@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatalogDA\cBenhDA.cs" />
+    <Compile Include="CatalogDA\cBenhTheoPKDA.cs" />
     <Compile Include="CatalogDA\cPhongKhamDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

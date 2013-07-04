@@ -8,3 +8,13 @@ D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\BUS\bin\Debug\DO
 D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\BUS\obj\Debug\ResolveAssemblyReference.cache
 D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\BUS\obj\Debug\BUS.dll
 D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\BUS\obj\Debug\BUS.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\BUS.dll.config
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\BUS.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\BUS.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\DA.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\DO.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\DA.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\bin\Debug\DO.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\obj\Debug\BUS.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\BUS\obj\Debug\BUS.pdb

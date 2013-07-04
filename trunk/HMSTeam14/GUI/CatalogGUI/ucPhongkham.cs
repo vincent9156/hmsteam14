@@ -98,28 +98,28 @@ namespace GUI
         /// <returns></returns>
         public string Xulymaphongkham()
         {
-            string maphongkham = BUS.cPhongKhamBUS.Getmaphongkham();
-            int socantang = Convert.ToInt32(maphongkham) + 1;
-            string maphongkham2 = null;
-            if (socantang >= 0 && socantang < 10)
-            {
-                maphongkham2 = "0000" + socantang;
-            }
-            if(socantang >=10 && socantang <100)
-            {
-                maphongkham2 = "000" + socantang;
-            }
-            if(socantang >=100 && socantang <1000)
-            {
-                maphongkham2 = "00" + socantang;
-            }
-            if(socantang >=1000 && socantang <10000)
-            {
-                maphongkham2 ="0" + socantang;
-            }
-            if(socantang >=10000 && socantang <100000)
-            {
-                maphongkham2 = socantang.ToString();
+                string maphongkham = BUS.cPhongKhamBUS.Getmaphongkham();
+                string maphongkham2 = null;
+                if (maphongkham == null)
+                {
+                maphongkham2 = "PK00";
+                }
+                else
+                {
+                string kytudau = maphongkham.Substring(0, 2);
+                int socantang = Convert.ToInt32(maphongkham.Substring(2)) + 1;
+                if (socantang >= 0 && socantang < 10)
+                {
+                    maphongkham2 = kytudau + "0" + socantang;
+                }
+                if (socantang >= 10 && socantang < 100)
+                {
+                    maphongkham2 = kytudau + socantang;
+                }
+                if (socantang >= 100)
+                {
+                    maphongkham2 = "Không th? thêm ph?ng khám";
+                }
             }
             return maphongkham2;
         }
