@@ -1,0 +1,6 @@
+D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\DO\bin\Debug\DO.dll.config
+D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\DO\bin\Debug\DO.dll
+D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\DO\bin\Debug\DO.pdb
+D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\DO\obj\Debug\ResolveAssemblyReference.cache
+D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\DO\obj\Debug\DO.dll
+D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\DO\obj\Debug\DO.pdb
