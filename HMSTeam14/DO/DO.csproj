@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatalogDO\cBenhDO.cs" />
+    <Compile Include="CatalogDO\cBenhTheoPKDO.cs" />
     <Compile Include="CatalogDO\cPhongKhamDO.cs" />
     <Compile Include="HMS_DB.Designer.cs">
       <AutoGen>True</AutoGen>

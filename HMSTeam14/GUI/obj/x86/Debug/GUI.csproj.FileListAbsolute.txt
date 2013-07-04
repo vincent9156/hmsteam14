@@ -34,3 +34,39 @@ D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\GUI\obj\x86\Debu
 D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\GUI\obj\x86\Debug\GUI.pdb
 D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\GUI\bin\Debug\DA.dll
 D:\K16T\Nam 3\Software Engineering Project\HMSProject\HMSTeam14\GUI\bin\Debug\DA.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe.config
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\GUI.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\BUS.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DO.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DA.dll
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\BUS.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DO.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DA.pdb
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucPhongkham.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmDoimatkhau.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHosobenhan.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmNhombenh.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmNhomthuoc.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmLogin.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmLichhen.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmGiaodienchinh.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucTrangchu.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBenh.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucThuoc.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucDonthuocmau.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucNhanvien.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucLichlamviec.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBaocao.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBenhtheophongkham.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucKhambenhngoaitru.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucSinhlieu.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe.licenses

@@ -28,14 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdBenh = new DevExpress.XtraGrid.GridControl();
-            this.gridBenh = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colMabenh = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTenbenhtv = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTenbenhta = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNgaytao = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTrangthai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pnDanhmucphongkham = new System.Windows.Forms.Panel();
+            this.cmbNhombenh = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenthuocTA = new DevExpress.XtraEditors.TextEdit();
             this.lblTenbenhTA = new DevExpress.XtraEditors.LabelControl();
@@ -52,90 +46,39 @@
             this.txtTenthuocTV = new DevExpress.XtraEditors.TextEdit();
             this.lblTenBenhTV = new DevExpress.XtraEditors.LabelControl();
             this.lblMaBenh = new DevExpress.XtraEditors.LabelControl();
-            this.cbmNhombenh = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtMota = new DevExpress.XtraEditors.MemoEdit();
             this.pnTimkiemDanhmucphongkham = new DevExpress.XtraEditors.PanelControl();
             this.lblDanhmucbenh = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.grdBenh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBenh)).BeginInit();
+            this.grdBenh = new DevExpress.XtraGrid.GridControl();
+            this.gridBenh = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMabenh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenNhomBenh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LookUpEdit = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.colManhombenh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenbenhtv = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenbenhta = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMota = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNgaytao = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTrangthai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pnDanhmucphongkham.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbNhombenh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMabenh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbmNhombenh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMota.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTimkiemDanhmucphongkham)).BeginInit();
             this.pnTimkiemDanhmucphongkham.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdBenh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBenh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LookUpEdit)).BeginInit();
             this.SuspendLayout();
-            // 
-            // grdBenh
-            // 
-            this.grdBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdBenh.Location = new System.Drawing.Point(0, 57);
-            this.grdBenh.MainView = this.gridBenh;
-            this.grdBenh.Name = "grdBenh";
-            this.grdBenh.Size = new System.Drawing.Size(1264, 332);
-            this.grdBenh.TabIndex = 44;
-            this.grdBenh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridBenh});
-            // 
-            // gridBenh
-            // 
-            this.gridBenh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMabenh,
-            this.colTenbenhtv,
-            this.colTenbenhta,
-            this.colNgaytao,
-            this.colTrangthai});
-            this.gridBenh.GridControl = this.grdBenh;
-            this.gridBenh.Name = "gridBenh";
-            this.gridBenh.OptionsFind.AlwaysVisible = true;
-            this.gridBenh.OptionsView.ShowGroupPanel = false;
-            // 
-            // colMabenh
-            // 
-            this.colMabenh.Caption = "Mã Bệnh";
-            this.colMabenh.Name = "colMabenh";
-            this.colMabenh.Visible = true;
-            this.colMabenh.VisibleIndex = 0;
-            // 
-            // colTenbenhtv
-            // 
-            this.colTenbenhtv.Caption = "Tên Bệnh Tiếng Việt";
-            this.colTenbenhtv.Name = "colTenbenhtv";
-            this.colTenbenhtv.Visible = true;
-            this.colTenbenhtv.VisibleIndex = 1;
-            // 
-            // colTenbenhta
-            // 
-            this.colTenbenhta.Caption = "Tên Bệnh Tiếng Anh";
-            this.colTenbenhta.Name = "colTenbenhta";
-            this.colTenbenhta.Visible = true;
-            this.colTenbenhta.VisibleIndex = 2;
-            // 
-            // colNgaytao
-            // 
-            this.colNgaytao.Caption = "Ngày Tạo";
-            this.colNgaytao.FieldName = "colNgaytao";
-            this.colNgaytao.Name = "colNgaytao";
-            this.colNgaytao.UnboundType = DevExpress.Data.UnboundColumnType.DateTime;
-            this.colNgaytao.Visible = true;
-            this.colNgaytao.VisibleIndex = 3;
-            // 
-            // colTrangthai
-            // 
-            this.colTrangthai.Caption = "Trạng Thái";
-            this.colTrangthai.FieldName = "colTrangthai";
-            this.colTrangthai.Name = "colTrangthai";
-            this.colTrangthai.UnboundType = DevExpress.Data.UnboundColumnType.Boolean;
-            this.colTrangthai.Visible = true;
-            this.colTrangthai.VisibleIndex = 4;
             // 
             // pnDanhmucphongkham
             // 
+            this.pnDanhmucphongkham.Controls.Add(this.cmbNhombenh);
             this.pnDanhmucphongkham.Controls.Add(this.labelControl1);
             this.pnDanhmucphongkham.Controls.Add(this.txtTenthuocTA);
             this.pnDanhmucphongkham.Controls.Add(this.lblTenbenhTA);
@@ -147,7 +90,6 @@
             this.pnDanhmucphongkham.Controls.Add(this.txtTenthuocTV);
             this.pnDanhmucphongkham.Controls.Add(this.lblTenBenhTV);
             this.pnDanhmucphongkham.Controls.Add(this.lblMaBenh);
-            this.pnDanhmucphongkham.Controls.Add(this.cbmNhombenh);
             this.pnDanhmucphongkham.Controls.Add(this.txtMota);
             this.pnDanhmucphongkham.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnDanhmucphongkham.Location = new System.Drawing.Point(0, 389);
@@ -155,11 +97,24 @@
             this.pnDanhmucphongkham.Size = new System.Drawing.Size(1264, 153);
             this.pnDanhmucphongkham.TabIndex = 43;
             // 
+            // cmbNhombenh
+            // 
+            this.cmbNhombenh.Location = new System.Drawing.Point(231, 71);
+            this.cmbNhombenh.Name = "cmbNhombenh";
+            this.cmbNhombenh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbNhombenh.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MANHOMBENH", "Mã nhóm bệnh"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TENNHOMBENH", "Tên nhóm bệnh")});
+            this.cmbNhombenh.Properties.NullText = "[------Chọn-----]";
+            this.cmbNhombenh.Size = new System.Drawing.Size(92, 20);
+            this.cmbNhombenh.TabIndex = 1;
+            // 
             // labelControl1
             // 
             this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.labelControl1.Location = new System.Drawing.Point(158, 77);
+            this.labelControl1.Location = new System.Drawing.Point(158, 74);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 13);
             this.labelControl1.TabIndex = 40;
@@ -173,7 +128,7 @@
             this.txtTenthuocTA.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.txtTenthuocTA.Properties.Appearance.Options.UseForeColor = true;
             this.txtTenthuocTA.Size = new System.Drawing.Size(248, 20);
-            this.txtTenthuocTA.TabIndex = 39;
+            this.txtTenthuocTA.TabIndex = 3;
             // 
             // lblTenbenhTA
             // 
@@ -218,8 +173,9 @@
             this.btnKhongLuu.Location = new System.Drawing.Point(877, 4);
             this.btnKhongLuu.Name = "btnKhongLuu";
             this.btnKhongLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnKhongLuu.TabIndex = 24;
+            this.btnKhongLuu.TabIndex = 1;
             this.btnKhongLuu.Text = "&Hủy bỏ";
+            this.btnKhongLuu.Click += new System.EventHandler(this.btnKhongLuu_Click);
             // 
             // btnSua
             // 
@@ -231,6 +187,7 @@
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 22;
             this.btnSua.Text = "&Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnTaomoi
             // 
@@ -242,6 +199,7 @@
             this.btnTaomoi.Size = new System.Drawing.Size(75, 23);
             this.btnTaomoi.TabIndex = 20;
             this.btnTaomoi.Text = "&Tạo mới";
+            this.btnTaomoi.Click += new System.EventHandler(this.btnTaomoi_Click);
             // 
             // btnLuu
             // 
@@ -251,8 +209,9 @@
             this.btnLuu.Location = new System.Drawing.Point(791, 4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 21;
+            this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "&Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // chkTrangThai
             // 
@@ -263,7 +222,7 @@
             this.chkTrangThai.Properties.Appearance.Options.UseForeColor = true;
             this.chkTrangThai.Properties.Caption = "Kích Hoạt";
             this.chkTrangThai.Size = new System.Drawing.Size(75, 19);
-            this.chkTrangThai.TabIndex = 36;
+            this.chkTrangThai.TabIndex = 5;
             // 
             // lblMota
             // 
@@ -294,7 +253,7 @@
             this.txtMabenh.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.txtMabenh.Properties.Appearance.Options.UseForeColor = true;
             this.txtMabenh.Size = new System.Drawing.Size(92, 20);
-            this.txtMabenh.TabIndex = 30;
+            this.txtMabenh.TabIndex = 0;
             // 
             // txtTenthuocTV
             // 
@@ -304,7 +263,7 @@
             this.txtTenthuocTV.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.txtTenthuocTV.Properties.Appearance.Options.UseForeColor = true;
             this.txtTenthuocTV.Size = new System.Drawing.Size(248, 20);
-            this.txtTenthuocTV.TabIndex = 32;
+            this.txtTenthuocTV.TabIndex = 2;
             // 
             // lblTenBenhTV
             // 
@@ -326,18 +285,6 @@
             this.lblMaBenh.TabIndex = 29;
             this.lblMaBenh.Text = "Mã Bệnh";
             // 
-            // cbmNhombenh
-            // 
-            this.cbmNhombenh.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbmNhombenh.Location = new System.Drawing.Point(231, 73);
-            this.cbmNhombenh.Name = "cbmNhombenh";
-            this.cbmNhombenh.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.cbmNhombenh.Properties.Appearance.Options.UseForeColor = true;
-            this.cbmNhombenh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbmNhombenh.Size = new System.Drawing.Size(92, 20);
-            this.cbmNhombenh.TabIndex = 41;
-            // 
             // txtMota
             // 
             this.txtMota.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -350,7 +297,7 @@
             this.txtMota.Properties.EditFormat.FormatString = "d";
             this.txtMota.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtMota.Size = new System.Drawing.Size(248, 40);
-            this.txtMota.TabIndex = 35;
+            this.txtMota.TabIndex = 4;
             // 
             // pnTimkiemDanhmucphongkham
             // 
@@ -372,6 +319,117 @@
             this.lblDanhmucbenh.TabIndex = 6;
             this.lblDanhmucbenh.Text = "Danh Mục Bệnh Trong Bệnh Viện";
             // 
+            // grdBenh
+            // 
+            this.grdBenh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdBenh.Location = new System.Drawing.Point(0, 57);
+            this.grdBenh.MainView = this.gridBenh;
+            this.grdBenh.Name = "grdBenh";
+            this.grdBenh.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.LookUpEdit});
+            this.grdBenh.Size = new System.Drawing.Size(1264, 332);
+            this.grdBenh.TabIndex = 0;
+            this.grdBenh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridBenh});
+            // 
+            // gridBenh
+            // 
+            this.gridBenh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMabenh,
+            this.colTenNhomBenh,
+            this.colManhombenh,
+            this.colTenbenhtv,
+            this.colTenbenhta,
+            this.colMota,
+            this.colNgaytao,
+            this.colTrangthai});
+            this.gridBenh.GridControl = this.grdBenh;
+            this.gridBenh.Name = "gridBenh";
+            this.gridBenh.OptionsFind.AlwaysVisible = true;
+            this.gridBenh.OptionsView.ShowGroupPanel = false;
+            this.gridBenh.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridBenh_RowClick);
+            this.gridBenh.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridBenh_FocusedRowChanged);
+            // 
+            // colMabenh
+            // 
+            this.colMabenh.Caption = "Mã Bệnh";
+            this.colMabenh.FieldName = "MABENH";
+            this.colMabenh.Name = "colMabenh";
+            this.colMabenh.OptionsColumn.AllowEdit = false;
+            this.colMabenh.Visible = true;
+            this.colMabenh.VisibleIndex = 2;
+            // 
+            // colTenNhomBenh
+            // 
+            this.colTenNhomBenh.Caption = "Tên Nhóm Bệnh";
+            this.colTenNhomBenh.ColumnEdit = this.LookUpEdit;
+            this.colTenNhomBenh.FieldName = "MANHOMBENH1";
+            this.colTenNhomBenh.Name = "colTenNhomBenh";
+            this.colTenNhomBenh.OptionsColumn.AllowEdit = false;
+            this.colTenNhomBenh.Visible = true;
+            this.colTenNhomBenh.VisibleIndex = 1;
+            // 
+            // LookUpEdit
+            // 
+            this.LookUpEdit.AutoHeight = false;
+            this.LookUpEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.LookUpEdit.Name = "LookUpEdit";
+            // 
+            // colManhombenh
+            // 
+            this.colManhombenh.Caption = "Mã Nhóm Bệnh";
+            this.colManhombenh.FieldName = "MANHOMBENH1";
+            this.colManhombenh.Name = "colManhombenh";
+            this.colManhombenh.OptionsColumn.AllowEdit = false;
+            this.colManhombenh.Visible = true;
+            this.colManhombenh.VisibleIndex = 0;
+            // 
+            // colTenbenhtv
+            // 
+            this.colTenbenhtv.Caption = "Tên Bệnh Tiếng Việt";
+            this.colTenbenhtv.FieldName = "TENBENHTV";
+            this.colTenbenhtv.Name = "colTenbenhtv";
+            this.colTenbenhtv.OptionsColumn.AllowEdit = false;
+            this.colTenbenhtv.Visible = true;
+            this.colTenbenhtv.VisibleIndex = 3;
+            // 
+            // colTenbenhta
+            // 
+            this.colTenbenhta.Caption = "Tên Bệnh Tiếng Anh";
+            this.colTenbenhta.FieldName = "TENBENHTA";
+            this.colTenbenhta.Name = "colTenbenhta";
+            this.colTenbenhta.OptionsColumn.AllowEdit = false;
+            this.colTenbenhta.Visible = true;
+            this.colTenbenhta.VisibleIndex = 4;
+            // 
+            // colMota
+            // 
+            this.colMota.Caption = "Mô Tả";
+            this.colMota.FieldName = "MOTA1";
+            this.colMota.Name = "colMota";
+            this.colMota.OptionsColumn.AllowEdit = false;
+            this.colMota.Visible = true;
+            this.colMota.VisibleIndex = 5;
+            // 
+            // colNgaytao
+            // 
+            this.colNgaytao.Caption = "Ngày Tạo";
+            this.colNgaytao.FieldName = "NGAYTAO1";
+            this.colNgaytao.Name = "colNgaytao";
+            this.colNgaytao.OptionsColumn.AllowEdit = false;
+            this.colNgaytao.UnboundType = DevExpress.Data.UnboundColumnType.DateTime;
+            // 
+            // colTrangthai
+            // 
+            this.colTrangthai.Caption = "Trạng Thái";
+            this.colTrangthai.FieldName = "TRANGTHAI1";
+            this.colTrangthai.Name = "colTrangthai";
+            this.colTrangthai.OptionsColumn.AllowEdit = false;
+            this.colTrangthai.UnboundType = DevExpress.Data.UnboundColumnType.Boolean;
+            this.colTrangthai.Visible = true;
+            this.colTrangthai.VisibleIndex = 6;
+            // 
             // ucBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,33 +440,28 @@
             this.Name = "ucBenh";
             this.Size = new System.Drawing.Size(1264, 542);
             this.Load += new System.EventHandler(this.ucBenh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdBenh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBenh)).EndInit();
             this.pnDanhmucphongkham.ResumeLayout(false);
             this.pnDanhmucphongkham.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbNhombenh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMabenh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbmNhombenh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMota.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTimkiemDanhmucphongkham)).EndInit();
             this.pnTimkiemDanhmucphongkham.ResumeLayout(false);
             this.pnTimkiemDanhmucphongkham.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdBenh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBenh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LookUpEdit)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl grdBenh;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridBenh;
-        private DevExpress.XtraGrid.Columns.GridColumn colMabenh;
-        private DevExpress.XtraGrid.Columns.GridColumn colTenbenhtv;
-        private DevExpress.XtraGrid.Columns.GridColumn colNgaytao;
-        private DevExpress.XtraGrid.Columns.GridColumn colTrangthai;
         private System.Windows.Forms.Panel pnDanhmucphongkham;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton btnKhongLuu;
@@ -426,10 +479,20 @@
         private DevExpress.XtraEditors.LabelControl lblDanhmucbenh;
         private DevExpress.XtraEditors.TextEdit txtTenthuocTA;
         private DevExpress.XtraEditors.LabelControl lblTenbenhTA;
-        private DevExpress.XtraGrid.Columns.GridColumn colTenbenhta;
         private DevExpress.XtraEditors.SimpleButton btnNhombenh;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.ComboBoxEdit cbmNhombenh;
         private DevExpress.XtraEditors.MemoEdit txtMota;
+        private DevExpress.XtraEditors.LookUpEdit cmbNhombenh;
+        private DevExpress.XtraGrid.GridControl grdBenh;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridBenh;
+        private DevExpress.XtraGrid.Columns.GridColumn colMabenh;
+        private DevExpress.XtraGrid.Columns.GridColumn colManhombenh;
+        private DevExpress.XtraGrid.Columns.GridColumn colTenbenhtv;
+        private DevExpress.XtraGrid.Columns.GridColumn colTenbenhta;
+        private DevExpress.XtraGrid.Columns.GridColumn colNgaytao;
+        private DevExpress.XtraGrid.Columns.GridColumn colTrangthai;
+        private DevExpress.XtraGrid.Columns.GridColumn colTenNhomBenh;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit LookUpEdit;
+        private DevExpress.XtraGrid.Columns.GridColumn colMota;
     }
 }
