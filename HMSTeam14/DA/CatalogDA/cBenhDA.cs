@@ -78,6 +78,7 @@ namespace DA
                 var query = (from dss in ds.tbBENHs
                              where dss.MABENH == MABENH
                              select dss).First();
+                //query.MABENH = MABENH;
                 query.TENBENHTA = TENBENHTA;
                 query.TENBENHTV = TENBENHTV;
                 query.MOTA = MOTA;

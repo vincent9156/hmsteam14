@@ -21,7 +21,8 @@ namespace GUI
         /// <summary>
         /// Hàm khai báo biến 
         /// </summary>
-        private bool Add = false, Update = false;
+        private bool Add = false, Update = false ;
+        private string mabenh = "" ,manhombenh="";
         /// <summary>
         /// Hàm lấy thông tin bệnh
         /// </summary>
@@ -65,6 +66,8 @@ namespace GUI
             LookUpEdit.DataSource = dsnhombenh;
             LookUpEdit.DisplayMember = "TENNHOMBENH";
             LookUpEdit.ValueMember = "MANHOMBENH";
+            txtMabenh.Enabled = false;
+            cmbNhombenh.Enabled = false;
         }
         /// <summary>
         /// reset hết text
@@ -75,7 +78,6 @@ namespace GUI
             txtTenthuocTA.Text = "";
             txtTenthuocTV.Text = "";
             txtMota.Text = "";
-            cmbNhombenh.EditValue = "";
             chkTrangThai.Checked = false;
         }
         /// <summary>
@@ -89,7 +91,6 @@ namespace GUI
             btnNhombenh.Enabled = !editing;
             btnLuu.Enabled = editing;
             btnKhongLuu.Enabled = editing;
-            cmbNhombenh.Enabled = editing;
             txtMota.Enabled = editing;
             txtTenthuocTA.Enabled = editing;
             txtTenthuocTV.Enabled = editing;
@@ -136,7 +137,7 @@ namespace GUI
                 if (soCanTang >= 0 && soCanTang < 10)
                     maNhombenh1 = kyTuDau + "0" + soCanTang;
                 if (soCanTang >= 10 && soCanTang < 100)
-                    maNhombenh1 = kyTuDau + "." + soCanTang;
+                    maNhombenh1 = kyTuDau + soCanTang;
                 if (soCanTang >= 100)
                     maNhombenh1 = "Không thể tăng hơn nữa!";
             }
@@ -169,6 +170,7 @@ namespace GUI
             Update = false;
             Resettextvalue();
             Enablediting(true);
+            cmbNhombenh.Enabled = true;
         }
         /// <summary>
         /// Thực hiện thao tác lưu dữ liệu
@@ -179,7 +181,6 @@ namespace GUI
         {
 
             cBenhPKDO ds = Getthongtinbenh();
-            string mabenh = XuLyMaBenh();
             if (Checkdauvao(ds) == true)
             {
                 if (Add && BUS.cBenhBUS.CheckBenh(ds.MABENH) == true && Update == false)
@@ -187,6 +188,8 @@ namespace GUI
                     XtraMessageBox.Show("Mã bệnh đã tồn tại: " + txtMabenh.Text + "!!",
                         "Hỏi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Enablediting(true);
+                    txtMabenh.Enabled = false;
+                    cmbNhombenh.Enabled = false;
                 }
                 else
                 {
@@ -198,11 +201,11 @@ namespace GUI
                     }
                 }
 
-                if (Update)
+                if (Update==true)
                 {
                     BUS.cBenhBUS.UpdateBenh(ds.MABENH, ds.TENBENHTA, ds.TENBENHTV, ds.MOTA1, ds.NGAYTAO1, ds.TRANGTHAI1);
                     ucBenh_Load(sender, e);
-                    XtraMessageBox.Show("Lưu thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    XtraMessageBox.Show("Cập nhật thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -214,6 +217,8 @@ namespace GUI
         private void btnKhongLuu_Click(object sender, EventArgs e)
         {
             Enablediting(false);
+            txtMabenh.Enabled = false;
+            cmbNhombenh.Enabled = false;
         }
         /// <summary>
         /// Thực hiện binding dữ liệu theo phương thức row changed
@@ -287,5 +292,38 @@ namespace GUI
             Enablediting(true);
         }
 #endregion
+
+        private void txtMabenh_EditValueChanged(object sender, EventArgs e)
+        {
+            if (txtMabenh.Text.Length > 4)
+            {
+                mabenh = txtMabenh.Text;
+            }
+
+            else
+            {
+                mabenh = XuLyMaBenh();
+            }
+        }
+
+        private void cmbNhombenh_EditValueChanged(object sender, EventArgs e)
+        {
+            if (Add == true)
+            {
+                manhombenh = cmbNhombenh.EditValue.ToString() + ".";
+                txtMabenh.Text = manhombenh;
+                txtMabenh.Enabled = true;
+            }
+        }
+
+        private void cmbNhombenh_Click(object sender, EventArgs e)
+        {
+            if (Add == true)
+            {
+                manhombenh = cmbNhombenh.EditValue.ToString() + ".";
+                txtMabenh.Text = manhombenh;
+                txtMabenh.Enabled = true;      
+            }
+        }
     }
 }
