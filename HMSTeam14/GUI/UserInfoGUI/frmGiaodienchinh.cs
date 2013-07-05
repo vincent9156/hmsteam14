@@ -141,5 +141,17 @@ namespace GUI
             pnHienthi.Controls.Add(sinhlieu);
             sinhlieu.Dock = System.Windows.Forms.DockStyle.Fill;
         }
+
+        private void btnGiupdo_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmHelp giupdo = new frmHelp();
+            giupdo.Show();
+        }
+
+        private void btnThongtinPM_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmThongtinphanmem thongtin = new frmThongtinphanmem();
+            thongtin.Show();
+        }
     }
 }
