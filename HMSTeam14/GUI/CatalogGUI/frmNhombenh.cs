@@ -51,11 +51,6 @@ namespace GUI
         /// <returns></returns>
         private static bool Checkdauvao(cNhomBenhDO ds)
         {
-            if (ds.MANHOMBENH.Length<=2|| ds.MANHOMBENH.Length>3)
-            {
-                XtraMessageBox.Show("Mã nhóm bệnh chỉ có 3 ký tự ");
-                return false;
-            }
             if (ds.MANHOMBENH.Equals(""))
             {
                 XtraMessageBox.Show("Vui lòng nhập mã nhóm bênh!");
@@ -102,11 +97,6 @@ namespace GUI
         private void btnHuy_Click(object sender, EventArgs e)
         {
             Resettextvalue();
-        }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

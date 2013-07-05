@@ -133,7 +133,6 @@
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 72;
             this.btnThoat.Text = "&Thoát";
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmNhombenh
             // 

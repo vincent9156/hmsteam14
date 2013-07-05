@@ -108,3 +108,41 @@ C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DA.dll
 C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\BUS.pdb
 C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DO.pdb
 C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\GUI\bin\Debug\DA.pdb
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe.config
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.pdb
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\GUI.pdb
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\BUS.dll
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\DO.dll
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\DA.dll
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\BUS.pdb
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\DO.pdb
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\bin\Debug\DA.pdb
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmNhombenh.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBenhtheophongkham.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucPhongkham.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucThuoc.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHelp.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmThongtinphanmem.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBenh.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmDoimatkhau.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHosobenhan.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmNhomthuoc.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmLogin.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmLichhen.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmGiaodienchinh.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucTrangchu.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucDonthuocmau.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucNhanvien.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucLichlamviec.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBaocao.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucKhambenhngoaitru.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucSinhlieu.resources
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe.licenses

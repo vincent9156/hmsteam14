@@ -28,7 +28,7 @@ namespace DA
                     dss.TENBENHTA = row.TENBENHTA;
                     dss.TENBENHTV = row.TENBENHTV;
                     dss.NGAYTAO1 = row.NGAYTAO.Value;
-                    dss.TRANGTHAI1 = row.TRANGTHAI.Value;
+                    dss.TRANGTHAI1 = row.TRANGTHAI;
                     dsbenh.Add(dss);
                 }
                 return dsbenh;

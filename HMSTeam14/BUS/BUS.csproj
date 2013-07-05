@@ -41,10 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogDA\cBenhBUS.cs" />
-    <Compile Include="CatalogDA\cBenhTheoPKBUS.cs" />
-    <Compile Include="CatalogDA\cPhongKhamBUS.cs" />
-    <Compile Include="CatalogDA\cThuocBUS.cs" />
+    <Compile Include="CatalogBUS\cBenhBUS.cs" />
+    <Compile Include="CatalogBUS\cBenhTheoPKBUS.cs" />
+    <Compile Include="CatalogBUS\cCheckedListBoxItem.cs" />
+    <Compile Include="CatalogBUS\cNhomNhanVienBUS.cs" />
+    <Compile Include="CatalogBUS\cPhongKhamBUS.cs" />
+    <Compile Include="CatalogBUS\cThuocBUS.cs" />
+    <Compile Include="CatalogBUS\cTinhNangBUS.cs" />
+    <Compile Include="CatalogBUS\cTinhNangNhomNhanVienBUS.cs" />
+    <Compile Include="CatalogBUS\cNhanVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,9 +63,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OutpantientDA\" />
-    <Folder Include="ReportDA\" />
-    <Folder Include="UserInfoDA\" />
+    <Folder Include="OutpantientBUS\" />
+    <Folder Include="ReportBUS\" />
+    <Folder Include="UserInfoBUS\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
