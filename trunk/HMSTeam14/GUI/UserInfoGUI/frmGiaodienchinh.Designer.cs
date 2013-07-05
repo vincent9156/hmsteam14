@@ -169,6 +169,7 @@
             this.btnGiupdo.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnGiupdo.LargeGlyph")));
             this.btnGiupdo.LargeWidth = 80;
             this.btnGiupdo.Name = "btnGiupdo";
+            this.btnGiupdo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGiupdo_ItemClick);
             // 
             // btnThongtinPM
             // 
@@ -177,11 +178,11 @@
             this.btnThongtinPM.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThongtinPM.LargeGlyph")));
             this.btnThongtinPM.LargeWidth = 80;
             this.btnThongtinPM.Name = "btnThongtinPM";
+            this.btnThongtinPM.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongtinPM_ItemClick);
             // 
             // btnTrangchu
             // 
             this.btnTrangchu.Caption = "Trang chủ";
-            // this.btnTrangchu.GlyphDisabled = global::GUI.Properties.Resources.Drugstore_icon;
             this.btnTrangchu.Id = 18;
             this.btnTrangchu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTrangchu.LargeGlyph")));
             this.btnTrangchu.LargeWidth = 80;

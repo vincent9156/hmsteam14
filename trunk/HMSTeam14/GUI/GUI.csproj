@@ -69,12 +69,6 @@
     <Compile Include="CatalogGUI\frmNhombenh.designer.cs">
       <DependentUpon>frmNhombenh.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatalogGUI\ucBenh.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CatalogGUI\ucBenh.designer.cs">
-      <DependentUpon>ucBenh.cs</DependentUpon>
-    </Compile>
     <Compile Include="CatalogGUI\ucBenhtheophongkham.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +80,24 @@
     </Compile>
     <Compile Include="CatalogGUI\ucPhongkham.designer.cs">
       <DependentUpon>ucPhongkham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmHelp.designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmThongtinphanmem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmThongtinphanmem.designer.cs">
+      <DependentUpon>frmThongtinphanmem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogGUI\ucBenh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CatalogGUI\ucBenh.designer.cs">
+      <DependentUpon>ucBenh.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInfoGUI\frmDoimatkhau.cs">
       <SubType>Form</SubType>
@@ -188,14 +200,20 @@
     <EmbeddedResource Include="CatalogGUI\frmNhombenh.resx">
       <DependentUpon>frmNhombenh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CatalogGUI\ucBenh.resx">
-      <DependentUpon>ucBenh.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CatalogGUI\ucBenhtheophongkham.resx">
       <DependentUpon>ucBenhtheophongkham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatalogGUI\ucPhongkham.resx">
       <DependentUpon>ucPhongkham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoGUI\frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoGUI\frmThongtinphanmem.resx">
+      <DependentUpon>frmThongtinphanmem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogGUI\ucBenh.resx">
+      <DependentUpon>ucBenh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmDoimatkhau.resx">
       <DependentUpon>frmDoimatkhau.cs</DependentUpon>
