@@ -118,5 +118,35 @@ namespace DA
                 return maphongkham;
             }
         }
+
+        public static string GetIDByClinicName(string Name)
+        {
+            Name = Name.ToLower();
+            cPhongKhamDO group = new cPhongKhamDO();
+            using (DB_HMS_Entities lst = new DB_HMS_Entities())
+            {
+                var query = from u in lst.tbPHONGKHAMs where u.TENPHONG == Name select u;
+                foreach (var row in query)
+                {
+                    group.MAPHONGKHAM = row.MAPHONGKHAM;
+                }
+            }
+            return group.MAPHONGKHAM;
+        }
+
+        public static string GetNameByClinicID(string ID)
+        {
+            ID = ID.ToLower();
+            cPhongKhamDO group = new cPhongKhamDO();
+            using (DB_HMS_Entities lst = new DB_HMS_Entities())
+            {
+                var query = from u in lst.tbPHONGKHAMs where u.MAPHONGKHAM == ID select u;
+                foreach (var row in query)
+                {
+                    group.TENPHONG = row.TENPHONG;
+                }
+            }
+            return group.TENPHONG;
+        }
     }
 }

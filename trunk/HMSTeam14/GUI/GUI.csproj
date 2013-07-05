@@ -69,11 +69,23 @@
     <Compile Include="CatalogGUI\frmNhombenh.designer.cs">
       <DependentUpon>frmNhombenh.cs</DependentUpon>
     </Compile>
+    <Compile Include="CatalogGUI\ucBenh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CatalogGUI\ucBenh.designer.cs">
+      <DependentUpon>ucBenh.cs</DependentUpon>
+    </Compile>
     <Compile Include="CatalogGUI\ucBenhtheophongkham.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CatalogGUI\ucBenhtheophongkham.designer.cs">
       <DependentUpon>ucBenhtheophongkham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogGUI\ucNhomnguoidung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CatalogGUI\ucNhomnguoidung.designer.cs">
+      <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
     </Compile>
     <Compile Include="CatalogGUI\ucPhongkham.cs">
       <SubType>UserControl</SubType>
@@ -81,9 +93,17 @@
     <Compile Include="CatalogGUI\ucPhongkham.designer.cs">
       <DependentUpon>ucPhongkham.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatalogGUI\ucThuoc.cs" />
+    <Compile Include="CatalogGUI\ucThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CatalogGUI\ucThuoc.designer.cs">
       <DependentUpon>ucThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogGUI\ucNhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CatalogGUI\ucNhanvien.designer.cs">
+      <DependentUpon>ucNhanvien.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInfoGUI\frmHelp.cs">
       <SubType>Form</SubType>
@@ -96,12 +116,6 @@
     </Compile>
     <Compile Include="UserInfoGUI\frmThongtinphanmem.designer.cs">
       <DependentUpon>frmThongtinphanmem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CatalogGUI\ucBenh.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CatalogGUI\ucBenh.designer.cs">
-      <DependentUpon>ucBenh.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInfoGUI\frmDoimatkhau.cs">
       <SubType>Form</SubType>
@@ -153,12 +167,6 @@
     <Compile Include="OutpantientGUI\ucDonthuocmau.Designer.cs">
       <DependentUpon>ucDonthuocmau.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatalogGUI\ucNhanvien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CatalogGUI\ucNhanvien.Designer.cs">
-      <DependentUpon>ucNhanvien.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserInfoGUI\ucLichlamviec.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,12 +191,6 @@
     <Compile Include="OutpantientGUI\ucKhambenhngoaitru.Designer.cs">
       <DependentUpon>ucKhambenhngoaitru.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatalogGUI\ucNhomnguoidung.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CatalogGUI\ucNhomnguoidung.Designer.cs">
-      <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
-    </Compile>
     <Compile Include="OutpantientGUI\ucSinhlieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,8 +200,14 @@
     <EmbeddedResource Include="CatalogGUI\frmNhombenh.resx">
       <DependentUpon>frmNhombenh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CatalogGUI\ucBenh.resx">
+      <DependentUpon>ucBenh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CatalogGUI\ucBenhtheophongkham.resx">
       <DependentUpon>ucBenhtheophongkham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogGUI\ucNhomnguoidung.resx">
+      <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatalogGUI\ucPhongkham.resx">
       <DependentUpon>ucPhongkham.cs</DependentUpon>
@@ -207,14 +215,14 @@
     <EmbeddedResource Include="CatalogGUI\ucThuoc.resx">
       <DependentUpon>ucThuoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CatalogGUI\ucNhanvien.resx">
+      <DependentUpon>ucNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmThongtinphanmem.resx">
       <DependentUpon>frmThongtinphanmem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CatalogGUI\ucBenh.resx">
-      <DependentUpon>ucBenh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmDoimatkhau.resx">
       <DependentUpon>frmDoimatkhau.cs</DependentUpon>
@@ -251,9 +259,6 @@
     <EmbeddedResource Include="OutpantientGUI\ucDonthuocmau.resx">
       <DependentUpon>ucDonthuocmau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CatalogGUI\ucNhanvien.resx">
-      <DependentUpon>ucNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\ucLichlamviec.resx">
       <DependentUpon>ucLichlamviec.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,9 +270,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OutpantientGUI\ucKhambenhngoaitru.resx">
       <DependentUpon>ucKhambenhngoaitru.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CatalogGUI\ucNhomnguoidung.resx">
-      <DependentUpon>ucNhomnguoidung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OutpantientGUI\ucSinhlieu.resx">
       <DependentUpon>ucSinhlieu.cs</DependentUpon>
