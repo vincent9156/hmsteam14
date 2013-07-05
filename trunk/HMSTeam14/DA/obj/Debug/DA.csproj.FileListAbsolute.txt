@@ -14,3 +14,11 @@ C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\DA\bin\Debug\DO.pdb
 C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\DA\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\DA\obj\Debug\DA.dll
 C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\DA\obj\Debug\DA.pdb
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\obj\Debug\DA.dll
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\bin\Debug\DA.dll.config
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\bin\Debug\DA.dll
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\bin\Debug\DA.pdb
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\bin\Debug\DO.dll
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\bin\Debug\DO.pdb
+C:\Users\Chip\Desktop\Project\trunk\HMSTeam14\DA\obj\Debug\DA.pdb

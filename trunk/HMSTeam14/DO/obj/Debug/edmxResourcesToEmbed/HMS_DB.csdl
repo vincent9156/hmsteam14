@@ -358,7 +358,7 @@
     </Key>
     <Property Name="MATHUOC" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
     <Property Name="TENTHUONGMAI" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
-    <Property Name="TENDATDUOC" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="TENBIETDUOC" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
     <Property Name="CACHDUNG" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="DONVI" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
     <Property Name="DONVIDUNG" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
