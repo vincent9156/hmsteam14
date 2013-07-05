@@ -44,6 +44,7 @@
     <Compile Include="CatalogDA\cBenhDA.cs" />
     <Compile Include="CatalogDA\cBenhTheoPKDA.cs" />
     <Compile Include="CatalogDA\cPhongKhamDA.cs" />
+    <Compile Include="CatalogDA\cThuocDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -204,7 +204,7 @@
         <MappingFragment StoreEntitySet="tbTHUOC">
           <ScalarProperty Name="MATHUOC" ColumnName="MATHUOC" />
           <ScalarProperty Name="TENTHUONGMAI" ColumnName="TENTHUONGMAI" />
-          <ScalarProperty Name="TENDATDUOC" ColumnName="TENDATDUOC" />
+          <ScalarProperty Name="TENBIETDUOC" ColumnName="TENDATDUOC" />
           <ScalarProperty Name="CACHDUNG" ColumnName="CACHDUNG" />
           <ScalarProperty Name="DONVI" ColumnName="DONVI" />
           <ScalarProperty Name="DONVIDUNG" ColumnName="DONVIDUNG" />

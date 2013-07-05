@@ -44,6 +44,7 @@
     <Compile Include="CatalogDA\cBenhBUS.cs" />
     <Compile Include="CatalogDA\cBenhTheoPKBUS.cs" />
     <Compile Include="CatalogDA\cPhongKhamBUS.cs" />
+    <Compile Include="CatalogDA\cThuocBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

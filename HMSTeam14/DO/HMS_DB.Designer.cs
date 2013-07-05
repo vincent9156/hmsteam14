@@ -4804,24 +4804,24 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String TENDATDUOC
+        public global::System.String TENBIETDUOC
         {
             get
             {
-                return _TENDATDUOC;
+                return _TENBIETDUOC;
             }
             set
             {
-                OnTENDATDUOCChanging(value);
-                ReportPropertyChanging("TENDATDUOC");
-                _TENDATDUOC = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("TENDATDUOC");
-                OnTENDATDUOCChanged();
+                OnTENBIETDUOCChanging(value);
+                ReportPropertyChanging("TENBIETDUOC");
+                _TENBIETDUOC = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TENBIETDUOC");
+                OnTENBIETDUOCChanged();
             }
         }
-        private global::System.String _TENDATDUOC;
-        partial void OnTENDATDUOCChanging(global::System.String value);
-        partial void OnTENDATDUOCChanged();
+        private global::System.String _TENBIETDUOC;
+        partial void OnTENBIETDUOCChanging(global::System.String value);
+        partial void OnTENBIETDUOCChanged();
     
         /// <summary>
         /// No Metadata Documentation available.

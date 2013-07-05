@@ -30,10 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucThuoc));
             this.pnDanhmucphongkham = new System.Windows.Forms.Panel();
+            this.lookUpEditDonVi = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEditCachDung = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEditDonViDung = new DevExpress.XtraEditors.LookUpEdit();
             this.lblGhichu = new DevExpress.XtraEditors.LabelControl();
-            this.cmbCachdung = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenthuocta = new DevExpress.XtraEditors.TextEdit();
@@ -50,7 +51,6 @@
             this.txtTenthuoctv = new DevExpress.XtraEditors.TextEdit();
             this.lblTenthuoc = new DevExpress.XtraEditors.LabelControl();
             this.lblThuoc = new DevExpress.XtraEditors.LabelControl();
-            this.cmbDonvi = new DevExpress.XtraEditors.LookUpEdit();
             this.txtGhichu = new DevExpress.XtraEditors.MemoEdit();
             this.pnTimkiemDanhmucphongkham = new DevExpress.XtraEditors.PanelControl();
             this.lblDanhmucthuoc = new DevExpress.XtraEditors.LabelControl();
@@ -65,15 +65,15 @@
             this.colGhichu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTrangthai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pnDanhmucphongkham.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCachdung.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDonVi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditCachDung.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDonViDung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocta.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMathuoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuoctv.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbDonvi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhichu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTimkiemDanhmucphongkham)).BeginInit();
             this.pnTimkiemDanhmucphongkham.SuspendLayout();
@@ -83,10 +83,11 @@
             // 
             // pnDanhmucphongkham
             // 
+            this.pnDanhmucphongkham.Controls.Add(this.lookUpEditDonVi);
+            this.pnDanhmucphongkham.Controls.Add(this.lookUpEditCachDung);
             this.pnDanhmucphongkham.Controls.Add(this.labelControl4);
-            this.pnDanhmucphongkham.Controls.Add(this.lookUpEdit1);
+            this.pnDanhmucphongkham.Controls.Add(this.lookUpEditDonViDung);
             this.pnDanhmucphongkham.Controls.Add(this.lblGhichu);
-            this.pnDanhmucphongkham.Controls.Add(this.cmbCachdung);
             this.pnDanhmucphongkham.Controls.Add(this.labelControl3);
             this.pnDanhmucphongkham.Controls.Add(this.labelControl2);
             this.pnDanhmucphongkham.Controls.Add(this.txtTenthuocta);
@@ -98,13 +99,46 @@
             this.pnDanhmucphongkham.Controls.Add(this.txtTenthuoctv);
             this.pnDanhmucphongkham.Controls.Add(this.lblTenthuoc);
             this.pnDanhmucphongkham.Controls.Add(this.lblThuoc);
-            this.pnDanhmucphongkham.Controls.Add(this.cmbDonvi);
             this.pnDanhmucphongkham.Controls.Add(this.txtGhichu);
             this.pnDanhmucphongkham.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnDanhmucphongkham.Location = new System.Drawing.Point(0, 355);
             this.pnDanhmucphongkham.Name = "pnDanhmucphongkham";
             this.pnDanhmucphongkham.Size = new System.Drawing.Size(1264, 187);
             this.pnDanhmucphongkham.TabIndex = 40;
+            // 
+            // lookUpEditDonVi
+            // 
+            this.lookUpEditDonVi.EditValue = "";
+            this.lookUpEditDonVi.Location = new System.Drawing.Point(375, 66);
+            this.lookUpEditDonVi.Name = "lookUpEditDonVi";
+            this.lookUpEditDonVi.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.lookUpEditDonVi.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEditDonVi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEditDonVi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("donvi", "Đơn vị")});
+            this.lookUpEditDonVi.Properties.NullText = "-------Chọn-------";
+            this.lookUpEditDonVi.Size = new System.Drawing.Size(93, 20);
+            this.lookUpEditDonVi.TabIndex = 58;
+            this.lookUpEditDonVi.EditValueChanged += new System.EventHandler(this.lookupEditDonVi_EditValueChanged);
+            // 
+            // lookUpEditCachDung
+            // 
+            this.lookUpEditCachDung.EditValue = "";
+            this.lookUpEditCachDung.Location = new System.Drawing.Point(178, 64);
+            this.lookUpEditCachDung.Name = "lookUpEditCachDung";
+            this.lookUpEditCachDung.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lookUpEditCachDung.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.lookUpEditCachDung.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEditCachDung.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEditCachDung.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEditCachDung.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("cachdung", "Cách dùng")});
+            this.lookUpEditCachDung.Properties.NullText = "-------Chọn-------";
+            this.lookUpEditCachDung.Size = new System.Drawing.Size(92, 20);
+            this.lookUpEditCachDung.TabIndex = 5;
+            this.lookUpEditCachDung.EditValueChanged += new System.EventHandler(this.lookUpEditCachDung_EditValueChanged);
             // 
             // labelControl4
             // 
@@ -116,63 +150,33 @@
             this.labelControl4.TabIndex = 55;
             this.labelControl4.Text = "Đơn vị dùng";
             // 
-            // lookUpEdit1
+            // lookUpEditDonViDung
             // 
-            this.lookUpEdit1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lookUpEdit1.EditValue = "";
-            this.lookUpEdit1.Location = new System.Drawing.Point(664, 60);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.lookUpEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEditDonViDung.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lookUpEditDonViDung.EditValue = "";
+            this.lookUpEditDonViDung.Location = new System.Drawing.Point(664, 65);
+            this.lookUpEditDonViDung.Name = "lookUpEditDonViDung";
+            this.lookUpEditDonViDung.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.lookUpEditDonViDung.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEditDonViDung.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name77", "Name77"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name78", "Name78"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name79", "Name79"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name80", "Name80")});
-            this.lookUpEdit1.Properties.NullText = "";
-            this.lookUpEdit1.Properties.PopupSizeable = false;
-            this.lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lookUpEdit1.Size = new System.Drawing.Size(92, 20);
-            this.lookUpEdit1.TabIndex = 56;
+            this.lookUpEditDonViDung.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("donvidung", "Đơn vị dùng")});
+            this.lookUpEditDonViDung.Properties.NullText = "-------Chọn-------";
+            this.lookUpEditDonViDung.Properties.PopupSizeable = false;
+            this.lookUpEditDonViDung.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.lookUpEditDonViDung.Size = new System.Drawing.Size(92, 20);
+            this.lookUpEditDonViDung.TabIndex = 56;
             // 
             // lblGhichu
             // 
             this.lblGhichu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGhichu.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.lblGhichu.Location = new System.Drawing.Point(863, 68);
+            this.lblGhichu.Location = new System.Drawing.Point(863, 32);
             this.lblGhichu.Name = "lblGhichu";
             this.lblGhichu.Size = new System.Drawing.Size(35, 13);
             this.lblGhichu.TabIndex = 53;
             this.lblGhichu.Text = "Ghi chú";
-            // 
-            // cmbCachdung
-            // 
-            this.cmbCachdung.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmbCachdung.EditValue = "";
-            this.cmbCachdung.Location = new System.Drawing.Point(179, 64);
-            this.cmbCachdung.Name = "cmbCachdung";
-            this.cmbCachdung.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.cmbCachdung.Properties.Appearance.Options.UseForeColor = true;
-            this.cmbCachdung.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbCachdung.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Hít", "Name1"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nhai", "Name2"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nhét hậu môn", "Name3"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nhỏ dưới lưỡi", "Name4"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nhỏ mắt", "Name10"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Thoa", "Name11"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Tiêm bắp", "Name12"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Tiêm dưới da", "Name27"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Tiêm dưới mông", "Name28"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Tiêm tĩnh mạch", "Name29")});
-            this.cmbCachdung.Properties.NullText = "";
-            this.cmbCachdung.Properties.PopupSizeable = false;
-            this.cmbCachdung.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbCachdung.Size = new System.Drawing.Size(92, 20);
-            this.cmbCachdung.TabIndex = 45;
             // 
             // labelControl3
             // 
@@ -251,6 +255,7 @@
             this.btnKhongLuu.Size = new System.Drawing.Size(75, 23);
             this.btnKhongLuu.TabIndex = 24;
             this.btnKhongLuu.Text = "&Hủy bỏ";
+            this.btnKhongLuu.Click += new System.EventHandler(this.btnKhongLuu_Click);
             // 
             // btnSua
             // 
@@ -263,6 +268,7 @@
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 22;
             this.btnSua.Text = "&Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnTaomoi
             // 
@@ -275,6 +281,7 @@
             this.btnTaomoi.Size = new System.Drawing.Size(75, 23);
             this.btnTaomoi.TabIndex = 20;
             this.btnTaomoi.Text = "&Tạo mới";
+            this.btnTaomoi.Click += new System.EventHandler(this.btnTaomoi_Click);
             // 
             // btnLuu
             // 
@@ -287,6 +294,7 @@
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 21;
             this.btnLuu.Text = "&Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // chkTrangThai
             // 
@@ -350,33 +358,12 @@
             this.lblThuoc.TabIndex = 29;
             this.lblThuoc.Text = "Mã Thuốc";
             // 
-            // cmbDonvi
-            // 
-            this.cmbDonvi.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmbDonvi.EditValue = "";
-            this.cmbDonvi.Location = new System.Drawing.Point(375, 64);
-            this.cmbDonvi.Name = "cmbDonvi";
-            this.cmbDonvi.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.cmbDonvi.Properties.Appearance.Options.UseForeColor = true;
-            this.cmbDonvi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbDonvi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name77", "Name77"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name78", "Name78"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name79", "Name79"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name80", "Name80")});
-            this.cmbDonvi.Properties.NullText = "";
-            this.cmbDonvi.Properties.PopupSizeable = false;
-            this.cmbDonvi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbDonvi.Size = new System.Drawing.Size(92, 20);
-            this.cmbDonvi.TabIndex = 43;
-            // 
             // txtGhichu
             // 
             this.txtGhichu.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtGhichu.Location = new System.Drawing.Point(913, 66);
+            this.txtGhichu.Location = new System.Drawing.Point(914, 29);
             this.txtGhichu.Name = "txtGhichu";
-            this.txtGhichu.Size = new System.Drawing.Size(239, 49);
+            this.txtGhichu.Size = new System.Drawing.Size(239, 90);
             this.txtGhichu.TabIndex = 54;
             // 
             // pnTimkiemDanhmucphongkham
@@ -425,72 +412,88 @@
             this.gridThuoc.Name = "gridThuoc";
             this.gridThuoc.OptionsFind.AlwaysVisible = true;
             this.gridThuoc.OptionsView.ShowGroupPanel = false;
+            this.gridThuoc.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridThuoc_RowClick);
             // 
             // colMathuoc
             // 
             this.colMathuoc.Caption = "Mã Thuốc";
+            this.colMathuoc.FieldName = "MATHUOC";
             this.colMathuoc.Name = "colMathuoc";
+            this.colMathuoc.OptionsColumn.AllowEdit = false;
             this.colMathuoc.Visible = true;
             this.colMathuoc.VisibleIndex = 0;
-            this.colMathuoc.Width = 79;
+            this.colMathuoc.Width = 65;
             // 
             // colTenthuongmai
             // 
             this.colTenthuongmai.Caption = "Tên Thương Mại";
+            this.colTenthuongmai.FieldName = "TENTHUONGMAI";
             this.colTenthuongmai.Name = "colTenthuongmai";
+            this.colTenthuongmai.OptionsColumn.AllowEdit = false;
             this.colTenthuongmai.Visible = true;
             this.colTenthuongmai.VisibleIndex = 1;
-            this.colTenthuongmai.Width = 102;
+            this.colTenthuongmai.Width = 211;
             // 
             // colTenbietduoc
             // 
             this.colTenbietduoc.Caption = "Tên Biệt Dược";
+            this.colTenbietduoc.FieldName = "TENBIETDUOC";
             this.colTenbietduoc.Name = "colTenbietduoc";
+            this.colTenbietduoc.OptionsColumn.AllowEdit = false;
             this.colTenbietduoc.Visible = true;
             this.colTenbietduoc.VisibleIndex = 2;
-            this.colTenbietduoc.Width = 103;
+            this.colTenbietduoc.Width = 211;
             // 
             // colDonvi
             // 
             this.colDonvi.Caption = "Đơn Vị";
+            this.colDonvi.FieldName = "DONVI";
             this.colDonvi.Name = "colDonvi";
+            this.colDonvi.OptionsColumn.AllowEdit = false;
             this.colDonvi.Visible = true;
             this.colDonvi.VisibleIndex = 3;
-            this.colDonvi.Width = 62;
+            this.colDonvi.Width = 102;
             // 
             // colCachdung
             // 
             this.colCachdung.Caption = "Cách Dùng";
+            this.colCachdung.FieldName = "CACHDUNG";
             this.colCachdung.Name = "colCachdung";
+            this.colCachdung.OptionsColumn.AllowEdit = false;
             this.colCachdung.Visible = true;
             this.colCachdung.VisibleIndex = 4;
-            this.colCachdung.Width = 62;
+            this.colCachdung.Width = 155;
             // 
             // colDonvidung
             // 
             this.colDonvidung.Caption = "Đơn vị dùng";
+            this.colDonvidung.FieldName = "DONVIDUNG";
             this.colDonvidung.Name = "colDonvidung";
+            this.colDonvidung.OptionsColumn.AllowEdit = false;
             this.colDonvidung.Visible = true;
             this.colDonvidung.VisibleIndex = 5;
-            this.colDonvidung.Width = 71;
+            this.colDonvidung.Width = 95;
             // 
             // colGhichu
             // 
             this.colGhichu.Caption = "Ghi chú";
+            this.colGhichu.FieldName = "GHICHU";
             this.colGhichu.Name = "colGhichu";
+            this.colGhichu.OptionsColumn.AllowEdit = false;
             this.colGhichu.Visible = true;
             this.colGhichu.VisibleIndex = 6;
-            this.colGhichu.Width = 57;
+            this.colGhichu.Width = 335;
             // 
             // colTrangthai
             // 
             this.colTrangthai.Caption = "Trạng Thái";
-            this.colTrangthai.FieldName = "colTrangthai";
+            this.colTrangthai.FieldName = "TRANGTHAI";
             this.colTrangthai.Name = "colTrangthai";
+            this.colTrangthai.OptionsColumn.AllowEdit = false;
             this.colTrangthai.UnboundType = DevExpress.Data.UnboundColumnType.Boolean;
             this.colTrangthai.Visible = true;
             this.colTrangthai.VisibleIndex = 7;
-            this.colTrangthai.Width = 67;
+            this.colTrangthai.Width = 72;
             // 
             // ucThuoc
             // 
@@ -504,15 +507,15 @@
             this.Load += new System.EventHandler(this.ucThuoc_Load);
             this.pnDanhmucphongkham.ResumeLayout(false);
             this.pnDanhmucphongkham.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCachdung.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDonVi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditCachDung.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDonViDung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocta.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMathuoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenthuoctv.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbDonvi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhichu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTimkiemDanhmucphongkham)).EndInit();
             this.pnTimkiemDanhmucphongkham.ResumeLayout(false);
@@ -549,16 +552,17 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTenbietduoc;
         private DevExpress.XtraEditors.SimpleButton btnNhomthuoc;
         private DevExpress.XtraEditors.LabelControl lblGhichu;
-        private DevExpress.XtraEditors.LookUpEdit cmbCachdung;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LookUpEdit cmbDonvi;
         private DevExpress.XtraEditors.MemoEdit txtGhichu;
         private DevExpress.XtraGrid.Columns.GridColumn colDonvi;
         private DevExpress.XtraGrid.Columns.GridColumn colCachdung;
         private DevExpress.XtraGrid.Columns.GridColumn colDonvidung;
         private DevExpress.XtraGrid.Columns.GridColumn colGhichu;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditDonViDung;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditCachDung;
+        //private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit LookUpEdit;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditDonVi;
     }
 }

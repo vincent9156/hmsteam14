@@ -46,6 +46,7 @@
     <Compile Include="CatalogDO\cBenhDO.cs" />
     <Compile Include="CatalogDO\cBenhTheoPKDO.cs" />
     <Compile Include="CatalogDO\cPhongKhamDO.cs" />
+    <Compile Include="CatalogDO\cThuocDO.cs" />
     <Compile Include="HMS_DB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
