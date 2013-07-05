@@ -99,8 +99,10 @@
             // 
             // cmbNhombenh
             // 
-            this.cmbNhombenh.Location = new System.Drawing.Point(231, 71);
+            this.cmbNhombenh.Location = new System.Drawing.Point(231, 75);
             this.cmbNhombenh.Name = "cmbNhombenh";
+            this.cmbNhombenh.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.cmbNhombenh.Properties.Appearance.Options.UseForeColor = true;
             this.cmbNhombenh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbNhombenh.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
@@ -109,6 +111,8 @@
             this.cmbNhombenh.Properties.NullText = "[------Chọn-----]";
             this.cmbNhombenh.Size = new System.Drawing.Size(92, 20);
             this.cmbNhombenh.TabIndex = 1;
+            this.cmbNhombenh.EditValueChanged += new System.EventHandler(this.cmbNhombenh_EditValueChanged);
+            this.cmbNhombenh.Click += new System.EventHandler(this.cmbNhombenh_Click);
             // 
             // labelControl1
             // 
@@ -247,13 +251,13 @@
             // txtMabenh
             // 
             this.txtMabenh.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtMabenh.Enabled = false;
             this.txtMabenh.Location = new System.Drawing.Point(231, 34);
             this.txtMabenh.Name = "txtMabenh";
             this.txtMabenh.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.txtMabenh.Properties.Appearance.Options.UseForeColor = true;
             this.txtMabenh.Size = new System.Drawing.Size(92, 20);
             this.txtMabenh.TabIndex = 0;
+            this.txtMabenh.EditValueChanged += new System.EventHandler(this.txtMabenh_EditValueChanged);
             // 
             // txtTenthuocTV
             // 
@@ -290,7 +294,9 @@
             this.txtMota.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMota.Location = new System.Drawing.Point(845, 30);
             this.txtMota.Name = "txtMota";
+            this.txtMota.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtMota.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.txtMota.Properties.Appearance.Options.UseBackColor = true;
             this.txtMota.Properties.Appearance.Options.UseForeColor = true;
             this.txtMota.Properties.DisplayFormat.FormatString = "d";
             this.txtMota.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
