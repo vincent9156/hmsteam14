@@ -146,3 +146,5 @@ C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe.licenses
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHelp.resources
+C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmThongtinphanmem.resources
