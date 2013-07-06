@@ -51,8 +51,6 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtTendangnhap = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMatkhau = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
@@ -67,6 +65,7 @@
             this.lookUpPhongBan = new DevExpress.XtraEditors.LookUpEdit();
             this.lookUpChuvu = new DevExpress.XtraEditors.LookUpEdit();
             this.grpThongtinnguoidung = new DevExpress.XtraEditors.GroupControl();
+            this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.lookUpNhom = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
@@ -82,7 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangthai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHovatenlot.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTendangnhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatkhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtManguoidung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpPhongBan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpChuvu.Properties)).BeginInit();
@@ -252,7 +250,7 @@
             this.chkTrangthai.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkTrangthai.Location = new System.Drawing.Point(893, 86);
+            this.chkTrangthai.Location = new System.Drawing.Point(893, 61);
             this.chkTrangthai.Name = "chkTrangthai";
             this.chkTrangthai.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.chkTrangthai.Properties.Appearance.Options.UseForeColor = true;
@@ -322,34 +320,6 @@
             this.labelControl5.TabIndex = 52;
             this.labelControl5.Text = "Tên đăng nhập";
             // 
-            // txtMatkhau
-            // 
-            this.txtMatkhau.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMatkhau.EditValue = "";
-            this.txtMatkhau.Enabled = false;
-            this.txtMatkhau.Location = new System.Drawing.Point(895, 61);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.txtMatkhau.Properties.Appearance.Options.UseForeColor = true;
-            this.txtMatkhau.Properties.LookAndFeel.SkinName = "Money Twins";
-            this.txtMatkhau.Properties.PasswordChar = '*';
-            this.txtMatkhau.Size = new System.Drawing.Size(145, 20);
-            this.txtMatkhau.TabIndex = 13;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.labelControl6.Location = new System.Drawing.Point(799, 64);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(44, 13);
-            this.labelControl6.TabIndex = 54;
-            this.labelControl6.Text = "Mật khẩu";
-            // 
             // labelControl9
             // 
             this.labelControl9.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
@@ -387,7 +357,7 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl18.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.labelControl18.Location = new System.Drawing.Point(799, 88);
+            this.labelControl18.Location = new System.Drawing.Point(799, 64);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(49, 13);
             this.labelControl18.TabIndex = 76;
@@ -512,6 +482,7 @@
             // 
             this.grpThongtinnguoidung.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.grpThongtinnguoidung.Appearance.Options.UseBackColor = true;
+            this.grpThongtinnguoidung.Controls.Add(this.btnReset);
             this.grpThongtinnguoidung.Controls.Add(this.lookUpNhom);
             this.grpThongtinnguoidung.Controls.Add(this.labelControl3);
             this.grpThongtinnguoidung.Controls.Add(this.lookUpChuvu);
@@ -527,8 +498,6 @@
             this.grpThongtinnguoidung.Controls.Add(this.labelControl13);
             this.grpThongtinnguoidung.Controls.Add(this.labelControl12);
             this.grpThongtinnguoidung.Controls.Add(this.labelControl9);
-            this.grpThongtinnguoidung.Controls.Add(this.labelControl6);
-            this.grpThongtinnguoidung.Controls.Add(this.txtMatkhau);
             this.grpThongtinnguoidung.Controls.Add(this.labelControl5);
             this.grpThongtinnguoidung.Controls.Add(this.txtTendangnhap);
             this.grpThongtinnguoidung.Controls.Add(this.labelControl7);
@@ -541,6 +510,17 @@
             this.grpThongtinnguoidung.Size = new System.Drawing.Size(1264, 157);
             this.grpThongtinnguoidung.TabIndex = 27;
             this.grpThongtinnguoidung.Text = "Thông tin người dùng";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Appearance.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnReset.Appearance.Options.UseForeColor = true;
+            this.btnReset.Location = new System.Drawing.Point(1064, 34);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(96, 23);
+            this.btnReset.TabIndex = 87;
+            this.btnReset.Text = "Lấy lại mật khẩu";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // lookUpNhom
             // 
@@ -591,7 +571,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangthai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHovatenlot.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTendangnhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMatkhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtManguoidung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpPhongBan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpChuvu.Properties)).EndInit();
@@ -627,8 +606,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.TextEdit txtTendangnhap;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit txtMatkhau;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl13;
@@ -646,5 +623,6 @@
         private DevExpress.XtraEditors.LookUpEdit lookUpNhom;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.Columns.GridColumn colNhom;
+        private DevExpress.XtraEditors.SimpleButton btnReset;
     }
 }

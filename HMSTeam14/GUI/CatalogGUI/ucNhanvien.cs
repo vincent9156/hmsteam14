@@ -37,7 +37,7 @@ namespace GUI
                 Gr.GIOITINH = "Nữ";
             }
             Gr.TENTAIKHOAN = txtTendangnhap.Text;
-            Gr.MATKHAU = txtMatkhau.Text;
+            Gr.MATKHAU = "123456";
             Gr.CHUCDANH = lookUpChuvu.EditValue.ToString();
             Gr.NGAYTAO = DateTime.Now;
             if (chkTrangthai.Checked == true)
@@ -89,7 +89,6 @@ namespace GUI
             txtTendangnhap.Text = null;
             chkTrangthai.Checked = false;
             txtHovatenlot.Text = null;
-            txtMatkhau.Text = null;
             lookUpChuvu.EditValue = "";
             lookUpNhom.EditValue = "";
             lookUpPhongBan.EditValue = "";
@@ -135,7 +134,6 @@ namespace GUI
             Resettextvalue();
             Enablediting(true);
             txtManguoidung.Text = StaffID();
-            txtMatkhau.Text = "123456";
             txtTendangnhap.Text = txtManguoidung.Text;
         }
 
@@ -201,6 +199,7 @@ namespace GUI
             {
                 txtManguoidung.Text = gridNhanvien.GetRowCellValue(e.FocusedRowHandle, "MANHANVIEN").ToString();
                 txtHovatenlot.Text = gridNhanvien.GetRowCellValue(e.FocusedRowHandle, "TENNHANVIEN").ToString();
+                txtTendangnhap.Text = gridNhanvien.GetRowCellValue(e.FocusedRowHandle, "TENTAIKHOAN").ToString();
                 lookUpChuvu.EditValue = gridNhanvien.GetRowCellValue(e.FocusedRowHandle, "CHUCDANH").ToString();
                 lookUpNhom.EditValue = gridNhanvien.GetRowCellValue(e.FocusedRowHandle, "MANHOMNHANVIEN").ToString();
                 lookUpPhongBan.EditValue = gridNhanvien.GetRowCellValue(e.FocusedRowHandle, "MAPHONGKHAM").ToString();
@@ -278,7 +277,10 @@ namespace GUI
             List<cNhomNhanVienDO> grp = BUS.cNhomNhanVienBUS.GetStaffGroupList();
             foreach (var row in grp)
             {
-                grouplist.Add(new GroupLookup(row.TENNHOMNHANVIEN));
+                if (row.TRANGTHAI == true)
+                {
+                    grouplist.Add(new GroupLookup(row.TENNHOMNHANVIEN));
+                }
             }
 
             lookUpNhom.Properties.DataSource = grouplist;
@@ -292,7 +294,10 @@ namespace GUI
             List<cPhongKhamDO> clc = cPhongKhamBUS.Getdsphongkham();
             foreach (var row in clc)
             {
-                cliniclist.Add(new ClinicLookup(row.TENPHONG));
+                if (row.TRANGTHAI == true)
+                {
+                    cliniclist.Add(new ClinicLookup(row.TENPHONG));
+                }
             }
 
             lookUpPhongBan.Properties.DataSource = cliniclist;
@@ -326,6 +331,14 @@ namespace GUI
             {
                 this.clinic = c;
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            cNhanVienDO ds = GetStaffInfor();
+            BUS.cNhanVienBUS.UpdatePassword(ds.MANHANVIEN, ds.MATKHAU);
+            ucNhanVien_Load(sender, e);
+            XtraMessageBox.Show("Mật khẩu đã được thiết lập lại!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
