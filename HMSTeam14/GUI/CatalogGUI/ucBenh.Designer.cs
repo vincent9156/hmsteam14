@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.pnDanhmucphongkham = new System.Windows.Forms.Panel();
+            this.txtTenbenhTA = new DevExpress.XtraEditors.MemoEdit();
+            this.txtTenbenhTV = new DevExpress.XtraEditors.MemoEdit();
             this.cmbNhombenh = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTenthuocTA = new DevExpress.XtraEditors.TextEdit();
             this.lblTenbenhTA = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnNhombenh = new DevExpress.XtraEditors.SimpleButton();
@@ -43,7 +44,6 @@
             this.lblMota = new DevExpress.XtraEditors.LabelControl();
             this.lblTrangthai = new DevExpress.XtraEditors.LabelControl();
             this.txtMabenh = new DevExpress.XtraEditors.TextEdit();
-            this.txtTenthuocTV = new DevExpress.XtraEditors.TextEdit();
             this.lblTenBenhTV = new DevExpress.XtraEditors.LabelControl();
             this.lblMaBenh = new DevExpress.XtraEditors.LabelControl();
             this.txtMota = new DevExpress.XtraEditors.MemoEdit();
@@ -61,13 +61,13 @@
             this.colNgaytao = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTrangthai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pnDanhmucphongkham.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenbenhTA.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenbenhTV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbNhombenh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMabenh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMota.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTimkiemDanhmucphongkham)).BeginInit();
             this.pnTimkiemDanhmucphongkham.SuspendLayout();
@@ -78,16 +78,16 @@
             // 
             // pnDanhmucphongkham
             // 
+            this.pnDanhmucphongkham.Controls.Add(this.txtTenbenhTA);
+            this.pnDanhmucphongkham.Controls.Add(this.txtTenbenhTV);
             this.pnDanhmucphongkham.Controls.Add(this.cmbNhombenh);
             this.pnDanhmucphongkham.Controls.Add(this.labelControl1);
-            this.pnDanhmucphongkham.Controls.Add(this.txtTenthuocTA);
             this.pnDanhmucphongkham.Controls.Add(this.lblTenbenhTA);
             this.pnDanhmucphongkham.Controls.Add(this.panelControl1);
             this.pnDanhmucphongkham.Controls.Add(this.chkTrangThai);
             this.pnDanhmucphongkham.Controls.Add(this.lblMota);
             this.pnDanhmucphongkham.Controls.Add(this.lblTrangthai);
             this.pnDanhmucphongkham.Controls.Add(this.txtMabenh);
-            this.pnDanhmucphongkham.Controls.Add(this.txtTenthuocTV);
             this.pnDanhmucphongkham.Controls.Add(this.lblTenBenhTV);
             this.pnDanhmucphongkham.Controls.Add(this.lblMaBenh);
             this.pnDanhmucphongkham.Controls.Add(this.txtMota);
@@ -96,6 +96,34 @@
             this.pnDanhmucphongkham.Name = "pnDanhmucphongkham";
             this.pnDanhmucphongkham.Size = new System.Drawing.Size(1264, 153);
             this.pnDanhmucphongkham.TabIndex = 43;
+            // 
+            // txtTenbenhTA
+            // 
+            this.txtTenbenhTA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTenbenhTA.Location = new System.Drawing.Point(499, 60);
+            this.txtTenbenhTA.Name = "txtTenbenhTA";
+            this.txtTenbenhTA.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.txtTenbenhTA.Properties.Appearance.Options.UseForeColor = true;
+            this.txtTenbenhTA.Properties.DisplayFormat.FormatString = "d";
+            this.txtTenbenhTA.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtTenbenhTA.Properties.EditFormat.FormatString = "d";
+            this.txtTenbenhTA.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtTenbenhTA.Size = new System.Drawing.Size(248, 40);
+            this.txtTenbenhTA.TabIndex = 42;
+            // 
+            // txtTenbenhTV
+            // 
+            this.txtTenbenhTV.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTenbenhTV.Location = new System.Drawing.Point(499, 14);
+            this.txtTenbenhTV.Name = "txtTenbenhTV";
+            this.txtTenbenhTV.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
+            this.txtTenbenhTV.Properties.Appearance.Options.UseForeColor = true;
+            this.txtTenbenhTV.Properties.DisplayFormat.FormatString = "d";
+            this.txtTenbenhTV.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtTenbenhTV.Properties.EditFormat.FormatString = "d";
+            this.txtTenbenhTV.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtTenbenhTV.Size = new System.Drawing.Size(248, 40);
+            this.txtTenbenhTV.TabIndex = 41;
             // 
             // cmbNhombenh
             // 
@@ -119,16 +147,6 @@
             this.labelControl1.Size = new System.Drawing.Size(54, 13);
             this.labelControl1.TabIndex = 40;
             this.labelControl1.Text = "Nhóm bệnh";
-            // 
-            // txtTenthuocTA
-            // 
-            this.txtTenthuocTA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTenthuocTA.Location = new System.Drawing.Point(488, 70);
-            this.txtTenthuocTA.Name = "txtTenthuocTA";
-            this.txtTenthuocTA.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.txtTenthuocTA.Properties.Appearance.Options.UseForeColor = true;
-            this.txtTenthuocTA.Size = new System.Drawing.Size(248, 20);
-            this.txtTenthuocTA.TabIndex = 3;
             // 
             // lblTenbenhTA
             // 
@@ -255,16 +273,6 @@
             this.txtMabenh.Size = new System.Drawing.Size(92, 20);
             this.txtMabenh.TabIndex = 0;
             // 
-            // txtTenthuocTV
-            // 
-            this.txtTenthuocTV.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTenthuocTV.Location = new System.Drawing.Point(488, 34);
-            this.txtTenthuocTV.Name = "txtTenthuocTV";
-            this.txtTenthuocTV.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
-            this.txtTenthuocTV.Properties.Appearance.Options.UseForeColor = true;
-            this.txtTenthuocTV.Size = new System.Drawing.Size(248, 20);
-            this.txtTenthuocTV.TabIndex = 2;
-            // 
             // lblTenBenhTV
             // 
             this.lblTenBenhTV.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -358,6 +366,7 @@
             this.colMabenh.OptionsColumn.AllowEdit = false;
             this.colMabenh.Visible = true;
             this.colMabenh.VisibleIndex = 2;
+            this.colMabenh.Width = 41;
             // 
             // colTenNhomBenh
             // 
@@ -368,6 +377,7 @@
             this.colTenNhomBenh.OptionsColumn.AllowEdit = false;
             this.colTenNhomBenh.Visible = true;
             this.colTenNhomBenh.VisibleIndex = 1;
+            this.colTenNhomBenh.Width = 56;
             // 
             // LookUpEdit
             // 
@@ -384,6 +394,7 @@
             this.colManhombenh.OptionsColumn.AllowEdit = false;
             this.colManhombenh.Visible = true;
             this.colManhombenh.VisibleIndex = 0;
+            this.colManhombenh.Width = 42;
             // 
             // colTenbenhtv
             // 
@@ -393,6 +404,7 @@
             this.colTenbenhtv.OptionsColumn.AllowEdit = false;
             this.colTenbenhtv.Visible = true;
             this.colTenbenhtv.VisibleIndex = 3;
+            this.colTenbenhtv.Width = 150;
             // 
             // colTenbenhta
             // 
@@ -402,6 +414,7 @@
             this.colTenbenhta.OptionsColumn.AllowEdit = false;
             this.colTenbenhta.Visible = true;
             this.colTenbenhta.VisibleIndex = 4;
+            this.colTenbenhta.Width = 165;
             // 
             // colMota
             // 
@@ -411,6 +424,7 @@
             this.colMota.OptionsColumn.AllowEdit = false;
             this.colMota.Visible = true;
             this.colMota.VisibleIndex = 5;
+            this.colMota.Width = 105;
             // 
             // colNgaytao
             // 
@@ -429,6 +443,7 @@
             this.colTrangthai.UnboundType = DevExpress.Data.UnboundColumnType.Boolean;
             this.colTrangthai.Visible = true;
             this.colTrangthai.VisibleIndex = 6;
+            this.colTrangthai.Width = 44;
             // 
             // ucBenh
             // 
@@ -442,13 +457,13 @@
             this.Load += new System.EventHandler(this.ucBenh_Load);
             this.pnDanhmucphongkham.ResumeLayout(false);
             this.pnDanhmucphongkham.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenbenhTA.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenbenhTV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbNhombenh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTA.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chkTrangThai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMabenh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenthuocTV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMota.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnTimkiemDanhmucphongkham)).EndInit();
             this.pnTimkiemDanhmucphongkham.ResumeLayout(false);
@@ -472,12 +487,10 @@
         private DevExpress.XtraEditors.LabelControl lblMota;
         private DevExpress.XtraEditors.LabelControl lblTrangthai;
         private DevExpress.XtraEditors.TextEdit txtMabenh;
-        private DevExpress.XtraEditors.TextEdit txtTenthuocTV;
         private DevExpress.XtraEditors.LabelControl lblTenBenhTV;
         private DevExpress.XtraEditors.LabelControl lblMaBenh;
         private DevExpress.XtraEditors.PanelControl pnTimkiemDanhmucphongkham;
         private DevExpress.XtraEditors.LabelControl lblDanhmucbenh;
-        private DevExpress.XtraEditors.TextEdit txtTenthuocTA;
         private DevExpress.XtraEditors.LabelControl lblTenbenhTA;
         private DevExpress.XtraEditors.SimpleButton btnNhombenh;
         private DevExpress.XtraEditors.LabelControl labelControl1;
@@ -494,5 +507,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTenNhomBenh;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit LookUpEdit;
         private DevExpress.XtraGrid.Columns.GridColumn colMota;
+        private DevExpress.XtraEditors.MemoEdit txtTenbenhTA;
+        private DevExpress.XtraEditors.MemoEdit txtTenbenhTV;
     }
 }

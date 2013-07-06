@@ -44,14 +44,14 @@ namespace GUI
         {
             List<cBenhTheoPKDO> dsbenhtheoPK = BUS.cBenhTheoPKBUS.Getdsbenhtheopk();
             grdLoaibenhtheopk.DataSource = dsbenhtheoPK;
-            List<cBenhPKDO> dsbenh = BUS.cBenhBUS.Getdsbenh();
+            List<cBenhPKDO> dsbenh = BUS.cBenhBUS.Getdsbenh1(true);
             cmbMabenh.Properties.DataSource = dsbenh;
             cmbMabenh.Properties.DisplayMember = "MABENH";
             cmbMabenh.Properties.ValueMember = "MABENH";
             cmbTenbenh.Properties.DataSource = dsbenh;
             cmbTenbenh.Properties.DisplayMember = "TENBENHTV";
             cmbTenbenh.Properties.ValueMember = "MABENH";
-            List<cPhongKhamDO> dsphongkham = BUS.cPhongKhamBUS.Getdsphongkham();
+            List<cPhongKhamDO> dsphongkham = BUS.cPhongKhamBUS.Getdsphongkham1(true);
             cmbPhongKham.Properties.DataSource = dsphongkham;
             cmbPhongKham.Properties.DisplayMember = "MAPHONGKHAM";
             cmbPhongKham.Properties.ValueMember = "MAPHONGKHAM";

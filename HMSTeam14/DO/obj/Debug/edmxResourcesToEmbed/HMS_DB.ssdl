@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DB_HMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="DB_HMSModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="DB_HMSModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENH" EntityType="DB_HMSModel.Store.tbBENH" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENHAN" EntityType="DB_HMSModel.Store.tbBENHAN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENHPHONGKHAM" EntityType="DB_HMSModel.Store.tbBENHPHONGKHAM" store:Type="Tables" Schema="dbo" />
@@ -11,15 +12,7 @@
     <EntitySet Name="tbHUONGDAN" EntityType="DB_HMSModel.Store.tbHUONGDAN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbKETOATHUOC" EntityType="DB_HMSModel.Store.tbKETOATHUOC" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbKETOATHUOCCHITIET" EntityType="DB_HMSModel.Store.tbKETOATHUOCCHITIET" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbLICHHEN" EntityType="DB_HMSModel.Store.tbLICHHEN" store:Type="Tables" store:Schema="dbo" store:Name="tbLICHHEN">
-      <DefiningQuery>SELECT 
-      [tbLICHHEN].[MALICHHEN] AS [MALICHHEN], 
-      [tbLICHHEN].[MABENHAN] AS [MABENHAN], 
-      [tbLICHHEN].[MABACSI] AS [MABACSI], 
-      [tbLICHHEN].[NGAYHEN] AS [NGAYHEN], 
-      [tbLICHHEN].[NGAYTAO] AS [NGAYTAO]
-      FROM [dbo].[tbLICHHEN] AS [tbLICHHEN]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="tbLICHHEN" EntityType="DB_HMSModel.Store.tbLICHHEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHANVIEN" EntityType="DB_HMSModel.Store.tbNHANVIEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMBENH" EntityType="DB_HMSModel.Store.tbNHOMBENH" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMNGUOIDUNG" EntityType="DB_HMSModel.Store.tbNHOMNGUOIDUNG" store:Type="Tables" Schema="dbo" />
@@ -32,15 +25,53 @@
     <EntitySet Name="tbTINHNANG" EntityType="DB_HMSModel.Store.tbTINHNANG" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTINHNANGNHOMND" EntityType="DB_HMSModel.Store.tbTINHNANGNHOMND" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTRIEUCHUNG" EntityType="DB_HMSModel.Store.tbTRIEUCHUNG" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tbBENH_tbNHOMBENH" Association="DB_HMSModel.Store.FK_tbBENH_tbNHOMBENH">
+      <End Role="tbNHOMBENH" EntitySet="tbNHOMBENH" />
+      <End Role="tbBENH" EntitySet="tbBENH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbBENHPHONGKHAM_tbBENH" Association="DB_HMSModel.Store.FK_tbBENHPHONGKHAM_tbBENH">
+      <End Role="tbBENH" EntitySet="tbBENH" />
+      <End Role="tbBENHPHONGKHAM" EntitySet="tbBENHPHONGKHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbBENHPHONGKHAM_tbPHONGKHAM" Association="DB_HMSModel.Store.FK_tbBENHPHONGKHAM_tbPHONGKHAM">
+      <End Role="tbPHONGKHAM" EntitySet="tbPHONGKHAM" />
+      <End Role="tbBENHPHONGKHAM" EntitySet="tbBENHPHONGKHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbNHANVIEN_tbNHOMNGUOIDUNG" Association="DB_HMSModel.Store.FK_tbNHANVIEN_tbNHOMNGUOIDUNG">
+      <End Role="tbNHOMNGUOIDUNG" EntitySet="tbNHOMNGUOIDUNG" />
+      <End Role="tbNHANVIEN" EntitySet="tbNHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbNHANVIEN_tbPHONGKHAM" Association="DB_HMSModel.Store.FK_tbNHANVIEN_tbPHONGKHAM">
+      <End Role="tbPHONGKHAM" EntitySet="tbPHONGKHAM" />
+      <End Role="tbNHANVIEN" EntitySet="tbNHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG" Association="DB_HMSModel.Store.FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG">
+      <End Role="tbNHOMNGUOIDUNG" EntitySet="tbNHOMNGUOIDUNG" />
+      <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMND" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTINHNANGNHOMND_tbTINHNANG" Association="DB_HMSModel.Store.FK_tbTINHNANGNHOMND_tbTINHNANG">
+      <End Role="tbTINHNANG" EntitySet="tbTINHNANG" />
+      <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMND" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="tbBENH">
     <Key>
       <PropertyRef Name="MABENH" />
     </Key>
     <Property Name="MABENH" Type="varchar" Nullable="false" MaxLength="10" />
     <Property Name="MANHOMBENH" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="TENBENHTV" Type="nvarchar" Nullable="false" MaxLength="50" />
-    <Property Name="TENBENHTA" Type="nvarchar" MaxLength="50" />
+    <Property Name="TENBENHTV" Type="nvarchar(max)" />
+    <Property Name="TENBENHTA" Type="nvarchar(max)" />
     <Property Name="MOTA" Type="nvarchar(max)" />
     <Property Name="NGAYTAO" Type="datetime" />
     <Property Name="TRANGTHAI" Type="bit" Nullable="false" />
@@ -135,15 +166,9 @@
     <Property Name="GHICHU" Type="nvarchar" MaxLength="200" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
-  <!--Errors Found During Generation:
-      warning 6002: The table/view 'DB_HMS.dbo.tbLICHHEN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
-      -->
   <EntityType Name="tbLICHHEN">
     <Key>
       <PropertyRef Name="MALICHHEN" />
-      <PropertyRef Name="MABENHAN" />
-      <PropertyRef Name="MABACSI" />
-      <PropertyRef Name="NGAYHEN" />
     </Key>
     <Property Name="MALICHHEN" Type="varchar" Nullable="false" MaxLength="10" />
     <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
@@ -269,4 +294,88 @@
     <Property Name="TRIEUCHUNG" Type="nvarchar" Nullable="false" MaxLength="200" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
+  <Association Name="FK_tbBENH_tbNHOMBENH">
+    <End Role="tbNHOMBENH" Type="DB_HMSModel.Store.tbNHOMBENH" Multiplicity="1" />
+    <End Role="tbBENH" Type="DB_HMSModel.Store.tbBENH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNHOMBENH">
+        <PropertyRef Name="MANHOMBENH" />
+      </Principal>
+      <Dependent Role="tbBENH">
+        <PropertyRef Name="MANHOMBENH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbBENHPHONGKHAM_tbBENH">
+    <End Role="tbBENH" Type="DB_HMSModel.Store.tbBENH" Multiplicity="1" />
+    <End Role="tbBENHPHONGKHAM" Type="DB_HMSModel.Store.tbBENHPHONGKHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbBENH">
+        <PropertyRef Name="MABENH" />
+      </Principal>
+      <Dependent Role="tbBENHPHONGKHAM">
+        <PropertyRef Name="MABENH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbBENHPHONGKHAM_tbPHONGKHAM">
+    <End Role="tbPHONGKHAM" Type="DB_HMSModel.Store.tbPHONGKHAM" Multiplicity="1" />
+    <End Role="tbBENHPHONGKHAM" Type="DB_HMSModel.Store.tbBENHPHONGKHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbPHONGKHAM">
+        <PropertyRef Name="MAPHONGKHAM" />
+      </Principal>
+      <Dependent Role="tbBENHPHONGKHAM">
+        <PropertyRef Name="MAPHONGKHAM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbNHANVIEN_tbNHOMNGUOIDUNG">
+    <End Role="tbNHOMNGUOIDUNG" Type="DB_HMSModel.Store.tbNHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="tbNHANVIEN" Type="DB_HMSModel.Store.tbNHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNHOMNGUOIDUNG">
+        <PropertyRef Name="MANHOMNDN" />
+      </Principal>
+      <Dependent Role="tbNHANVIEN">
+        <PropertyRef Name="MANHOMND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbNHANVIEN_tbPHONGKHAM">
+    <End Role="tbPHONGKHAM" Type="DB_HMSModel.Store.tbPHONGKHAM" Multiplicity="1" />
+    <End Role="tbNHANVIEN" Type="DB_HMSModel.Store.tbNHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbPHONGKHAM">
+        <PropertyRef Name="MAPHONGKHAM" />
+      </Principal>
+      <Dependent Role="tbNHANVIEN">
+        <PropertyRef Name="MAPHONGKHAM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG">
+    <End Role="tbNHOMNGUOIDUNG" Type="DB_HMSModel.Store.tbNHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="tbTINHNANGNHOMND" Type="DB_HMSModel.Store.tbTINHNANGNHOMND" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNHOMNGUOIDUNG">
+        <PropertyRef Name="MANHOMNDN" />
+      </Principal>
+      <Dependent Role="tbTINHNANGNHOMND">
+        <PropertyRef Name="MANHOMND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTINHNANGNHOMND_tbTINHNANG">
+    <End Role="tbTINHNANG" Type="DB_HMSModel.Store.tbTINHNANG" Multiplicity="1" />
+    <End Role="tbTINHNANGNHOMND" Type="DB_HMSModel.Store.tbTINHNANGNHOMND" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTINHNANG">
+        <PropertyRef Name="MATINHNANG" />
+      </Principal>
+      <Dependent Role="tbTINHNANGNHOMND">
+        <PropertyRef Name="MATINHNANG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

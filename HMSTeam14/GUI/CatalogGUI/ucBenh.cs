@@ -28,13 +28,32 @@ namespace GUI
         /// <returns></returns>
         public cBenhPKDO Getthongtinbenh()
         {
-
             cBenhPKDO ds = new cBenhPKDO();
+            //String[] n = txtTenbenhTV.Text.Split(' ');
+            //string sTenTV= "";
+            //for (int i = 0; i < n.Length; i++)
+            //{
+            //    n[i] = n[i].Trim();
+            //    if (n[i] != "")
+            //    {
+            //        sTenTV = sTenTV + " " + n[i];
+            //    }
+            //}
+            ds.TENBENHTV =txtTenbenhTV.Text;
+            //String[] n1 = txtTenbenhTA.Text.Split(' ');
+            //string sTenTA = "";
+            //for (int i = 0; i < n.Length; i++)
+            //{
+            //    n1[i] = n1[i].Trim();
+            //    if (n1[i] != "")
+            //    {
+            //        sTenTA = sTenTA + " " + n[i];
+            //    }
+            //}
+            ds.TENBENHTA = txtTenbenhTA.Text;
             ds.MABENH = txtMabenh.Text;
             ds.MANHOMBENH1 = cmbNhombenh.EditValue.ToString();
             ds.MOTA1 = txtMota.Text;
-            ds.TENBENHTA = txtTenthuocTA.Text;
-            ds.TENBENHTV = txtTenthuocTV.Text;
             ds.NGAYTAO1 = DateTime.Today;
             if (chkTrangThai.Checked==true)
             {
@@ -72,8 +91,8 @@ namespace GUI
         private void Resettextvalue()
         {
             txtMabenh.Text = "";
-            txtTenthuocTA.Text = "";
-            txtTenthuocTV.Text = "";
+            txtTenbenhTA.Text = "";
+            txtTenbenhTV.Text = "";
             txtMota.Text = "";
             cmbNhombenh.EditValue = "";
             chkTrangThai.Checked = false;
@@ -91,8 +110,8 @@ namespace GUI
             btnKhongLuu.Enabled = editing;
             cmbNhombenh.Enabled = editing;
             txtMota.Enabled = editing;
-            txtTenthuocTA.Enabled = editing;
-            txtTenthuocTV.Enabled = editing;
+            txtTenbenhTA.Enabled = editing;
+            txtTenbenhTV.Enabled = editing;
             chkTrangThai.Enabled = editing;
         }
         /// <summary>
@@ -225,9 +244,8 @@ namespace GUI
             try
             {
                 txtMabenh.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "MABENH").ToString();
-                txtTenthuocTA.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "TENBENHTA").ToString();
-                txtTenthuocTA.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "TENBENHTA").ToString();
-                txtTenthuocTV.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "TENBENHTV").ToString();
+                txtTenbenhTA.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "TENBENHTA").ToString();
+                txtTenbenhTV.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "TENBENHTV").ToString();
                 cmbNhombenh.EditValue = gridBenh.GetRowCellValue(e.FocusedRowHandle, "MANHOMBENH1").ToString();
                 txtMota.Text = gridBenh.GetRowCellValue(e.FocusedRowHandle, "MOTA1").ToString();
                 bool TRANGTHAI = bool.Parse(gridBenh.GetRowCellValue(e.FocusedRowHandle, "TRANGTHAI1").ToString());
@@ -255,9 +273,8 @@ namespace GUI
             try
             {
                 txtMabenh.Text = gridBenh.GetRowCellValue(e.RowHandle, "MABENH").ToString();
-                txtTenthuocTA.Text = gridBenh.GetRowCellValue(e.RowHandle, "TENBENHTA").ToString();
-                txtTenthuocTA.Text = gridBenh.GetRowCellValue(e.RowHandle, "TENBENHTA").ToString();
-                txtTenthuocTV.Text = gridBenh.GetRowCellValue(e.RowHandle, "TENBENHTV").ToString();
+                txtTenbenhTA.Text = gridBenh.GetRowCellValue(e.RowHandle, "TENBENHTA").ToString();
+                txtTenbenhTV.Text = gridBenh.GetRowCellValue(e.RowHandle, "TENBENHTV").ToString();
                 cmbNhombenh.EditValue = gridBenh.GetRowCellValue(e.RowHandle, "MANHOMBENH1").ToString();
                 txtMota.Text = gridBenh.GetRowCellValue(e.RowHandle, "MOTA").ToString();
                 bool TRANGTHAI = bool.Parse(gridBenh.GetRowCellValue(e.RowHandle, "TRANGTHAI1").ToString());

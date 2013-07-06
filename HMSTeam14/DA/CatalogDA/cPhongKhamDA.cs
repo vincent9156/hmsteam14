@@ -32,6 +32,27 @@ namespace DA
             }
         }
 
+        public static List<cPhongKhamDO> Getdsphongkham1(bool test)
+        {
+            List<cPhongKhamDO> dsphongkham1 = new List<cPhongKhamDO>();
+            using (DB_HMS_Entities ds = new DB_HMS_Entities())
+            {
+                var query = from ads in ds.tbPHONGKHAMs
+                            where ads.TRANGTHAI==test
+                            select ads;
+                foreach (var row in query)
+                {
+                    cPhongKhamDO dss = new cPhongKhamDO();
+                    dss.MAPHONGKHAM = row.MAPHONGKHAM;
+                    dss.TENPHONG = row.TENPHONG;
+                    dss.NGAYTAO = row.NGAYTAO.Value;
+                    dss.TRANGTHAI = row.TRANGTHAI.Value;
+                    dsphongkham1.Add(dss);
+                }
+                return dsphongkham1;
+            }
+        }
+        
         /// <summary>
         /// Them moi phong kham vao entities
         /// </summary>

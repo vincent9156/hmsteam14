@@ -38,7 +38,17 @@ namespace GUI
         {
             cNhomBenhDO ds = new cNhomBenhDO();
             ds.MANHOMBENH = txtMaNhom.Text;
-            ds.TENNHOMBENH = txtTenNhom.Text;
+            String[] n = txtTenNhom.Text.Split(' ');
+            string sTenNhom = "";
+            for (int i = 0; i < n.Length; i++)
+            {
+                n[i] = n[i].Trim();
+                if (n[i] != "")
+                {
+                    sTenNhom = sTenNhom + " " + n[i];
+                }
+            }
+            ds.TENNHOMBENH = sTenNhom.Trim();
             ds.NGAYTAO = DateTime.Today;
             ds.MOTA = txtMota.Text;
             ds.TRANGTHAI=true;
