@@ -33,5 +33,9 @@ namespace BUS
         {
             return DA.cNhanVienDA.GetStaffID();
         }
+        public static void UpdatePassword(string Manhanvien, string Matkhau)
+        {
+            DA.cNhanVienDA.UpdatePassword(Manhanvien, Matkhau);
+        }
     }
 }

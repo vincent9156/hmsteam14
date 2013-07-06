@@ -84,5 +84,17 @@ namespace DA
                 return StaffID;
             }
         }
+
+        public static void UpdatePassword(string Manhanvien, string Password)
+        {
+            using (DB_HMS_Entities Grp = new DB_HMS_Entities())
+            {
+                var query = (from u in Grp.tbNHANVIENs
+                             where u.MANHANVIEN == Manhanvien
+                             select u).First();
+                query.MATKHAU = Password;
+                Grp.SaveChanges();
+            }
+        }
     }
 }
