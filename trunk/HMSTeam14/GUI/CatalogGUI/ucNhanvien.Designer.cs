@@ -65,6 +65,9 @@
             this.lookUpPhongBan = new DevExpress.XtraEditors.LookUpEdit();
             this.lookUpChuvu = new DevExpress.XtraEditors.LookUpEdit();
             this.grpThongtinnguoidung = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.btnReset = new DevExpress.XtraEditors.SimpleButton();
             this.lookUpNhom = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -482,6 +485,9 @@
             // 
             this.grpThongtinnguoidung.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.grpThongtinnguoidung.Appearance.Options.UseBackColor = true;
+            this.grpThongtinnguoidung.Controls.Add(this.labelControl8);
+            this.grpThongtinnguoidung.Controls.Add(this.labelControl6);
+            this.grpThongtinnguoidung.Controls.Add(this.labelControl4);
             this.grpThongtinnguoidung.Controls.Add(this.btnReset);
             this.grpThongtinnguoidung.Controls.Add(this.lookUpNhom);
             this.grpThongtinnguoidung.Controls.Add(this.labelControl3);
@@ -510,6 +516,33 @@
             this.grpThongtinnguoidung.Size = new System.Drawing.Size(1264, 157);
             this.grpThongtinnguoidung.TabIndex = 27;
             this.grpThongtinnguoidung.Text = "Thông tin người dùng";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl8.Location = new System.Drawing.Point(777, 38);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(6, 13);
+            this.labelControl8.TabIndex = 90;
+            this.labelControl8.Text = "*";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl6.Location = new System.Drawing.Point(777, 90);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(6, 13);
+            this.labelControl6.TabIndex = 89;
+            this.labelControl6.Text = "*";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl4.Location = new System.Drawing.Point(512, 64);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(6, 13);
+            this.labelControl4.TabIndex = 88;
+            this.labelControl4.Text = "*";
             // 
             // btnReset
             // 
@@ -624,5 +657,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.Columns.GridColumn colNhom;
         private DevExpress.XtraEditors.SimpleButton btnReset;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
     }
 }

@@ -24,7 +24,7 @@ namespace GUI
         public cNhanVienDO GetStaffInfor()
         {
             cNhanVienDO Gr = new cNhanVienDO();
-            Gr.TENNHANVIEN = txtHovatenlot.Text.Trim();
+            Gr.TENNHANVIEN = CheckName(txtHovatenlot.Text).Trim();
             Gr.MANHANVIEN = txtManguoidung.Text;
             Gr.MANHOMNHANVIEN = BUS.cNhanVienBUS.GetIDByGroupName(lookUpNhom.EditValue.ToString());
             Gr.MAPHONGKHAM = BUS.cNhanVienBUS.GetIDByClinicName(lookUpPhongBan.EditValue.ToString());
@@ -49,6 +49,21 @@ namespace GUI
                 Gr.TINHTRANG = false;
             }
             return Gr;
+        }
+
+        private string CheckName(string name)
+        {
+            String[] n = name.Split(' ');
+            string sTen = "";
+            for (int i = 0; i < n.Length; i++)
+            {
+                n[i] = n[i].Trim();
+                if (n[i] != "")
+                {
+                    sTen = sTen + " " + n[i];
+                }
+            }
+            return sTen;
         }
 
         private void LoadStaffList()
@@ -79,6 +94,16 @@ namespace GUI
             if (staff.TENNHANVIEN == "")
             {
                 XtraMessageBox.Show("Vui lòng nhập tên nhân viên!");
+                return false;
+            }
+            if (staff.MANHOMNHANVIEN == "")
+            {
+                XtraMessageBox.Show("Vui lòng chọn nhóm nhân viên!");
+                return false;
+            }
+            if (staff.MAPHONGKHAM == "")
+            {
+                XtraMessageBox.Show("Vui lòng chọn phòng khám!");
                 return false;
             }
             return true;

@@ -17,23 +17,14 @@ namespace GUI
             InitializeComponent();
         }
         private bool Add = false, Update = false;
-        private string sTenNhom = "";
         private List<cTinhNangDO> listFunc = BUS.cTinhNangBUS.GetFunctionList();
         private List<cTinhNangNhomNhanVienDO> lstFunction = new List<cTinhNangNhomNhanVienDO>();
         public cNhomNhanVienDO GetStaffGroupInfor()
         {
             cNhomNhanVienDO Gr = new cNhomNhanVienDO();
-            String[] n = txtTenNhom.Text.Split(' ');
-            sTenNhom = "";
-            for (int i = 0; i < n.Length; i++)
-            {
-                n[i] = n[i].Trim();
-                if (n[i] != "")
-                {
-                    sTenNhom = sTenNhom + " " + n[i];
-                }
-            }
-            Gr.TENNHOMNHANVIEN = sTenNhom.Trim();
+           
+           
+            Gr.TENNHOMNHANVIEN = CheckName(txtTenNhom.Text).Trim();
             Gr.MANHOMNHANVIEN = txtMaNhom.Text;
             Gr.MOTA = txtMota.Text;
             if (chkTrangthai.Checked == true)
@@ -46,7 +37,20 @@ namespace GUI
             }
             return Gr;
         }
-
+        private string CheckName(string name)
+        {
+            String[] n = name.Split(' ');
+            string sTenNhom = "";
+            for (int i = 0; i < n.Length; i++)
+            {
+                n[i] = n[i].Trim();
+                if (n[i] != "")
+                {
+                    sTenNhom = sTenNhom + " " + n[i];
+                }
+            }
+            return sTenNhom;
+        }
         private void LoadStaffGroupList()
         {
             List<cNhomNhanVienDO> GroupList = BUS.cNhomNhanVienBUS.GetStaffGroupList();
@@ -134,7 +138,7 @@ namespace GUI
             {
                 if (Add && BUS.cNhomNhanVienBUS.CheckExist(ds.TENNHOMNHANVIEN) == true && Update == false)
                 {
-                    XtraMessageBox.Show("Tên phòng khám đã tồn tại: " + sTenNhom.Trim() + "!",
+                    XtraMessageBox.Show("Tên phòng khám đã tồn tại: " + CheckName(txtTenNhom.Text) + "!",
                         "Hỏi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Enablediting(true);
                 }else

@@ -61,7 +61,7 @@ namespace DA
                 var query = (from u in Group.tbNHOMNGUOIDUNGs where u.TENNHOMND == TENNHOM select u);
                 foreach (var row in query)
                 {
-                    if (row.TENNHOMND == TENNHOM)
+                    if (row.TENNHOMND.ToLower() == TENNHOM.ToLower())
                     {
                         exist = true;
                     }
