@@ -112,6 +112,7 @@
             this.btnCancel.Size = new System.Drawing.Size(95, 26);
             this.btnCancel.TabIndex = 24;
             this.btnCancel.Text = "Hủy";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
@@ -125,6 +126,7 @@
             this.btnOK.Size = new System.Drawing.Size(95, 26);
             this.btnOK.TabIndex = 23;
             this.btnOK.Text = "Đăng Nhập ";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // labelControl2
             // 
@@ -201,6 +203,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

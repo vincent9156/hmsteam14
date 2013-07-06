@@ -143,6 +143,7 @@
             this.btnDangxuat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDangxuat.LargeGlyph")));
             this.btnDangxuat.LargeWidth = 80;
             this.btnDangxuat.Name = "btnDangxuat";
+            this.btnDangxuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangxuat_ItemClick);
             // 
             // btnThaydoimk
             // 
@@ -501,6 +502,7 @@
             this.Name = "frmGiaodienchinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm khám bệnh ngoại trú ABC";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGiaodienchinh_FormClosed);
             this.Load += new System.EventHandler(this.frmGiaodienchinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();

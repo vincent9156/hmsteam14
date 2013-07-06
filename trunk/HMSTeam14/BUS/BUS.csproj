@@ -44,12 +44,12 @@
     <Compile Include="CatalogBUS\cBenhBUS.cs" />
     <Compile Include="CatalogBUS\cBenhTheoPKBUS.cs" />
     <Compile Include="CatalogBUS\cCheckedListBoxItem.cs" />
+    <Compile Include="CatalogBUS\cNhanVienBUS.cs" />
     <Compile Include="CatalogBUS\cNhomNhanVienBUS.cs" />
     <Compile Include="CatalogBUS\cPhongKhamBUS.cs" />
     <Compile Include="CatalogBUS\cThuocBUS.cs" />
     <Compile Include="CatalogBUS\cTinhNangBUS.cs" />
     <Compile Include="CatalogBUS\cTinhNangNhomNhanVienBUS.cs" />
-    <Compile Include="CatalogBUS\cNhanVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

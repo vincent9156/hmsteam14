@@ -38,3 +38,13 @@ C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\BUS\bin\Debug\DO.
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\BUS\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\BUS\obj\Debug\BUS.dll
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\BUS\obj\Debug\BUS.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\BUS.dll.config
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\BUS.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\BUS.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\DA.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\DO.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\DA.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\bin\Debug\DO.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\obj\Debug\ResolveAssemblyReference.cache
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\obj\Debug\BUS.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\BUS\obj\Debug\BUS.pdb
