@@ -34,6 +34,29 @@ namespace DA
                 return dsbenh;
             }
         }
+        public static List<cBenhPKDO> Getdsbenh1(bool test)
+        {
+            List<cBenhPKDO> dsbenh = new List<cBenhPKDO>();
+            using (DB_HMS_Entities ds = new DB_HMS_Entities())
+            {
+                var query = from ads in ds.tbBENHs
+                            where ads.TRANGTHAI == test
+                            select ads;
+                foreach (var row in query)
+                {
+                    cBenhPKDO dss = new cBenhPKDO();
+                    dss.MABENH = row.MABENH;
+                    dss.MANHOMBENH1 = row.MANHOMBENH;
+                    dss.MOTA1 = row.MOTA;
+                    dss.TENBENHTA = row.TENBENHTA;
+                    dss.TENBENHTV = row.TENBENHTV;
+                    dss.NGAYTAO1 = row.NGAYTAO.Value;
+                    dss.TRANGTHAI1 = row.TRANGTHAI;
+                    dsbenh.Add(dss);
+                }
+                return dsbenh;
+            }
+        }
         /// <summary>
         /// Thêm bệnh vào database
         /// </summary>

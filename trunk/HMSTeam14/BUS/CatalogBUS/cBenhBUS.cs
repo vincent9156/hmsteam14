@@ -15,6 +15,10 @@ namespace BUS
             return DA.cBenhDA.Getdsbenh();
         }
 
+        public static List<cBenhPKDO> Getdsbenh1(bool test)
+        {
+            return DA.cBenhDA.Getdsbenh1(test);
+        }
         public static void InsertBenh(string MABENH, string MANHOMBENH, string TENBENHTA, string TENBENHTV, string MOTA, DateTime NGAYTAO, Boolean TRANGTHAI)
         {
             DA.cBenhDA.InsertBenh(MABENH, MANHOMBENH, TENBENHTA, TENBENHTV, MOTA, NGAYTAO, TRANGTHAI);

@@ -13,7 +13,10 @@ namespace BUS
         {
             return DA.cPhongKhamDA.Getdsphongkham();
         }
-
+        public static List<cPhongKhamDO> Getdsphongkham1(bool test)
+        {
+            return DA.cPhongKhamDA.Getdsphongkham1(test);
+        }
         public static void Insertphongkham(string MAPHONGKHAM, string TENPHONG, DateTime NGAYTAO, Boolean TRANGTHAI)
         {
             DA.cPhongKhamDA.Insertphongkham(MAPHONGKHAM,TENPHONG,NGAYTAO,TRANGTHAI);
