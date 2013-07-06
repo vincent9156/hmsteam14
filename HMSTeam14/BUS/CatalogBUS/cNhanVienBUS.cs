@@ -37,5 +37,9 @@ namespace BUS
         {
             DA.cNhanVienDA.UpdatePassword(Manhanvien, Matkhau);
         }
+        public static bool CheckUser(string username, string password)
+        {
+            return  DA.cNhanVienDA.CheckUser(username, password);
+        }
     }
 }

@@ -105,11 +105,23 @@
     <Compile Include="CatalogGUI\ucNhanvien.designer.cs">
       <DependentUpon>ucNhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInfoGUI\frmGiaodienchinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmGiaodienchinh.designer.cs">
+      <DependentUpon>frmGiaodienchinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInfoGUI\frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserInfoGUI\frmHelp.designer.cs">
       <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoGUI\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInfoGUI\frmThongtinphanmem.cs">
       <SubType>Form</SubType>
@@ -140,18 +152,6 @@
     </Compile>
     <Compile Include="UserInfoGUI\frmLichhen.Designer.cs">
       <DependentUpon>frmLichhen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserInfoGUI\frmGiaodienchinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserInfoGUI\frmGiaodienchinh.Designer.cs">
-      <DependentUpon>frmGiaodienchinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserInfoGUI\frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserInfoGUI\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInfoGUI\ucTrangchu.cs">
       <SubType>UserControl</SubType>
@@ -218,8 +218,14 @@
     <EmbeddedResource Include="CatalogGUI\ucNhanvien.resx">
       <DependentUpon>ucNhanvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoGUI\frmGiaodienchinh.resx">
+      <DependentUpon>frmGiaodienchinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoGUI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmThongtinphanmem.resx">
       <DependentUpon>frmThongtinphanmem.cs</DependentUpon>
@@ -233,14 +239,8 @@
     <EmbeddedResource Include="CatalogGUI\frmNhomthuoc.resx">
       <DependentUpon>frmNhomthuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInfoGUI\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmLichhen.resx">
       <DependentUpon>frmLichhen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserInfoGUI\frmGiaodienchinh.resx">
-      <DependentUpon>frmGiaodienchinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\ucTrangchu.resx">
       <DependentUpon>ucTrangchu.cs</DependentUpon>

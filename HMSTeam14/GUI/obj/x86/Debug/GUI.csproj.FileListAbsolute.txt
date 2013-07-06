@@ -148,3 +148,41 @@ C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug
 C:\Users\Tung Truong\Desktop\Projects Mr.Tùng\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe.licenses
 C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHelp.resources
 C:\Users\Zer0\Desktop\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmThongtinphanmem.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe.config
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\GUI.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\BUS.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\DO.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\DA.dll
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\BUS.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\DO.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\bin\Debug\DA.pdb
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmNhombenh.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBenh.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBenhtheophongkham.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucNhomnguoidung.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucPhongkham.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucThuoc.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucNhanvien.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHelp.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmThongtinphanmem.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmDoimatkhau.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmHosobenhan.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmNhomthuoc.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmLogin.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmLichhen.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.frmGiaodienchinh.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucTrangchu.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.Properties.Resources.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucDonthuocmau.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucLichlamviec.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucPhanquyen.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucBaocao.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucKhambenhngoaitru.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.ucSinhlieu.resources
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe.licenses

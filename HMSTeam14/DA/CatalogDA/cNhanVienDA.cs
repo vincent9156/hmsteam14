@@ -84,7 +84,24 @@ namespace DA
                 return StaffID;
             }
         }
-
+        public static bool CheckUser(string username, string password)
+        {
+            Boolean test = false;
+            using (DB_HMS_Entities dk = new DB_HMS_Entities())
+            {
+                var query = from c in dk.tbNHANVIENs
+                            where c.IDDANGNHAP == username && c.MATKHAU == password
+                            select c;
+                foreach (var row in query)
+                {
+                    if (row.IDDANGNHAP == username || row.MATKHAU == password)
+                    {
+                        test = true;
+                    }
+                }
+            }
+            return test;
+        }
         public static void UpdatePassword(string Manhanvien, string Password)
         {
             using (DB_HMS_Entities Grp = new DB_HMS_Entities())

@@ -116,8 +116,10 @@ namespace GUI
 
         private void btnDangnhap_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmLogin login = new frmLogin();
-            login.Show();
+            frmLogin Login = new frmLogin();
+            Login.Show();
+            this.DialogResult = DialogResult.OK;
+            this.Hide();
         }
 
         private void btnThaydoimk_ItemClick(object sender, ItemClickEventArgs e)
@@ -152,6 +154,16 @@ namespace GUI
         {
             frmThongtinphanmem thongtin = new frmThongtinphanmem();
             thongtin.Show();
+        }
+
+        private void frmGiaodienchinh_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.ExitThread();
+        }
+
+        private void btnDangxuat_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Application.ExitThread();
         }
     }
 }
