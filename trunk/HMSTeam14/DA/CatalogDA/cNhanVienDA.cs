@@ -44,7 +44,7 @@ namespace DA
                 infor.GIOITINH = Gioitinh;
                 infor.CHUCDANH = Chucdanh;
                 infor.IDDANGNHAP = Tendangnhap;
-                infor.MATKHAU = Matkhau;
+                infor.MATKHAU = ToMD5(ToMD5(ToMD5(Matkhau)));
                 infor.TRANGTHAI = Tinhtrang;
                 infor.NGAYTAO = Ngaytao;
                 staff.AddTotbNHANVIENs(infor);
@@ -109,9 +109,76 @@ namespace DA
                 var query = (from u in Grp.tbNHANVIENs
                              where u.MANHANVIEN == Manhanvien
                              select u).First();
-                query.MATKHAU = Password;
+                query.MATKHAU = ToMD5(ToMD5(ToMD5(Password)));
                 Grp.SaveChanges();
             }
+        }
+
+        public static string GetPassword(string Manhanvien)
+        {
+            using (DB_HMS_Entities Pass = new DB_HMS_Entities())
+            {
+                var query = (from u in Pass.tbNHANVIENs
+                             where u.MANHANVIEN == Manhanvien
+                             select u).First();
+                return query.MATKHAU;
+            }
+        }
+
+        public static cNhanVienDO GetStaffByID(string ID)
+        {
+            ID = ID.ToLower();
+            cNhanVienDO staff = new cNhanVienDO();
+            using (DB_HMS_Entities lst = new DB_HMS_Entities())
+            {
+                var query = (from u in lst.tbNHANVIENs where u.MANHANVIEN == ID select u).First();
+                staff.MANHANVIEN = query.MANHANVIEN;
+                staff.TENNHANVIEN = query.HOTEN;
+                staff.GIOITINH = query.GIOITINH;
+                staff.MANHOMNHANVIEN = query.MANHOMND;
+                staff.MAPHONGKHAM = query.MAPHONGKHAM;
+                staff.NGAYTAO = (DateTime)query.NGAYTAO;
+                staff.TENTAIKHOAN = query.IDDANGNHAP;
+                staff.MATKHAU = query.MATKHAU;
+                staff.CHUCDANH = query.CHUCDANH;
+                staff.TINHTRANG = (bool)query.TRANGTHAI;
+                return staff;
+            }
+            
+        }
+        //public static string MD5(string password)
+        //{
+        //    byte[] textBytes = System.Text.Encoding.Default.GetBytes(password);
+        //    try
+        //    {
+        //        System.Security.Cryptography.MD5CryptoServiceProvider cryptHandler;
+        //        cryptHandler = new System.Security.Cryptography.MD5CryptoServiceProvider();
+        //        byte[] hash = cryptHandler.ComputeHash(textBytes);
+        //        string ret = "";
+        //        foreach (byte a in hash)
+        //        {
+        //            if (a < 16)
+        //                ret += "0" + a.ToString("x");
+        //            else
+        //                ret += a.ToString("x");
+        //        }
+        //        return ret;
+        //    }
+        //    catch
+        //    {
+        //        throw;
+        //    }
+        //}
+        public static string ToMD5(string str)
+        {
+            System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
+            byte[] bHash = md5.ComputeHash(Encoding.UTF8.GetBytes(str));
+            StringBuilder sbHash = new StringBuilder();
+            foreach (byte b in bHash)
+            {
+                sbHash.Append(String.Format("{0:x2}", b));
+            }
+            return sbHash.ToString();
         }
     }
 }

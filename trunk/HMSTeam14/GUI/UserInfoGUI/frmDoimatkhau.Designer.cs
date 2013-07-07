@@ -115,6 +115,7 @@
             this.btnDongydoimatkhau.Size = new System.Drawing.Size(75, 23);
             this.btnDongydoimatkhau.TabIndex = 7;
             this.btnDongydoimatkhau.Text = "Đồng ý";
+            this.btnDongydoimatkhau.Click += new System.EventHandler(this.btnDongydoimatkhau_Click);
             // 
             // btnHuybodoimatkhau
             // 
@@ -123,6 +124,7 @@
             this.btnHuybodoimatkhau.Size = new System.Drawing.Size(75, 23);
             this.btnHuybodoimatkhau.TabIndex = 8;
             this.btnHuybodoimatkhau.Text = "Hủy bỏ";
+            this.btnHuybodoimatkhau.Click += new System.EventHandler(this.btnHuybodoimatkhau_Click);
             // 
             // frmDoimatkhau
             // 

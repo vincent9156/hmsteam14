@@ -24,8 +24,9 @@ namespace GUI
             if (CountLogin > 0 && Check() == true)
             {
 
-                if (BUS.cNhanVienBUS.CheckUser(txtUsername.Text, txtPassword.Text) == true)
+                if (BUS.cNhanVienBUS.CheckUser(txtUsername.Text, BUS.cNhanVienBUS.ToMD5(BUS.cNhanVienBUS.ToMD5(BUS.cNhanVienBUS.ToMD5(txtPassword.Text)))) == true)
                 {
+                    DO.cCommonDO.CurrentUser = BUS.cNhanVienBUS.GetStaffInforByID(txtUsername.Text);
                     frmGiaodienchinh Trangchinh = new frmGiaodienchinh();
                     Trangchinh.Show();
                     this.DialogResult = DialogResult.OK;
@@ -74,29 +75,6 @@ namespace GUI
                 return true;
             }
             return false;
-        }
-        public static string MD5(string password)
-        {
-            byte[] textBytes = System.Text.Encoding.Default.GetBytes(password);
-            try
-            {
-                System.Security.Cryptography.MD5CryptoServiceProvider cryptHandler;
-                cryptHandler = new System.Security.Cryptography.MD5CryptoServiceProvider();
-                byte[] hash = cryptHandler.ComputeHash(textBytes);
-                string ret = "";
-                foreach (byte a in hash)
-                {
-                    if (a < 16)
-                        ret += "0" + a.ToString("x");
-                    else
-                        ret += a.ToString("x");
-                }
-                return ret;
-            }
-            catch
-            {
-                throw;
-            }
         }
     }
 }
