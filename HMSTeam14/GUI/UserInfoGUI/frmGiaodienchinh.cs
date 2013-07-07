@@ -119,7 +119,6 @@ namespace GUI
             frmLogin Login = new frmLogin();
             Login.Show();
             this.DialogResult = DialogResult.OK;
-            this.Hide();
         }
 
         private void btnThaydoimk_ItemClick(object sender, ItemClickEventArgs e)

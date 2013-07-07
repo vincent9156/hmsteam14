@@ -41,5 +41,13 @@ namespace BUS
         {
             return  DA.cNhanVienDA.CheckUser(username, password);
         }
+        public static cNhanVienDO GetStaffInforByID(string ID)
+        {
+            return DA.cNhanVienDA.GetStaffByID(ID);
+        }
+        public static string ToMD5(string password)
+        {
+            return DA.cNhanVienDA.ToMD5(password);
+        }
     }
 }

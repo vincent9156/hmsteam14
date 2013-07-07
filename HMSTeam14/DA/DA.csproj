@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CatalogDA\cBenhDA.cs" />
     <Compile Include="CatalogDA\cBenhTheoPKDA.cs" />
+    <Compile Include="CatalogDA\cCommon.cs" />
     <Compile Include="CatalogDA\cNhanVienDA.cs" />
     <Compile Include="CatalogDA\cPhongKhamDA.cs" />
     <Compile Include="CatalogDA\cThuocDA.cs" />
