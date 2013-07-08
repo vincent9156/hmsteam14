@@ -65,7 +65,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(23, 92);
+            this.labelControl2.Location = new System.Drawing.Point(55, 92);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(86, 13);
             this.labelControl2.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(23, 130);
+            this.labelControl3.Location = new System.Drawing.Point(55, 130);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(67, 13);
             this.labelControl3.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(23, 168);
+            this.labelControl4.Location = new System.Drawing.Point(55, 168);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(95, 13);
             this.labelControl4.TabIndex = 3;
@@ -89,22 +89,25 @@
             // 
             // txtMatkhauhientai
             // 
-            this.txtMatkhauhientai.Location = new System.Drawing.Point(127, 92);
+            this.txtMatkhauhientai.Location = new System.Drawing.Point(159, 92);
             this.txtMatkhauhientai.Name = "txtMatkhauhientai";
+            this.txtMatkhauhientai.Properties.PasswordChar = '*';
             this.txtMatkhauhientai.Size = new System.Drawing.Size(195, 20);
             this.txtMatkhauhientai.TabIndex = 4;
             // 
             // txtMatkhaumoi
             // 
-            this.txtMatkhaumoi.Location = new System.Drawing.Point(127, 127);
+            this.txtMatkhaumoi.Location = new System.Drawing.Point(159, 127);
             this.txtMatkhaumoi.Name = "txtMatkhaumoi";
+            this.txtMatkhaumoi.Properties.PasswordChar = '*';
             this.txtMatkhaumoi.Size = new System.Drawing.Size(195, 20);
             this.txtMatkhaumoi.TabIndex = 5;
             // 
             // txtXacnhanmatkhau
             // 
-            this.txtXacnhanmatkhau.Location = new System.Drawing.Point(127, 165);
+            this.txtXacnhanmatkhau.Location = new System.Drawing.Point(159, 165);
             this.txtXacnhanmatkhau.Name = "txtXacnhanmatkhau";
+            this.txtXacnhanmatkhau.Properties.PasswordChar = '*';
             this.txtXacnhanmatkhau.Size = new System.Drawing.Size(195, 20);
             this.txtXacnhanmatkhau.TabIndex = 6;
             // 
@@ -114,7 +117,7 @@
             this.btnDongydoimatkhau.Name = "btnDongydoimatkhau";
             this.btnDongydoimatkhau.Size = new System.Drawing.Size(75, 23);
             this.btnDongydoimatkhau.TabIndex = 7;
-            this.btnDongydoimatkhau.Text = "Đồng ý";
+            this.btnDongydoimatkhau.Text = "&Đồng ý";
             this.btnDongydoimatkhau.Click += new System.EventHandler(this.btnDongydoimatkhau_Click);
             // 
             // btnHuybodoimatkhau
@@ -123,7 +126,7 @@
             this.btnHuybodoimatkhau.Name = "btnHuybodoimatkhau";
             this.btnHuybodoimatkhau.Size = new System.Drawing.Size(75, 23);
             this.btnHuybodoimatkhau.TabIndex = 8;
-            this.btnHuybodoimatkhau.Text = "Hủy bỏ";
+            this.btnHuybodoimatkhau.Text = "&Hủy bỏ";
             this.btnHuybodoimatkhau.Click += new System.EventHandler(this.btnHuybodoimatkhau_Click);
             // 
             // frmDoimatkhau
@@ -140,6 +143,8 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.panelControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmDoimatkhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đổi mật khẩu";

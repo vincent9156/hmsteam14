@@ -25,15 +25,15 @@ namespace GUI
             {
                 if (txtMatkhauhientai.Text.Trim() == null)
                 {
-                    MessageBox.Show("Vui lòng nhập mật khẩu hiện tại!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    XtraMessageBox.Show("Vui lòng nhập mật khẩu hiện tại!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 if (txtMatkhaumoi.Text.Trim() == null)
                 {
-                    MessageBox.Show("Vui lòng nhập mật khẩu mới!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    XtraMessageBox.Show("Vui lòng nhập mật khẩu mới!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 if (txtXacnhanmatkhau.Text.Trim() == null)
                 {
-                    MessageBox.Show("Vui lòng nhập xác nhận lại mật khẩu!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    XtraMessageBox.Show("Vui lòng nhập xác nhận lại mật khẩu!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 txtMatkhaumoi.Text = "";
                 txtMatkhauhientai.Text = "";
@@ -50,21 +50,21 @@ namespace GUI
                     {
                         if (txtMatkhaumoi.Text.Trim().Equals(txtXacnhanmatkhau.Text.Trim()) == false)
                         {
-                            MessageBox.Show("Mật khẩu xác nhận chưa đúng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            XtraMessageBox.Show("Mật khẩu xác nhận chưa đúng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             txtMatkhaumoi.Text = "";
                             txtMatkhauhientai.Text = "";
                             txtXacnhanmatkhau.Text = "";
                             //txtMatkhauhientai.Focus();
                         }else
                         {
-                            MessageBox.Show("Thay đổi mật khẩu thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            XtraMessageBox.Show("Thay đổi mật khẩu thành công!", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             BUS.cNhanVienBUS.UpdatePassword(user.MANHANVIEN, txtMatkhaumoi.Text);
                             this.Hide();
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Mật khẩu hiện tại không đúng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        XtraMessageBox.Show("Mật khẩu hiện tại không đúng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtMatkhaumoi.Text = "";
                         txtMatkhauhientai.Text = "";
                         txtXacnhanmatkhau.Text = "";
@@ -75,11 +75,11 @@ namespace GUI
                 {
                     if (txtMatkhaumoi.Text.Length < 6)
                     {
-                        MessageBox.Show("Mật khẩu phải hơn 6 kí tự!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        XtraMessageBox.Show("Mật khẩu phải hơn 6 kí tự!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        MessageBox.Show("Mật khẩu chỉ bao gồm kí tự, chữ số và các kí tự đặc biệt \n Không bao gồm khoảng trắng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        XtraMessageBox.Show("Mật khẩu chỉ bao gồm kí tự, chữ số và các kí tự đặc biệt \n Không bao gồm khoảng trắng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     txtMatkhaumoi.Text = "";
                     txtMatkhauhientai.Text = "";

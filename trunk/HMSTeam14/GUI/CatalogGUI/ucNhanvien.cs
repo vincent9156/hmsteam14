@@ -324,7 +324,6 @@ namespace GUI
                     cliniclist.Add(new ClinicLookup(row.TENPHONG));
                 }
             }
-
             lookUpPhongBan.Properties.DataSource = cliniclist;
             lookUpPhongBan.Properties.DisplayMember = "clinic";
             lookUpPhongBan.Properties.ValueMember = "clinic";

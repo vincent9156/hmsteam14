@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="DB_HMSModelStoreContainer" CdmEntityContainer="DB_HMS_Entities">
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="DB_HMSModel.sysdiagram">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="definition" ColumnName="definition" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="name" ColumnName="name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tbBENHs">
       <EntityTypeMapping TypeName="DB_HMSModel.tbBENH">
         <MappingFragment StoreEntitySet="tbBENH">
@@ -36,6 +25,23 @@
           <ScalarProperty Name="MABENHNHAN" ColumnName="MABENHNHAN" />
           <ScalarProperty Name="MABENHAN" ColumnName="MABENHAN" />
           <ScalarProperty Name="STT" ColumnName="STT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbBENHNHANs">
+      <EntityTypeMapping TypeName="DB_HMSModel.tbBENHNHAN">
+        <MappingFragment StoreEntitySet="tbBENHNHAN">
+          <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
+          <ScalarProperty Name="NGAYTAO" ColumnName="NGAYTAO" />
+          <ScalarProperty Name="DUONG" ColumnName="DUONG" />
+          <ScalarProperty Name="QUAN" ColumnName="QUAN" />
+          <ScalarProperty Name="TINH" ColumnName="TINH" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="TUOI" ColumnName="TUOI" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="HO" ColumnName="HO" />
+          <ScalarProperty Name="MABENHNHAN" ColumnName="MABENHNHAN" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -172,6 +178,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbNHOMTINHNANGs">
+      <EntityTypeMapping TypeName="DB_HMSModel.tbNHOMTINHNANG">
+        <MappingFragment StoreEntitySet="tbNHOMTINHNANG">
+          <ScalarProperty Name="TENNHOMTINHNANG" ColumnName="TENNHOMTINHNANG" />
+          <ScalarProperty Name="MANHOMTINHNANG" ColumnName="MANHOMTINHNANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="tbPHONGKHAMs">
       <EntityTypeMapping TypeName="DB_HMSModel.tbPHONGKHAM">
         <MappingFragment StoreEntitySet="tbPHONGKHAM">
@@ -187,6 +201,24 @@
         <MappingFragment StoreEntitySet="tbQUYEN">
           <ScalarProperty Name="TENQUYEN" ColumnName="TENQUYEN" />
           <ScalarProperty Name="MAQUYEN" ColumnName="MAQUYEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbSINHLIEUx">
+      <EntityTypeMapping TypeName="DB_HMSModel.tbSINHLIEU">
+        <MappingFragment StoreEntitySet="tbSINHLIEU">
+          <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
+          <ScalarProperty Name="NGAYTAO" ColumnName="NGAYTAO" />
+          <ScalarProperty Name="VONGBUNG" ColumnName="VONGBUNG" />
+          <ScalarProperty Name="CANBANG" ColumnName="CANBANG" />
+          <ScalarProperty Name="CHIEUCAO" ColumnName="CHIEUCAO" />
+          <ScalarProperty Name="HUYETAP" ColumnName="HUYETAP" />
+          <ScalarProperty Name="NHIETDO" ColumnName="NHIETDO" />
+          <ScalarProperty Name="NHIPTHO" ColumnName="NHIPTHO" />
+          <ScalarProperty Name="MACH" ColumnName="MACH" />
+          <ScalarProperty Name="MAYTA" ColumnName="MAYTA" />
+          <ScalarProperty Name="MABENHAN" ColumnName="MABENHAN" />
+          <ScalarProperty Name="MASINHLIEU" ColumnName="MASINHLIEU" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -237,6 +269,7 @@
     <EntitySetMapping Name="tbTINHNANGs">
       <EntityTypeMapping TypeName="DB_HMSModel.tbTINHNANG">
         <MappingFragment StoreEntitySet="tbTINHNANG">
+          <ScalarProperty Name="MANHOMTINHNANG" ColumnName="MANHOMTINHNANG" />
           <ScalarProperty Name="TENTINHNANG" ColumnName="TENTINHNANG" />
           <ScalarProperty Name="MATINHNANG" ColumnName="MATINHNANG" />
         </MappingFragment>

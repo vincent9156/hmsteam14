@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DB_HMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="DB_HMSModelStoreContainer">
-    <EntitySet Name="sysdiagrams" EntityType="DB_HMSModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENH" EntityType="DB_HMSModel.Store.tbBENH" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENHAN" EntityType="DB_HMSModel.Store.tbBENHAN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbBENHNHAN" EntityType="DB_HMSModel.Store.tbBENHNHAN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENHPHONGKHAM" EntityType="DB_HMSModel.Store.tbBENHPHONGKHAM" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbCHITIETDONTHUOCMAU" EntityType="DB_HMSModel.Store.tbCHITIETDONTHUOCMAU" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbCHUANDOAN" EntityType="DB_HMSModel.Store.tbCHUANDOAN" store:Type="Tables" Schema="dbo" />
@@ -16,8 +16,10 @@
     <EntitySet Name="tbNHANVIEN" EntityType="DB_HMSModel.Store.tbNHANVIEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMBENH" EntityType="DB_HMSModel.Store.tbNHOMBENH" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMNGUOIDUNG" EntityType="DB_HMSModel.Store.tbNHOMNGUOIDUNG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbNHOMTINHNANG" EntityType="DB_HMSModel.Store.tbNHOMTINHNANG" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbPHONGKHAM" EntityType="DB_HMSModel.Store.tbPHONGKHAM" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbQUYEN" EntityType="DB_HMSModel.Store.tbQUYEN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbSINHLIEU" EntityType="DB_HMSModel.Store.tbSINHLIEU" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTHPHANQUYEN" EntityType="DB_HMSModel.Store.tbTHPHANQUYEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTHUOC" EntityType="DB_HMSModel.Store.tbTHUOC" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTIENSUBENH" EntityType="DB_HMSModel.Store.tbTIENSUBENH" store:Type="Tables" Schema="dbo" />
@@ -54,16 +56,6 @@
       <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMND" />
     </AssociationSet>
   </EntityContainer>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <EntityType Name="tbBENH">
     <Key>
       <PropertyRef Name="MABENH" />
@@ -88,6 +80,22 @@
     <Property Name="NGAYTAO" Type="datetime" />
     <Property Name="TRANGTHAI" Type="bit" />
     <Property Name="TRANGTHAIBENHAN" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbBENHNHAN">
+    <Key>
+      <PropertyRef Name="MABENHNHAN" />
+    </Key>
+    <Property Name="MABENHNHAN" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="HO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TEN" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NGAYSINH" Type="datetime" />
+    <Property Name="TUOI" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="GIOITINH" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="TINH" Type="nvarchar(max)" />
+    <Property Name="QUAN" Type="nvarchar(max)" />
+    <Property Name="DUONG" Type="nvarchar(max)" />
+    <Property Name="NGAYTAO" Type="datetime" />
+    <Property Name="TRANGTHAI" Type="bit" />
   </EntityType>
   <EntityType Name="tbBENHPHONGKHAM">
     <Key>
@@ -186,7 +194,7 @@
     <Property Name="HOTEN" Type="nvarchar" MaxLength="50" />
     <Property Name="GIOITINH" Type="nvarchar" MaxLength="50" />
     <Property Name="IDDANGNHAP" Type="nvarchar" Nullable="false" MaxLength="10" />
-    <Property Name="MATKHAU" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="MATKHAU" Type="nvarchar(max)" Nullable="false" />
     <Property Name="CHUCDANH" Type="nvarchar" MaxLength="50" />
     <Property Name="TRANGTHAI" Type="bit" />
     <Property Name="NGAYTAO" Type="datetime" />
@@ -211,6 +219,13 @@
     <Property Name="TRANGTHAI" Type="bit" />
     <Property Name="MOTA" Type="nvarchar" MaxLength="100" />
   </EntityType>
+  <EntityType Name="tbNHOMTINHNANG">
+    <Key>
+      <PropertyRef Name="MANHOMTINHNANG" />
+    </Key>
+    <Property Name="MANHOMTINHNANG" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="TENNHOMTINHNANG" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
   <EntityType Name="tbPHONGKHAM">
     <Key>
       <PropertyRef Name="MAPHONGKHAM" />
@@ -226,6 +241,23 @@
     </Key>
     <Property Name="MAQUYEN" Type="varchar" Nullable="false" MaxLength="10" />
     <Property Name="TENQUYEN" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbSINHLIEU">
+    <Key>
+      <PropertyRef Name="MASINHLIEU" />
+    </Key>
+    <Property Name="MASINHLIEU" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MAYTA" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MACH" Type="varchar" MaxLength="20" />
+    <Property Name="NHIPTHO" Type="varchar" MaxLength="20" />
+    <Property Name="NHIETDO" Type="varchar" MaxLength="20" />
+    <Property Name="HUYETAP" Type="varchar" MaxLength="20" />
+    <Property Name="CHIEUCAO" Type="varchar" MaxLength="20" />
+    <Property Name="CANBANG" Type="varchar" MaxLength="20" />
+    <Property Name="VONGBUNG" Type="varchar" MaxLength="20" />
+    <Property Name="NGAYTAO" Type="datetime" />
+    <Property Name="TRANGTHAI" Type="bit" />
   </EntityType>
   <EntityType Name="tbTHPHANQUYEN">
     <Key>
@@ -275,6 +307,7 @@
     </Key>
     <Property Name="MATINHNANG" Type="varchar" Nullable="false" MaxLength="10" />
     <Property Name="TENTINHNANG" Type="nvarchar" MaxLength="100" />
+    <Property Name="MANHOMTINHNANG" Type="nvarchar" Nullable="false" MaxLength="10" />
   </EntityType>
   <EntityType Name="tbTINHNANGNHOMND">
     <Key>
