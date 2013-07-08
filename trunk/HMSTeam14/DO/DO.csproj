@@ -52,15 +52,16 @@
     <Compile Include="CatalogDO\cTinhNangDO.cs" />
     <Compile Include="CatalogDO\cTinhNangNhomNhanVienDO.cs" />
     <Compile Include="CatalogDO\cCommonDO.cs" />
+    <Compile Include="OutpantientDO\cBenhanDO.cs" />
     <Compile Include="HMS_DB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HMS_DB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="OutpantientDO\cBenhnhanDO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OutpantientDO\" />
     <Folder Include="ReportDO\" />
     <Folder Include="UserInfoDO\" />
   </ItemGroup>

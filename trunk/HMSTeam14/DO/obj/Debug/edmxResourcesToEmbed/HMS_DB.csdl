@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DB_HMSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
   <EntityContainer Name="DB_HMS_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="DB_HMSModel.sysdiagram" />
     <EntitySet Name="tbBENHs" EntityType="DB_HMSModel.tbBENH" />
     <EntitySet Name="tbBENHANs" EntityType="DB_HMSModel.tbBENHAN" />
     <EntitySet Name="tbBENHNHANs" EntityType="DB_HMSModel.tbBENHNHAN" />
     <EntitySet Name="tbBENHPHONGKHAMs" EntityType="DB_HMSModel.tbBENHPHONGKHAM" />
-    <EntitySet Name="tbCHITIETDONTHUOCMAUs" EntityType="DB_HMSModel.tbCHITIETDONTHUOCMAU" />
     <EntitySet Name="tbCHUANDOANs" EntityType="DB_HMSModel.tbCHUANDOAN" />
     <EntitySet Name="tbCHUANDOANCHITIETs" EntityType="DB_HMSModel.tbCHUANDOANCHITIET" />
     <EntitySet Name="tbDONTHUOCMAUs" EntityType="DB_HMSModel.tbDONTHUOCMAU" />
+    <EntitySet Name="tbDONTHUOCMAUCHITIETs" EntityType="DB_HMSModel.tbDONTHUOCMAUCHITIET" />
     <EntitySet Name="tbHUONGDANs" EntityType="DB_HMSModel.tbHUONGDAN" />
     <EntitySet Name="tbKETOATHUOCs" EntityType="DB_HMSModel.tbKETOATHUOC" />
     <EntitySet Name="tbKETOATHUOCCHITIETs" EntityType="DB_HMSModel.tbKETOATHUOCCHITIET" />
@@ -56,6 +57,16 @@
       <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMNDs" />
     </AssociationSet>
   </EntityContainer>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
   <EntityType Name="tbBENH">
     <Key>
       <PropertyRef Name="MABENH" />
@@ -74,25 +85,25 @@
     <Key>
       <PropertyRef Name="MABENHAN" />
     </Key>
-    <Property Type="Int32" Name="STT" Nullable="false" />
+    <Property Type="String" Name="STT" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="MABENHAN" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="MABENHNHAN" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Type="String" Name="MABACSI" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Type="String" Name="TENBENHAN" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Type="DateTime" Name="NGAYTAO" />
+    <Property Type="String" Name="MABACSY" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TRANGTHAIBENHNHAN" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Type="Boolean" Name="TRANGTHAI" />
-    <Property Type="String" Name="TRANGTHAIBENHAN" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="NGAYTAO" />
   </EntityType>
   <EntityType Name="tbBENHNHAN">
     <Key>
       <PropertyRef Name="MABENHNHAN" />
     </Key>
     <Property Type="String" Name="MABENHNHAN" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="STT" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="HO" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="TEN" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Type="DateTime" Name="NGAYSINH" />
-    <Property Type="String" Name="TUOI" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NGAYSINH" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TUOI" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="TINH" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="QUAN" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Type="String" Name="DUONG" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -109,16 +120,6 @@
     <Property Type="DateTime" Name="NGAYTAO" />
     <NavigationProperty Name="tbBENH" Relationship="DB_HMSModel.FK_tbBENHPHONGKHAM_tbBENH" FromRole="tbBENHPHONGKHAM" ToRole="tbBENH" />
     <NavigationProperty Name="tbPHONGKHAM" Relationship="DB_HMSModel.FK_tbBENHPHONGKHAM_tbPHONGKHAM" FromRole="tbBENHPHONGKHAM" ToRole="tbPHONGKHAM" />
-  </EntityType>
-  <EntityType Name="tbCHITIETDONTHUOCMAU">
-    <Key>
-      <PropertyRef Name="STT" />
-    </Key>
-    <Property Type="Int32" Name="STT" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Type="String" Name="MADONTHUOCMAU" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Type="String" Name="MATHUOC" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Type="Int32" Name="SOLUONG" />
-    <Property Type="DateTime" Name="NGAYTAO" />
   </EntityType>
   <EntityType Name="tbCHUANDOAN">
     <Key>
@@ -141,11 +142,23 @@
   <EntityType Name="tbDONTHUOCMAU">
     <Key>
       <PropertyRef Name="MADONTHUOCMAU" />
+      <PropertyRef Name="MABACSY" />
     </Key>
     <Property Type="String" Name="MADONTHUOCMAU" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Type="String" Name="MABACSY" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Type="DateTime" Name="NGAYTAO" />
     <Property Type="Boolean" Name="TRANGTHAI" />
+  </EntityType>
+  <EntityType Name="tbDONTHUOCMAUCHITIET">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Type="Int32" Name="STT" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="MATHUOC" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MADONTHUOCMAU" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MABACSI" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="NGAYTAO" />
+    <Property Type="Int32" Name="SOLUONG" />
   </EntityType>
   <EntityType Name="tbHUONGDAN">
     <Key>

@@ -50,6 +50,8 @@
     <Compile Include="CatalogBUS\cThuocBUS.cs" />
     <Compile Include="CatalogBUS\cTinhNangBUS.cs" />
     <Compile Include="CatalogBUS\cTinhNangNhomNhanVienBUS.cs" />
+    <Compile Include="OutpantientBUS\cBenhnhanBUS.cs" />
+    <Compile Include="OutpantientBUS\cBenhanBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +65,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OutpantientBUS\" />
     <Folder Include="ReportBUS\" />
     <Folder Include="UserInfoBUS\" />
   </ItemGroup>
