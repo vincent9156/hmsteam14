@@ -79,22 +79,6 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<sysdiagram> sysdiagrams
-        {
-            get
-            {
-                if ((_sysdiagrams == null))
-                {
-                    _sysdiagrams = base.CreateObjectSet<sysdiagram>("sysdiagrams");
-                }
-                return _sysdiagrams;
-            }
-        }
-        private ObjectSet<sysdiagram> _sysdiagrams;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         public ObjectSet<tbBENH> tbBENHs
         {
             get
@@ -123,6 +107,22 @@ namespace DO
             }
         }
         private ObjectSet<tbBENHAN> _tbBENHANs;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tbBENHNHAN> tbBENHNHANs
+        {
+            get
+            {
+                if ((_tbBENHNHANs == null))
+                {
+                    _tbBENHNHANs = base.CreateObjectSet<tbBENHNHAN>("tbBENHNHANs");
+                }
+                return _tbBENHNHANs;
+            }
+        }
+        private ObjectSet<tbBENHNHAN> _tbBENHNHANs;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -319,6 +319,22 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<tbNHOMTINHNANG> tbNHOMTINHNANGs
+        {
+            get
+            {
+                if ((_tbNHOMTINHNANGs == null))
+                {
+                    _tbNHOMTINHNANGs = base.CreateObjectSet<tbNHOMTINHNANG>("tbNHOMTINHNANGs");
+                }
+                return _tbNHOMTINHNANGs;
+            }
+        }
+        private ObjectSet<tbNHOMTINHNANG> _tbNHOMTINHNANGs;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<tbPHONGKHAM> tbPHONGKHAMs
         {
             get
@@ -347,6 +363,22 @@ namespace DO
             }
         }
         private ObjectSet<tbQUYEN> _tbQUYENs;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<tbSINHLIEU> tbSINHLIEUx
+        {
+            get
+            {
+                if ((_tbSINHLIEUx == null))
+                {
+                    _tbSINHLIEUx = base.CreateObjectSet<tbSINHLIEU>("tbSINHLIEUx");
+                }
+                return _tbSINHLIEUx;
+            }
+        }
+        private ObjectSet<tbSINHLIEU> _tbSINHLIEUx;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -464,14 +496,6 @@ namespace DO
         #region AddTo Methods
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the sysdiagrams EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTosysdiagrams(sysdiagram sysdiagram)
-        {
-            base.AddObject("sysdiagrams", sysdiagram);
-        }
-    
-        /// <summary>
         /// Deprecated Method for adding a new object to the tbBENHs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbBENHs(tbBENH tbBENH)
@@ -485,6 +509,14 @@ namespace DO
         public void AddTotbBENHANs(tbBENHAN tbBENHAN)
         {
             base.AddObject("tbBENHANs", tbBENHAN);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tbBENHNHANs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotbBENHNHANs(tbBENHNHAN tbBENHNHAN)
+        {
+            base.AddObject("tbBENHNHANs", tbBENHNHAN);
         }
     
         /// <summary>
@@ -584,6 +616,14 @@ namespace DO
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the tbNHOMTINHNANGs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotbNHOMTINHNANGs(tbNHOMTINHNANG tbNHOMTINHNANG)
+        {
+            base.AddObject("tbNHOMTINHNANGs", tbNHOMTINHNANG);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the tbPHONGKHAMs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbPHONGKHAMs(tbPHONGKHAM tbPHONGKHAM)
@@ -597,6 +637,14 @@ namespace DO
         public void AddTotbQUYENs(tbQUYEN tbQUYEN)
         {
             base.AddObject("tbQUYENs", tbQUYEN);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the tbSINHLIEUx EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotbSINHLIEUx(tbSINHLIEU tbSINHLIEU)
+        {
+            base.AddObject("tbSINHLIEUx", tbSINHLIEU);
         }
     
         /// <summary>
@@ -662,161 +710,6 @@ namespace DO
     #endregion
     
     #region Entities
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="sysdiagram")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class sysdiagram : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new sysdiagram object.
-        /// </summary>
-        /// <param name="name">Initial value of the name property.</param>
-        /// <param name="principal_id">Initial value of the principal_id property.</param>
-        /// <param name="diagram_id">Initial value of the diagram_id property.</param>
-        public static sysdiagram Createsysdiagram(global::System.String name, global::System.Int32 principal_id, global::System.Int32 diagram_id)
-        {
-            sysdiagram sysdiagram = new sysdiagram();
-            sysdiagram.name = name;
-            sysdiagram.principal_id = principal_id;
-            sysdiagram.diagram_id = diagram_id;
-            return sysdiagram;
-        }
-
-        #endregion
-        #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String name
-        {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                OnnameChanging(value);
-                ReportPropertyChanging("name");
-                _name = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("name");
-                OnnameChanged();
-            }
-        }
-        private global::System.String _name;
-        partial void OnnameChanging(global::System.String value);
-        partial void OnnameChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 principal_id
-        {
-            get
-            {
-                return _principal_id;
-            }
-            set
-            {
-                Onprincipal_idChanging(value);
-                ReportPropertyChanging("principal_id");
-                _principal_id = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("principal_id");
-                Onprincipal_idChanged();
-            }
-        }
-        private global::System.Int32 _principal_id;
-        partial void Onprincipal_idChanging(global::System.Int32 value);
-        partial void Onprincipal_idChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 diagram_id
-        {
-            get
-            {
-                return _diagram_id;
-            }
-            set
-            {
-                if (_diagram_id != value)
-                {
-                    Ondiagram_idChanging(value);
-                    ReportPropertyChanging("diagram_id");
-                    _diagram_id = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("diagram_id");
-                    Ondiagram_idChanged();
-                }
-            }
-        }
-        private global::System.Int32 _diagram_id;
-        partial void Ondiagram_idChanging(global::System.Int32 value);
-        partial void Ondiagram_idChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Int32> version
-        {
-            get
-            {
-                return _version;
-            }
-            set
-            {
-                OnversionChanging(value);
-                ReportPropertyChanging("version");
-                _version = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("version");
-                OnversionChanged();
-            }
-        }
-        private Nullable<global::System.Int32> _version;
-        partial void OnversionChanging(Nullable<global::System.Int32> value);
-        partial void OnversionChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.Byte[] definition
-        {
-            get
-            {
-                return StructuralObject.GetValidValue(_definition);
-            }
-            set
-            {
-                OndefinitionChanging(value);
-                ReportPropertyChanging("definition");
-                _definition = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("definition");
-                OndefinitionChanged();
-            }
-        }
-        private global::System.Byte[] _definition;
-        partial void OndefinitionChanging(global::System.Byte[] value);
-        partial void OndefinitionChanged();
-
-        #endregion
-    
-    }
     
     /// <summary>
     /// No Metadata Documentation available.
@@ -1308,6 +1201,307 @@ namespace DO
         private global::System.String _TRANGTHAIBENHAN;
         partial void OnTRANGTHAIBENHANChanging(global::System.String value);
         partial void OnTRANGTHAIBENHANChanged();
+
+        #endregion
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbBENHNHAN")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tbBENHNHAN : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tbBENHNHAN object.
+        /// </summary>
+        /// <param name="mABENHNHAN">Initial value of the MABENHNHAN property.</param>
+        /// <param name="tEN">Initial value of the TEN property.</param>
+        /// <param name="tUOI">Initial value of the TUOI property.</param>
+        /// <param name="gIOITINH">Initial value of the GIOITINH property.</param>
+        public static tbBENHNHAN CreatetbBENHNHAN(global::System.String mABENHNHAN, global::System.String tEN, global::System.String tUOI, global::System.String gIOITINH)
+        {
+            tbBENHNHAN tbBENHNHAN = new tbBENHNHAN();
+            tbBENHNHAN.MABENHNHAN = mABENHNHAN;
+            tbBENHNHAN.TEN = tEN;
+            tbBENHNHAN.TUOI = tUOI;
+            tbBENHNHAN.GIOITINH = gIOITINH;
+            return tbBENHNHAN;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MABENHNHAN
+        {
+            get
+            {
+                return _MABENHNHAN;
+            }
+            set
+            {
+                if (_MABENHNHAN != value)
+                {
+                    OnMABENHNHANChanging(value);
+                    ReportPropertyChanging("MABENHNHAN");
+                    _MABENHNHAN = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("MABENHNHAN");
+                    OnMABENHNHANChanged();
+                }
+            }
+        }
+        private global::System.String _MABENHNHAN;
+        partial void OnMABENHNHANChanging(global::System.String value);
+        partial void OnMABENHNHANChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String HO
+        {
+            get
+            {
+                return _HO;
+            }
+            set
+            {
+                OnHOChanging(value);
+                ReportPropertyChanging("HO");
+                _HO = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("HO");
+                OnHOChanged();
+            }
+        }
+        private global::System.String _HO;
+        partial void OnHOChanging(global::System.String value);
+        partial void OnHOChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String TEN
+        {
+            get
+            {
+                return _TEN;
+            }
+            set
+            {
+                OnTENChanging(value);
+                ReportPropertyChanging("TEN");
+                _TEN = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("TEN");
+                OnTENChanged();
+            }
+        }
+        private global::System.String _TEN;
+        partial void OnTENChanging(global::System.String value);
+        partial void OnTENChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NGAYSINH
+        {
+            get
+            {
+                return _NGAYSINH;
+            }
+            set
+            {
+                OnNGAYSINHChanging(value);
+                ReportPropertyChanging("NGAYSINH");
+                _NGAYSINH = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NGAYSINH");
+                OnNGAYSINHChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NGAYSINH;
+        partial void OnNGAYSINHChanging(Nullable<global::System.DateTime> value);
+        partial void OnNGAYSINHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String TUOI
+        {
+            get
+            {
+                return _TUOI;
+            }
+            set
+            {
+                OnTUOIChanging(value);
+                ReportPropertyChanging("TUOI");
+                _TUOI = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("TUOI");
+                OnTUOIChanged();
+            }
+        }
+        private global::System.String _TUOI;
+        partial void OnTUOIChanging(global::System.String value);
+        partial void OnTUOIChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String GIOITINH
+        {
+            get
+            {
+                return _GIOITINH;
+            }
+            set
+            {
+                OnGIOITINHChanging(value);
+                ReportPropertyChanging("GIOITINH");
+                _GIOITINH = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("GIOITINH");
+                OnGIOITINHChanged();
+            }
+        }
+        private global::System.String _GIOITINH;
+        partial void OnGIOITINHChanging(global::System.String value);
+        partial void OnGIOITINHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TINH
+        {
+            get
+            {
+                return _TINH;
+            }
+            set
+            {
+                OnTINHChanging(value);
+                ReportPropertyChanging("TINH");
+                _TINH = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TINH");
+                OnTINHChanged();
+            }
+        }
+        private global::System.String _TINH;
+        partial void OnTINHChanging(global::System.String value);
+        partial void OnTINHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String QUAN
+        {
+            get
+            {
+                return _QUAN;
+            }
+            set
+            {
+                OnQUANChanging(value);
+                ReportPropertyChanging("QUAN");
+                _QUAN = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("QUAN");
+                OnQUANChanged();
+            }
+        }
+        private global::System.String _QUAN;
+        partial void OnQUANChanging(global::System.String value);
+        partial void OnQUANChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String DUONG
+        {
+            get
+            {
+                return _DUONG;
+            }
+            set
+            {
+                OnDUONGChanging(value);
+                ReportPropertyChanging("DUONG");
+                _DUONG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("DUONG");
+                OnDUONGChanged();
+            }
+        }
+        private global::System.String _DUONG;
+        partial void OnDUONGChanging(global::System.String value);
+        partial void OnDUONGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NGAYTAO
+        {
+            get
+            {
+                return _NGAYTAO;
+            }
+            set
+            {
+                OnNGAYTAOChanging(value);
+                ReportPropertyChanging("NGAYTAO");
+                _NGAYTAO = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NGAYTAO");
+                OnNGAYTAOChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NGAYTAO;
+        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
+        partial void OnNGAYTAOChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> TRANGTHAI
+        {
+            get
+            {
+                return _TRANGTHAI;
+            }
+            set
+            {
+                OnTRANGTHAIChanging(value);
+                ReportPropertyChanging("TRANGTHAI");
+                _TRANGTHAI = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRANGTHAI");
+                OnTRANGTHAIChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _TRANGTHAI;
+        partial void OnTRANGTHAIChanging(Nullable<global::System.Boolean> value);
+        partial void OnTRANGTHAIChanged();
 
         #endregion
     
@@ -3421,6 +3615,87 @@ namespace DO
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbNHOMTINHNANG")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tbNHOMTINHNANG : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tbNHOMTINHNANG object.
+        /// </summary>
+        /// <param name="mANHOMTINHNANG">Initial value of the MANHOMTINHNANG property.</param>
+        /// <param name="tENNHOMTINHNANG">Initial value of the TENNHOMTINHNANG property.</param>
+        public static tbNHOMTINHNANG CreatetbNHOMTINHNANG(global::System.String mANHOMTINHNANG, global::System.String tENNHOMTINHNANG)
+        {
+            tbNHOMTINHNANG tbNHOMTINHNANG = new tbNHOMTINHNANG();
+            tbNHOMTINHNANG.MANHOMTINHNANG = mANHOMTINHNANG;
+            tbNHOMTINHNANG.TENNHOMTINHNANG = tENNHOMTINHNANG;
+            return tbNHOMTINHNANG;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MANHOMTINHNANG
+        {
+            get
+            {
+                return _MANHOMTINHNANG;
+            }
+            set
+            {
+                if (_MANHOMTINHNANG != value)
+                {
+                    OnMANHOMTINHNANGChanging(value);
+                    ReportPropertyChanging("MANHOMTINHNANG");
+                    _MANHOMTINHNANG = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("MANHOMTINHNANG");
+                    OnMANHOMTINHNANGChanged();
+                }
+            }
+        }
+        private global::System.String _MANHOMTINHNANG;
+        partial void OnMANHOMTINHNANGChanging(global::System.String value);
+        partial void OnMANHOMTINHNANGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String TENNHOMTINHNANG
+        {
+            get
+            {
+                return _TENNHOMTINHNANG;
+            }
+            set
+            {
+                OnTENNHOMTINHNANGChanging(value);
+                ReportPropertyChanging("TENNHOMTINHNANG");
+                _TENNHOMTINHNANG = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("TENNHOMTINHNANG");
+                OnTENNHOMTINHNANGChanged();
+            }
+        }
+        private global::System.String _TENNHOMTINHNANG;
+        partial void OnTENNHOMTINHNANGChanging(global::System.String value);
+        partial void OnTENNHOMTINHNANGChanged();
+
+        #endregion
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbPHONGKHAM")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -3666,6 +3941,329 @@ namespace DO
         private global::System.String _TENQUYEN;
         partial void OnTENQUYENChanging(global::System.String value);
         partial void OnTENQUYENChanged();
+
+        #endregion
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbSINHLIEU")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tbSINHLIEU : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tbSINHLIEU object.
+        /// </summary>
+        /// <param name="mASINHLIEU">Initial value of the MASINHLIEU property.</param>
+        /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
+        /// <param name="mAYTA">Initial value of the MAYTA property.</param>
+        public static tbSINHLIEU CreatetbSINHLIEU(global::System.String mASINHLIEU, global::System.String mABENHAN, global::System.String mAYTA)
+        {
+            tbSINHLIEU tbSINHLIEU = new tbSINHLIEU();
+            tbSINHLIEU.MASINHLIEU = mASINHLIEU;
+            tbSINHLIEU.MABENHAN = mABENHAN;
+            tbSINHLIEU.MAYTA = mAYTA;
+            return tbSINHLIEU;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MASINHLIEU
+        {
+            get
+            {
+                return _MASINHLIEU;
+            }
+            set
+            {
+                if (_MASINHLIEU != value)
+                {
+                    OnMASINHLIEUChanging(value);
+                    ReportPropertyChanging("MASINHLIEU");
+                    _MASINHLIEU = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("MASINHLIEU");
+                    OnMASINHLIEUChanged();
+                }
+            }
+        }
+        private global::System.String _MASINHLIEU;
+        partial void OnMASINHLIEUChanging(global::System.String value);
+        partial void OnMASINHLIEUChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MABENHAN
+        {
+            get
+            {
+                return _MABENHAN;
+            }
+            set
+            {
+                OnMABENHANChanging(value);
+                ReportPropertyChanging("MABENHAN");
+                _MABENHAN = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("MABENHAN");
+                OnMABENHANChanged();
+            }
+        }
+        private global::System.String _MABENHAN;
+        partial void OnMABENHANChanging(global::System.String value);
+        partial void OnMABENHANChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MAYTA
+        {
+            get
+            {
+                return _MAYTA;
+            }
+            set
+            {
+                OnMAYTAChanging(value);
+                ReportPropertyChanging("MAYTA");
+                _MAYTA = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("MAYTA");
+                OnMAYTAChanged();
+            }
+        }
+        private global::System.String _MAYTA;
+        partial void OnMAYTAChanging(global::System.String value);
+        partial void OnMAYTAChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MACH
+        {
+            get
+            {
+                return _MACH;
+            }
+            set
+            {
+                OnMACHChanging(value);
+                ReportPropertyChanging("MACH");
+                _MACH = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MACH");
+                OnMACHChanged();
+            }
+        }
+        private global::System.String _MACH;
+        partial void OnMACHChanging(global::System.String value);
+        partial void OnMACHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NHIPTHO
+        {
+            get
+            {
+                return _NHIPTHO;
+            }
+            set
+            {
+                OnNHIPTHOChanging(value);
+                ReportPropertyChanging("NHIPTHO");
+                _NHIPTHO = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NHIPTHO");
+                OnNHIPTHOChanged();
+            }
+        }
+        private global::System.String _NHIPTHO;
+        partial void OnNHIPTHOChanging(global::System.String value);
+        partial void OnNHIPTHOChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NHIETDO
+        {
+            get
+            {
+                return _NHIETDO;
+            }
+            set
+            {
+                OnNHIETDOChanging(value);
+                ReportPropertyChanging("NHIETDO");
+                _NHIETDO = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NHIETDO");
+                OnNHIETDOChanged();
+            }
+        }
+        private global::System.String _NHIETDO;
+        partial void OnNHIETDOChanging(global::System.String value);
+        partial void OnNHIETDOChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String HUYETAP
+        {
+            get
+            {
+                return _HUYETAP;
+            }
+            set
+            {
+                OnHUYETAPChanging(value);
+                ReportPropertyChanging("HUYETAP");
+                _HUYETAP = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("HUYETAP");
+                OnHUYETAPChanged();
+            }
+        }
+        private global::System.String _HUYETAP;
+        partial void OnHUYETAPChanging(global::System.String value);
+        partial void OnHUYETAPChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CHIEUCAO
+        {
+            get
+            {
+                return _CHIEUCAO;
+            }
+            set
+            {
+                OnCHIEUCAOChanging(value);
+                ReportPropertyChanging("CHIEUCAO");
+                _CHIEUCAO = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CHIEUCAO");
+                OnCHIEUCAOChanged();
+            }
+        }
+        private global::System.String _CHIEUCAO;
+        partial void OnCHIEUCAOChanging(global::System.String value);
+        partial void OnCHIEUCAOChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CANBANG
+        {
+            get
+            {
+                return _CANBANG;
+            }
+            set
+            {
+                OnCANBANGChanging(value);
+                ReportPropertyChanging("CANBANG");
+                _CANBANG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CANBANG");
+                OnCANBANGChanged();
+            }
+        }
+        private global::System.String _CANBANG;
+        partial void OnCANBANGChanging(global::System.String value);
+        partial void OnCANBANGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String VONGBUNG
+        {
+            get
+            {
+                return _VONGBUNG;
+            }
+            set
+            {
+                OnVONGBUNGChanging(value);
+                ReportPropertyChanging("VONGBUNG");
+                _VONGBUNG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("VONGBUNG");
+                OnVONGBUNGChanged();
+            }
+        }
+        private global::System.String _VONGBUNG;
+        partial void OnVONGBUNGChanging(global::System.String value);
+        partial void OnVONGBUNGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NGAYTAO
+        {
+            get
+            {
+                return _NGAYTAO;
+            }
+            set
+            {
+                OnNGAYTAOChanging(value);
+                ReportPropertyChanging("NGAYTAO");
+                _NGAYTAO = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NGAYTAO");
+                OnNGAYTAOChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NGAYTAO;
+        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
+        partial void OnNGAYTAOChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> TRANGTHAI
+        {
+            get
+            {
+                return _TRANGTHAI;
+            }
+            set
+            {
+                OnTRANGTHAIChanging(value);
+                ReportPropertyChanging("TRANGTHAI");
+                _TRANGTHAI = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRANGTHAI");
+                OnTRANGTHAIChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _TRANGTHAI;
+        partial void OnTRANGTHAIChanging(Nullable<global::System.Boolean> value);
+        partial void OnTRANGTHAIChanged();
 
         #endregion
     
@@ -4305,10 +4903,12 @@ namespace DO
         /// Create a new tbTINHNANG object.
         /// </summary>
         /// <param name="mATINHNANG">Initial value of the MATINHNANG property.</param>
-        public static tbTINHNANG CreatetbTINHNANG(global::System.String mATINHNANG)
+        /// <param name="mANHOMTINHNANG">Initial value of the MANHOMTINHNANG property.</param>
+        public static tbTINHNANG CreatetbTINHNANG(global::System.String mATINHNANG, global::System.String mANHOMTINHNANG)
         {
             tbTINHNANG tbTINHNANG = new tbTINHNANG();
             tbTINHNANG.MATINHNANG = mATINHNANG;
+            tbTINHNANG.MANHOMTINHNANG = mANHOMTINHNANG;
             return tbTINHNANG;
         }
 
@@ -4365,6 +4965,30 @@ namespace DO
         private global::System.String _TENTINHNANG;
         partial void OnTENTINHNANGChanging(global::System.String value);
         partial void OnTENTINHNANGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MANHOMTINHNANG
+        {
+            get
+            {
+                return _MANHOMTINHNANG;
+            }
+            set
+            {
+                OnMANHOMTINHNANGChanging(value);
+                ReportPropertyChanging("MANHOMTINHNANG");
+                _MANHOMTINHNANG = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("MANHOMTINHNANG");
+                OnMANHOMTINHNANGChanged();
+            }
+        }
+        private global::System.String _MANHOMTINHNANG;
+        partial void OnMANHOMTINHNANGChanging(global::System.String value);
+        partial void OnMANHOMTINHNANGChanged();
 
         #endregion
     
