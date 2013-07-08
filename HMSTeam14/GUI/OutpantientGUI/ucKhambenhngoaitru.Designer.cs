@@ -546,7 +546,7 @@
             // 
             this.tabSinhlieu.Controls.Add(this.pnSinhlieu);
             this.tabSinhlieu.Name = "tabSinhlieu";
-            this.tabSinhlieu.Size = new System.Drawing.Size(980, 388);
+            this.tabSinhlieu.Size = new System.Drawing.Size(982, 389);
             this.tabSinhlieu.Text = "Sinh liệu - Thể trạng";
             // 
             // pnSinhlieu
@@ -583,16 +583,16 @@
             this.pnSinhlieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnSinhlieu.Location = new System.Drawing.Point(0, 0);
             this.pnSinhlieu.Name = "pnSinhlieu";
-            this.pnSinhlieu.Size = new System.Drawing.Size(980, 388);
+            this.pnSinhlieu.Size = new System.Drawing.Size(982, 389);
             this.pnSinhlieu.TabIndex = 0;
             // 
             // grdSinhlieu
             // 
             this.grdSinhlieu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grdSinhlieu.Location = new System.Drawing.Point(2, 225);
+            this.grdSinhlieu.Location = new System.Drawing.Point(2, 226);
             this.grdSinhlieu.MainView = this.gridSinhlieu;
             this.grdSinhlieu.Name = "grdSinhlieu";
-            this.grdSinhlieu.Size = new System.Drawing.Size(976, 161);
+            this.grdSinhlieu.Size = new System.Drawing.Size(978, 161);
             this.grdSinhlieu.TabIndex = 72;
             this.grdSinhlieu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridSinhlieu});
@@ -607,7 +607,7 @@
             // 
             this.labelControl29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl29.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl29.Location = new System.Drawing.Point(863, 129);
+            this.labelControl29.Location = new System.Drawing.Point(865, 129);
             this.labelControl29.Name = "labelControl29";
             this.labelControl29.Size = new System.Drawing.Size(27, 16);
             this.labelControl29.TabIndex = 70;
@@ -617,7 +617,7 @@
             // 
             this.labelControl27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl27.Location = new System.Drawing.Point(864, 99);
+            this.labelControl27.Location = new System.Drawing.Point(866, 99);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(23, 16);
             this.labelControl27.TabIndex = 71;
@@ -627,7 +627,7 @@
             // 
             this.labelControl26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl26.Location = new System.Drawing.Point(863, 63);
+            this.labelControl26.Location = new System.Drawing.Point(865, 63);
             this.labelControl26.Name = "labelControl26";
             this.labelControl26.Size = new System.Drawing.Size(27, 16);
             this.labelControl26.TabIndex = 69;
@@ -637,7 +637,7 @@
             // 
             this.txtVongbung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtVongbung.Enabled = false;
-            this.txtVongbung.Location = new System.Drawing.Point(605, 126);
+            this.txtVongbung.Location = new System.Drawing.Point(607, 126);
             this.txtVongbung.Name = "txtVongbung";
             this.txtVongbung.Size = new System.Drawing.Size(227, 20);
             this.txtVongbung.TabIndex = 68;
@@ -646,7 +646,7 @@
             // 
             this.txtCannang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCannang.Enabled = false;
-            this.txtCannang.Location = new System.Drawing.Point(605, 94);
+            this.txtCannang.Location = new System.Drawing.Point(607, 94);
             this.txtCannang.Name = "txtCannang";
             this.txtCannang.Size = new System.Drawing.Size(227, 20);
             this.txtCannang.TabIndex = 67;
@@ -655,7 +655,7 @@
             // 
             this.txtChieucao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtChieucao.Enabled = false;
-            this.txtChieucao.Location = new System.Drawing.Point(605, 62);
+            this.txtChieucao.Location = new System.Drawing.Point(607, 62);
             this.txtChieucao.Name = "txtChieucao";
             this.txtChieucao.Size = new System.Drawing.Size(227, 20);
             this.txtChieucao.TabIndex = 66;
@@ -664,7 +664,7 @@
             // 
             this.labelControl25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl25.Location = new System.Drawing.Point(496, 124);
+            this.labelControl25.Location = new System.Drawing.Point(498, 124);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(66, 16);
             this.labelControl25.TabIndex = 65;
@@ -674,7 +674,7 @@
             // 
             this.labelControl24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl24.Location = new System.Drawing.Point(496, 93);
+            this.labelControl24.Location = new System.Drawing.Point(498, 93);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(59, 16);
             this.labelControl24.TabIndex = 64;
@@ -684,7 +684,7 @@
             // 
             this.labelControl23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl23.Location = new System.Drawing.Point(496, 60);
+            this.labelControl23.Location = new System.Drawing.Point(498, 60);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(61, 16);
             this.labelControl23.TabIndex = 63;
@@ -693,7 +693,7 @@
             // simpleButton1
             // 
             this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton1.Location = new System.Drawing.Point(391, 190);
+            this.simpleButton1.Location = new System.Drawing.Point(393, 190);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(106, 23);
             this.simpleButton1.TabIndex = 62;
@@ -703,7 +703,7 @@
             // 
             this.labelControl32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl32.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl32.Location = new System.Drawing.Point(185, 194);
+            this.labelControl32.Location = new System.Drawing.Point(187, 194);
             this.labelControl32.Name = "labelControl32";
             this.labelControl32.Size = new System.Drawing.Size(37, 16);
             this.labelControl32.TabIndex = 58;
@@ -713,7 +713,7 @@
             // 
             this.dateEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(247, 191);
+            this.dateEdit1.Location = new System.Drawing.Point(249, 191);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEdit1.Properties.Appearance.Options.UseFont = true;
@@ -728,7 +728,7 @@
             // 
             this.labelControl28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl28.Location = new System.Drawing.Point(11, 178);
+            this.labelControl28.Location = new System.Drawing.Point(13, 178);
             this.labelControl28.Name = "labelControl28";
             this.labelControl28.Size = new System.Drawing.Size(148, 19);
             this.labelControl28.TabIndex = 55;
@@ -738,7 +738,7 @@
             // 
             this.labelControl6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(394, 133);
+            this.labelControl6.Location = new System.Drawing.Point(396, 133);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(51, 16);
             this.labelControl6.TabIndex = 52;
@@ -748,7 +748,7 @@
             // 
             this.textEdit5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit5.Enabled = false;
-            this.textEdit5.Location = new System.Drawing.Point(133, 134);
+            this.textEdit5.Location = new System.Drawing.Point(135, 134);
             this.textEdit5.Name = "textEdit5";
             this.textEdit5.Size = new System.Drawing.Size(221, 20);
             this.textEdit5.TabIndex = 51;
@@ -757,7 +757,7 @@
             // 
             this.labelControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(238, 108);
+            this.labelControl5.Location = new System.Drawing.Point(240, 108);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(6, 18);
             this.labelControl5.TabIndex = 50;
@@ -767,7 +767,7 @@
             // 
             this.labelControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(394, 108);
+            this.labelControl4.Location = new System.Drawing.Point(396, 108);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(37, 16);
             this.labelControl4.TabIndex = 49;
@@ -777,7 +777,7 @@
             // 
             this.textEdit4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit4.Enabled = false;
-            this.textEdit4.Location = new System.Drawing.Point(250, 108);
+            this.textEdit4.Location = new System.Drawing.Point(252, 108);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Size = new System.Drawing.Size(103, 20);
             this.textEdit4.TabIndex = 48;
@@ -786,7 +786,7 @@
             // 
             this.textEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit3.Enabled = false;
-            this.textEdit3.Location = new System.Drawing.Point(132, 108);
+            this.textEdit3.Location = new System.Drawing.Point(134, 108);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Size = new System.Drawing.Size(103, 20);
             this.textEdit3.TabIndex = 47;
@@ -795,7 +795,7 @@
             // 
             this.lbldoC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbldoC.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldoC.Location = new System.Drawing.Point(394, 81);
+            this.lbldoC.Location = new System.Drawing.Point(396, 81);
             this.lbldoC.Name = "lbldoC";
             this.lbldoC.Size = new System.Drawing.Size(26, 16);
             this.lbldoC.TabIndex = 46;
@@ -805,7 +805,7 @@
             // 
             this.lbllanphut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbllanphut.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllanphut.Location = new System.Drawing.Point(394, 57);
+            this.lbllanphut.Location = new System.Drawing.Point(396, 57);
             this.lbllanphut.Name = "lbllanphut";
             this.lbllanphut.Size = new System.Drawing.Size(51, 16);
             this.lbllanphut.TabIndex = 45;
@@ -815,7 +815,7 @@
             // 
             this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit2.Enabled = false;
-            this.textEdit2.Location = new System.Drawing.Point(133, 58);
+            this.textEdit2.Location = new System.Drawing.Point(135, 58);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(221, 20);
             this.textEdit2.TabIndex = 44;
@@ -824,7 +824,7 @@
             // 
             this.lblNhieptho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNhieptho.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhieptho.Location = new System.Drawing.Point(39, 136);
+            this.lblNhieptho.Location = new System.Drawing.Point(41, 136);
             this.lblNhieptho.Name = "lblNhieptho";
             this.lblNhieptho.Size = new System.Drawing.Size(60, 16);
             this.lblNhieptho.TabIndex = 40;
@@ -834,7 +834,7 @@
             // 
             this.lblHuyetap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHuyetap.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHuyetap.Location = new System.Drawing.Point(38, 111);
+            this.lblHuyetap.Location = new System.Drawing.Point(40, 111);
             this.lblHuyetap.Name = "lblHuyetap";
             this.lblHuyetap.Size = new System.Drawing.Size(60, 16);
             this.lblHuyetap.TabIndex = 39;
@@ -844,7 +844,7 @@
             // 
             this.lblNhietdo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNhietdo.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhietdo.Location = new System.Drawing.Point(39, 85);
+            this.lblNhietdo.Location = new System.Drawing.Point(41, 85);
             this.lblNhietdo.Name = "lblNhietdo";
             this.lblNhietdo.Size = new System.Drawing.Size(58, 16);
             this.lblNhietdo.TabIndex = 38;
@@ -854,7 +854,7 @@
             // 
             this.lblMach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMach.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMach.Location = new System.Drawing.Point(39, 61);
+            this.lblMach.Location = new System.Drawing.Point(41, 61);
             this.lblMach.Name = "lblMach";
             this.lblMach.Size = new System.Drawing.Size(39, 16);
             this.lblMach.TabIndex = 37;
@@ -864,7 +864,7 @@
             // 
             this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(133, 82);
+            this.textEdit1.Location = new System.Drawing.Point(135, 82);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Size = new System.Drawing.Size(221, 20);
             this.textEdit1.TabIndex = 35;
@@ -873,7 +873,7 @@
             // 
             this.lblNhaplieu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNhaplieu.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhaplieu.Location = new System.Drawing.Point(11, 15);
+            this.lblNhaplieu.Location = new System.Drawing.Point(13, 15);
             this.lblNhaplieu.Name = "lblNhaplieu";
             this.lblNhaplieu.Size = new System.Drawing.Size(174, 22);
             this.lblNhaplieu.TabIndex = 32;
@@ -883,7 +883,7 @@
             // 
             this.tabTrieuchung.Controls.Add(this.pnTrieuchung);
             this.tabTrieuchung.Name = "tabTrieuchung";
-            this.tabTrieuchung.Size = new System.Drawing.Size(980, 388);
+            this.tabTrieuchung.Size = new System.Drawing.Size(982, 389);
             this.tabTrieuchung.Text = "Triệu chứng";
             // 
             // pnTrieuchung
@@ -913,13 +913,13 @@
             this.pnTrieuchung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnTrieuchung.Location = new System.Drawing.Point(0, 0);
             this.pnTrieuchung.Name = "pnTrieuchung";
-            this.pnTrieuchung.Size = new System.Drawing.Size(980, 388);
+            this.pnTrieuchung.Size = new System.Drawing.Size(982, 389);
             this.pnTrieuchung.TabIndex = 0;
             // 
             // btnLuu1
             // 
             this.btnLuu1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu1.Location = new System.Drawing.Point(842, 286);
+            this.btnLuu1.Location = new System.Drawing.Point(844, 286);
             this.btnLuu1.Name = "btnLuu1";
             this.btnLuu1.Size = new System.Drawing.Size(96, 23);
             this.btnLuu1.TabIndex = 46;
@@ -936,7 +936,7 @@
             // 
             this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(1, 215);
+            this.labelControl1.Location = new System.Drawing.Point(3, 215);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(154, 22);
             this.labelControl1.TabIndex = 44;
@@ -945,7 +945,7 @@
             // txtBenhphoi
             // 
             this.txtBenhphoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBenhphoi.Location = new System.Drawing.Point(665, 74);
+            this.txtBenhphoi.Location = new System.Drawing.Point(667, 74);
             this.txtBenhphoi.Name = "txtBenhphoi";
             this.txtBenhphoi.Size = new System.Drawing.Size(273, 20);
             this.txtBenhphoi.TabIndex = 42;
@@ -953,7 +953,7 @@
             // txtBenhtruyennhiem
             // 
             this.txtBenhtruyennhiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBenhtruyennhiem.Location = new System.Drawing.Point(665, 107);
+            this.txtBenhtruyennhiem.Location = new System.Drawing.Point(667, 107);
             this.txtBenhtruyennhiem.Name = "txtBenhtruyennhiem";
             this.txtBenhtruyennhiem.Size = new System.Drawing.Size(273, 20);
             this.txtBenhtruyennhiem.TabIndex = 43;
@@ -961,7 +961,7 @@
             // txtBenhtieuhoa
             // 
             this.txtBenhtieuhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBenhtieuhoa.Location = new System.Drawing.Point(665, 41);
+            this.txtBenhtieuhoa.Location = new System.Drawing.Point(667, 41);
             this.txtBenhtieuhoa.Name = "txtBenhtieuhoa";
             this.txtBenhtieuhoa.Size = new System.Drawing.Size(273, 20);
             this.txtBenhtieuhoa.TabIndex = 41;
@@ -969,7 +969,7 @@
             // chkBenhtruyennhiem
             // 
             this.chkBenhtruyennhiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhtruyennhiem.Location = new System.Drawing.Point(504, 108);
+            this.chkBenhtruyennhiem.Location = new System.Drawing.Point(506, 108);
             this.chkBenhtruyennhiem.Name = "chkBenhtruyennhiem";
             this.chkBenhtruyennhiem.Properties.Caption = "Bệnh truyền nhiễm";
             this.chkBenhtruyennhiem.Size = new System.Drawing.Size(134, 19);
@@ -978,7 +978,7 @@
             // chkBenhphoi
             // 
             this.chkBenhphoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhphoi.Location = new System.Drawing.Point(504, 75);
+            this.chkBenhphoi.Location = new System.Drawing.Point(506, 75);
             this.chkBenhphoi.Name = "chkBenhphoi";
             this.chkBenhphoi.Properties.Caption = "Bệnh phổi (hen,lao)";
             this.chkBenhphoi.Size = new System.Drawing.Size(124, 19);
@@ -987,7 +987,7 @@
             // chkBenhdaday
             // 
             this.chkBenhdaday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhdaday.Location = new System.Drawing.Point(504, 42);
+            this.chkBenhdaday.Location = new System.Drawing.Point(506, 42);
             this.chkBenhdaday.Name = "chkBenhdaday";
             this.chkBenhdaday.Properties.Caption = "Bệnh dạ dày -tiêu hóa";
             this.chkBenhdaday.Size = new System.Drawing.Size(134, 19);
@@ -996,7 +996,7 @@
             // txtBenhtieuduong
             // 
             this.txtBenhtieuduong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBenhtieuduong.Location = new System.Drawing.Point(665, 140);
+            this.txtBenhtieuduong.Location = new System.Drawing.Point(667, 140);
             this.txtBenhtieuduong.Name = "txtBenhtieuduong";
             this.txtBenhtieuduong.Size = new System.Drawing.Size(273, 20);
             this.txtBenhtieuduong.TabIndex = 37;
@@ -1004,7 +1004,7 @@
             // txtBenhtimmach
             // 
             this.txtBenhtimmach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBenhtimmach.Location = new System.Drawing.Point(187, 170);
+            this.txtBenhtimmach.Location = new System.Drawing.Point(189, 170);
             this.txtBenhtimmach.Name = "txtBenhtimmach";
             this.txtBenhtimmach.Size = new System.Drawing.Size(272, 20);
             this.txtBenhtimmach.TabIndex = 36;
@@ -1012,7 +1012,7 @@
             // txtBenhcaphuyetap
             // 
             this.txtBenhcaphuyetap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBenhcaphuyetap.Location = new System.Drawing.Point(187, 137);
+            this.txtBenhcaphuyetap.Location = new System.Drawing.Point(189, 137);
             this.txtBenhcaphuyetap.Name = "txtBenhcaphuyetap";
             this.txtBenhcaphuyetap.Size = new System.Drawing.Size(272, 20);
             this.txtBenhcaphuyetap.TabIndex = 35;
@@ -1020,7 +1020,7 @@
             // txtDiung
             // 
             this.txtDiung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDiung.Location = new System.Drawing.Point(187, 104);
+            this.txtDiung.Location = new System.Drawing.Point(189, 104);
             this.txtDiung.Name = "txtDiung";
             this.txtDiung.Size = new System.Drawing.Size(272, 20);
             this.txtDiung.TabIndex = 34;
@@ -1028,7 +1028,7 @@
             // txtPhanungthuoc
             // 
             this.txtPhanungthuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPhanungthuoc.Location = new System.Drawing.Point(187, 71);
+            this.txtPhanungthuoc.Location = new System.Drawing.Point(189, 71);
             this.txtPhanungthuoc.Name = "txtPhanungthuoc";
             this.txtPhanungthuoc.Size = new System.Drawing.Size(272, 20);
             this.txtPhanungthuoc.TabIndex = 33;
@@ -1036,7 +1036,7 @@
             // txtChaymaulau
             // 
             this.txtChaymaulau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtChaymaulau.Location = new System.Drawing.Point(187, 41);
+            this.txtChaymaulau.Location = new System.Drawing.Point(189, 41);
             this.txtChaymaulau.Name = "txtChaymaulau";
             this.txtChaymaulau.Size = new System.Drawing.Size(272, 20);
             this.txtChaymaulau.TabIndex = 32;
@@ -1045,7 +1045,7 @@
             // 
             this.lblnhaplieu2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblnhaplieu2.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnhaplieu2.Location = new System.Drawing.Point(1, 5);
+            this.lblnhaplieu2.Location = new System.Drawing.Point(3, 5);
             this.lblnhaplieu2.Name = "lblnhaplieu2";
             this.lblnhaplieu2.Size = new System.Drawing.Size(115, 22);
             this.lblnhaplieu2.TabIndex = 31;
@@ -1054,7 +1054,7 @@
             // chkBenhtieuduong
             // 
             this.chkBenhtieuduong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhtieuduong.Location = new System.Drawing.Point(504, 141);
+            this.chkBenhtieuduong.Location = new System.Drawing.Point(506, 141);
             this.chkBenhtieuduong.Name = "chkBenhtieuduong";
             this.chkBenhtieuduong.Properties.Caption = "Bệnh tiểu đường";
             this.chkBenhtieuduong.Size = new System.Drawing.Size(114, 19);
@@ -1063,7 +1063,7 @@
             // chkBenhtimmach
             // 
             this.chkBenhtimmach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhtimmach.Location = new System.Drawing.Point(26, 171);
+            this.chkBenhtimmach.Location = new System.Drawing.Point(28, 171);
             this.chkBenhtimmach.Name = "chkBenhtimmach";
             this.chkBenhtimmach.Properties.Caption = "Bệnh tim mạch";
             this.chkBenhtimmach.Size = new System.Drawing.Size(101, 19);
@@ -1072,7 +1072,7 @@
             // chkBenhcaohuyetap
             // 
             this.chkBenhcaohuyetap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhcaohuyetap.Location = new System.Drawing.Point(26, 138);
+            this.chkBenhcaohuyetap.Location = new System.Drawing.Point(28, 138);
             this.chkBenhcaohuyetap.Name = "chkBenhcaohuyetap";
             this.chkBenhcaohuyetap.Properties.Caption = "Bệnh cao huyết áp";
             this.chkBenhcaohuyetap.Size = new System.Drawing.Size(124, 19);
@@ -1081,7 +1081,7 @@
             // chkBenhdiung
             // 
             this.chkBenhdiung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkBenhdiung.Location = new System.Drawing.Point(26, 105);
+            this.chkBenhdiung.Location = new System.Drawing.Point(28, 105);
             this.chkBenhdiung.Name = "chkBenhdiung";
             this.chkBenhdiung.Properties.Caption = "Bệnh dị ứng";
             this.chkBenhdiung.Size = new System.Drawing.Size(81, 19);
@@ -1090,7 +1090,7 @@
             // chkPhanungthuoc
             // 
             this.chkPhanungthuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkPhanungthuoc.Location = new System.Drawing.Point(26, 72);
+            this.chkPhanungthuoc.Location = new System.Drawing.Point(28, 72);
             this.chkPhanungthuoc.Name = "chkPhanungthuoc";
             this.chkPhanungthuoc.Properties.Caption = "Phản ứng thuốc";
             this.chkPhanungthuoc.Size = new System.Drawing.Size(101, 19);
@@ -1099,7 +1099,7 @@
             // chkChaymaulau
             // 
             this.chkChaymaulau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkChaymaulau.Location = new System.Drawing.Point(26, 39);
+            this.chkChaymaulau.Location = new System.Drawing.Point(28, 39);
             this.chkChaymaulau.Name = "chkChaymaulau";
             this.chkChaymaulau.Properties.Caption = "Chảy máu lâu";
             this.chkChaymaulau.Size = new System.Drawing.Size(101, 19);
@@ -1109,7 +1109,7 @@
             // 
             this.tabChuandoan.Controls.Add(this.pnChuandoan);
             this.tabChuandoan.Name = "tabChuandoan";
-            this.tabChuandoan.Size = new System.Drawing.Size(980, 388);
+            this.tabChuandoan.Size = new System.Drawing.Size(982, 389);
             this.tabChuandoan.Text = "Chuẩn đoán";
             // 
             // pnChuandoan
@@ -1132,7 +1132,7 @@
             this.pnChuandoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnChuandoan.Location = new System.Drawing.Point(0, 0);
             this.pnChuandoan.Name = "pnChuandoan";
-            this.pnChuandoan.Size = new System.Drawing.Size(980, 388);
+            this.pnChuandoan.Size = new System.Drawing.Size(982, 389);
             this.pnChuandoan.TabIndex = 0;
             // 
             // btnToathuoc
@@ -1261,7 +1261,7 @@
             // 
             this.tabKetoathuoc.Controls.Add(this.panelControl3);
             this.tabKetoathuoc.Name = "tabKetoathuoc";
-            this.tabKetoathuoc.Size = new System.Drawing.Size(980, 388);
+            this.tabKetoathuoc.Size = new System.Drawing.Size(982, 389);
             this.tabKetoathuoc.Text = "Kê toa thuốc";
             // 
             // panelControl3
@@ -1282,16 +1282,16 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 0);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(980, 388);
+            this.panelControl3.Size = new System.Drawing.Size(982, 389);
             this.panelControl3.TabIndex = 0;
             // 
             // grdDonthuocmau
             // 
             this.grdDonthuocmau.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grdDonthuocmau.Location = new System.Drawing.Point(2, 81);
+            this.grdDonthuocmau.Location = new System.Drawing.Point(2, 82);
             this.grdDonthuocmau.MainView = this.gridDonthuocmau;
             this.grdDonthuocmau.Name = "grdDonthuocmau";
-            this.grdDonthuocmau.Size = new System.Drawing.Size(976, 273);
+            this.grdDonthuocmau.Size = new System.Drawing.Size(978, 273);
             this.grdDonthuocmau.TabIndex = 47;
             this.grdDonthuocmau.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridDonthuocmau});
@@ -1382,9 +1382,9 @@
             this.panelControl7.Controls.Add(this.btnHuy3);
             this.panelControl7.Controls.Add(this.btnLuu3);
             this.panelControl7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl7.Location = new System.Drawing.Point(2, 354);
+            this.panelControl7.Location = new System.Drawing.Point(2, 355);
             this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Size = new System.Drawing.Size(976, 32);
+            this.panelControl7.Size = new System.Drawing.Size(978, 32);
             this.panelControl7.TabIndex = 46;
             // 
             // btnTaikham
@@ -1520,7 +1520,7 @@
             // 
             this.tabLichhen.Controls.Add(this.pnTaikham);
             this.tabLichhen.Name = "tabLichhen";
-            this.tabLichhen.Size = new System.Drawing.Size(980, 388);
+            this.tabLichhen.Size = new System.Drawing.Size(982, 389);
             this.tabLichhen.Text = "Hẹn tái khám và kết thúc";
             // 
             // pnTaikham
@@ -1545,7 +1545,7 @@
             this.pnTaikham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnTaikham.Location = new System.Drawing.Point(0, 0);
             this.pnTaikham.Name = "pnTaikham";
-            this.pnTaikham.Size = new System.Drawing.Size(980, 388);
+            this.pnTaikham.Size = new System.Drawing.Size(982, 389);
             this.pnTaikham.TabIndex = 0;
             // 
             // groupControl1
