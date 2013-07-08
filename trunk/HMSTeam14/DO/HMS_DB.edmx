@@ -6,7 +6,6 @@
     <edmx:StorageModels>
     <Schema Namespace="DB_HMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="DB_HMSModelStoreContainer">
-          <EntitySet Name="sysdiagrams" EntityType="DB_HMSModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tbBENH" EntityType="DB_HMSModel.Store.tbBENH" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tbBENHAN" EntityType="DB_HMSModel.Store.tbBENHAN" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="tbBENHNHAN" EntityType="DB_HMSModel.Store.tbBENHNHAN" store:Type="Tables" Schema="dbo" />
@@ -62,16 +61,6 @@
             <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMND" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
-        </EntityType>
         <EntityType Name="tbBENH">
           <Key>
             <PropertyRef Name="MABENH" />
@@ -101,17 +90,17 @@
             <PropertyRef Name="MABENHNHAN" />
           </Key>
           <Property Name="MABENHNHAN" Type="varchar" Nullable="false" MaxLength="10" />
-          <Property Name="STT" Type="varchar" MaxLength="20" />
           <Property Name="HO" Type="nvarchar" MaxLength="50" />
           <Property Name="TEN" Type="nvarchar" Nullable="false" MaxLength="50" />
-          <Property Name="NGAYSINH" Type="nvarchar" MaxLength="20" />
-          <Property Name="TUOI" Type="nvarchar" Nullable="false" MaxLength="20" />
-          <Property Name="GIOITINH" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="NGAYSINH" Type="datetime" />
+          <Property Name="TUOI" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="GIOITINH" Type="nvarchar" Nullable="false" MaxLength="20" />
           <Property Name="TINH" Type="nvarchar(max)" />
           <Property Name="QUAN" Type="nvarchar(max)" />
           <Property Name="DUONG" Type="nvarchar(max)" />
           <Property Name="NGAYTAO" Type="datetime" />
           <Property Name="TRANGTHAI" Type="bit" />
+          <Property Name="STT" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tbBENHPHONGKHAM">
           <Key>
@@ -434,7 +423,6 @@
     <edmx:ConceptualModels>
       <Schema Namespace="DB_HMSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="DB_HMS_Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="sysdiagrams" EntityType="DB_HMSModel.sysdiagram" />
           <EntitySet Name="tbBENHs" EntityType="DB_HMSModel.tbBENH" />
           <EntitySet Name="tbBENHANs" EntityType="DB_HMSModel.tbBENHAN" />
           <EntitySet Name="tbBENHNHANs" EntityType="DB_HMSModel.tbBENHNHAN" />
@@ -490,16 +478,6 @@
             <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMNDs" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="sysdiagram">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-          <Property Type="Int32" Name="principal_id" Nullable="false" />
-          <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="Int32" Name="version" />
-          <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
-        </EntityType>
         <EntityType Name="tbBENH">
           <Key>
             <PropertyRef Name="MABENH" />
@@ -531,17 +509,17 @@
             <PropertyRef Name="MABENHNHAN" />
           </Key>
           <Property Type="String" Name="MABENHNHAN" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Type="String" Name="STT" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Type="String" Name="HO" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="TEN" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="NGAYSINH" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="TUOI" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="NGAYSINH" />
+          <Property Type="String" Name="TUOI" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIOITINH" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="TINH" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="QUAN" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="DUONG" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Type="DateTime" Name="NGAYTAO" />
           <Property Type="Boolean" Name="TRANGTHAI" />
+          <Property Type="String" Name="STT" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tbBENHPHONGKHAM">
           <Key>
@@ -877,17 +855,6 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DB_HMSModelStoreContainer" CdmEntityContainer="DB_HMS_Entities">
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="DB_HMSModel.sysdiagram">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="definition" ColumnName="definition" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="name" ColumnName="name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="tbBENHs">
             <EntityTypeMapping TypeName="DB_HMSModel.tbBENH">
               <MappingFragment StoreEntitySet="tbBENH">
@@ -917,6 +884,7 @@
           <EntitySetMapping Name="tbBENHNHANs">
             <EntityTypeMapping TypeName="DB_HMSModel.tbBENHNHAN">
               <MappingFragment StoreEntitySet="tbBENHNHAN">
+                <ScalarProperty Name="STT" ColumnName="STT" />
                 <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
                 <ScalarProperty Name="NGAYTAO" ColumnName="NGAYTAO" />
                 <ScalarProperty Name="DUONG" ColumnName="DUONG" />
@@ -927,7 +895,6 @@
                 <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
                 <ScalarProperty Name="TEN" ColumnName="TEN" />
                 <ScalarProperty Name="HO" ColumnName="HO" />
-                <ScalarProperty Name="STT" ColumnName="STT" />
                 <ScalarProperty Name="MABENHNHAN" ColumnName="MABENHNHAN" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -1203,33 +1170,32 @@
     <!-- Diagram content (shape and connector positions) -->
     <Diagrams>
       <Diagram Name="HMS_DB">
-        <EntityTypeShape EntityType="DB_HMSModel.sysdiagram" Width="1.5" PointX="2.75" PointY="11.375" Height="1.9802864583333246" />
         <EntityTypeShape EntityType="DB_HMSModel.tbBENH" Width="1.5" PointX="0.75" PointY="10.75" Height="2.7494921874999818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbBENHAN" Width="1.5" PointX="4.75" PointY="11.375" Height="2.3648893229166674" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbBENHNHAN" Width="1.5" PointX="6.75" PointY="11.375" Height="3.3263964843749818" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbBENHAN" Width="1.5" PointX="2.75" PointY="11.375" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbBENHNHAN" Width="1.5" PointX="4.75" PointY="11.375" Height="3.3263964843749818" />
         <EntityTypeShape EntityType="DB_HMSModel.tbBENHPHONGKHAM" Width="1.5" PointX="3" PointY="0.75" Height="1.9802864583333246" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbCHUANDOAN" Width="1.5" PointX="8.75" PointY="5.375" Height="1.7879850260416674" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbCHUANDOANCHITIET" Width="1.5" PointX="8.75" PointY="8.375" Height="1.7879850260416674" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbDONTHUOCMAU" Width="1.5" PointX="8.75" PointY="11.375" Height="1.7879850260416674" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbDONTHUOCMAUCHITIET" Width="1.5" PointX="8.75" PointY="14.375" Height="2.1725878906249818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbHUONGDAN" Width="1.5" PointX="10.75" PointY="5.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbCHUANDOAN" Width="1.5" PointX="6.75" PointY="11.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbCHUANDOANCHITIET" Width="1.5" PointX="8.75" PointY="5.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbDONTHUOCMAU" Width="1.5" PointX="8.75" PointY="8.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbDONTHUOCMAUCHITIET" Width="1.5" PointX="8.75" PointY="11.375" Height="2.1725878906249818" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbHUONGDAN" Width="1.5" PointX="6.75" PointY="14.375" Height="1.7879850260416674" />
         <EntityTypeShape EntityType="DB_HMSModel.tbKETOATHUOC" Width="1.5" PointX="5.75" PointY="5.375" Height="1.5956835937499818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbKETOATHUOCCHITIET" Width="1.5" PointX="10.75" PointY="8.375" Height="2.7494921874999818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbLICHHEN" Width="1.5" PointX="3.75" PointY="15.375" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbKETOATHUOCCHITIET" Width="1.5" PointX="8.75" PointY="14.375" Height="2.7494921874999818" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbLICHHEN" Width="1.5" PointX="10.75" PointY="5.375" Height="1.9802864583333246" />
         <EntityTypeShape EntityType="DB_HMSModel.tbNHANVIEN" Width="1.5" PointX="3" PointY="7.125" Height="3.3263964843749818" />
         <EntityTypeShape EntityType="DB_HMSModel.tbNHOMBENH" Width="1.5" PointX="1.5" PointY="15" Height="2.1725878906249818" />
         <EntityTypeShape EntityType="DB_HMSModel.tbNHOMNGUOIDUNG" Width="1.5" PointX="0.75" PointY="7.5" Height="2.3648893229166674" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbNHOMTINHNANG" Width="1.5" PointX="10.75" PointY="12.375" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbNHOMTINHNANG" Width="1.5" PointX="10.75" PointY="8.375" Height="1.4033821614583246" />
         <EntityTypeShape EntityType="DB_HMSModel.tbPHONGKHAM" Width="1.5" PointX="0.75" PointY="3.625" Height="2.1725878906249818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbQUYEN" Width="1.5" PointX="10.75" PointY="15.375" Height="1.4033821614583246" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbSINHLIEU" Width="1.5" PointX="5.75" PointY="16.375" Height="3.3263964843749818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbTHPHANQUYEN" Width="1.5" PointX="12.75" PointY="5.375" Height="1.7879850260416674" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbTHUOC" Width="1.5" PointX="12.75" PointY="8.375" Height="2.7494921874999818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbTIENSUBENH" Width="1.5" PointX="12.75" PointY="12.375" Height="1.5956835937499818" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbTIENSUBENHCHITIET" Width="1.5" PointX="7.75" PointY="17.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbQUYEN" Width="1.5" PointX="10.75" PointY="11.375" Height="1.4033821614583246" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbSINHLIEU" Width="1.5" PointX="10.75" PointY="14.375" Height="3.3263964843749818" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbTHPHANQUYEN" Width="1.5" PointX="3.75" PointY="16.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbTHUOC" Width="1.5" PointX="12.75" PointY="5.375" Height="2.7494921874999809" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbTIENSUBENH" Width="1.5" PointX="12.75" PointY="9.375" Height="1.5956835937499818" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbTIENSUBENHCHITIET" Width="1.5" PointX="5.75" PointY="17.375" Height="1.7879850260416674" />
         <EntityTypeShape EntityType="DB_HMSModel.tbTINHNANG" Width="1.5" PointX="3.75" PointY="3.875" Height="1.7879850260416674" />
         <EntityTypeShape EntityType="DB_HMSModel.tbTINHNANGNHOMND" Width="1.5" PointX="6" PointY="7.75" Height="1.9802864583333246" />
-        <EntityTypeShape EntityType="DB_HMSModel.tbTRIEUCHUNG" Width="1.5" PointX="12.75" PointY="15.375" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="DB_HMSModel.tbTRIEUCHUNG" Width="1.5" PointX="12.75" PointY="12.375" Height="1.7879850260416674" />
         <AssociationConnector Association="DB_HMSModel.FK_tbBENH_tbNHOMBENH" >
           <ConnectorPoint PointX="1.875" PointY="15" />
           <ConnectorPoint PointX="1.875" PointY="13.499492187499982" />
