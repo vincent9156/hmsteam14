@@ -18,6 +18,7 @@ namespace DO
         public string TINH { set; get; }
         public string QUAN { set; get; }
         public string DUONG { set; get; }
+        public string DIACHI { set; get; }
         public bool TRANGTHAI { set; get; }
         public DateTime NGAYTAO { set; get; }
     }

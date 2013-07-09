@@ -111,6 +111,12 @@
     <Compile Include="OutpantientGUI\ucDonthuocmau.designer.cs">
       <DependentUpon>ucDonthuocmau.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutpantientGUI\ucSinhlieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpantientGUI\ucSinhlieu.designer.cs">
+      <DependentUpon>ucSinhlieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInfoGUI\frmGiaodienchinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,12 +197,6 @@
     <Compile Include="OutpantientGUI\ucKhambenhngoaitru.Designer.cs">
       <DependentUpon>ucKhambenhngoaitru.cs</DependentUpon>
     </Compile>
-    <Compile Include="OutpantientGUI\ucSinhlieu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="OutpantientGUI\ucSinhlieu.designer.cs">
-      <DependentUpon>ucSinhlieu.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="CatalogGUI\frmNhombenh.resx">
       <DependentUpon>frmNhombenh.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OutpantientGUI\ucDonthuocmau.resx">
       <DependentUpon>ucDonthuocmau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpantientGUI\ucSinhlieu.resx">
+      <DependentUpon>ucSinhlieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmGiaodienchinh.resx">
       <DependentUpon>frmGiaodienchinh.cs</DependentUpon>
@@ -270,9 +273,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OutpantientGUI\ucKhambenhngoaitru.resx">
       <DependentUpon>ucKhambenhngoaitru.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OutpantientGUI\ucSinhlieu.resx">
-      <DependentUpon>ucSinhlieu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

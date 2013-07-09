@@ -60,6 +60,7 @@
       <DependentUpon>HMS_DB.edmx</DependentUpon>
     </Compile>
     <Compile Include="OutpantientDO\cBenhnhanDO.cs" />
+    <Compile Include="OutpantientDO\cSinhLieuDO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
