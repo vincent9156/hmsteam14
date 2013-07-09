@@ -50,6 +50,7 @@
     <Compile Include="CatalogDA\cNhomNhanVienDA.cs" />
     <Compile Include="CatalogDA\cTinhNangDA.cs" />
     <Compile Include="CatalogDA\cTinhNangNhomNhanVienDA.cs" />
+    <Compile Include="OutpantientDA\cDonThuocMauDA.cs" />
     <Compile Include="OutpantientDA\cBenhnhanDA.cs" />
     <Compile Include="OutpantientDA\cBenhanDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

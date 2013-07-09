@@ -105,6 +105,12 @@
     <Compile Include="CatalogGUI\ucNhanvien.designer.cs">
       <DependentUpon>ucNhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutpantientGUI\ucDonthuocmau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpantientGUI\ucDonthuocmau.designer.cs">
+      <DependentUpon>ucDonthuocmau.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInfoGUI\frmGiaodienchinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,12 +167,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OutpantientGUI\ucDonthuocmau.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="OutpantientGUI\ucDonthuocmau.Designer.cs">
-      <DependentUpon>ucDonthuocmau.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserInfoGUI\ucLichlamviec.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -218,6 +218,9 @@
     <EmbeddedResource Include="CatalogGUI\ucNhanvien.resx">
       <DependentUpon>ucNhanvien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OutpantientGUI\ucDonthuocmau.resx">
+      <DependentUpon>ucDonthuocmau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\frmGiaodienchinh.resx">
       <DependentUpon>frmGiaodienchinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,9 +259,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="OutpantientGUI\ucDonthuocmau.resx">
-      <DependentUpon>ucDonthuocmau.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserInfoGUI\ucLichlamviec.resx">
       <DependentUpon>ucLichlamviec.cs</DependentUpon>
     </EmbeddedResource>
