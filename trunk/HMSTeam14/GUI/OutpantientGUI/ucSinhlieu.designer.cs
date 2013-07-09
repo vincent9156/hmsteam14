@@ -40,21 +40,21 @@
             this.colMabenhnhan = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
+            this.txtVongBung = new DevExpress.XtraEditors.TextEdit();
+            this.txtCanNang = new DevExpress.XtraEditors.TextEdit();
+            this.txtChieuCao = new DevExpress.XtraEditors.TextEdit();
             this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.txtNhipTho = new DevExpress.XtraEditors.TextEdit();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtHuyetAp1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.txtHuyetAp = new DevExpress.XtraEditors.TextEdit();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtNhietDo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtMach = new DevExpress.XtraEditors.TextEdit();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -67,13 +67,12 @@
             this.lblMach = new DevExpress.XtraEditors.LabelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.lblGioiTinh = new DevExpress.XtraEditors.LabelControl();
+            this.lblTuoi = new DevExpress.XtraEditors.LabelControl();
+            this.lblMaBenhNhan = new DevExpress.XtraEditors.LabelControl();
+            this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
+            this.lblNgaySinh = new DevExpress.XtraEditors.LabelControl();
+            this.lblDiaChi = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -92,23 +91,18 @@
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVongBung.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCanNang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChieuCao.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNhipTho.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHuyetAp1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHuyetAp.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNhietDo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMach.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -180,12 +174,17 @@
             this.colMabenhnhan});
             this.gridDanhsachbenhnhan.GridControl = this.grdDanhsachbenhnhan;
             this.gridDanhsachbenhnhan.Name = "gridDanhsachbenhnhan";
+            this.gridDanhsachbenhnhan.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridDanhsachbenhnhan.OptionsView.ShowGroupPanel = false;
+            this.gridDanhsachbenhnhan.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowForFocusedRow;
+            this.gridDanhsachbenhnhan.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridDSBN_RowClick);
             // 
             // colSTT
             // 
             this.colSTT.Caption = "STT";
+            this.colSTT.FieldName = "STT";
             this.colSTT.Name = "colSTT";
+            this.colSTT.OptionsColumn.AllowEdit = false;
             this.colSTT.Visible = true;
             this.colSTT.VisibleIndex = 0;
             this.colSTT.Width = 83;
@@ -193,7 +192,9 @@
             // colHoten
             // 
             this.colHoten.Caption = "Họ Tên";
+            this.colHoten.FieldName = "HOTEN";
             this.colHoten.Name = "colHoten";
+            this.colHoten.OptionsColumn.AllowEdit = false;
             this.colHoten.Visible = true;
             this.colHoten.VisibleIndex = 2;
             this.colHoten.Width = 334;
@@ -201,7 +202,9 @@
             // colMabenhnhan
             // 
             this.colMabenhnhan.Caption = "Mã bệnh nhân";
+            this.colMabenhnhan.FieldName = "MABENHNHAN";
             this.colMabenhnhan.Name = "colMabenhnhan";
+            this.colMabenhnhan.OptionsColumn.AllowEdit = false;
             this.colMabenhnhan.Visible = true;
             this.colMabenhnhan.VisibleIndex = 1;
             this.colMabenhnhan.Width = 186;
@@ -217,21 +220,21 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.simpleButton1);
+            this.groupControl2.Controls.Add(this.btnHuy);
             this.groupControl2.Controls.Add(this.btnLuu);
-            this.groupControl2.Controls.Add(this.textEdit13);
-            this.groupControl2.Controls.Add(this.textEdit12);
-            this.groupControl2.Controls.Add(this.textEdit11);
+            this.groupControl2.Controls.Add(this.txtVongBung);
+            this.groupControl2.Controls.Add(this.txtCanNang);
+            this.groupControl2.Controls.Add(this.txtChieuCao);
             this.groupControl2.Controls.Add(this.labelControl29);
-            this.groupControl2.Controls.Add(this.textEdit6);
+            this.groupControl2.Controls.Add(this.txtNhipTho);
             this.groupControl2.Controls.Add(this.labelControl23);
-            this.groupControl2.Controls.Add(this.textEdit4);
+            this.groupControl2.Controls.Add(this.txtHuyetAp1);
             this.groupControl2.Controls.Add(this.labelControl27);
-            this.groupControl2.Controls.Add(this.textEdit3);
+            this.groupControl2.Controls.Add(this.txtHuyetAp);
             this.groupControl2.Controls.Add(this.labelControl24);
-            this.groupControl2.Controls.Add(this.textEdit2);
+            this.groupControl2.Controls.Add(this.txtNhietDo);
             this.groupControl2.Controls.Add(this.labelControl26);
-            this.groupControl2.Controls.Add(this.textEdit1);
+            this.groupControl2.Controls.Add(this.txtMach);
             this.groupControl2.Controls.Add(this.labelControl25);
             this.groupControl2.Controls.Add(this.labelControl6);
             this.groupControl2.Controls.Add(this.labelControl5);
@@ -249,50 +252,56 @@
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Sinh liệu, thể trạng bệnh nhân";
             // 
-            // simpleButton1
+            // btnHuy
             // 
-            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton1.Location = new System.Drawing.Point(808, 259);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(73, 23);
-            this.simpleButton1.TabIndex = 68;
-            this.simpleButton1.Text = "&Hủy bỏ";
+            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHuy.Location = new System.Drawing.Point(808, 259);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(73, 23);
+            this.btnHuy.TabIndex = 68;
+            this.btnHuy.Text = "&Hủy bỏ";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
             this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuu.Enabled = false;
             this.btnLuu.Location = new System.Drawing.Point(696, 259);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(106, 23);
             this.btnLuu.TabIndex = 67;
             this.btnLuu.Text = "&Lưu Sinh Liệu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // textEdit13
+            // txtVongBung
             // 
-            this.textEdit13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit13.Location = new System.Drawing.Point(624, 145);
-            this.textEdit13.Name = "textEdit13";
-            this.textEdit13.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit13.Size = new System.Drawing.Size(165, 20);
-            this.textEdit13.TabIndex = 66;
+            this.txtVongBung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtVongBung.Enabled = false;
+            this.txtVongBung.Location = new System.Drawing.Point(624, 145);
+            this.txtVongBung.Name = "txtVongBung";
+            this.txtVongBung.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtVongBung.Size = new System.Drawing.Size(165, 20);
+            this.txtVongBung.TabIndex = 66;
             // 
-            // textEdit12
+            // txtCanNang
             // 
-            this.textEdit12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit12.Location = new System.Drawing.Point(624, 110);
-            this.textEdit12.Name = "textEdit12";
-            this.textEdit12.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit12.Size = new System.Drawing.Size(165, 20);
-            this.textEdit12.TabIndex = 65;
+            this.txtCanNang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCanNang.Enabled = false;
+            this.txtCanNang.Location = new System.Drawing.Point(624, 110);
+            this.txtCanNang.Name = "txtCanNang";
+            this.txtCanNang.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtCanNang.Size = new System.Drawing.Size(165, 20);
+            this.txtCanNang.TabIndex = 65;
             // 
-            // textEdit11
+            // txtChieuCao
             // 
-            this.textEdit11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit11.Location = new System.Drawing.Point(624, 75);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit11.Size = new System.Drawing.Size(165, 20);
-            this.textEdit11.TabIndex = 64;
+            this.txtChieuCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtChieuCao.Enabled = false;
+            this.txtChieuCao.Location = new System.Drawing.Point(624, 75);
+            this.txtChieuCao.Name = "txtChieuCao";
+            this.txtChieuCao.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtChieuCao.Size = new System.Drawing.Size(165, 20);
+            this.txtChieuCao.TabIndex = 64;
             // 
             // labelControl29
             // 
@@ -304,14 +313,15 @@
             this.labelControl29.TabIndex = 62;
             this.labelControl29.Text = "(cm)";
             // 
-            // textEdit6
+            // txtNhipTho
             // 
-            this.textEdit6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit6.Location = new System.Drawing.Point(161, 179);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit6.Size = new System.Drawing.Size(236, 20);
-            this.textEdit6.TabIndex = 54;
+            this.txtNhipTho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNhipTho.Enabled = false;
+            this.txtNhipTho.Location = new System.Drawing.Point(161, 179);
+            this.txtNhipTho.Name = "txtNhipTho";
+            this.txtNhipTho.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtNhipTho.Size = new System.Drawing.Size(236, 20);
+            this.txtNhipTho.TabIndex = 54;
             // 
             // labelControl23
             // 
@@ -323,14 +333,15 @@
             this.labelControl23.TabIndex = 55;
             this.labelControl23.Text = "-Chiều cao";
             // 
-            // textEdit4
+            // txtHuyetAp1
             // 
-            this.textEdit4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit4.Location = new System.Drawing.Point(294, 145);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit4.Size = new System.Drawing.Size(103, 20);
-            this.textEdit4.TabIndex = 52;
+            this.txtHuyetAp1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHuyetAp1.Enabled = false;
+            this.txtHuyetAp1.Location = new System.Drawing.Point(294, 145);
+            this.txtHuyetAp1.Name = "txtHuyetAp1";
+            this.txtHuyetAp1.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtHuyetAp1.Size = new System.Drawing.Size(103, 20);
+            this.txtHuyetAp1.TabIndex = 52;
             // 
             // labelControl27
             // 
@@ -342,14 +353,15 @@
             this.labelControl27.TabIndex = 63;
             this.labelControl27.Text = "(kg)";
             // 
-            // textEdit3
+            // txtHuyetAp
             // 
-            this.textEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit3.Location = new System.Drawing.Point(163, 145);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit3.Size = new System.Drawing.Size(114, 20);
-            this.textEdit3.TabIndex = 51;
+            this.txtHuyetAp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHuyetAp.Enabled = false;
+            this.txtHuyetAp.Location = new System.Drawing.Point(161, 145);
+            this.txtHuyetAp.Name = "txtHuyetAp";
+            this.txtHuyetAp.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtHuyetAp.Size = new System.Drawing.Size(114, 20);
+            this.txtHuyetAp.TabIndex = 51;
             // 
             // labelControl24
             // 
@@ -361,14 +373,15 @@
             this.labelControl24.TabIndex = 56;
             this.labelControl24.Text = "-Cân nặng";
             // 
-            // textEdit2
+            // txtNhietDo
             // 
-            this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit2.Location = new System.Drawing.Point(161, 110);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit2.Size = new System.Drawing.Size(236, 20);
-            this.textEdit2.TabIndex = 50;
+            this.txtNhietDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNhietDo.Enabled = false;
+            this.txtNhietDo.Location = new System.Drawing.Point(161, 110);
+            this.txtNhietDo.Name = "txtNhietDo";
+            this.txtNhietDo.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtNhietDo.Size = new System.Drawing.Size(236, 20);
+            this.txtNhietDo.TabIndex = 50;
             // 
             // labelControl26
             // 
@@ -380,14 +393,15 @@
             this.labelControl26.TabIndex = 61;
             this.labelControl26.Text = "(cm)";
             // 
-            // textEdit1
+            // txtMach
             // 
-            this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit1.Location = new System.Drawing.Point(161, 75);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit1.Size = new System.Drawing.Size(236, 20);
-            this.textEdit1.TabIndex = 49;
+            this.txtMach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMach.Enabled = false;
+            this.txtMach.Location = new System.Drawing.Point(161, 75);
+            this.txtMach.Name = "txtMach";
+            this.txtMach.Properties.LookAndFeel.SkinName = "Lilian";
+            this.txtMach.Size = new System.Drawing.Size(236, 20);
+            this.txtMach.TabIndex = 49;
             // 
             // labelControl25
             // 
@@ -500,13 +514,12 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.radioButton2);
-            this.groupControl3.Controls.Add(this.radioButton1);
-            this.groupControl3.Controls.Add(this.textEdit10);
-            this.groupControl3.Controls.Add(this.textEdit9);
-            this.groupControl3.Controls.Add(this.textEdit8);
-            this.groupControl3.Controls.Add(this.textEdit7);
-            this.groupControl3.Controls.Add(this.textEdit5);
+            this.groupControl3.Controls.Add(this.lblGioiTinh);
+            this.groupControl3.Controls.Add(this.lblTuoi);
+            this.groupControl3.Controls.Add(this.lblMaBenhNhan);
+            this.groupControl3.Controls.Add(this.lblHoTen);
+            this.groupControl3.Controls.Add(this.lblNgaySinh);
+            this.groupControl3.Controls.Add(this.lblDiaChi);
             this.groupControl3.Controls.Add(this.labelControl13);
             this.groupControl3.Controls.Add(this.labelControl12);
             this.groupControl3.Controls.Add(this.labelControl11);
@@ -520,74 +533,59 @@
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Thông tin bệnh nhân";
             // 
-            // radioButton2
+            // lblGioiTinh
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Enabled = false;
-            this.radioButton2.Location = new System.Drawing.Point(707, 48);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 72;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.lblGioiTinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblGioiTinh.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGioiTinh.Location = new System.Drawing.Point(631, 49);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(0, 14);
+            this.lblGioiTinh.TabIndex = 71;
             // 
-            // radioButton1
+            // lblTuoi
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Enabled = false;
-            this.radioButton1.Location = new System.Drawing.Point(639, 48);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 17);
-            this.radioButton1.TabIndex = 71;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.lblTuoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTuoi.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuoi.Location = new System.Drawing.Point(631, 77);
+            this.lblTuoi.Name = "lblTuoi";
+            this.lblTuoi.Size = new System.Drawing.Size(0, 14);
+            this.lblTuoi.TabIndex = 70;
             // 
-            // textEdit10
+            // lblMaBenhNhan
             // 
-            this.textEdit10.Enabled = false;
-            this.textEdit10.Location = new System.Drawing.Point(639, 75);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit10.Size = new System.Drawing.Size(86, 20);
-            this.textEdit10.TabIndex = 70;
+            this.lblMaBenhNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMaBenhNhan.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaBenhNhan.Location = new System.Drawing.Point(314, 49);
+            this.lblMaBenhNhan.Name = "lblMaBenhNhan";
+            this.lblMaBenhNhan.Size = new System.Drawing.Size(0, 14);
+            this.lblMaBenhNhan.TabIndex = 69;
             // 
-            // textEdit9
+            // lblHoTen
             // 
-            this.textEdit9.Enabled = false;
-            this.textEdit9.Location = new System.Drawing.Point(309, 132);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit9.Size = new System.Drawing.Size(222, 20);
-            this.textEdit9.TabIndex = 69;
+            this.lblHoTen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHoTen.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoTen.Location = new System.Drawing.Point(314, 77);
+            this.lblHoTen.Name = "lblHoTen";
+            this.lblHoTen.Size = new System.Drawing.Size(0, 14);
+            this.lblHoTen.TabIndex = 68;
             // 
-            // textEdit8
+            // lblNgaySinh
             // 
-            this.textEdit8.Enabled = false;
-            this.textEdit8.Location = new System.Drawing.Point(309, 104);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit8.Size = new System.Drawing.Size(130, 20);
-            this.textEdit8.TabIndex = 68;
+            this.lblNgaySinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNgaySinh.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgaySinh.Location = new System.Drawing.Point(314, 107);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(0, 14);
+            this.lblNgaySinh.TabIndex = 67;
             // 
-            // textEdit7
+            // lblDiaChi
             // 
-            this.textEdit7.Enabled = false;
-            this.textEdit7.Location = new System.Drawing.Point(309, 75);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit7.Size = new System.Drawing.Size(222, 20);
-            this.textEdit7.TabIndex = 67;
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Enabled = false;
-            this.textEdit5.Location = new System.Drawing.Point(309, 46);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.LookAndFeel.SkinName = "Lilian";
-            this.textEdit5.Size = new System.Drawing.Size(130, 20);
-            this.textEdit5.TabIndex = 66;
+            this.lblDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDiaChi.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaChi.Location = new System.Drawing.Point(314, 134);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(0, 14);
+            this.lblDiaChi.TabIndex = 66;
             // 
             // labelControl13
             // 
@@ -659,6 +657,7 @@
             this.Controls.Add(this.panelControl1);
             this.Name = "ucSinhlieu";
             this.Size = new System.Drawing.Size(1264, 542);
+            this.Load += new System.EventHandler(this.ucSinhlieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -673,24 +672,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVongBung.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCanNang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtChieuCao.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNhipTho.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHuyetAp1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtHuyetAp.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNhietDo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMach.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -709,19 +703,19 @@
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
-        private DevExpress.XtraEditors.TextEdit textEdit13;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit txtVongBung;
+        private DevExpress.XtraEditors.TextEdit txtCanNang;
+        private DevExpress.XtraEditors.TextEdit txtChieuCao;
         private DevExpress.XtraEditors.LabelControl labelControl29;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit txtNhipTho;
         private DevExpress.XtraEditors.LabelControl labelControl23;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txtHuyetAp1;
         private DevExpress.XtraEditors.LabelControl labelControl27;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit txtHuyetAp;
         private DevExpress.XtraEditors.LabelControl labelControl24;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtNhietDo;
         private DevExpress.XtraEditors.LabelControl labelControl26;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtMach;
         private DevExpress.XtraEditors.LabelControl labelControl25;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
@@ -732,22 +726,21 @@
         private DevExpress.XtraEditors.LabelControl lblHuyetap;
         private DevExpress.XtraEditors.LabelControl lblNhietdo;
         private DevExpress.XtraEditors.LabelControl lblMach;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblGioiTinh;
+        private DevExpress.XtraEditors.LabelControl lblTuoi;
+        private DevExpress.XtraEditors.LabelControl lblMaBenhNhan;
+        private DevExpress.XtraEditors.LabelControl lblHoTen;
+        private DevExpress.XtraEditors.LabelControl lblNgaySinh;
+        private DevExpress.XtraEditors.LabelControl lblDiaChi;
     }
 }
