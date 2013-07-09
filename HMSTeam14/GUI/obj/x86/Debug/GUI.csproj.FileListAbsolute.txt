@@ -186,3 +186,6 @@ D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI
 D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe.licenses
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\GUI\bin\Debug\GUI.exe.config
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.exe
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\GUI\obj\x86\Debug\GUI.pdb
