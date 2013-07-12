@@ -7,16 +7,26 @@ namespace DO
 {
     public class cBenhanDO
     {
-        public string STT { set; get; }
         public string MABENHAN { set; get; }
         public string MABENHNHAN { set; get; }
         public string MABACSY { set; get; }
-        public string DIACHI { set;get; }
-        public string TUOI {set;get;}
+        public string HOTEN {set;get;}
+        public string TUOI { set; get; }
         public string GIOITINH { set; get; }
-        public string HOTEN {get;set;}
-        public string TRANGTHAIBENHNHAN { set; get; }
-        public bool TRANGTHAI { set; get; }
-        public DateTime NGAYTAO { set; get; }
+        public DateTime NGAYDK { set; get; }
+        public DateTime GIODK { set; get; }
+        public int MAXACNHAN { set; get; }
+        public int TRANGTHAI { set; get; }
+        public string MAPHONGKHAM {set;get;}
+    }
+    public class cBenhNhanDO
+    {
+        public string MABENHNHAN { set; get; }
+        public string HOTEN { set; get; }
+        public DateTime? NTNSBN { set; get; }
+        public int NSBN {get;set;}
+        public string GIOITINH { set; get; }
+        public string DIACHI { set; get; }
+        public string TINH {get;set;}
     }
 }

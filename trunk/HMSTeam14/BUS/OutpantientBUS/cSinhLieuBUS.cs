@@ -50,22 +50,5 @@ namespace BUS
         {
             return DA.cSinhLieuDA.Getmayta();
         }
-        /// <summary>
-        /// Hàm gửi yêu cầu lấy thông tin bệnh nhân từ database
-        /// </summary>
-        /// <returns></returns>
-        public static List<cBenhnhanDO> GetBenhNhan()
-        {
-            return DA.cSinhLieuDA.GetBenhNhan();
-        }
-        /// <summary>
-        /// Hàm gửi yêu cầu lấy thông tin bệnh nhân từ database
-        /// </summary>
-        /// <returns></returns>
-        public static cBenhnhanDO GetBenhNhan1(string ID)
-        {
-            return DA.cSinhLieuDA.GetBenhNhan1(ID);
-        }
-
     }
 }

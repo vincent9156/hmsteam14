@@ -50,7 +50,7 @@
     <Compile Include="CatalogBUS\cThuocBUS.cs" />
     <Compile Include="CatalogBUS\cTinhNangBUS.cs" />
     <Compile Include="CatalogBUS\cTinhNangNhomNhanVienBUS.cs" />
-    <Compile Include="OutpantientBUS\cBenhnhanBUS.cs" />
+    <Compile Include="OutpantientBUS\cDonthuocmauBUS.cs" />
     <Compile Include="OutpantientBUS\cBenhanBUS.cs" />
     <Compile Include="OutpantientBUS\cSinhLieuBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

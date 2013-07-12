@@ -23,7 +23,9 @@ namespace GUI
         /// </summary>
         private void LoadDSBN()
         {
-            List<cBenhnhanDO> dsbenhnhan = BUS.cSinhLieuBUS.GetBenhNhan();
+            DO.cNhanVienDO user = BUS.cNhanVienBUS.GetStaffInforByID(DO.cCommonDO.CurrentUser.MANHANVIEN);
+            string MAPHONGKHAM = DO.cCommonDO.CurrentUser.MAPHONGKHAM;
+            List<cBenhanDO> dsbenhnhan = BUS.cBenhanBUS.Getdsbenhan(MAPHONGKHAM,1, 0, DateTime.Today);
             grdDanhsachbenhnhan.DataSource = dsbenhnhan;
         }
 
@@ -109,13 +111,13 @@ namespace GUI
             try
             {
                 string ID = gridDanhsachbenhnhan.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
-                cBenhnhanDO infor = cSinhLieuBUS.GetBenhNhan1(ID);
+                cBenhNhanDO infor = BUS.cBenhanBUS.GetThongtinbenhan(ID);
                 lblMaBenhNhan.Text = ID;
                 lblHoTen.Text = infor.HOTEN;
                 lblGioiTinh.Text = infor.GIOITINH;
                 lblDiaChi.Text = infor.DIACHI;
-                lblNgaySinh.Text = (String)(infor.NGAYSINH).ToString();
-                lblTuoi.Text = infor.TUOI;
+                lblNgaySinh.Text = (String)(infor.NTNSBN).ToString();
+                lblTuoi.Text = gridDanhsachbenhnhan.GetRowCellValue(e.RowHandle, "TUOI").ToString();
                 EnableEditing(false);
             }
             catch (Exception ex)
@@ -164,6 +166,7 @@ namespace GUI
                 if (IsNumeric(txtCanNang.Text) == true && IsNumeric(txtChieuCao.Text) == true && IsNumeric(txtHuyetAp.Text) == true && IsNumeric(txtHuyetAp1.Text) == true && IsNumeric(txtMach.Text) == true && IsNumeric(txtNhietDo.Text) == true && IsNumeric(txtNhipTho.Text) == true && IsNumeric(txtVongBung.Text) == true)
                 {
                     BUS.cSinhLieuBUS.InsertInfomation(masl, mabenhan, mayta, i.MACH, i.NHIPTHO, i.NHIETDO, i.HUYETAP, i.CHIEUCAO, i.CANNANG, i.VONGBUNG, i.NGAYTAO, i.TRANGTHAI);
+                    BUS.cBenhanBUS.UpdateTrangthai(mabenhan, 2);
                     XtraMessageBox.Show("Lưu thành công!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

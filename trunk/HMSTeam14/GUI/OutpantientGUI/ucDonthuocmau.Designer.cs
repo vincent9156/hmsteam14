@@ -31,6 +31,11 @@
             this.pnDonthuocmau = new DevExpress.XtraEditors.PanelControl();
             this.lblDanhmucbenh = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.lbldangsudungdon = new DevExpress.XtraEditors.LabelControl();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbTenthuoc = new DevExpress.XtraEditors.LookUpEdit();
+            this.lblsottdonthuocmau = new DevExpress.XtraEditors.LabelControl();
             this.lblDonthuocmauso = new DevExpress.XtraEditors.LabelControl();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnKhongluu = new DevExpress.XtraEditors.SimpleButton();
@@ -42,7 +47,6 @@
             this.txtCachdung = new DevExpress.XtraEditors.TextEdit();
             this.txtDonvi = new DevExpress.XtraEditors.TextEdit();
             this.txtSoluong = new DevExpress.XtraEditors.TextEdit();
-            this.txtTenthuoc = new DevExpress.XtraEditors.TextEdit();
             this.lblGhichu = new DevExpress.XtraEditors.LabelControl();
             this.lblDonvidung = new DevExpress.XtraEditors.LabelControl();
             this.lblSoluongdung = new DevExpress.XtraEditors.LabelControl();
@@ -53,6 +57,8 @@
             this.lblTenthuoc = new DevExpress.XtraEditors.LabelControl();
             this.grdDonthuocmau = new DevExpress.XtraGrid.GridControl();
             this.gridDonthuocmau = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMabacsy = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMadonthuocmau = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTenthuoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSoluong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDonvi = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -62,20 +68,20 @@
             this.colDonvidung = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colGhichu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMathuoc = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lblDT8 = new System.Windows.Forms.LinkLabel();
+            this.lblDT7 = new System.Windows.Forms.LinkLabel();
+            this.lblDT6 = new System.Windows.Forms.LinkLabel();
+            this.lblDT5 = new System.Windows.Forms.LinkLabel();
+            this.lblDT4 = new System.Windows.Forms.LinkLabel();
+            this.lblDT3 = new System.Windows.Forms.LinkLabel();
+            this.lblDT2 = new System.Windows.Forms.LinkLabel();
+            this.lblDT1 = new System.Windows.Forms.LinkLabel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.lblsottdonthuocmau = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pnDonthuocmau)).BeginInit();
             this.pnDonthuocmau.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTenthuoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhichu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDonvidung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoluongdan.Properties)).BeginInit();
@@ -83,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCachdung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDonvi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoluong.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenthuoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDonthuocmau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDonthuocmau)).BeginInit();
             this.SuspendLayout();
@@ -110,6 +115,10 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.lbldangsudungdon);
+            this.panelControl2.Controls.Add(this.btnSua);
+            this.panelControl2.Controls.Add(this.btnThem);
+            this.panelControl2.Controls.Add(this.cmbTenthuoc);
             this.panelControl2.Controls.Add(this.lblsottdonthuocmau);
             this.panelControl2.Controls.Add(this.lblDonthuocmauso);
             this.panelControl2.Controls.Add(this.btnXoa);
@@ -122,7 +131,6 @@
             this.panelControl2.Controls.Add(this.txtCachdung);
             this.panelControl2.Controls.Add(this.txtDonvi);
             this.panelControl2.Controls.Add(this.txtSoluong);
-            this.panelControl2.Controls.Add(this.txtTenthuoc);
             this.panelControl2.Controls.Add(this.lblGhichu);
             this.panelControl2.Controls.Add(this.lblDonvidung);
             this.panelControl2.Controls.Add(this.lblSoluongdung);
@@ -132,20 +140,66 @@
             this.panelControl2.Controls.Add(this.lblSoluong);
             this.panelControl2.Controls.Add(this.lblTenthuoc);
             this.panelControl2.Controls.Add(this.grdDonthuocmau);
-            this.panelControl2.Controls.Add(this.linkLabel8);
-            this.panelControl2.Controls.Add(this.linkLabel7);
-            this.panelControl2.Controls.Add(this.linkLabel6);
-            this.panelControl2.Controls.Add(this.linkLabel5);
-            this.panelControl2.Controls.Add(this.linkLabel4);
-            this.panelControl2.Controls.Add(this.linkLabel3);
-            this.panelControl2.Controls.Add(this.linkLabel2);
-            this.panelControl2.Controls.Add(this.linkLabel1);
+            this.panelControl2.Controls.Add(this.lblDT8);
+            this.panelControl2.Controls.Add(this.lblDT7);
+            this.panelControl2.Controls.Add(this.lblDT6);
+            this.panelControl2.Controls.Add(this.lblDT5);
+            this.panelControl2.Controls.Add(this.lblDT4);
+            this.panelControl2.Controls.Add(this.lblDT3);
+            this.panelControl2.Controls.Add(this.lblDT2);
+            this.panelControl2.Controls.Add(this.lblDT1);
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(0, 42);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1264, 500);
             this.panelControl2.TabIndex = 6;
+            // 
+            // lbldangsudungdon
+            // 
+            this.lbldangsudungdon.Location = new System.Drawing.Point(138, 14);
+            this.lbldangsudungdon.Name = "lbldangsudungdon";
+            this.lbldangsudungdon.Size = new System.Drawing.Size(0, 13);
+            this.lbldangsudungdon.TabIndex = 35;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(138, 99);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(78, 23);
+            this.btnSua.TabIndex = 34;
+            this.btnSua.Text = "&Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(47, 99);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(78, 23);
+            this.btnThem.TabIndex = 33;
+            this.btnThem.Text = "&Thêm Thuốc";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // cmbTenthuoc
+            // 
+            this.cmbTenthuoc.Location = new System.Drawing.Point(26, 60);
+            this.cmbTenthuoc.Name = "cmbTenthuoc";
+            this.cmbTenthuoc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbTenthuoc.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MATHUOC", "Mã thuốc"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TENTHUONGMAI", "Tên thuốc")});
+            this.cmbTenthuoc.Properties.NullText = "";
+            this.cmbTenthuoc.Size = new System.Drawing.Size(167, 20);
+            this.cmbTenthuoc.TabIndex = 32;
+            this.cmbTenthuoc.EditValueChanged += new System.EventHandler(this.cmbTenthuoc_EditValueChanged);
+            // 
+            // lblsottdonthuocmau
+            // 
+            this.lblsottdonthuocmau.Location = new System.Drawing.Point(120, 16);
+            this.lblsottdonthuocmau.Name = "lblsottdonthuocmau";
+            this.lblsottdonthuocmau.Size = new System.Drawing.Size(0, 13);
+            this.lblsottdonthuocmau.TabIndex = 31;
             // 
             // lblDonthuocmauso
             // 
@@ -157,19 +211,21 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(151, 91);
+            this.btnXoa.Location = new System.Drawing.Point(225, 99);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(78, 23);
             this.btnXoa.TabIndex = 29;
-            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Text = "&Xoá";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnKhongluu
             // 
-            this.btnKhongluu.Location = new System.Drawing.Point(235, 91);
+            this.btnKhongluu.Location = new System.Drawing.Point(438, 99);
             this.btnKhongluu.Name = "btnKhongluu";
             this.btnKhongluu.Size = new System.Drawing.Size(78, 23);
             this.btnKhongluu.TabIndex = 3;
             this.btnKhongluu.Text = "&Không Lưu";
+            this.btnKhongluu.Click += new System.EventHandler(this.btnKhongluu_Click);
             // 
             // txtGhichu
             // 
@@ -180,11 +236,12 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(26, 91);
+            this.btnLuu.Location = new System.Drawing.Point(312, 99);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(119, 23);
             this.btnLuu.TabIndex = 2;
             this.btnLuu.Text = "&Lưu Đơn Thuốc";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtDonvidung
             // 
@@ -199,6 +256,7 @@
             this.txtSoluongdan.Name = "txtSoluongdan";
             this.txtSoluongdan.Size = new System.Drawing.Size(100, 20);
             this.txtSoluongdan.TabIndex = 26;
+            this.txtSoluongdan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoluongdan_KeyPress);
             // 
             // txtSolandung
             // 
@@ -206,6 +264,7 @@
             this.txtSolandung.Name = "txtSolandung";
             this.txtSolandung.Size = new System.Drawing.Size(100, 20);
             this.txtSolandung.TabIndex = 25;
+            this.txtSolandung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSolandung_KeyPress);
             // 
             // txtCachdung
             // 
@@ -227,13 +286,7 @@
             this.txtSoluong.Name = "txtSoluong";
             this.txtSoluong.Size = new System.Drawing.Size(100, 20);
             this.txtSoluong.TabIndex = 22;
-            // 
-            // txtTenthuoc
-            // 
-            this.txtTenthuoc.Location = new System.Drawing.Point(26, 61);
-            this.txtTenthuoc.Name = "txtTenthuoc";
-            this.txtTenthuoc.Size = new System.Drawing.Size(167, 20);
-            this.txtTenthuoc.TabIndex = 21;
+            this.txtSoluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoluong_KeyPress);
             // 
             // lblGhichu
             // 
@@ -313,6 +366,8 @@
             // gridDonthuocmau
             // 
             this.gridDonthuocmau.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMabacsy,
+            this.colMadonthuocmau,
             this.colTenthuoc,
             this.colSoluong,
             this.colDonvi,
@@ -326,149 +381,188 @@
             this.gridDonthuocmau.Name = "gridDonthuocmau";
             this.gridDonthuocmau.OptionsFind.AlwaysVisible = true;
             this.gridDonthuocmau.OptionsView.ShowGroupPanel = false;
+            this.gridDonthuocmau.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridDonthuocmau_RowClick);
+            // 
+            // colMabacsy
+            // 
+            this.colMabacsy.Caption = "Mã Bác Sỹ";
+            this.colMabacsy.FieldName = "MABACSI";
+            this.colMabacsy.Name = "colMabacsy";
+            // 
+            // colMadonthuocmau
+            // 
+            this.colMadonthuocmau.Caption = "Mã đơn thuốc mẫu";
+            this.colMadonthuocmau.FieldName = "MADONTHUOCMAU1";
+            this.colMadonthuocmau.Name = "colMadonthuocmau";
             // 
             // colTenthuoc
             // 
             this.colTenthuoc.Caption = "Tên thuốc";
+            this.colTenthuoc.FieldName = "TENTHUONGMAI";
             this.colTenthuoc.Name = "colTenthuoc";
+            this.colTenthuoc.OptionsColumn.AllowEdit = false;
             this.colTenthuoc.Visible = true;
             this.colTenthuoc.VisibleIndex = 1;
             // 
             // colSoluong
             // 
             this.colSoluong.Caption = "Số lượng";
+            this.colSoluong.FieldName = "SOLUONG";
             this.colSoluong.Name = "colSoluong";
+            this.colSoluong.OptionsColumn.AllowEdit = false;
             this.colSoluong.Visible = true;
             this.colSoluong.VisibleIndex = 2;
             // 
             // colDonvi
             // 
             this.colDonvi.Caption = "Đơn vị";
+            this.colDonvi.FieldName = "DONVI";
             this.colDonvi.Name = "colDonvi";
+            this.colDonvi.OptionsColumn.AllowEdit = false;
             this.colDonvi.Visible = true;
             this.colDonvi.VisibleIndex = 3;
             // 
             // colCachdung
             // 
             this.colCachdung.Caption = "Cách dùng";
+            this.colCachdung.FieldName = "CACHDUNG";
             this.colCachdung.Name = "colCachdung";
+            this.colCachdung.OptionsColumn.AllowEdit = false;
             this.colCachdung.Visible = true;
             this.colCachdung.VisibleIndex = 4;
             // 
             // colSolandung
             // 
             this.colSolandung.Caption = "Số lần dùng";
+            this.colSolandung.FieldName = "SOLANDUNG";
             this.colSolandung.Name = "colSolandung";
+            this.colSolandung.OptionsColumn.AllowEdit = false;
             this.colSolandung.Visible = true;
             this.colSolandung.VisibleIndex = 5;
             // 
             // colSoluongdung
             // 
             this.colSoluongdung.Caption = "Số lượng dùng";
+            this.colSoluongdung.FieldName = "SOLUONGDUNG";
             this.colSoluongdung.Name = "colSoluongdung";
+            this.colSoluongdung.OptionsColumn.AllowEdit = false;
             this.colSoluongdung.Visible = true;
             this.colSoluongdung.VisibleIndex = 6;
             // 
             // colDonvidung
             // 
             this.colDonvidung.Caption = "Đơn vị dùng";
+            this.colDonvidung.FieldName = "DONVIDUNG";
             this.colDonvidung.Name = "colDonvidung";
+            this.colDonvidung.OptionsColumn.AllowEdit = false;
             this.colDonvidung.Visible = true;
             this.colDonvidung.VisibleIndex = 7;
             // 
             // colGhichu
             // 
             this.colGhichu.Caption = "Ghi chú ";
+            this.colGhichu.FieldName = "GHICHU";
             this.colGhichu.Name = "colGhichu";
+            this.colGhichu.OptionsColumn.AllowEdit = false;
             this.colGhichu.Visible = true;
             this.colGhichu.VisibleIndex = 8;
             // 
             // colMathuoc
             // 
             this.colMathuoc.Caption = "Mã thuốc";
+            this.colMathuoc.FieldName = "MATHUOC";
             this.colMathuoc.Name = "colMathuoc";
+            this.colMathuoc.OptionsColumn.AllowEdit = false;
             this.colMathuoc.Visible = true;
             this.colMathuoc.VisibleIndex = 0;
             // 
-            // linkLabel8
+            // lblDT8
             // 
-            this.linkLabel8.AutoSize = true;
-            this.linkLabel8.Location = new System.Drawing.Point(314, 125);
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel8.TabIndex = 9;
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "8.";
+            this.lblDT8.AutoSize = true;
+            this.lblDT8.Location = new System.Drawing.Point(314, 125);
+            this.lblDT8.Name = "lblDT8";
+            this.lblDT8.Size = new System.Drawing.Size(17, 13);
+            this.lblDT8.TabIndex = 9;
+            this.lblDT8.TabStop = true;
+            this.lblDT8.Text = "8.";
+            this.lblDT8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT8_LinkClicked);
             // 
-            // linkLabel7
+            // lblDT7
             // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Location = new System.Drawing.Point(291, 125);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel7.TabIndex = 8;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "7.";
+            this.lblDT7.AutoSize = true;
+            this.lblDT7.Location = new System.Drawing.Point(291, 125);
+            this.lblDT7.Name = "lblDT7";
+            this.lblDT7.Size = new System.Drawing.Size(17, 13);
+            this.lblDT7.TabIndex = 8;
+            this.lblDT7.TabStop = true;
+            this.lblDT7.Text = "7.";
+            this.lblDT7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT7_LinkClicked);
             // 
-            // linkLabel6
+            // lblDT6
             // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.Location = new System.Drawing.Point(268, 125);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel6.TabIndex = 7;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "6.";
+            this.lblDT6.AutoSize = true;
+            this.lblDT6.Location = new System.Drawing.Point(268, 125);
+            this.lblDT6.Name = "lblDT6";
+            this.lblDT6.Size = new System.Drawing.Size(17, 13);
+            this.lblDT6.TabIndex = 7;
+            this.lblDT6.TabStop = true;
+            this.lblDT6.Text = "6.";
+            this.lblDT6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT6_LinkClicked);
             // 
-            // linkLabel5
+            // lblDT5
             // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(245, 125);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel5.TabIndex = 6;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "5.";
+            this.lblDT5.AutoSize = true;
+            this.lblDT5.Location = new System.Drawing.Point(245, 125);
+            this.lblDT5.Name = "lblDT5";
+            this.lblDT5.Size = new System.Drawing.Size(17, 13);
+            this.lblDT5.TabIndex = 6;
+            this.lblDT5.TabStop = true;
+            this.lblDT5.Text = "5.";
+            this.lblDT5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT5_LinkClicked);
             // 
-            // linkLabel4
+            // lblDT4
             // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(222, 125);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel4.TabIndex = 5;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "4.";
+            this.lblDT4.AutoSize = true;
+            this.lblDT4.Location = new System.Drawing.Point(222, 125);
+            this.lblDT4.Name = "lblDT4";
+            this.lblDT4.Size = new System.Drawing.Size(17, 13);
+            this.lblDT4.TabIndex = 5;
+            this.lblDT4.TabStop = true;
+            this.lblDT4.Text = "4.";
+            this.lblDT4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT4_LinkClicked);
             // 
-            // linkLabel3
+            // lblDT3
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(199, 125);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel3.TabIndex = 4;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "3.";
+            this.lblDT3.AutoSize = true;
+            this.lblDT3.Location = new System.Drawing.Point(199, 125);
+            this.lblDT3.Name = "lblDT3";
+            this.lblDT3.Size = new System.Drawing.Size(17, 13);
+            this.lblDT3.TabIndex = 4;
+            this.lblDT3.TabStop = true;
+            this.lblDT3.Text = "3.";
+            this.lblDT3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT3_LinkClicked);
             // 
-            // linkLabel2
+            // lblDT2
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(176, 125);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel2.TabIndex = 3;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "2.";
+            this.lblDT2.AutoSize = true;
+            this.lblDT2.Location = new System.Drawing.Point(176, 125);
+            this.lblDT2.Name = "lblDT2";
+            this.lblDT2.Size = new System.Drawing.Size(17, 13);
+            this.lblDT2.TabIndex = 3;
+            this.lblDT2.TabStop = true;
+            this.lblDT2.Text = "2.";
+            this.lblDT2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT2_LinkClicked);
             // 
-            // linkLabel1
+            // lblDT1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(153, 125);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(17, 13);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "1.";
+            this.lblDT1.AutoSize = true;
+            this.lblDT1.Location = new System.Drawing.Point(153, 125);
+            this.lblDT1.Name = "lblDT1";
+            this.lblDT1.Size = new System.Drawing.Size(17, 13);
+            this.lblDT1.TabIndex = 2;
+            this.lblDT1.TabStop = true;
+            this.lblDT1.Text = "1.";
+            this.lblDT1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblDT1_LinkClicked);
             // 
             // labelControl1
             // 
@@ -478,13 +572,6 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Đơn Thuốc Mẫu";
             // 
-            // lblsottdonthuocmau
-            // 
-            this.lblsottdonthuocmau.Location = new System.Drawing.Point(120, 16);
-            this.lblsottdonthuocmau.Name = "lblsottdonthuocmau";
-            this.lblsottdonthuocmau.Size = new System.Drawing.Size(0, 13);
-            this.lblsottdonthuocmau.TabIndex = 31;
-            // 
             // ucDonthuocmau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,12 +580,14 @@
             this.Controls.Add(this.pnDonthuocmau);
             this.Name = "ucDonthuocmau";
             this.Size = new System.Drawing.Size(1264, 542);
+            this.Load += new System.EventHandler(this.ucDonthuocmau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnDonthuocmau)).EndInit();
             this.pnDonthuocmau.ResumeLayout(false);
             this.pnDonthuocmau.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTenthuoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGhichu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDonvidung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoluongdan.Properties)).EndInit();
@@ -506,7 +595,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCachdung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDonvi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoluong.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenthuoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDonthuocmau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDonthuocmau)).EndInit();
             this.ResumeLayout(false);
@@ -529,14 +617,14 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDonvidung;
         private DevExpress.XtraGrid.Columns.GridColumn colGhichu;
         private DevExpress.XtraGrid.Columns.GridColumn colMathuoc;
-        private System.Windows.Forms.LinkLabel linkLabel8;
-        private System.Windows.Forms.LinkLabel linkLabel7;
-        private System.Windows.Forms.LinkLabel linkLabel6;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lblDT8;
+        private System.Windows.Forms.LinkLabel lblDT7;
+        private System.Windows.Forms.LinkLabel lblDT6;
+        private System.Windows.Forms.LinkLabel lblDT5;
+        private System.Windows.Forms.LinkLabel lblDT4;
+        private System.Windows.Forms.LinkLabel lblDT3;
+        private System.Windows.Forms.LinkLabel lblDT2;
+        private System.Windows.Forms.LinkLabel lblDT1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl lblGhichu;
         private DevExpress.XtraEditors.LabelControl lblDonvidung;
@@ -555,9 +643,14 @@
         private DevExpress.XtraEditors.TextEdit txtCachdung;
         private DevExpress.XtraEditors.TextEdit txtDonvi;
         private DevExpress.XtraEditors.TextEdit txtSoluong;
-        private DevExpress.XtraEditors.TextEdit txtTenthuoc;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
         private DevExpress.XtraEditors.LabelControl lblDonthuocmauso;
         private DevExpress.XtraEditors.LabelControl lblsottdonthuocmau;
+        private DevExpress.XtraEditors.LookUpEdit cmbTenthuoc;
+        private DevExpress.XtraGrid.Columns.GridColumn colMabacsy;
+        private DevExpress.XtraGrid.Columns.GridColumn colMadonthuocmau;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
+        private DevExpress.XtraEditors.SimpleButton btnSua;
+        private DevExpress.XtraEditors.LabelControl lbldangsudungdon;
     }
 }

@@ -10,50 +10,6 @@ namespace DA
     public class cSinhLieuDA
     {
         /// <summary>
-        /// lấy thông tin bệnh nhân
-        /// </summary>
-        /// <returns></returns>
-        public static List<cBenhnhanDO> GetBenhNhan()
-        {
-            List<cBenhnhanDO> dsbenhnhan = new List<cBenhnhanDO>();
-            using (DB_HMS_Entities dk = new DB_HMS_Entities())
-            {
-                var query = from ds in dk.tbBENHNHANs
-                            select ds;
-                foreach (var row in query)
-                {
-                    cBenhnhanDO ds = new cBenhnhanDO();
-                    ds.STT = row.STT;
-                    ds.MABENHNHAN = row.MABENHNHAN;
-                    ds.HOTEN = row.HO + " " + row.TEN;
-                    ds.DIACHI = row.DUONG + " " + row.QUAN + " " + row.TINH;
-                    ds.GIOITINH = row.GIOITINH;
-                    ds.NGAYSINH = row.NGAYSINH.Value;
-                    ds.TUOI = row.TUOI;
-                    dsbenhnhan.Add(ds);
-                }
-                return dsbenhnhan;                             
-            }
-        }
-
-        public static cBenhnhanDO GetBenhNhan1(string PatientID)
-        {
-            using (DB_HMS_Entities dk = new DB_HMS_Entities())
-            {
-                var query = (from d in dk.tbBENHNHANs
-                            where d.MABENHNHAN == PatientID
-                            select d).First();
-                    cBenhnhanDO ds = new cBenhnhanDO();
-                    ds.MABENHNHAN = query.MABENHNHAN;
-                    ds.DIACHI = query.DUONG + ", " + query.QUAN + ", " + query.TINH;
-                    ds.HOTEN = query.HO + " " + query.TEN;
-                    ds.GIOITINH = query.GIOITINH;
-                    ds.NGAYSINH = query.NGAYSINH.Value;
-                    ds.TUOI = query.TUOI;
-                return ds;
-            }
-        }
-        /// <summary>
         /// Nhập vào thông tin của sinh liệu
         /// </summary>
         /// <param name="MASINHLIEU"></param>
@@ -81,7 +37,7 @@ namespace DA
                 sl.NHIETDO = NHIETDO;
                 sl.HUYETAP = HUYETAP;
                 sl.CHIEUCAO = CHIEUCAO;
-                sl.CANBANG = CANNANG;
+                sl.CANNANG = CANNANG;
                 sl.VONGBUNG = VONGBUNG;
                 sl.NGAYTAO = NGAYTAO;
                 sl.TRANGTHAI = TRANGTHAI;

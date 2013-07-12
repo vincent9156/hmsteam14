@@ -8,34 +8,34 @@ namespace BUS
 {
     public class cBenhanBUS
     {
-        public static List<cBenhanDO> Getdsbenhan(string TRANGTHAIBENHAN, bool TRANGTHAI)
+        public static List<cBenhanDO> Getdsbenhan(string MAPHONGKHAM ,int TRANGTHAI, int MAXACNHAN, DateTime NGAYHIENTAI)
         {
-            return DA.cBenhanDA.Getdsbenhan(TRANGTHAIBENHAN, TRANGTHAI);
+            return DA.cBenhanDA.Getdsbenhan(MAPHONGKHAM,TRANGTHAI, MAXACNHAN, NGAYHIENTAI);
         }
-        public static List<cBenhanDO> Getdsbenhan1(string MABACSI, string TRANGTHAIBENHAN, bool TRANGTHAI)
+        public static List<cBenhanDO> Getdsbenhan1(string MAPHONGKHAM,string MABACSI, int TRANGTHAI, int MAXACNHAN,DateTime NGAYHIENTAI)
         {
-            return DA.cBenhanDA.Getdsbenhan1(MABACSI, TRANGTHAIBENHAN, TRANGTHAI);
+            return DA.cBenhanDA.Getdsbenhan1(MAPHONGKHAM,MABACSI, TRANGTHAI, MAXACNHAN,NGAYHIENTAI);
         }
-        public static List<cBenhanDO> Getdsbenhan2(string MABACSI,string MABENHNHAN ,string TRANGTHAIBENHAN)
+        public static List<cBenhanDO> Getdsbenhan2(string MABACSI, string MABENHNHAN, int MAXACNHAN)
         {
-            return DA.cBenhanDA.Getdsbenhan2(MABACSI, MABENHNHAN, TRANGTHAIBENHAN);
+            return DA.cBenhanDA.Getdsbenhan2(MABACSI, MABENHNHAN, MAXACNHAN);
         }
 
-        public static void InsertBenhan(string MABENHAN, string STT, string MABENHNHAN, string MABACSI, string TRANGTHAIBENHAN, DateTime NGAYTAO, Boolean TRANGTHAI)
+        public static void UpdateTrangthai(string MABENHAN, int TRANGTHAI)
         {
-            DA.cBenhanDA.InsertBenhan(MABENHAN, STT, MABENHNHAN, MABACSI, TRANGTHAIBENHAN, NGAYTAO, TRANGTHAI);
+            DA.cBenhanDA.UpdateTrangthai(MABENHAN, TRANGTHAI);
         }
-        public static void UpdateTrangthaibenhnhan(string MABENHAN, string TRANGTHAIBENHAN, DateTime NGAYTAO)
+        public static void UpdateMaxacnhan(string MABENHAN, int MAXACNHAN)
         {
-            DA.cBenhanDA.UpdateTrangthaibenhnhan(MABENHAN, TRANGTHAIBENHAN, NGAYTAO);
+            DA.cBenhanDA.UpdateMaxacnhan(MABENHAN, MAXACNHAN);
         }
-        public static void UpdateTrangthaibenhan(string MABENHAN, DateTime NGAYTAO, bool TRANGTHAI)
+        public static void UpdateBacsivaobenhan(string MABENHAN, string MABACSY)
         {
-            DA.cBenhanDA.UpdateTrangthaibenhan(MABENHAN, NGAYTAO, TRANGTHAI);
+            DA.cBenhanDA.UpdateBacsivaobenhan(MABENHAN, MABACSY);
         }
-        public static void UpdateBacsivaobenhan(string MABENHAN, string MABACSY, DateTime NGAYTAO)
+        public static cBenhNhanDO GetThongtinbenhan(string MABENHNHAN)
         {
-            DA.cBenhanDA.UpdateBacsivaobenhan(MABENHAN, MABACSY, NGAYTAO);
+            return DA.cBenhanDA.GetThongtinbenhan(MABENHNHAN);
         }
     }
 }
