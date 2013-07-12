@@ -120,6 +120,25 @@ namespace DA
             return ktphongkham;
         }
 
+        public static bool Checkmaphongkham(string MAPHONGKHAM)
+        {
+            Boolean ktmaphongkham = false;
+            using (DB_HMS_Entities ds = new DB_HMS_Entities())
+            {
+                var query = (from dss in ds.tbPHONGKHAMs
+                             where dss.MAPHONGKHAM == MAPHONGKHAM.Trim()
+                             select dss);
+                foreach (var row in query)
+                {
+                    if (row.MAPHONGKHAM == MAPHONGKHAM)
+                    {
+                        ktmaphongkham = true;
+                    }
+                }
+            }
+            return ktmaphongkham;
+        }
+
         /// <summary>
         /// Lay ma phong kham tu entities
         /// </summary>
