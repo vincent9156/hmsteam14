@@ -38,3 +38,11 @@ D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\DA\bin\Debug\DO.pdb
 D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\DA\obj\Debug\ResolveAssemblyReference.cache
 D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\DA\obj\Debug\DA.dll
 D:\VanLang\Nam III\Hoc Ki 2\SEP\HMSProject\trunk\HMSTeam14\DA\obj\Debug\DA.pdb
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\bin\Debug\DA.dll.config
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\bin\Debug\DA.dll
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\bin\Debug\DA.pdb
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\bin\Debug\DO.dll
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\bin\Debug\DO.pdb
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\obj\Debug\ResolveAssemblyReference.cache
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\obj\Debug\DA.dll
+D:\K16T\Nam 3\Software Engineering Project\Project\trunk\HMSTeam14\DA\obj\Debug\DA.pdb
