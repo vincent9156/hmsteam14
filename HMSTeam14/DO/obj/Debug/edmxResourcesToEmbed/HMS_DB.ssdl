@@ -1,35 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DB_HMSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
   <EntityContainer Name="DB_HMSModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="DB_HMSModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENH" EntityType="DB_HMSModel.Store.tbBENH" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbBENHAN" EntityType="DB_HMSModel.Store.tbBENHAN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENHNHAN" EntityType="DB_HMSModel.Store.tbBENHNHAN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbBENHPHONGKHAM" EntityType="DB_HMSModel.Store.tbBENHPHONGKHAM" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbCHUANDOAN" EntityType="DB_HMSModel.Store.tbCHUANDOAN" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbCHUANDOANCHITIET" EntityType="DB_HMSModel.Store.tbCHUANDOANCHITIET" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbDONTHUOCMAU" EntityType="DB_HMSModel.Store.tbDONTHUOCMAU" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbDONTHUOCMAUCHITIET" EntityType="DB_HMSModel.Store.tbDONTHUOCMAUCHITIET" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbHOSOKHAMBENH" EntityType="DB_HMSModel.Store.tbHOSOKHAMBENH" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbHUONGDAN" EntityType="DB_HMSModel.Store.tbHUONGDAN" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbKETOATHUOC" EntityType="DB_HMSModel.Store.tbKETOATHUOC" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbKETOATHUOCCHITIET" EntityType="DB_HMSModel.Store.tbKETOATHUOCCHITIET" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbKETOA" EntityType="DB_HMSModel.Store.tbKETOA" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbLICHHEN" EntityType="DB_HMSModel.Store.tbLICHHEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHANVIEN" EntityType="DB_HMSModel.Store.tbNHANVIEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMBENH" EntityType="DB_HMSModel.Store.tbNHOMBENH" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMNGUOIDUNG" EntityType="DB_HMSModel.Store.tbNHOMNGUOIDUNG" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbNHOMTINHNANG" EntityType="DB_HMSModel.Store.tbNHOMTINHNANG" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbPHONGKHAM" EntityType="DB_HMSModel.Store.tbPHONGKHAM" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbQUANHUYEN" EntityType="DB_HMSModel.Store.tbQUANHUYEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbQUYEN" EntityType="DB_HMSModel.Store.tbQUYEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbSINHLIEU" EntityType="DB_HMSModel.Store.tbSINHLIEU" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTHPHANQUYEN" EntityType="DB_HMSModel.Store.tbTHPHANQUYEN" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTHUOC" EntityType="DB_HMSModel.Store.tbTHUOC" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbTIENSUBENH" EntityType="DB_HMSModel.Store.tbTIENSUBENH" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="tbTIENSUBENHCHITIET" EntityType="DB_HMSModel.Store.tbTIENSUBENHCHITIET" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbTIENSU" EntityType="DB_HMSModel.Store.tbTIENSU" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTINHNANG" EntityType="DB_HMSModel.Store.tbTINHNANG" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTINHNANGNHOMND" EntityType="DB_HMSModel.Store.tbTINHNANGNHOMND" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbTINHTP" EntityType="DB_HMSModel.Store.tbTINHTP" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="tbTRIEUCHUNG" EntityType="DB_HMSModel.Store.tbTRIEUCHUNG" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="FK_tbBENH_tbNHOMBENH" Association="DB_HMSModel.Store.FK_tbBENH_tbNHOMBENH">
       <End Role="tbNHOMBENH" EntitySet="tbNHOMBENH" />
       <End Role="tbBENH" EntitySet="tbBENH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbBENHNHAN_tbQUANHUYEN" Association="DB_HMSModel.Store.FK_tbBENHNHAN_tbQUANHUYEN">
+      <End Role="tbQUANHUYEN" EntitySet="tbQUANHUYEN" />
+      <End Role="tbBENHNHAN" EntitySet="tbBENHNHAN" />
     </AssociationSet>
     <AssociationSet Name="FK_tbBENHPHONGKHAM_tbBENH" Association="DB_HMSModel.Store.FK_tbBENHPHONGKHAM_tbBENH">
       <End Role="tbBENH" EntitySet="tbBENH" />
@@ -39,6 +43,46 @@
       <End Role="tbPHONGKHAM" EntitySet="tbPHONGKHAM" />
       <End Role="tbBENHPHONGKHAM" EntitySet="tbBENHPHONGKHAM" />
     </AssociationSet>
+    <AssociationSet Name="FK_tbCHUANDOAN_tbHOSOKHAMBENH1" Association="DB_HMSModel.Store.FK_tbCHUANDOAN_tbHOSOKHAMBENH1">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbCHUANDOAN" EntitySet="tbCHUANDOAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU" Association="DB_HMSModel.Store.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU">
+      <End Role="tbDONTHUOCMAU" EntitySet="tbDONTHUOCMAU" />
+      <End Role="tbDONTHUOCMAUCHITIET" EntitySet="tbDONTHUOCMAUCHITIET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbDONTHUOCMAUCHITIET_tbTHUOC" Association="DB_HMSModel.Store.FK_tbDONTHUOCMAUCHITIET_tbTHUOC">
+      <End Role="tbTHUOC" EntitySet="tbTHUOC" />
+      <End Role="tbDONTHUOCMAUCHITIET" EntitySet="tbDONTHUOCMAUCHITIET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbHOSOKHAMBENH_tbBENHNHAN" Association="DB_HMSModel.Store.FK_tbHOSOKHAMBENH_tbBENHNHAN">
+      <End Role="tbBENHNHAN" EntitySet="tbBENHNHAN" />
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbHOSOKHAMBENH_tbNHANVIEN" Association="DB_HMSModel.Store.FK_tbHOSOKHAMBENH_tbNHANVIEN">
+      <End Role="tbNHANVIEN" EntitySet="tbNHANVIEN" />
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbHOSOKHAMBENH_tbPHONGKHAM" Association="DB_HMSModel.Store.FK_tbHOSOKHAMBENH_tbPHONGKHAM">
+      <End Role="tbPHONGKHAM" EntitySet="tbPHONGKHAM" />
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbHUONGDAN_tbHOSOKHAMBENH" Association="DB_HMSModel.Store.FK_tbHUONGDAN_tbHOSOKHAMBENH">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbHUONGDAN" EntitySet="tbHUONGDAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbKETOA_tbHOSOKHAMBENH1" Association="DB_HMSModel.Store.FK_tbKETOA_tbHOSOKHAMBENH1">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbKETOA" EntitySet="tbKETOA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbKETOA_tbTHUOC" Association="DB_HMSModel.Store.FK_tbKETOA_tbTHUOC">
+      <End Role="tbTHUOC" EntitySet="tbTHUOC" />
+      <End Role="tbKETOA" EntitySet="tbKETOA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbLICHHEN_tbHOSOKHAMBENH" Association="DB_HMSModel.Store.FK_tbLICHHEN_tbHOSOKHAMBENH">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbLICHHEN" EntitySet="tbLICHHEN" />
+    </AssociationSet>
     <AssociationSet Name="FK_tbNHANVIEN_tbNHOMNGUOIDUNG" Association="DB_HMSModel.Store.FK_tbNHANVIEN_tbNHOMNGUOIDUNG">
       <End Role="tbNHOMNGUOIDUNG" EntitySet="tbNHOMNGUOIDUNG" />
       <End Role="tbNHANVIEN" EntitySet="tbNHANVIEN" />
@@ -46,6 +90,34 @@
     <AssociationSet Name="FK_tbNHANVIEN_tbPHONGKHAM" Association="DB_HMSModel.Store.FK_tbNHANVIEN_tbPHONGKHAM">
       <End Role="tbPHONGKHAM" EntitySet="tbPHONGKHAM" />
       <End Role="tbNHANVIEN" EntitySet="tbNHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbQUANHUYEN_tbTINHTP" Association="DB_HMSModel.Store.FK_tbQUANHUYEN_tbTINHTP">
+      <End Role="tbTINHTP" EntitySet="tbTINHTP" />
+      <End Role="tbQUANHUYEN" EntitySet="tbQUANHUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbSINHLIEU_tbHOSOKHAMBENH" Association="DB_HMSModel.Store.FK_tbSINHLIEU_tbHOSOKHAMBENH">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbSINHLIEU" EntitySet="tbSINHLIEU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG" Association="DB_HMSModel.Store.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG">
+      <End Role="tbNHOMNGUOIDUNG" EntitySet="tbNHOMNGUOIDUNG" />
+      <End Role="tbTHPHANQUYEN" EntitySet="tbTHPHANQUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTHPHANQUYEN_tbQUYEN" Association="DB_HMSModel.Store.FK_tbTHPHANQUYEN_tbQUYEN">
+      <End Role="tbQUYEN" EntitySet="tbQUYEN" />
+      <End Role="tbTHPHANQUYEN" EntitySet="tbTHPHANQUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTHPHANQUYEN_tbTINHNANG" Association="DB_HMSModel.Store.FK_tbTHPHANQUYEN_tbTINHNANG">
+      <End Role="tbTINHNANG" EntitySet="tbTINHNANG" />
+      <End Role="tbTHPHANQUYEN" EntitySet="tbTHPHANQUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTIENSU_tbHOSOKHAMBENH" Association="DB_HMSModel.Store.FK_tbTIENSU_tbHOSOKHAMBENH">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbTIENSU" EntitySet="tbTIENSU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbTINHNANG_tbNHOMTINHNANG1" Association="DB_HMSModel.Store.FK_tbTINHNANG_tbNHOMTINHNANG1">
+      <End Role="tbNHOMTINHNANG" EntitySet="tbNHOMTINHNANG" />
+      <End Role="tbTINHNANG" EntitySet="tbTINHNANG" />
     </AssociationSet>
     <AssociationSet Name="FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG" Association="DB_HMSModel.Store.FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG">
       <End Role="tbNHOMNGUOIDUNG" EntitySet="tbNHOMNGUOIDUNG" />
@@ -55,7 +127,21 @@
       <End Role="tbTINHNANG" EntitySet="tbTINHNANG" />
       <End Role="tbTINHNANGNHOMND" EntitySet="tbTINHNANGNHOMND" />
     </AssociationSet>
+    <AssociationSet Name="FK_tbTRIEUCHUNG_tbHOSOKHAMBENH" Association="DB_HMSModel.Store.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH">
+      <End Role="tbHOSOKHAMBENH" EntitySet="tbHOSOKHAMBENH" />
+      <End Role="tbTRIEUCHUNG" EntitySet="tbTRIEUCHUNG" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="tbBENH">
     <Key>
       <PropertyRef Name="MABENH" />
@@ -68,34 +154,18 @@
     <Property Name="NGAYTAO" Type="datetime" />
     <Property Name="TRANGTHAI" Type="bit" Nullable="false" />
   </EntityType>
-  <EntityType Name="tbBENHAN">
-    <Key>
-      <PropertyRef Name="MABENHAN" />
-    </Key>
-    <Property Name="STT" Type="varchar" MaxLength="10" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENHNHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABACSY" Type="varchar" MaxLength="10" />
-    <Property Name="TRANGTHAIBENHNHAN" Type="nvarchar" Nullable="false" MaxLength="20" />
-    <Property Name="TRANGTHAI" Type="bit" />
-    <Property Name="NGAYTAO" Type="datetime" />
-  </EntityType>
   <EntityType Name="tbBENHNHAN">
     <Key>
       <PropertyRef Name="MABENHNHAN" />
     </Key>
     <Property Name="MABENHNHAN" Type="varchar" Nullable="false" MaxLength="10" />
     <Property Name="HO" Type="nvarchar" MaxLength="50" />
-    <Property Name="TEN" Type="nvarchar" Nullable="false" MaxLength="50" />
-    <Property Name="NGAYSINH" Type="datetime" />
-    <Property Name="TUOI" Type="varchar" Nullable="false" MaxLength="20" />
-    <Property Name="GIOITINH" Type="nvarchar" Nullable="false" MaxLength="20" />
-    <Property Name="TINH" Type="nvarchar(max)" />
-    <Property Name="QUAN" Type="nvarchar(max)" />
-    <Property Name="DUONG" Type="nvarchar(max)" />
-    <Property Name="NGAYTAO" Type="datetime" />
-    <Property Name="TRANGTHAI" Type="bit" />
-    <Property Name="STT" Type="varchar" MaxLength="50" />
+    <Property Name="TEN" Type="nvarchar" MaxLength="50" />
+    <Property Name="NTNSBN" Type="datetime" />
+    <Property Name="NSBN" Type="int" />
+    <Property Name="GIOITINH" Type="varchar" MaxLength="2" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="200" />
+    <Property Name="IDQH" Type="varchar" Nullable="false" MaxLength="6" />
   </EntityType>
   <EntityType Name="tbBENHPHONGKHAM">
     <Key>
@@ -111,17 +181,8 @@
       <PropertyRef Name="MACHUANDOAN" />
     </Key>
     <Property Name="MACHUANDOAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="XYLY" Type="nvarchar" MaxLength="50" />
-    <Property Name="NGAYTAO" Type="datetime" />
-  </EntityType>
-  <EntityType Name="tbCHUANDOANCHITIET">
-    <Key>
-      <PropertyRef Name="MACDCHITIET" />
-    </Key>
-    <Property Name="MACDCHITIET" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="MACHUANDOAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="GHICHU" Type="nvarchar" MaxLength="100" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
   <EntityType Name="tbDONTHUOCMAU">
@@ -144,46 +205,54 @@
     <Property Name="MABACSI" Type="varchar" MaxLength="10" />
     <Property Name="NGAYTAO" Type="datetime" />
     <Property Name="SOLUONG" Type="int" />
+    <Property Name="SOLANDUNG" Type="int" />
+    <Property Name="SOLUONGDUNG" Type="int" />
+  </EntityType>
+  <EntityType Name="tbHOSOKHAMBENH">
+    <Key>
+      <PropertyRef Name="MAKHAMBENH" />
+    </Key>
+    <Property Name="MAKHAMBENH" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="MABENHNHAN" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MABACSY" Type="varchar" MaxLength="10" />
+    <Property Name="TUOI" Type="int" />
+    <Property Name="GIOITINH" Type="varchar" MaxLength="2" />
+    <Property Name="MAPHONGKHAM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MAXACNHAN" Type="int" />
+    <Property Name="TRANGTHAI" Type="int" />
+    <Property Name="GIODK" Type="datetime" />
+    <Property Name="NGAYDK" Type="date" />
   </EntityType>
   <EntityType Name="tbHUONGDAN">
     <Key>
       <PropertyRef Name="MAHUONGDAN" />
     </Key>
     <Property Name="MAHUONGDAN" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="CHIDINHDIEUTRI" Type="nvarchar" MaxLength="500" />
-    <Property Name="LOIDAN" Type="nvarchar" MaxLength="300" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="CHIDINHDIEUTRI" Type="nvarchar(max)" />
+    <Property Name="LOIDAN" Type="nvarchar(max)" />
+    <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
-  <EntityType Name="tbKETOATHUOC">
+  <EntityType Name="tbKETOA">
     <Key>
       <PropertyRef Name="MATOATHUOC" />
     </Key>
     <Property Name="MATOATHUOC" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="NGAYTAO" Type="datetime" />
-  </EntityType>
-  <EntityType Name="tbKETOATHUOCCHITIET">
-    <Key>
-      <PropertyRef Name="STT" />
-    </Key>
-    <Property Name="STT" Type="int" Nullable="false" />
-    <Property Name="MATOATHUOC" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="15" />
     <Property Name="MATHUOC" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="CACHDUNG" Type="nvarchar" MaxLength="50" />
-    <Property Name="DONVI" Type="nvarchar" MaxLength="50" />
-    <Property Name="DONVIDUNG" Type="nvarchar" MaxLength="50" />
     <Property Name="SOLUONG" Type="int" />
-    <Property Name="GHICHU" Type="nvarchar" MaxLength="200" />
+    <Property Name="SOLANDUNG" Type="int" />
+    <Property Name="SOLUONGDUNG" Type="int" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
   <EntityType Name="tbLICHHEN">
     <Key>
       <PropertyRef Name="MALICHHEN" />
     </Key>
-    <Property Name="MALICHHEN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MALICHHEN" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="15" />
     <Property Name="MABACSI" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="NGAYHEN" Type="datetime" Nullable="false" />
+    <Property Name="NGAYHEN" Type="datetime" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
   <EntityType Name="tbNHANVIEN">
@@ -237,6 +306,14 @@
     <Property Name="NGAYTAO" Type="datetime" />
     <Property Name="TRANGTHAI" Type="bit" />
   </EntityType>
+  <EntityType Name="tbQUANHUYEN">
+    <Key>
+      <PropertyRef Name="IDQH" />
+    </Key>
+    <Property Name="IDQH" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="TENQH" Type="varchar" MaxLength="50" />
+    <Property Name="IDTP" Type="varchar" Nullable="false" MaxLength="6" />
+  </EntityType>
   <EntityType Name="tbQUYEN">
     <Key>
       <PropertyRef Name="MAQUYEN" />
@@ -249,14 +326,14 @@
       <PropertyRef Name="MASINHLIEU" />
     </Key>
     <Property Name="MASINHLIEU" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MAYTA" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MABENHAN" Type="varchar" MaxLength="15" />
+    <Property Name="MAYTA" Type="varchar" MaxLength="10" />
     <Property Name="MACH" Type="varchar" MaxLength="20" />
     <Property Name="NHIPTHO" Type="varchar" MaxLength="20" />
     <Property Name="NHIETDO" Type="varchar" MaxLength="20" />
     <Property Name="HUYETAP" Type="varchar" MaxLength="20" />
     <Property Name="CHIEUCAO" Type="varchar" MaxLength="20" />
-    <Property Name="CANBANG" Type="varchar" MaxLength="20" />
+    <Property Name="CANNANG" Type="varchar" MaxLength="20" />
     <Property Name="VONGBUNG" Type="varchar" MaxLength="20" />
     <Property Name="NGAYTAO" Type="datetime" />
     <Property Name="TRANGTHAI" Type="bit" />
@@ -286,22 +363,14 @@
     <Property Name="TRANGTHAI" Type="bit" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
-  <EntityType Name="tbTIENSUBENH">
+  <EntityType Name="tbTIENSU">
     <Key>
       <PropertyRef Name="MATIENSU" />
     </Key>
     <Property Name="MATIENSU" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="GHICHU" Type="nvarchar" MaxLength="200" />
     <Property Name="NGAYTAO" Type="datetime" />
-  </EntityType>
-  <EntityType Name="tbTIENSUBENHCHITIET">
-    <Key>
-      <PropertyRef Name="STT" />
-    </Key>
-    <Property Name="STT" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="MATIENSUBENH" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="BENHTIENSU" Type="nvarchar" MaxLength="100" />
-    <Property Name="MOTA" Type="nvarchar" MaxLength="300" />
   </EntityType>
   <EntityType Name="tbTINHNANG">
     <Key>
@@ -320,13 +389,20 @@
     <Property Name="MATINHNANG" Type="varchar" Nullable="false" MaxLength="10" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
+  <EntityType Name="tbTINHTP">
+    <Key>
+      <PropertyRef Name="IDTP" />
+    </Key>
+    <Property Name="IDTP" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="TENTP" Type="varchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="tbTRIEUCHUNG">
     <Key>
       <PropertyRef Name="MATRIEUCHUNG" />
     </Key>
     <Property Name="MATRIEUCHUNG" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="10" />
-    <Property Name="TRIEUCHUNG" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="MABENHAN" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="TENTRIEUCHUNG" Type="nvarchar(max)" />
     <Property Name="NGAYTAO" Type="datetime" />
   </EntityType>
   <Association Name="FK_tbBENH_tbNHOMBENH">
@@ -338,6 +414,18 @@
       </Principal>
       <Dependent Role="tbBENH">
         <PropertyRef Name="MANHOMBENH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbBENHNHAN_tbQUANHUYEN">
+    <End Role="tbQUANHUYEN" Type="DB_HMSModel.Store.tbQUANHUYEN" Multiplicity="1" />
+    <End Role="tbBENHNHAN" Type="DB_HMSModel.Store.tbBENHNHAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbQUANHUYEN">
+        <PropertyRef Name="IDQH" />
+      </Principal>
+      <Dependent Role="tbBENHNHAN">
+        <PropertyRef Name="IDQH" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -365,6 +453,128 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_tbCHUANDOAN_tbHOSOKHAMBENH1">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="1" />
+    <End Role="tbCHUANDOAN" Type="DB_HMSModel.Store.tbCHUANDOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbCHUANDOAN">
+        <PropertyRef Name="MABENHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU">
+    <End Role="tbDONTHUOCMAU" Type="DB_HMSModel.Store.tbDONTHUOCMAU" Multiplicity="0..1" />
+    <End Role="tbDONTHUOCMAUCHITIET" Type="DB_HMSModel.Store.tbDONTHUOCMAUCHITIET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbDONTHUOCMAU">
+        <PropertyRef Name="MADONTHUOCMAU" />
+        <PropertyRef Name="MABACSY" />
+      </Principal>
+      <Dependent Role="tbDONTHUOCMAUCHITIET">
+        <PropertyRef Name="MADONTHUOCMAU" />
+        <PropertyRef Name="MABACSI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbDONTHUOCMAUCHITIET_tbTHUOC">
+    <End Role="tbTHUOC" Type="DB_HMSModel.Store.tbTHUOC" Multiplicity="1" />
+    <End Role="tbDONTHUOCMAUCHITIET" Type="DB_HMSModel.Store.tbDONTHUOCMAUCHITIET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTHUOC">
+        <PropertyRef Name="MATHUOC" />
+      </Principal>
+      <Dependent Role="tbDONTHUOCMAUCHITIET">
+        <PropertyRef Name="MATHUOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbHOSOKHAMBENH_tbBENHNHAN">
+    <End Role="tbBENHNHAN" Type="DB_HMSModel.Store.tbBENHNHAN" Multiplicity="1" />
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbBENHNHAN">
+        <PropertyRef Name="MABENHNHAN" />
+      </Principal>
+      <Dependent Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MABENHNHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbHOSOKHAMBENH_tbNHANVIEN">
+    <End Role="tbNHANVIEN" Type="DB_HMSModel.Store.tbNHANVIEN" Multiplicity="1" />
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNHANVIEN">
+        <PropertyRef Name="MANHANVIEN" />
+      </Principal>
+      <Dependent Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MABENHNHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbHOSOKHAMBENH_tbPHONGKHAM">
+    <End Role="tbPHONGKHAM" Type="DB_HMSModel.Store.tbPHONGKHAM" Multiplicity="1" />
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbPHONGKHAM">
+        <PropertyRef Name="MAPHONGKHAM" />
+      </Principal>
+      <Dependent Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAPHONGKHAM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbHUONGDAN_tbHOSOKHAMBENH">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="1" />
+    <End Role="tbHUONGDAN" Type="DB_HMSModel.Store.tbHUONGDAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbHUONGDAN">
+        <PropertyRef Name="MABENHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbKETOA_tbHOSOKHAMBENH1">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="1" />
+    <End Role="tbKETOA" Type="DB_HMSModel.Store.tbKETOA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbKETOA">
+        <PropertyRef Name="MABENHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbKETOA_tbTHUOC">
+    <End Role="tbTHUOC" Type="DB_HMSModel.Store.tbTHUOC" Multiplicity="1" />
+    <End Role="tbKETOA" Type="DB_HMSModel.Store.tbKETOA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTHUOC">
+        <PropertyRef Name="MATHUOC" />
+      </Principal>
+      <Dependent Role="tbKETOA">
+        <PropertyRef Name="MATHUOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbLICHHEN_tbHOSOKHAMBENH">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="1" />
+    <End Role="tbLICHHEN" Type="DB_HMSModel.Store.tbLICHHEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbLICHHEN">
+        <PropertyRef Name="MABENHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_tbNHANVIEN_tbNHOMNGUOIDUNG">
     <End Role="tbNHOMNGUOIDUNG" Type="DB_HMSModel.Store.tbNHOMNGUOIDUNG" Multiplicity="1" />
     <End Role="tbNHANVIEN" Type="DB_HMSModel.Store.tbNHANVIEN" Multiplicity="*" />
@@ -389,6 +599,90 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_tbQUANHUYEN_tbTINHTP">
+    <End Role="tbTINHTP" Type="DB_HMSModel.Store.tbTINHTP" Multiplicity="1" />
+    <End Role="tbQUANHUYEN" Type="DB_HMSModel.Store.tbQUANHUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTINHTP">
+        <PropertyRef Name="IDTP" />
+      </Principal>
+      <Dependent Role="tbQUANHUYEN">
+        <PropertyRef Name="IDTP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbSINHLIEU_tbHOSOKHAMBENH">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="0..1" />
+    <End Role="tbSINHLIEU" Type="DB_HMSModel.Store.tbSINHLIEU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbSINHLIEU">
+        <PropertyRef Name="MABENHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG">
+    <End Role="tbNHOMNGUOIDUNG" Type="DB_HMSModel.Store.tbNHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="tbTHPHANQUYEN" Type="DB_HMSModel.Store.tbTHPHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNHOMNGUOIDUNG">
+        <PropertyRef Name="MANHOMNDN" />
+      </Principal>
+      <Dependent Role="tbTHPHANQUYEN">
+        <PropertyRef Name="MANHOMND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTHPHANQUYEN_tbQUYEN">
+    <End Role="tbQUYEN" Type="DB_HMSModel.Store.tbQUYEN" Multiplicity="1" />
+    <End Role="tbTHPHANQUYEN" Type="DB_HMSModel.Store.tbTHPHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbQUYEN">
+        <PropertyRef Name="MAQUYEN" />
+      </Principal>
+      <Dependent Role="tbTHPHANQUYEN">
+        <PropertyRef Name="MAQUYEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTHPHANQUYEN_tbTINHNANG">
+    <End Role="tbTINHNANG" Type="DB_HMSModel.Store.tbTINHNANG" Multiplicity="1" />
+    <End Role="tbTHPHANQUYEN" Type="DB_HMSModel.Store.tbTHPHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbTINHNANG">
+        <PropertyRef Name="MATINHNANG" />
+      </Principal>
+      <Dependent Role="tbTHPHANQUYEN">
+        <PropertyRef Name="MATINHNANG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTIENSU_tbHOSOKHAMBENH">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="1" />
+    <End Role="tbTIENSU" Type="DB_HMSModel.Store.tbTIENSU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbTIENSU">
+        <PropertyRef Name="MABENHAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTINHNANG_tbNHOMTINHNANG1">
+    <End Role="tbNHOMTINHNANG" Type="DB_HMSModel.Store.tbNHOMTINHNANG" Multiplicity="1" />
+    <End Role="tbTINHNANG" Type="DB_HMSModel.Store.tbTINHNANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNHOMTINHNANG">
+        <PropertyRef Name="MANHOMTINHNANG" />
+      </Principal>
+      <Dependent Role="tbTINHNANG">
+        <PropertyRef Name="MANHOMTINHNANG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG">
     <End Role="tbNHOMNGUOIDUNG" Type="DB_HMSModel.Store.tbNHOMNGUOIDUNG" Multiplicity="1" />
     <End Role="tbTINHNANGNHOMND" Type="DB_HMSModel.Store.tbTINHNANGNHOMND" Multiplicity="*" />
@@ -410,6 +704,18 @@
       </Principal>
       <Dependent Role="tbTINHNANGNHOMND">
         <PropertyRef Name="MATINHNANG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbTRIEUCHUNG_tbHOSOKHAMBENH">
+    <End Role="tbHOSOKHAMBENH" Type="DB_HMSModel.Store.tbHOSOKHAMBENH" Multiplicity="1" />
+    <End Role="tbTRIEUCHUNG" Type="DB_HMSModel.Store.tbTRIEUCHUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHOSOKHAMBENH">
+        <PropertyRef Name="MAKHAMBENH" />
+      </Principal>
+      <Dependent Role="tbTRIEUCHUNG">
+        <PropertyRef Name="MABENHAN" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

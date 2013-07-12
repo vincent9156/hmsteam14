@@ -36,6 +36,30 @@ namespace DA
             }
         }
 
+        public static List<cThuocDO> GetListMedicine1(Boolean Trangthai)
+        {
+            List<cThuocDO> dsMedicine = new List<cThuocDO>();
+            using (DB_HMS_Entities dk = new DB_HMS_Entities())
+            {
+                var query = from ds in dk.tbTHUOCs
+                            where ds.TRANGTHAI== Trangthai
+                            select ds;
+                foreach (var row in query)
+                {
+                    cThuocDO ds = new cThuocDO();
+                    ds.MATHUOC = row.MATHUOC;
+                    ds.TENTHUONGMAI = row.TENTHUONGMAI;
+                    ds.TENBIETDUOC = row.TENBIETDUOC;
+                    ds.CACHDUNG = row.CACHDUNG;
+                    ds.DONVI = row.DONVI;
+                    ds.DONVIDUNG = row.DONVIDUNG;
+                    ds.GHICHU = row.GHICHU;
+                    ds.TRANGTHAI = row.TRANGTHAI.Value;
+                    dsMedicine.Add(ds);
+                }
+                return dsMedicine;
+            }
+        }
         /// <summary>
         /// Thêm thuốc xuống database
         /// </summary>
@@ -161,6 +185,21 @@ namespace DA
                 }
             }
             return group.TENPHONG;
+        }
+        public static cThuocDO Getthongtinthuoc(string MATHUOC)
+        {
+
+            cThuocDO st = new cThuocDO();
+            using (DB_HMS_Entities lst = new DB_HMS_Entities())
+            {
+                var query = (from u in lst.tbTHUOCs where u.MATHUOC == MATHUOC select u).First();
+                st.CACHDUNG = query.CACHDUNG;
+                st.DONVI = query.DONVI;
+                st.DONVIDUNG = query.DONVIDUNG;
+                st.GHICHU = query.GHICHU;
+                return st;
+            }
+
         }
     }
 }

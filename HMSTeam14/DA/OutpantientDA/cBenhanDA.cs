@@ -8,115 +8,82 @@ namespace DA
 {
     public class cBenhanDA
     {
-        public static List<cBenhanDO> Getdsbenhan(string TRANGTHAIBENHAN,bool TRANGTHAI)
+        public static List<cBenhanDO> Getdsbenhan(string MAPHONGKHAM ,int TRANGTHAI, int MAXACNHAN,DateTime NGAYHIENTAI)
         {
             List<cBenhanDO> dsbenhan = new List<cBenhanDO>();
             using (DB_HMS_Entities ds = new DB_HMS_Entities())
             {
-                var query = from ads in ds.tbBENHANs
+                var query = from ads in ds.tbHOSOKHAMBENHs
                             join ads1 in ds.tbBENHNHANs on ads.MABENHNHAN equals ads1.MABENHNHAN
-                            where ads.TRANGTHAIBENHNHAN == TRANGTHAIBENHAN && ads.TRANGTHAI ==TRANGTHAI
+                            where ads.MAPHONGKHAM==MAPHONGKHAM && ads.TRANGTHAI == TRANGTHAI && ads.MAXACNHAN == MAXACNHAN && ads.NGAYDK== NGAYHIENTAI
                             select new { ads, ads1};
                 foreach (var row in query)
                 {
                     cBenhanDO dss = new cBenhanDO();
-                    dss.MABENHAN = row.ads.MABENHAN;
+                    dss.MABENHAN = row.ads.MAKHAMBENH;
                     dss.MABENHNHAN = row.ads.MABENHNHAN;
                     dss.MABACSY = row.ads.MABACSY;
-                    dss.STT = row.ads1.STT;
                     dss.HOTEN = row.ads1.HO + "" + row.ads1.TEN;
-                    dss.DIACHI = row.ads1.DUONG + " " + row.ads1.QUAN + " " + row.ads1.TINH;
-                    dss.TUOI = row.ads1.TUOI;
-                    dss.GIOITINH = row.ads1.GIOITINH;
-                    dss.TRANGTHAI = row.ads.TRANGTHAI.Value;
-                    dss.TRANGTHAIBENHNHAN = row.ads.TRANGTHAIBENHNHAN;
-                    dss.NGAYTAO = row.ads.NGAYTAO.Value;
+                    dss.TUOI = row.ads.TUOI.ToString();
+                    dss.GIOITINH = row.ads.GIOITINH;
+                    dss.NGAYDK = row.ads.NGAYDK.Value;
+                    dss.GIODK = row.ads.GIODK.Value;
                     dsbenhan.Add(dss);
                 }
                 return dsbenhan;
             }
         }
-        public static List<cBenhanDO> Getdsbenhan1(string MABACSI, string TRANGTHAIBENHAN, bool TRANGTHAI)
+        public static List<cBenhanDO> Getdsbenhan1(string MAPHONGKHAM ,string MABACSI, int TRANGTHAI, int MAXACNHAN , DateTime NGAYHIENTAI)
         {
-            List<cBenhanDO> dsbenhan1 = new List<cBenhanDO>();
+            List<cBenhanDO> dsbenhan = new List<cBenhanDO>();
             using (DB_HMS_Entities ds = new DB_HMS_Entities())
             {
-                var query = from ads in ds.tbBENHANs
+                var query = from ads in ds.tbHOSOKHAMBENHs
                             join ads1 in ds.tbBENHNHANs on ads.MABENHNHAN equals ads1.MABENHNHAN
-                            where ads.TRANGTHAIBENHNHAN == TRANGTHAIBENHAN && ads.TRANGTHAI == TRANGTHAI && ads.MABACSY == MABACSI
+                            where  ads.TRANGTHAI == TRANGTHAI && ads.MAXACNHAN == MAXACNHAN && ads.MABACSY==MABACSI && ads.NGAYDK== NGAYHIENTAI && ads.MAPHONGKHAM ==MAPHONGKHAM
                             select new { ads, ads1 };
                 foreach (var row in query)
                 {
                     cBenhanDO dss = new cBenhanDO();
-                    dss.MABENHAN = row.ads.MABENHAN;
+                    dss.MABENHAN = row.ads.MAKHAMBENH;
                     dss.MABENHNHAN = row.ads.MABENHNHAN;
                     dss.MABACSY = row.ads.MABACSY;
-                    dss.STT = row.ads1.STT;
-                    dss.HOTEN = row.ads1.HO + "  " + row.ads1.TEN;
-                    dss.DIACHI = row.ads1.DUONG + "/" + row.ads1.QUAN + "/" + row.ads1.TINH;
-                    dss.TUOI = row.ads1.TUOI;
-                    dss.GIOITINH = row.ads1.GIOITINH;
-                    dss.TRANGTHAI = row.ads.TRANGTHAI.Value;
-                    dss.TRANGTHAIBENHNHAN = row.ads.TRANGTHAIBENHNHAN;
-                    dss.NGAYTAO = row.ads.NGAYTAO.Value;
-                    dsbenhan1.Add(dss);
+                    dss.HOTEN = row.ads1.HO + "" + row.ads1.TEN;
+                    dss.TUOI = row.ads.TUOI.ToString();
+                    dss.GIOITINH = row.ads.GIOITINH;
+                    dss.NGAYDK = row.ads.NGAYDK.Value;
+                    dss.GIODK = row.ads.GIODK.Value;
+                    dsbenhan.Add(dss);
                 }
-                return dsbenhan1;
+                return dsbenhan;
             }
         }
-        public static List<cBenhanDO> Getdsbenhan2(string MABACSI, string MABENHNHAN, string TRANGTHAIBENHAN)
+        public static List<cBenhanDO> Getdsbenhan2(string MABACSI, string MABENHNHAN, int MAXACNHAN)
         {
-            List<cBenhanDO> dsbenhan1 = new List<cBenhanDO>();
+            List<cBenhanDO> dsbenhan = new List<cBenhanDO>();
             using (DB_HMS_Entities ds = new DB_HMS_Entities())
             {
-                var query = from ads in ds.tbBENHANs
+                var query = from ads in ds.tbHOSOKHAMBENHs
                             join ads1 in ds.tbBENHNHANs on ads.MABENHNHAN equals ads1.MABENHNHAN
-                            where ads.MABACSY==MABACSI && ads.MABENHNHAN ==MABENHNHAN && ads.TRANGTHAIBENHNHAN == TRANGTHAIBENHAN
+                            where ads.MAKHAMBENH == MABENHNHAN && ads.MAXACNHAN == MAXACNHAN && ads.MABACSY == MABACSI
                             select new { ads, ads1 };
                 foreach (var row in query)
                 {
                     cBenhanDO dss = new cBenhanDO();
-                    dss.MABENHAN = row.ads.MABENHAN;
+                    dss.MABENHAN = row.ads.MAKHAMBENH;
                     dss.MABENHNHAN = row.ads.MABENHNHAN;
                     dss.MABACSY = row.ads.MABACSY;
-                    dss.STT = row.ads1.STT;
-                    dss.HOTEN = row.ads1.HO + "  " + row.ads1.TEN;
-                    dss.DIACHI = row.ads1.DUONG + "/" + row.ads1.QUAN + "/" + row.ads1.TINH;
-                    dss.TUOI = row.ads1.TUOI;
-                    dss.GIOITINH = row.ads1.GIOITINH;
-                    dss.TRANGTHAI = row.ads.TRANGTHAI.Value;
-                    dss.TRANGTHAIBENHNHAN = row.ads.TRANGTHAIBENHNHAN;
-                    dss.NGAYTAO = row.ads.NGAYTAO.Value;
-                    dsbenhan1.Add(dss);
+                    dss.HOTEN = row.ads1.HO + "" + row.ads1.TEN;
+                    dss.TUOI = row.ads.TUOI.ToString();
+                    dss.GIOITINH = row.ads.GIOITINH;
+                    dss.NGAYDK = row.ads.NGAYDK.Value;
+                    dss.GIODK = row.ads.GIODK.Value;
+                    dsbenhan.Add(dss);
                 }
-                return dsbenhan1;
+                return dsbenhan;
             }
         }
-        /// <summary>
-        /// Thêm bệnh vào database
-        /// </summary>
-        /// <param name="MABENH"></param>
-        /// <param name="MANHOMBENH"></param>
-        /// <param name="TENBENHTA"></param>
-        /// <param name="TENBENHTV"></param>
-        /// <param name="MOTA"></param>
-        /// <param name="NGAYTAO"></param>
-        /// <param name="TRANGTHAI"></param>
-        public static void InsertBenhan(string MABENHAN, string STT,string MABENHNHAN, string MABACSI, string TRANGTHAIBENHAN,  DateTime NGAYTAO, Boolean TRANGTHAI)
-        {
-            using (DB_HMS_Entities ds = new DB_HMS_Entities())
-            {
-                tbBENHAN pk = new tbBENHAN();
-                pk.MABENHAN = MABENHAN;
-                pk.MABACSY = MABACSI;
-                pk.MABENHNHAN = MABENHNHAN;
-                pk.STT = STT;
-                pk.NGAYTAO = NGAYTAO;
-                pk.TRANGTHAI = TRANGTHAI;
-                ds.AddTotbBENHANs(pk);
-                ds.SaveChanges();
-            }
-        }
+
         /// <summary>
         /// Cập nhật bệnh vào database
         /// </summary>
@@ -127,50 +94,66 @@ namespace DA
         /// <param name="MOTA"></param>
         /// <param name="NGAYTAO"></param>
         /// <param name="TRANGTHAI"></param>
-        public static void UpdateTrangthaibenhnhan(string MABENHAN, string TRANGTHAIBENHAN, DateTime NGAYTAO)
+        public static void UpdateTrangthai(string MABENHAN, int TRANGTHAI )
         {
             using (DB_HMS_Entities ds = new DB_HMS_Entities())
             {
-                tbBENHAN pk = new tbBENHAN();
-                var query = (from dss in ds.tbBENHANs
-                             where dss.MABENHAN ==MABENHAN
+                tbHOSOKHAMBENH pk = new tbHOSOKHAMBENH();
+                var query = (from dss in ds.tbHOSOKHAMBENHs
+                             where dss.MAKHAMBENH ==MABENHAN
                              select dss).First();
                 //query.MABENH = MABENH;
-                query.MABENHAN = MABENHAN;
-                query.TRANGTHAIBENHNHAN = TRANGTHAIBENHAN;
-                query.NGAYTAO = NGAYTAO;
-                ds.SaveChanges();
-            }
-        }
-        public static void UpdateTrangthaibenhan(string MABENHAN,  DateTime NGAYTAO,bool TRANGTHAI)
-        {
-            using (DB_HMS_Entities ds = new DB_HMS_Entities())
-            {
-                tbBENHAN pk = new tbBENHAN();
-                var query = (from dss in ds.tbBENHANs
-                             where dss.MABENHAN == MABENHAN
-                             select dss).First();
-                //query.MABENH = MABENH;
-                query.MABENHAN = MABENHAN;
+                query.MAKHAMBENH = MABENHAN;
                 query.TRANGTHAI = TRANGTHAI;
-                query.NGAYTAO = NGAYTAO;
                 ds.SaveChanges();
             }
         }
-        public static void UpdateBacsivaobenhan(string MABENHAN, string MABACSY,DateTime NGAYTAO)
+        public static void UpdateMaxacnhan(string MABENHAN, int MAXACNHAN)
         {
             using (DB_HMS_Entities ds = new DB_HMS_Entities())
             {
-                tbBENHAN pk = new tbBENHAN();
-                var query = (from dss in ds.tbBENHANs
-                             where dss.MABENHAN == MABENHAN
+                tbHOSOKHAMBENH pk = new tbHOSOKHAMBENH();
+                var query = (from dss in ds.tbHOSOKHAMBENHs
+                             where dss.MAKHAMBENH == MABENHAN
                              select dss).First();
                 //query.MABENH = MABENH;
-                query.MABENHAN = MABENHAN;
-                query.MABACSY = MABACSY;
-                query.NGAYTAO = NGAYTAO;
+                query.MAKHAMBENH = MABENHAN;
+                query.MAXACNHAN = MAXACNHAN;
                 ds.SaveChanges();
             }
+        }
+        public static void UpdateBacsivaobenhan(string MABENHAN, string MABACSY)
+        {
+            using (DB_HMS_Entities ds = new DB_HMS_Entities())
+            {
+                tbHOSOKHAMBENH pk = new tbHOSOKHAMBENH();
+                var query = (from dss in ds.tbHOSOKHAMBENHs
+                             where dss.MAKHAMBENH == MABENHAN
+                             select dss).First();
+                //query.MABENH = MABENH;
+                query.MAKHAMBENH = MABENHAN;
+                query.MABACSY = MABACSY;
+                ds.SaveChanges();
+            }
+        }
+        public static cBenhNhanDO GetThongtinbenhan(string MABENHNHAN)
+        {
+            cBenhNhanDO ma = new cBenhNhanDO();
+            using (DB_HMS_Entities lst = new DB_HMS_Entities())
+            {
+                var query = (from u in lst.tbBENHNHANs
+                             join u2 in lst.tbQUANHUYENs on u.IDQH equals u2.IDQH
+                             join u3 in lst.tbTINHTPs on u2.IDTP equals u3.IDTP
+                             where u.MABENHNHAN == MABENHNHAN
+                             select new { u,u2,u3}).First();
+                ma.MABENHNHAN = query.u.MABENHNHAN;
+                ma.HOTEN = query.u.HO+" "+query.u.TEN;
+                ma.DIACHI = query.u.DIACHI + " " + query.u2.TENQH + " " + query.u3.TENTP;
+                ma.GIOITINH = query.u.GIOITINH;
+                ma.NTNSBN = query.u.NTNSBN;
+                return ma;
+            }
+
         }
     }
 }

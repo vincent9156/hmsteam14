@@ -25,7 +25,9 @@ namespace DO
         public string MATHUOC{get;set;}
         public string MADONTHUOCMAU1{get;set;}
         public string MABACSI{get;set;}
-        public int? SOLUONG{get;set;}
+        public string SOLUONG{get;set;}
+        public string SOLUONGDUNG {get;set;}
+        public string SOLANDUNG {get;set;}
         public string TENTHUONGMAI { get; set; }
         public string CACHDUNG { set; get; }
         public string DONVIDUNG { set; get; }

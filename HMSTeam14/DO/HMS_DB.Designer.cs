@@ -20,10 +20,29 @@ using System.Runtime.Serialization;
 
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENH_tbNHOMBENH", "tbNHOMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMBENH), "tbBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENH), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENHPHONGKHAM_tbBENH", "tbBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbBENH), "tbBENHPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENHPHONGKHAM), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbQUANHUYEN), "tbBENHNHAN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENHNHAN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbBENHNHAN), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENHPHONGKHAM_tbPHONGKHAM", "tbPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbPHONGKHAM), "tbBENHPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENHPHONGKHAM), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbCHUANDOAN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbCHUANDOAN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DO.tbDONTHUOCMAU), "tbDONTHUOCMAUCHITIET", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbDONTHUOCMAUCHITIET), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTHUOC), "tbDONTHUOCMAUCHITIET", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbDONTHUOCMAUCHITIET), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHANVIEN), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbPHONGKHAM), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbHUONGDAN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHUONGDAN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbKETOA", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbKETOA), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbLICHHEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbLICHHEN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DO.tbHOSOKHAMBENH), "tbSINHLIEU", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbSINHLIEU), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbTIENSU", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTIENSU), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbTRIEUCHUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTRIEUCHUNG), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbKETOA_tbTHUOC", "tbTHUOC", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTHUOC), "tbKETOA", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbKETOA), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbNHANVIEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMNGUOIDUNG), "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbNHANVIEN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbNHANVIEN_tbPHONGKHAM", "tbPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbPHONGKHAM), "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbNHANVIEN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMNGUOIDUNG), "tbTHPHANQUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTHPHANQUYEN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMNGUOIDUNG), "tbTINHNANGNHOMND", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTINHNANGNHOMND), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTINHNANG_tbNHOMTINHNANG1", "tbNHOMTINHNANG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMTINHNANG), "tbTINHNANG", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTINHNANG), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbQUANHUYEN_tbTINHTP", "tbTINHTP", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTINHTP), "tbQUANHUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbQUANHUYEN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbQUYEN", "tbQUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbQUYEN), "tbTHPHANQUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTHPHANQUYEN), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbTINHNANG", "tbTINHNANG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTINHNANG), "tbTHPHANQUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTHPHANQUYEN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTINHNANGNHOMND_tbTINHNANG", "tbTINHNANG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTINHNANG), "tbTINHNANGNHOMND", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTINHNANGNHOMND), true)]
 
 #endregion
@@ -79,6 +98,22 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<sysdiagram> sysdiagrams
+        {
+            get
+            {
+                if ((_sysdiagrams == null))
+                {
+                    _sysdiagrams = base.CreateObjectSet<sysdiagram>("sysdiagrams");
+                }
+                return _sysdiagrams;
+            }
+        }
+        private ObjectSet<sysdiagram> _sysdiagrams;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<tbBENH> tbBENHs
         {
             get
@@ -91,22 +126,6 @@ namespace DO
             }
         }
         private ObjectSet<tbBENH> _tbBENHs;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tbBENHAN> tbBENHANs
-        {
-            get
-            {
-                if ((_tbBENHANs == null))
-                {
-                    _tbBENHANs = base.CreateObjectSet<tbBENHAN>("tbBENHANs");
-                }
-                return _tbBENHANs;
-            }
-        }
-        private ObjectSet<tbBENHAN> _tbBENHANs;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -159,22 +178,6 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<tbCHUANDOANCHITIET> tbCHUANDOANCHITIETs
-        {
-            get
-            {
-                if ((_tbCHUANDOANCHITIETs == null))
-                {
-                    _tbCHUANDOANCHITIETs = base.CreateObjectSet<tbCHUANDOANCHITIET>("tbCHUANDOANCHITIETs");
-                }
-                return _tbCHUANDOANCHITIETs;
-            }
-        }
-        private ObjectSet<tbCHUANDOANCHITIET> _tbCHUANDOANCHITIETs;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         public ObjectSet<tbDONTHUOCMAU> tbDONTHUOCMAUs
         {
             get
@@ -207,6 +210,22 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
+        {
+            get
+            {
+                if ((_tbHOSOKHAMBENHs == null))
+                {
+                    _tbHOSOKHAMBENHs = base.CreateObjectSet<tbHOSOKHAMBENH>("tbHOSOKHAMBENHs");
+                }
+                return _tbHOSOKHAMBENHs;
+            }
+        }
+        private ObjectSet<tbHOSOKHAMBENH> _tbHOSOKHAMBENHs;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<tbHUONGDAN> tbHUONGDANs
         {
             get
@@ -223,34 +242,18 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<tbKETOATHUOC> tbKETOATHUOCs
+        public ObjectSet<tbKETOA> tbKETOAs
         {
             get
             {
-                if ((_tbKETOATHUOCs == null))
+                if ((_tbKETOAs == null))
                 {
-                    _tbKETOATHUOCs = base.CreateObjectSet<tbKETOATHUOC>("tbKETOATHUOCs");
+                    _tbKETOAs = base.CreateObjectSet<tbKETOA>("tbKETOAs");
                 }
-                return _tbKETOATHUOCs;
+                return _tbKETOAs;
             }
         }
-        private ObjectSet<tbKETOATHUOC> _tbKETOATHUOCs;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tbKETOATHUOCCHITIET> tbKETOATHUOCCHITIETs
-        {
-            get
-            {
-                if ((_tbKETOATHUOCCHITIETs == null))
-                {
-                    _tbKETOATHUOCCHITIETs = base.CreateObjectSet<tbKETOATHUOCCHITIET>("tbKETOATHUOCCHITIETs");
-                }
-                return _tbKETOATHUOCCHITIETs;
-            }
-        }
-        private ObjectSet<tbKETOATHUOCCHITIET> _tbKETOATHUOCCHITIETs;
+        private ObjectSet<tbKETOA> _tbKETOAs;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -351,6 +354,22 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<tbQUANHUYEN> tbQUANHUYENs
+        {
+            get
+            {
+                if ((_tbQUANHUYENs == null))
+                {
+                    _tbQUANHUYENs = base.CreateObjectSet<tbQUANHUYEN>("tbQUANHUYENs");
+                }
+                return _tbQUANHUYENs;
+            }
+        }
+        private ObjectSet<tbQUANHUYEN> _tbQUANHUYENs;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<tbQUYEN> tbQUYENs
         {
             get
@@ -415,34 +434,18 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<tbTIENSUBENH> tbTIENSUBENHs
+        public ObjectSet<tbTIENSU> tbTIENSUs
         {
             get
             {
-                if ((_tbTIENSUBENHs == null))
+                if ((_tbTIENSUs == null))
                 {
-                    _tbTIENSUBENHs = base.CreateObjectSet<tbTIENSUBENH>("tbTIENSUBENHs");
+                    _tbTIENSUs = base.CreateObjectSet<tbTIENSU>("tbTIENSUs");
                 }
-                return _tbTIENSUBENHs;
+                return _tbTIENSUs;
             }
         }
-        private ObjectSet<tbTIENSUBENH> _tbTIENSUBENHs;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<tbTIENSUBENHCHITIET> tbTIENSUBENHCHITIETs
-        {
-            get
-            {
-                if ((_tbTIENSUBENHCHITIETs == null))
-                {
-                    _tbTIENSUBENHCHITIETs = base.CreateObjectSet<tbTIENSUBENHCHITIET>("tbTIENSUBENHCHITIETs");
-                }
-                return _tbTIENSUBENHCHITIETs;
-            }
-        }
-        private ObjectSet<tbTIENSUBENHCHITIET> _tbTIENSUBENHCHITIETs;
+        private ObjectSet<tbTIENSU> _tbTIENSUs;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -479,6 +482,22 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<tbTINHTP> tbTINHTPs
+        {
+            get
+            {
+                if ((_tbTINHTPs == null))
+                {
+                    _tbTINHTPs = base.CreateObjectSet<tbTINHTP>("tbTINHTPs");
+                }
+                return _tbTINHTPs;
+            }
+        }
+        private ObjectSet<tbTINHTP> _tbTINHTPs;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<tbTRIEUCHUNG> tbTRIEUCHUNGs
         {
             get
@@ -496,19 +515,19 @@ namespace DO
         #region AddTo Methods
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the sysdiagrams EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTosysdiagrams(sysdiagram sysdiagram)
+        {
+            base.AddObject("sysdiagrams", sysdiagram);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the tbBENHs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbBENHs(tbBENH tbBENH)
         {
             base.AddObject("tbBENHs", tbBENH);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tbBENHANs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotbBENHANs(tbBENHAN tbBENHAN)
-        {
-            base.AddObject("tbBENHANs", tbBENHAN);
         }
     
         /// <summary>
@@ -536,14 +555,6 @@ namespace DO
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the tbCHUANDOANCHITIETs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotbCHUANDOANCHITIETs(tbCHUANDOANCHITIET tbCHUANDOANCHITIET)
-        {
-            base.AddObject("tbCHUANDOANCHITIETs", tbCHUANDOANCHITIET);
-        }
-    
-        /// <summary>
         /// Deprecated Method for adding a new object to the tbDONTHUOCMAUs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbDONTHUOCMAUs(tbDONTHUOCMAU tbDONTHUOCMAU)
@@ -560,6 +571,14 @@ namespace DO
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the tbHOSOKHAMBENHs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotbHOSOKHAMBENHs(tbHOSOKHAMBENH tbHOSOKHAMBENH)
+        {
+            base.AddObject("tbHOSOKHAMBENHs", tbHOSOKHAMBENH);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the tbHUONGDANs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbHUONGDANs(tbHUONGDAN tbHUONGDAN)
@@ -568,19 +587,11 @@ namespace DO
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the tbKETOATHUOCs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// Deprecated Method for adding a new object to the tbKETOAs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddTotbKETOATHUOCs(tbKETOATHUOC tbKETOATHUOC)
+        public void AddTotbKETOAs(tbKETOA tbKETOA)
         {
-            base.AddObject("tbKETOATHUOCs", tbKETOATHUOC);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tbKETOATHUOCCHITIETs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotbKETOATHUOCCHITIETs(tbKETOATHUOCCHITIET tbKETOATHUOCCHITIET)
-        {
-            base.AddObject("tbKETOATHUOCCHITIETs", tbKETOATHUOCCHITIET);
+            base.AddObject("tbKETOAs", tbKETOA);
         }
     
         /// <summary>
@@ -632,6 +643,14 @@ namespace DO
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the tbQUANHUYENs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotbQUANHUYENs(tbQUANHUYEN tbQUANHUYEN)
+        {
+            base.AddObject("tbQUANHUYENs", tbQUANHUYEN);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the tbQUYENs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbQUYENs(tbQUYEN tbQUYEN)
@@ -664,19 +683,11 @@ namespace DO
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the tbTIENSUBENHs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// Deprecated Method for adding a new object to the tbTIENSUs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddTotbTIENSUBENHs(tbTIENSUBENH tbTIENSUBENH)
+        public void AddTotbTIENSUs(tbTIENSU tbTIENSU)
         {
-            base.AddObject("tbTIENSUBENHs", tbTIENSUBENH);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the tbTIENSUBENHCHITIETs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddTotbTIENSUBENHCHITIETs(tbTIENSUBENHCHITIET tbTIENSUBENHCHITIET)
-        {
-            base.AddObject("tbTIENSUBENHCHITIETs", tbTIENSUBENHCHITIET);
+            base.AddObject("tbTIENSUs", tbTIENSU);
         }
     
         /// <summary>
@@ -696,6 +707,14 @@ namespace DO
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the tbTINHTPs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddTotbTINHTPs(tbTINHTP tbTINHTP)
+        {
+            base.AddObject("tbTINHTPs", tbTINHTP);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the tbTRIEUCHUNGs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddTotbTRIEUCHUNGs(tbTRIEUCHUNG tbTRIEUCHUNG)
@@ -710,6 +729,161 @@ namespace DO
     #endregion
     
     #region Entities
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="sysdiagram")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class sysdiagram : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new sysdiagram object.
+        /// </summary>
+        /// <param name="name">Initial value of the name property.</param>
+        /// <param name="principal_id">Initial value of the principal_id property.</param>
+        /// <param name="diagram_id">Initial value of the diagram_id property.</param>
+        public static sysdiagram Createsysdiagram(global::System.String name, global::System.Int32 principal_id, global::System.Int32 diagram_id)
+        {
+            sysdiagram sysdiagram = new sysdiagram();
+            sysdiagram.name = name;
+            sysdiagram.principal_id = principal_id;
+            sysdiagram.diagram_id = diagram_id;
+            return sysdiagram;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                OnnameChanging(value);
+                ReportPropertyChanging("name");
+                _name = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("name");
+                OnnameChanged();
+            }
+        }
+        private global::System.String _name;
+        partial void OnnameChanging(global::System.String value);
+        partial void OnnameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 principal_id
+        {
+            get
+            {
+                return _principal_id;
+            }
+            set
+            {
+                Onprincipal_idChanging(value);
+                ReportPropertyChanging("principal_id");
+                _principal_id = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("principal_id");
+                Onprincipal_idChanged();
+            }
+        }
+        private global::System.Int32 _principal_id;
+        partial void Onprincipal_idChanging(global::System.Int32 value);
+        partial void Onprincipal_idChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 diagram_id
+        {
+            get
+            {
+                return _diagram_id;
+            }
+            set
+            {
+                if (_diagram_id != value)
+                {
+                    Ondiagram_idChanging(value);
+                    ReportPropertyChanging("diagram_id");
+                    _diagram_id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("diagram_id");
+                    Ondiagram_idChanged();
+                }
+            }
+        }
+        private global::System.Int32 _diagram_id;
+        partial void Ondiagram_idChanging(global::System.Int32 value);
+        partial void Ondiagram_idChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> version
+        {
+            get
+            {
+                return _version;
+            }
+            set
+            {
+                OnversionChanging(value);
+                ReportPropertyChanging("version");
+                _version = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("version");
+                OnversionChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _version;
+        partial void OnversionChanging(Nullable<global::System.Int32> value);
+        partial void OnversionChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] definition
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_definition);
+            }
+            set
+            {
+                OndefinitionChanging(value);
+                ReportPropertyChanging("definition");
+                _definition = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("definition");
+                OndefinitionChanged();
+            }
+        }
+        private global::System.Byte[] _definition;
+        partial void OndefinitionChanging(global::System.Byte[] value);
+        partial void OndefinitionChanged();
+
+        #endregion
+    
+    }
     
     /// <summary>
     /// No Metadata Documentation available.
@@ -980,209 +1154,6 @@ namespace DO
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbBENHAN")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class tbBENHAN : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new tbBENHAN object.
-        /// </summary>
-        /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
-        /// <param name="mABENHNHAN">Initial value of the MABENHNHAN property.</param>
-        /// <param name="tRANGTHAIBENHNHAN">Initial value of the TRANGTHAIBENHNHAN property.</param>
-        public static tbBENHAN CreatetbBENHAN(global::System.String mABENHAN, global::System.String mABENHNHAN, global::System.String tRANGTHAIBENHNHAN)
-        {
-            tbBENHAN tbBENHAN = new tbBENHAN();
-            tbBENHAN.MABENHAN = mABENHAN;
-            tbBENHAN.MABENHNHAN = mABENHNHAN;
-            tbBENHAN.TRANGTHAIBENHNHAN = tRANGTHAIBENHNHAN;
-            return tbBENHAN;
-        }
-
-        #endregion
-        #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String STT
-        {
-            get
-            {
-                return _STT;
-            }
-            set
-            {
-                OnSTTChanging(value);
-                ReportPropertyChanging("STT");
-                _STT = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("STT");
-                OnSTTChanged();
-            }
-        }
-        private global::System.String _STT;
-        partial void OnSTTChanging(global::System.String value);
-        partial void OnSTTChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String MABENHAN
-        {
-            get
-            {
-                return _MABENHAN;
-            }
-            set
-            {
-                if (_MABENHAN != value)
-                {
-                    OnMABENHANChanging(value);
-                    ReportPropertyChanging("MABENHAN");
-                    _MABENHAN = StructuralObject.SetValidValue(value, false);
-                    ReportPropertyChanged("MABENHAN");
-                    OnMABENHANChanged();
-                }
-            }
-        }
-        private global::System.String _MABENHAN;
-        partial void OnMABENHANChanging(global::System.String value);
-        partial void OnMABENHANChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String MABENHNHAN
-        {
-            get
-            {
-                return _MABENHNHAN;
-            }
-            set
-            {
-                OnMABENHNHANChanging(value);
-                ReportPropertyChanging("MABENHNHAN");
-                _MABENHNHAN = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MABENHNHAN");
-                OnMABENHNHANChanged();
-            }
-        }
-        private global::System.String _MABENHNHAN;
-        partial void OnMABENHNHANChanging(global::System.String value);
-        partial void OnMABENHNHANChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String MABACSY
-        {
-            get
-            {
-                return _MABACSY;
-            }
-            set
-            {
-                OnMABACSYChanging(value);
-                ReportPropertyChanging("MABACSY");
-                _MABACSY = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("MABACSY");
-                OnMABACSYChanged();
-            }
-        }
-        private global::System.String _MABACSY;
-        partial void OnMABACSYChanging(global::System.String value);
-        partial void OnMABACSYChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String TRANGTHAIBENHNHAN
-        {
-            get
-            {
-                return _TRANGTHAIBENHNHAN;
-            }
-            set
-            {
-                OnTRANGTHAIBENHNHANChanging(value);
-                ReportPropertyChanging("TRANGTHAIBENHNHAN");
-                _TRANGTHAIBENHNHAN = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("TRANGTHAIBENHNHAN");
-                OnTRANGTHAIBENHNHANChanged();
-            }
-        }
-        private global::System.String _TRANGTHAIBENHNHAN;
-        partial void OnTRANGTHAIBENHNHANChanging(global::System.String value);
-        partial void OnTRANGTHAIBENHNHANChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Boolean> TRANGTHAI
-        {
-            get
-            {
-                return _TRANGTHAI;
-            }
-            set
-            {
-                OnTRANGTHAIChanging(value);
-                ReportPropertyChanging("TRANGTHAI");
-                _TRANGTHAI = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("TRANGTHAI");
-                OnTRANGTHAIChanged();
-            }
-        }
-        private Nullable<global::System.Boolean> _TRANGTHAI;
-        partial void OnTRANGTHAIChanging(Nullable<global::System.Boolean> value);
-        partial void OnTRANGTHAIChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> NGAYTAO
-        {
-            get
-            {
-                return _NGAYTAO;
-            }
-            set
-            {
-                OnNGAYTAOChanging(value);
-                ReportPropertyChanging("NGAYTAO");
-                _NGAYTAO = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("NGAYTAO");
-                OnNGAYTAOChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _NGAYTAO;
-        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
-        partial void OnNGAYTAOChanged();
-
-        #endregion
-    
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbBENHNHAN")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -1194,16 +1165,12 @@ namespace DO
         /// Create a new tbBENHNHAN object.
         /// </summary>
         /// <param name="mABENHNHAN">Initial value of the MABENHNHAN property.</param>
-        /// <param name="tEN">Initial value of the TEN property.</param>
-        /// <param name="tUOI">Initial value of the TUOI property.</param>
-        /// <param name="gIOITINH">Initial value of the GIOITINH property.</param>
-        public static tbBENHNHAN CreatetbBENHNHAN(global::System.String mABENHNHAN, global::System.String tEN, global::System.String tUOI, global::System.String gIOITINH)
+        /// <param name="iDQH">Initial value of the IDQH property.</param>
+        public static tbBENHNHAN CreatetbBENHNHAN(global::System.String mABENHNHAN, global::System.String iDQH)
         {
             tbBENHNHAN tbBENHNHAN = new tbBENHNHAN();
             tbBENHNHAN.MABENHNHAN = mABENHNHAN;
-            tbBENHNHAN.TEN = tEN;
-            tbBENHNHAN.TUOI = tUOI;
-            tbBENHNHAN.GIOITINH = gIOITINH;
+            tbBENHNHAN.IDQH = iDQH;
             return tbBENHNHAN;
         }
 
@@ -1264,7 +1231,7 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String TEN
         {
@@ -1276,7 +1243,7 @@ namespace DO
             {
                 OnTENChanging(value);
                 ReportPropertyChanging("TEN");
-                _TEN = StructuralObject.SetValidValue(value, false);
+                _TEN = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("TEN");
                 OnTENChanged();
             }
@@ -1290,53 +1257,53 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> NGAYSINH
+        public Nullable<global::System.DateTime> NTNSBN
         {
             get
             {
-                return _NGAYSINH;
+                return _NTNSBN;
             }
             set
             {
-                OnNGAYSINHChanging(value);
-                ReportPropertyChanging("NGAYSINH");
-                _NGAYSINH = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("NGAYSINH");
-                OnNGAYSINHChanged();
+                OnNTNSBNChanging(value);
+                ReportPropertyChanging("NTNSBN");
+                _NTNSBN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NTNSBN");
+                OnNTNSBNChanged();
             }
         }
-        private Nullable<global::System.DateTime> _NGAYSINH;
-        partial void OnNGAYSINHChanging(Nullable<global::System.DateTime> value);
-        partial void OnNGAYSINHChanged();
+        private Nullable<global::System.DateTime> _NTNSBN;
+        partial void OnNTNSBNChanging(Nullable<global::System.DateTime> value);
+        partial void OnNTNSBNChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String TUOI
+        public Nullable<global::System.Int32> NSBN
         {
             get
             {
-                return _TUOI;
+                return _NSBN;
             }
             set
             {
-                OnTUOIChanging(value);
-                ReportPropertyChanging("TUOI");
-                _TUOI = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("TUOI");
-                OnTUOIChanged();
+                OnNSBNChanging(value);
+                ReportPropertyChanging("NSBN");
+                _NSBN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NSBN");
+                OnNSBNChanged();
             }
         }
-        private global::System.String _TUOI;
-        partial void OnTUOIChanging(global::System.String value);
-        partial void OnTUOIChanged();
+        private Nullable<global::System.Int32> _NSBN;
+        partial void OnNSBNChanging(Nullable<global::System.Int32> value);
+        partial void OnNSBNChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String GIOITINH
         {
@@ -1348,7 +1315,7 @@ namespace DO
             {
                 OnGIOITINHChanging(value);
                 ReportPropertyChanging("GIOITINH");
-                _GIOITINH = StructuralObject.SetValidValue(value, false);
+                _GIOITINH = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("GIOITINH");
                 OnGIOITINHChanged();
             }
@@ -1362,147 +1329,114 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String TINH
+        public global::System.String DIACHI
         {
             get
             {
-                return _TINH;
+                return _DIACHI;
             }
             set
             {
-                OnTINHChanging(value);
-                ReportPropertyChanging("TINH");
-                _TINH = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("TINH");
-                OnTINHChanged();
+                OnDIACHIChanging(value);
+                ReportPropertyChanging("DIACHI");
+                _DIACHI = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("DIACHI");
+                OnDIACHIChanged();
             }
         }
-        private global::System.String _TINH;
-        partial void OnTINHChanging(global::System.String value);
-        partial void OnTINHChanged();
+        private global::System.String _DIACHI;
+        partial void OnDIACHIChanging(global::System.String value);
+        partial void OnDIACHIChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String QUAN
+        public global::System.String IDQH
         {
             get
             {
-                return _QUAN;
+                return _IDQH;
             }
             set
             {
-                OnQUANChanging(value);
-                ReportPropertyChanging("QUAN");
-                _QUAN = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("QUAN");
-                OnQUANChanged();
+                OnIDQHChanging(value);
+                ReportPropertyChanging("IDQH");
+                _IDQH = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("IDQH");
+                OnIDQHChanged();
             }
         }
-        private global::System.String _QUAN;
-        partial void OnQUANChanging(global::System.String value);
-        partial void OnQUANChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String DUONG
-        {
-            get
-            {
-                return _DUONG;
-            }
-            set
-            {
-                OnDUONGChanging(value);
-                ReportPropertyChanging("DUONG");
-                _DUONG = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("DUONG");
-                OnDUONGChanged();
-            }
-        }
-        private global::System.String _DUONG;
-        partial void OnDUONGChanging(global::System.String value);
-        partial void OnDUONGChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> NGAYTAO
-        {
-            get
-            {
-                return _NGAYTAO;
-            }
-            set
-            {
-                OnNGAYTAOChanging(value);
-                ReportPropertyChanging("NGAYTAO");
-                _NGAYTAO = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("NGAYTAO");
-                OnNGAYTAOChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _NGAYTAO;
-        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
-        partial void OnNGAYTAOChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.Boolean> TRANGTHAI
-        {
-            get
-            {
-                return _TRANGTHAI;
-            }
-            set
-            {
-                OnTRANGTHAIChanging(value);
-                ReportPropertyChanging("TRANGTHAI");
-                _TRANGTHAI = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("TRANGTHAI");
-                OnTRANGTHAIChanged();
-            }
-        }
-        private Nullable<global::System.Boolean> _TRANGTHAI;
-        partial void OnTRANGTHAIChanging(Nullable<global::System.Boolean> value);
-        partial void OnTRANGTHAIChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String STT
-        {
-            get
-            {
-                return _STT;
-            }
-            set
-            {
-                OnSTTChanging(value);
-                ReportPropertyChanging("STT");
-                _STT = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("STT");
-                OnSTTChanged();
-            }
-        }
-        private global::System.String _STT;
-        partial void OnSTTChanging(global::System.String value);
-        partial void OnSTTChanged();
+        private global::System.String _IDQH;
+        partial void OnIDQHChanging(global::System.String value);
+        partial void OnIDQHChanged();
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN")]
+        public tbQUANHUYEN tbQUANHUYEN
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbQUANHUYEN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbQUANHUYEN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbQUANHUYEN> tbQUANHUYENReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbQUANHUYEN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbQUANHUYEN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbHOSOKHAMBENH")]
+        public EntityCollection<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -1774,24 +1708,24 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String XYLY
+        public global::System.String GHICHU
         {
             get
             {
-                return _XYLY;
+                return _GHICHU;
             }
             set
             {
-                OnXYLYChanging(value);
-                ReportPropertyChanging("XYLY");
-                _XYLY = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("XYLY");
-                OnXYLYChanged();
+                OnGHICHUChanging(value);
+                ReportPropertyChanging("GHICHU");
+                _GHICHU = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("GHICHU");
+                OnGHICHUChanged();
             }
         }
-        private global::System.String _XYLY;
-        partial void OnXYLYChanging(global::System.String value);
-        partial void OnXYLYChanged();
+        private global::System.String _GHICHU;
+        partial void OnGHICHUChanging(global::System.String value);
+        partial void OnGHICHUChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1819,137 +1753,47 @@ namespace DO
 
         #endregion
     
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbCHUANDOANCHITIET")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class tbCHUANDOANCHITIET : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new tbCHUANDOANCHITIET object.
-        /// </summary>
-        /// <param name="mACDCHITIET">Initial value of the MACDCHITIET property.</param>
-        /// <param name="mACHUANDOAN">Initial value of the MACHUANDOAN property.</param>
-        /// <param name="mABENH">Initial value of the MABENH property.</param>
-        public static tbCHUANDOANCHITIET CreatetbCHUANDOANCHITIET(global::System.Int32 mACDCHITIET, global::System.String mACHUANDOAN, global::System.String mABENH)
-        {
-            tbCHUANDOANCHITIET tbCHUANDOANCHITIET = new tbCHUANDOANCHITIET();
-            tbCHUANDOANCHITIET.MACDCHITIET = mACDCHITIET;
-            tbCHUANDOANCHITIET.MACHUANDOAN = mACHUANDOAN;
-            tbCHUANDOANCHITIET.MABENH = mABENH;
-            return tbCHUANDOANCHITIET;
-        }
-
-        #endregion
-        #region Primitive Properties
+        #region Navigation Properties
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        public global::System.Int32 MACDCHITIET
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
         {
             get
             {
-                return _MACDCHITIET;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH").Value;
             }
             set
             {
-                if (_MACDCHITIET != value)
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
                 {
-                    OnMACDCHITIETChanging(value);
-                    ReportPropertyChanging("MACDCHITIET");
-                    _MACDCHITIET = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("MACDCHITIET");
-                    OnMACDCHITIETChanged();
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", value);
                 }
             }
         }
-        private global::System.Int32 _MACDCHITIET;
-        partial void OnMACDCHITIETChanging(global::System.Int32 value);
-        partial void OnMACDCHITIETChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String MACHUANDOAN
-        {
-            get
-            {
-                return _MACHUANDOAN;
-            }
-            set
-            {
-                OnMACHUANDOANChanging(value);
-                ReportPropertyChanging("MACHUANDOAN");
-                _MACHUANDOAN = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MACHUANDOAN");
-                OnMACHUANDOANChanged();
-            }
-        }
-        private global::System.String _MACHUANDOAN;
-        partial void OnMACHUANDOANChanging(global::System.String value);
-        partial void OnMACHUANDOANChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String MABENH
-        {
-            get
-            {
-                return _MABENH;
-            }
-            set
-            {
-                OnMABENHChanging(value);
-                ReportPropertyChanging("MABENH");
-                _MABENH = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MABENH");
-                OnMABENHChanged();
-            }
-        }
-        private global::System.String _MABENH;
-        partial void OnMABENHChanging(global::System.String value);
-        partial void OnMABENHChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> NGAYTAO
-        {
-            get
-            {
-                return _NGAYTAO;
-            }
-            set
-            {
-                OnNGAYTAOChanging(value);
-                ReportPropertyChanging("NGAYTAO");
-                _NGAYTAO = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("NGAYTAO");
-                OnNGAYTAOChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _NGAYTAO;
-        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
-        partial void OnNGAYTAOChanged();
 
         #endregion
-    
     }
     
     /// <summary>
@@ -2082,6 +1926,31 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAUCHITIET")]
+        public EntityCollection<tbDONTHUOCMAUCHITIET> tbDONTHUOCMAUCHITIETs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbDONTHUOCMAUCHITIET>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAUCHITIET");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbDONTHUOCMAUCHITIET>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAUCHITIET", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -2258,9 +2127,682 @@ namespace DO
         private Nullable<global::System.Int32> _SOLUONG;
         partial void OnSOLUONGChanging(Nullable<global::System.Int32> value);
         partial void OnSOLUONGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> SOLANDUNG
+        {
+            get
+            {
+                return _SOLANDUNG;
+            }
+            set
+            {
+                OnSOLANDUNGChanging(value);
+                ReportPropertyChanging("SOLANDUNG");
+                _SOLANDUNG = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SOLANDUNG");
+                OnSOLANDUNGChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _SOLANDUNG;
+        partial void OnSOLANDUNGChanging(Nullable<global::System.Int32> value);
+        partial void OnSOLANDUNGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> SOLUONGDUNG
+        {
+            get
+            {
+                return _SOLUONGDUNG;
+            }
+            set
+            {
+                OnSOLUONGDUNGChanging(value);
+                ReportPropertyChanging("SOLUONGDUNG");
+                _SOLUONGDUNG = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SOLUONGDUNG");
+                OnSOLUONGDUNGChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _SOLUONGDUNG;
+        partial void OnSOLUONGDUNGChanging(Nullable<global::System.Int32> value);
+        partial void OnSOLUONGDUNGChanged();
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU")]
+        public tbDONTHUOCMAU tbDONTHUOCMAU
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbDONTHUOCMAU>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbDONTHUOCMAU>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbDONTHUOCMAU> tbDONTHUOCMAUReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbDONTHUOCMAU>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbDONTHUOCMAU>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC")]
+        public tbTHUOC tbTHUOC
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbTHUOC> tbTHUOCReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbHOSOKHAMBENH")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tbHOSOKHAMBENH : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tbHOSOKHAMBENH object.
+        /// </summary>
+        /// <param name="mAKHAMBENH">Initial value of the MAKHAMBENH property.</param>
+        /// <param name="mABENHNHAN">Initial value of the MABENHNHAN property.</param>
+        /// <param name="mAPHONGKHAM">Initial value of the MAPHONGKHAM property.</param>
+        public static tbHOSOKHAMBENH CreatetbHOSOKHAMBENH(global::System.String mAKHAMBENH, global::System.String mABENHNHAN, global::System.String mAPHONGKHAM)
+        {
+            tbHOSOKHAMBENH tbHOSOKHAMBENH = new tbHOSOKHAMBENH();
+            tbHOSOKHAMBENH.MAKHAMBENH = mAKHAMBENH;
+            tbHOSOKHAMBENH.MABENHNHAN = mABENHNHAN;
+            tbHOSOKHAMBENH.MAPHONGKHAM = mAPHONGKHAM;
+            return tbHOSOKHAMBENH;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MAKHAMBENH
+        {
+            get
+            {
+                return _MAKHAMBENH;
+            }
+            set
+            {
+                if (_MAKHAMBENH != value)
+                {
+                    OnMAKHAMBENHChanging(value);
+                    ReportPropertyChanging("MAKHAMBENH");
+                    _MAKHAMBENH = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("MAKHAMBENH");
+                    OnMAKHAMBENHChanged();
+                }
+            }
+        }
+        private global::System.String _MAKHAMBENH;
+        partial void OnMAKHAMBENHChanging(global::System.String value);
+        partial void OnMAKHAMBENHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MABENHNHAN
+        {
+            get
+            {
+                return _MABENHNHAN;
+            }
+            set
+            {
+                OnMABENHNHANChanging(value);
+                ReportPropertyChanging("MABENHNHAN");
+                _MABENHNHAN = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("MABENHNHAN");
+                OnMABENHNHANChanged();
+            }
+        }
+        private global::System.String _MABENHNHAN;
+        partial void OnMABENHNHANChanging(global::System.String value);
+        partial void OnMABENHNHANChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String MABACSY
+        {
+            get
+            {
+                return _MABACSY;
+            }
+            set
+            {
+                OnMABACSYChanging(value);
+                ReportPropertyChanging("MABACSY");
+                _MABACSY = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("MABACSY");
+                OnMABACSYChanged();
+            }
+        }
+        private global::System.String _MABACSY;
+        partial void OnMABACSYChanging(global::System.String value);
+        partial void OnMABACSYChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> TUOI
+        {
+            get
+            {
+                return _TUOI;
+            }
+            set
+            {
+                OnTUOIChanging(value);
+                ReportPropertyChanging("TUOI");
+                _TUOI = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TUOI");
+                OnTUOIChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _TUOI;
+        partial void OnTUOIChanging(Nullable<global::System.Int32> value);
+        partial void OnTUOIChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String GIOITINH
+        {
+            get
+            {
+                return _GIOITINH;
+            }
+            set
+            {
+                OnGIOITINHChanging(value);
+                ReportPropertyChanging("GIOITINH");
+                _GIOITINH = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("GIOITINH");
+                OnGIOITINHChanged();
+            }
+        }
+        private global::System.String _GIOITINH;
+        partial void OnGIOITINHChanging(global::System.String value);
+        partial void OnGIOITINHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String MAPHONGKHAM
+        {
+            get
+            {
+                return _MAPHONGKHAM;
+            }
+            set
+            {
+                OnMAPHONGKHAMChanging(value);
+                ReportPropertyChanging("MAPHONGKHAM");
+                _MAPHONGKHAM = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("MAPHONGKHAM");
+                OnMAPHONGKHAMChanged();
+            }
+        }
+        private global::System.String _MAPHONGKHAM;
+        partial void OnMAPHONGKHAMChanging(global::System.String value);
+        partial void OnMAPHONGKHAMChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> MAXACNHAN
+        {
+            get
+            {
+                return _MAXACNHAN;
+            }
+            set
+            {
+                OnMAXACNHANChanging(value);
+                ReportPropertyChanging("MAXACNHAN");
+                _MAXACNHAN = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MAXACNHAN");
+                OnMAXACNHANChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _MAXACNHAN;
+        partial void OnMAXACNHANChanging(Nullable<global::System.Int32> value);
+        partial void OnMAXACNHANChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> TRANGTHAI
+        {
+            get
+            {
+                return _TRANGTHAI;
+            }
+            set
+            {
+                OnTRANGTHAIChanging(value);
+                ReportPropertyChanging("TRANGTHAI");
+                _TRANGTHAI = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("TRANGTHAI");
+                OnTRANGTHAIChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _TRANGTHAI;
+        partial void OnTRANGTHAIChanging(Nullable<global::System.Int32> value);
+        partial void OnTRANGTHAIChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> GIODK
+        {
+            get
+            {
+                return _GIODK;
+            }
+            set
+            {
+                OnGIODKChanging(value);
+                ReportPropertyChanging("GIODK");
+                _GIODK = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("GIODK");
+                OnGIODKChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _GIODK;
+        partial void OnGIODKChanging(Nullable<global::System.DateTime> value);
+        partial void OnGIODKChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NGAYDK
+        {
+            get
+            {
+                return _NGAYDK;
+            }
+            set
+            {
+                OnNGAYDKChanging(value);
+                ReportPropertyChanging("NGAYDK");
+                _NGAYDK = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NGAYDK");
+                OnNGAYDKChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NGAYDK;
+        partial void OnNGAYDKChanging(Nullable<global::System.DateTime> value);
+        partial void OnNGAYDKChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN")]
+        public tbBENHNHAN tbBENHNHAN
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbBENHNHAN> tbBENHNHANReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbCHUANDOAN")]
+        public EntityCollection<tbCHUANDOAN> tbCHUANDOANs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbCHUANDOAN>("DB_HMSModel.FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbCHUANDOAN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbCHUANDOAN>("DB_HMSModel.FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbCHUANDOAN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN")]
+        public tbNHANVIEN tbNHANVIEN
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbNHANVIEN> tbNHANVIENReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM")]
+        public tbPHONGKHAM tbPHONGKHAM
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbPHONGKHAM> tbPHONGKHAMReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHUONGDAN")]
+        public EntityCollection<tbHUONGDAN> tbHUONGDANs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHUONGDAN>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHUONGDAN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHUONGDAN>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHUONGDAN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbHOSOKHAMBENH1", "tbKETOA")]
+        public EntityCollection<tbKETOA> tbKETOAs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbKETOA");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbKETOA", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbLICHHEN_tbHOSOKHAMBENH", "tbLICHHEN")]
+        public EntityCollection<tbLICHHEN> tbLICHHENs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbLICHHEN>("DB_HMSModel.FK_tbLICHHEN_tbHOSOKHAMBENH", "tbLICHHEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbLICHHEN>("DB_HMSModel.FK_tbLICHHEN_tbHOSOKHAMBENH", "tbLICHHEN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbSINHLIEU")]
+        public EntityCollection<tbSINHLIEU> tbSINHLIEUx
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbSINHLIEU>("DB_HMSModel.FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbSINHLIEU");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbSINHLIEU>("DB_HMSModel.FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbSINHLIEU", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTIENSU_tbHOSOKHAMBENH", "tbTIENSU")]
+        public EntityCollection<tbTIENSU> tbTIENSUs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbTIENSU>("DB_HMSModel.FK_tbTIENSU_tbHOSOKHAMBENH", "tbTIENSU");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbTIENSU>("DB_HMSModel.FK_tbTIENSU_tbHOSOKHAMBENH", "tbTIENSU", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbTRIEUCHUNG")]
+        public EntityCollection<tbTRIEUCHUNG> tbTRIEUCHUNGs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbTRIEUCHUNG>("DB_HMSModel.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbTRIEUCHUNG");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbTRIEUCHUNG>("DB_HMSModel.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbTRIEUCHUNG", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -2387,32 +2929,99 @@ namespace DO
         private global::System.String _LOIDAN;
         partial void OnLOIDANChanging(global::System.String value);
         partial void OnLOIDANChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> NGAYTAO
+        {
+            get
+            {
+                return _NGAYTAO;
+            }
+            set
+            {
+                OnNGAYTAOChanging(value);
+                ReportPropertyChanging("NGAYTAO");
+                _NGAYTAO = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("NGAYTAO");
+                OnNGAYTAOChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _NGAYTAO;
+        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
+        partial void OnNGAYTAOChanged();
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbKETOATHUOC")]
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbKETOA")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class tbKETOATHUOC : EntityObject
+    public partial class tbKETOA : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new tbKETOATHUOC object.
+        /// Create a new tbKETOA object.
         /// </summary>
         /// <param name="mATOATHUOC">Initial value of the MATOATHUOC property.</param>
         /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
-        public static tbKETOATHUOC CreatetbKETOATHUOC(global::System.String mATOATHUOC, global::System.String mABENHAN)
+        /// <param name="mATHUOC">Initial value of the MATHUOC property.</param>
+        public static tbKETOA CreatetbKETOA(global::System.String mATOATHUOC, global::System.String mABENHAN, global::System.String mATHUOC)
         {
-            tbKETOATHUOC tbKETOATHUOC = new tbKETOATHUOC();
-            tbKETOATHUOC.MATOATHUOC = mATOATHUOC;
-            tbKETOATHUOC.MABENHAN = mABENHAN;
-            return tbKETOATHUOC;
+            tbKETOA tbKETOA = new tbKETOA();
+            tbKETOA.MATOATHUOC = mATOATHUOC;
+            tbKETOA.MABENHAN = mABENHAN;
+            tbKETOA.MATHUOC = mATHUOC;
+            return tbKETOA;
         }
 
         #endregion
@@ -2472,113 +3081,6 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTime> NGAYTAO
-        {
-            get
-            {
-                return _NGAYTAO;
-            }
-            set
-            {
-                OnNGAYTAOChanging(value);
-                ReportPropertyChanging("NGAYTAO");
-                _NGAYTAO = StructuralObject.SetValidValue(value);
-                ReportPropertyChanged("NGAYTAO");
-                OnNGAYTAOChanged();
-            }
-        }
-        private Nullable<global::System.DateTime> _NGAYTAO;
-        partial void OnNGAYTAOChanging(Nullable<global::System.DateTime> value);
-        partial void OnNGAYTAOChanged();
-
-        #endregion
-    
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbKETOATHUOCCHITIET")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class tbKETOATHUOCCHITIET : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new tbKETOATHUOCCHITIET object.
-        /// </summary>
-        /// <param name="sTT">Initial value of the STT property.</param>
-        /// <param name="mATOATHUOC">Initial value of the MATOATHUOC property.</param>
-        /// <param name="mATHUOC">Initial value of the MATHUOC property.</param>
-        public static tbKETOATHUOCCHITIET CreatetbKETOATHUOCCHITIET(global::System.Int32 sTT, global::System.String mATOATHUOC, global::System.String mATHUOC)
-        {
-            tbKETOATHUOCCHITIET tbKETOATHUOCCHITIET = new tbKETOATHUOCCHITIET();
-            tbKETOATHUOCCHITIET.STT = sTT;
-            tbKETOATHUOCCHITIET.MATOATHUOC = mATOATHUOC;
-            tbKETOATHUOCCHITIET.MATHUOC = mATHUOC;
-            return tbKETOATHUOCCHITIET;
-        }
-
-        #endregion
-        #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 STT
-        {
-            get
-            {
-                return _STT;
-            }
-            set
-            {
-                if (_STT != value)
-                {
-                    OnSTTChanging(value);
-                    ReportPropertyChanging("STT");
-                    _STT = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("STT");
-                    OnSTTChanged();
-                }
-            }
-        }
-        private global::System.Int32 _STT;
-        partial void OnSTTChanging(global::System.Int32 value);
-        partial void OnSTTChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String MATOATHUOC
-        {
-            get
-            {
-                return _MATOATHUOC;
-            }
-            set
-            {
-                OnMATOATHUOCChanging(value);
-                ReportPropertyChanging("MATOATHUOC");
-                _MATOATHUOC = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MATOATHUOC");
-                OnMATOATHUOCChanged();
-            }
-        }
-        private global::System.String _MATOATHUOC;
-        partial void OnMATOATHUOCChanging(global::System.String value);
-        partial void OnMATOATHUOCChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
         public global::System.String MATHUOC
@@ -2599,78 +3101,6 @@ namespace DO
         private global::System.String _MATHUOC;
         partial void OnMATHUOCChanging(global::System.String value);
         partial void OnMATHUOCChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String CACHDUNG
-        {
-            get
-            {
-                return _CACHDUNG;
-            }
-            set
-            {
-                OnCACHDUNGChanging(value);
-                ReportPropertyChanging("CACHDUNG");
-                _CACHDUNG = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("CACHDUNG");
-                OnCACHDUNGChanged();
-            }
-        }
-        private global::System.String _CACHDUNG;
-        partial void OnCACHDUNGChanging(global::System.String value);
-        partial void OnCACHDUNGChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String DONVI
-        {
-            get
-            {
-                return _DONVI;
-            }
-            set
-            {
-                OnDONVIChanging(value);
-                ReportPropertyChanging("DONVI");
-                _DONVI = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("DONVI");
-                OnDONVIChanged();
-            }
-        }
-        private global::System.String _DONVI;
-        partial void OnDONVIChanging(global::System.String value);
-        partial void OnDONVIChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String DONVIDUNG
-        {
-            get
-            {
-                return _DONVIDUNG;
-            }
-            set
-            {
-                OnDONVIDUNGChanging(value);
-                ReportPropertyChanging("DONVIDUNG");
-                _DONVIDUNG = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("DONVIDUNG");
-                OnDONVIDUNGChanged();
-            }
-        }
-        private global::System.String _DONVIDUNG;
-        partial void OnDONVIDUNGChanging(global::System.String value);
-        partial void OnDONVIDUNGChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2701,24 +3131,48 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String GHICHU
+        public Nullable<global::System.Int32> SOLANDUNG
         {
             get
             {
-                return _GHICHU;
+                return _SOLANDUNG;
             }
             set
             {
-                OnGHICHUChanging(value);
-                ReportPropertyChanging("GHICHU");
-                _GHICHU = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("GHICHU");
-                OnGHICHUChanged();
+                OnSOLANDUNGChanging(value);
+                ReportPropertyChanging("SOLANDUNG");
+                _SOLANDUNG = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SOLANDUNG");
+                OnSOLANDUNGChanged();
             }
         }
-        private global::System.String _GHICHU;
-        partial void OnGHICHUChanging(global::System.String value);
-        partial void OnGHICHUChanged();
+        private Nullable<global::System.Int32> _SOLANDUNG;
+        partial void OnSOLANDUNGChanging(Nullable<global::System.Int32> value);
+        partial void OnSOLANDUNGChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Int32> SOLUONGDUNG
+        {
+            get
+            {
+                return _SOLUONGDUNG;
+            }
+            set
+            {
+                OnSOLUONGDUNGChanging(value);
+                ReportPropertyChanging("SOLUONGDUNG");
+                _SOLUONGDUNG = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("SOLUONGDUNG");
+                OnSOLUONGDUNGChanged();
+            }
+        }
+        private Nullable<global::System.Int32> _SOLUONGDUNG;
+        partial void OnSOLUONGDUNGChanging(Nullable<global::System.Int32> value);
+        partial void OnSOLUONGDUNGChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2746,6 +3200,85 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbTHUOC", "tbTHUOC")]
+        public tbTHUOC tbTHUOC
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbTHUOC> tbTHUOCReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -2764,14 +3297,12 @@ namespace DO
         /// <param name="mALICHHEN">Initial value of the MALICHHEN property.</param>
         /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
         /// <param name="mABACSI">Initial value of the MABACSI property.</param>
-        /// <param name="nGAYHEN">Initial value of the NGAYHEN property.</param>
-        public static tbLICHHEN CreatetbLICHHEN(global::System.String mALICHHEN, global::System.String mABENHAN, global::System.String mABACSI, global::System.DateTime nGAYHEN)
+        public static tbLICHHEN CreatetbLICHHEN(global::System.Int32 mALICHHEN, global::System.String mABENHAN, global::System.String mABACSI)
         {
             tbLICHHEN tbLICHHEN = new tbLICHHEN();
             tbLICHHEN.MALICHHEN = mALICHHEN;
             tbLICHHEN.MABENHAN = mABENHAN;
             tbLICHHEN.MABACSI = mABACSI;
-            tbLICHHEN.NGAYHEN = nGAYHEN;
             return tbLICHHEN;
         }
 
@@ -2783,7 +3314,7 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String MALICHHEN
+        public global::System.Int32 MALICHHEN
         {
             get
             {
@@ -2795,14 +3326,14 @@ namespace DO
                 {
                     OnMALICHHENChanging(value);
                     ReportPropertyChanging("MALICHHEN");
-                    _MALICHHEN = StructuralObject.SetValidValue(value, false);
+                    _MALICHHEN = StructuralObject.SetValidValue(value);
                     ReportPropertyChanged("MALICHHEN");
                     OnMALICHHENChanged();
                 }
             }
         }
-        private global::System.String _MALICHHEN;
-        partial void OnMALICHHENChanging(global::System.String value);
+        private global::System.Int32 _MALICHHEN;
+        partial void OnMALICHHENChanging(global::System.Int32 value);
         partial void OnMALICHHENChanged();
     
         /// <summary>
@@ -2856,9 +3387,9 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.DateTime NGAYHEN
+        public Nullable<global::System.DateTime> NGAYHEN
         {
             get
             {
@@ -2873,8 +3404,8 @@ namespace DO
                 OnNGAYHENChanged();
             }
         }
-        private global::System.DateTime _NGAYHEN;
-        partial void OnNGAYHENChanging(global::System.DateTime value);
+        private Nullable<global::System.DateTime> _NGAYHEN;
+        partial void OnNGAYHENChanging(Nullable<global::System.DateTime> value);
         partial void OnNGAYHENChanged();
     
         /// <summary>
@@ -2903,6 +3434,47 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -3183,6 +3755,28 @@ namespace DO
         #endregion
     
         #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbHOSOKHAMBENH")]
+        public EntityCollection<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3618,6 +4212,28 @@ namespace DO
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbTHPHANQUYEN")]
+        public EntityCollection<tbTHPHANQUYEN> tbTHPHANQUYENs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbTHPHANQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbTHPHANQUYEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbTHPHANQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbTHPHANQUYEN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTINHNANGNHOMND_tbNHOMNGUOIDUNG", "tbTINHNANGNHOMND")]
         public EntityCollection<tbTINHNANGNHOMND> tbTINHNANGNHOMNDs
         {
@@ -3716,6 +4332,31 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTINHNANG_tbNHOMTINHNANG1", "tbTINHNANG")]
+        public EntityCollection<tbTINHNANG> tbTINHNANGs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbTINHNANG>("DB_HMSModel.FK_tbTINHNANG_tbNHOMTINHNANG1", "tbTINHNANG");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbTINHNANG>("DB_HMSModel.FK_tbTINHNANG_tbNHOMTINHNANG1", "tbTINHNANG", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -3873,6 +4514,28 @@ namespace DO
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbHOSOKHAMBENH")]
+        public EntityCollection<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbNHANVIEN_tbPHONGKHAM", "tbNHANVIEN")]
         public EntityCollection<tbNHANVIEN> tbNHANVIENs
         {
@@ -3885,6 +4548,174 @@ namespace DO
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbNHANVIEN>("DB_HMSModel.FK_tbNHANVIEN_tbPHONGKHAM", "tbNHANVIEN", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbQUANHUYEN")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tbQUANHUYEN : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tbQUANHUYEN object.
+        /// </summary>
+        /// <param name="iDQH">Initial value of the IDQH property.</param>
+        /// <param name="iDTP">Initial value of the IDTP property.</param>
+        public static tbQUANHUYEN CreatetbQUANHUYEN(global::System.String iDQH, global::System.String iDTP)
+        {
+            tbQUANHUYEN tbQUANHUYEN = new tbQUANHUYEN();
+            tbQUANHUYEN.IDQH = iDQH;
+            tbQUANHUYEN.IDTP = iDTP;
+            return tbQUANHUYEN;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String IDQH
+        {
+            get
+            {
+                return _IDQH;
+            }
+            set
+            {
+                if (_IDQH != value)
+                {
+                    OnIDQHChanging(value);
+                    ReportPropertyChanging("IDQH");
+                    _IDQH = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("IDQH");
+                    OnIDQHChanged();
+                }
+            }
+        }
+        private global::System.String _IDQH;
+        partial void OnIDQHChanging(global::System.String value);
+        partial void OnIDQHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TENQH
+        {
+            get
+            {
+                return _TENQH;
+            }
+            set
+            {
+                OnTENQHChanging(value);
+                ReportPropertyChanging("TENQH");
+                _TENQH = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TENQH");
+                OnTENQHChanged();
+            }
+        }
+        private global::System.String _TENQH;
+        partial void OnTENQHChanging(global::System.String value);
+        partial void OnTENQHChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String IDTP
+        {
+            get
+            {
+                return _IDTP;
+            }
+            set
+            {
+                OnIDTPChanging(value);
+                ReportPropertyChanging("IDTP");
+                _IDTP = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("IDTP");
+                OnIDTPChanged();
+            }
+        }
+        private global::System.String _IDTP;
+        partial void OnIDTPChanging(global::System.String value);
+        partial void OnIDTPChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbBENHNHAN_tbQUANHUYEN", "tbBENHNHAN")]
+        public EntityCollection<tbBENHNHAN> tbBENHNHANs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbBENHNHAN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbBENHNHAN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbBENHNHAN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbBENHNHAN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbQUANHUYEN_tbTINHTP", "tbTINHTP")]
+        public tbTINHTP tbTINHTP
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTINHTP>("DB_HMSModel.FK_tbQUANHUYEN_tbTINHTP", "tbTINHTP").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTINHTP>("DB_HMSModel.FK_tbQUANHUYEN_tbTINHTP", "tbTINHTP").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbTINHTP> tbTINHTPReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTINHTP>("DB_HMSModel.FK_tbQUANHUYEN_tbTINHTP", "tbTINHTP");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbTINHTP>("DB_HMSModel.FK_tbQUANHUYEN_tbTINHTP", "tbTINHTP", value);
                 }
             }
         }
@@ -3969,6 +4800,31 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbQUYEN", "tbTHPHANQUYEN")]
+        public EntityCollection<tbTHPHANQUYEN> tbTHPHANQUYENs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbTHPHANQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbQUYEN", "tbTHPHANQUYEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbTHPHANQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbQUYEN", "tbTHPHANQUYEN", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -3985,14 +4841,10 @@ namespace DO
         /// Create a new tbSINHLIEU object.
         /// </summary>
         /// <param name="mASINHLIEU">Initial value of the MASINHLIEU property.</param>
-        /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
-        /// <param name="mAYTA">Initial value of the MAYTA property.</param>
-        public static tbSINHLIEU CreatetbSINHLIEU(global::System.String mASINHLIEU, global::System.String mABENHAN, global::System.String mAYTA)
+        public static tbSINHLIEU CreatetbSINHLIEU(global::System.String mASINHLIEU)
         {
             tbSINHLIEU tbSINHLIEU = new tbSINHLIEU();
             tbSINHLIEU.MASINHLIEU = mASINHLIEU;
-            tbSINHLIEU.MABENHAN = mABENHAN;
-            tbSINHLIEU.MAYTA = mAYTA;
             return tbSINHLIEU;
         }
 
@@ -4029,7 +4881,7 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String MABENHAN
         {
@@ -4041,7 +4893,7 @@ namespace DO
             {
                 OnMABENHANChanging(value);
                 ReportPropertyChanging("MABENHAN");
-                _MABENHAN = StructuralObject.SetValidValue(value, false);
+                _MABENHAN = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("MABENHAN");
                 OnMABENHANChanged();
             }
@@ -4053,7 +4905,7 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String MAYTA
         {
@@ -4065,7 +4917,7 @@ namespace DO
             {
                 OnMAYTAChanging(value);
                 ReportPropertyChanging("MAYTA");
-                _MAYTA = StructuralObject.SetValidValue(value, false);
+                _MAYTA = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("MAYTA");
                 OnMAYTAChanged();
             }
@@ -4199,24 +5051,24 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String CANBANG
+        public global::System.String CANNANG
         {
             get
             {
-                return _CANBANG;
+                return _CANNANG;
             }
             set
             {
-                OnCANBANGChanging(value);
-                ReportPropertyChanging("CANBANG");
-                _CANBANG = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("CANBANG");
-                OnCANBANGChanged();
+                OnCANNANGChanging(value);
+                ReportPropertyChanging("CANNANG");
+                _CANNANG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CANNANG");
+                OnCANNANGChanged();
             }
         }
-        private global::System.String _CANBANG;
-        partial void OnCANBANGChanging(global::System.String value);
-        partial void OnCANBANGChanged();
+        private global::System.String _CANNANG;
+        partial void OnCANNANGChanging(global::System.String value);
+        partial void OnCANNANGChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4292,6 +5144,47 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -4429,6 +5322,123 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG")]
+        public tbNHOMNGUOIDUNG tbNHOMNGUOIDUNG
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHOMNGUOIDUNG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHOMNGUOIDUNG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbNHOMNGUOIDUNG> tbNHOMNGUOIDUNGReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHOMNGUOIDUNG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbNHOMNGUOIDUNG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbQUYEN", "tbQUYEN")]
+        public tbQUYEN tbQUYEN
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbQUYEN", "tbQUYEN").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbQUYEN", "tbQUYEN").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbQUYEN> tbQUYENReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbQUYEN", "tbQUYEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbQUYEN", "tbQUYEN", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbTINHNANG", "tbTINHNANG")]
+        public tbTINHNANG tbTINHNANG
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTINHNANG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbTINHNANG", "tbTINHNANG").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTINHNANG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbTINHNANG", "tbTINHNANG").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbTINHNANG> tbTINHNANGReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTINHNANG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbTINHNANG", "tbTINHNANG");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbTINHNANG>("DB_HMSModel.FK_tbTHPHANQUYEN_tbTINHNANG", "tbTINHNANG", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
@@ -4678,29 +5688,76 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbDONTHUOCMAUCHITIET")]
+        public EntityCollection<tbDONTHUOCMAUCHITIET> tbDONTHUOCMAUCHITIETs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbDONTHUOCMAUCHITIET>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbDONTHUOCMAUCHITIET");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbDONTHUOCMAUCHITIET>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbDONTHUOCMAUCHITIET", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbTHUOC", "tbKETOA")]
+        public EntityCollection<tbKETOA> tbKETOAs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbKETOA");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbKETOA", value);
+                }
+            }
+        }
+
+        #endregion
     }
     
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbTIENSUBENH")]
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbTIENSU")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class tbTIENSUBENH : EntityObject
+    public partial class tbTIENSU : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new tbTIENSUBENH object.
+        /// Create a new tbTIENSU object.
         /// </summary>
         /// <param name="mATIENSU">Initial value of the MATIENSU property.</param>
         /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
-        public static tbTIENSUBENH CreatetbTIENSUBENH(global::System.String mATIENSU, global::System.String mABENHAN)
+        public static tbTIENSU CreatetbTIENSU(global::System.String mATIENSU, global::System.String mABENHAN)
         {
-            tbTIENSUBENH tbTIENSUBENH = new tbTIENSUBENH();
-            tbTIENSUBENH.MATIENSU = mATIENSU;
-            tbTIENSUBENH.MABENHAN = mABENHAN;
-            return tbTIENSUBENH;
+            tbTIENSU tbTIENSU = new tbTIENSU();
+            tbTIENSU.MATIENSU = mATIENSU;
+            tbTIENSU.MABENHAN = mABENHAN;
+            return tbTIENSU;
         }
 
         #endregion
@@ -4762,6 +5819,30 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
+        public global::System.String GHICHU
+        {
+            get
+            {
+                return _GHICHU;
+            }
+            set
+            {
+                OnGHICHUChanging(value);
+                ReportPropertyChanging("GHICHU");
+                _GHICHU = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("GHICHU");
+                OnGHICHUChanged();
+            }
+        }
+        private global::System.String _GHICHU;
+        partial void OnGHICHUChanging(global::System.String value);
+        partial void OnGHICHUChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
         public Nullable<global::System.DateTime> NGAYTAO
         {
             get
@@ -4783,135 +5864,47 @@ namespace DO
 
         #endregion
     
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbTIENSUBENHCHITIET")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class tbTIENSUBENHCHITIET : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new tbTIENSUBENHCHITIET object.
-        /// </summary>
-        /// <param name="sTT">Initial value of the STT property.</param>
-        /// <param name="mATIENSUBENH">Initial value of the MATIENSUBENH property.</param>
-        public static tbTIENSUBENHCHITIET CreatetbTIENSUBENHCHITIET(global::System.Int32 sTT, global::System.String mATIENSUBENH)
-        {
-            tbTIENSUBENHCHITIET tbTIENSUBENHCHITIET = new tbTIENSUBENHCHITIET();
-            tbTIENSUBENHCHITIET.STT = sTT;
-            tbTIENSUBENHCHITIET.MATIENSUBENH = mATIENSUBENH;
-            return tbTIENSUBENHCHITIET;
-        }
-
-        #endregion
-        #region Primitive Properties
+        #region Navigation Properties
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        public global::System.Int32 STT
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
         {
             get
             {
-                return _STT;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value;
             }
             set
             {
-                if (_STT != value)
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
                 {
-                    OnSTTChanging(value);
-                    ReportPropertyChanging("STT");
-                    _STT = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("STT");
-                    OnSTTChanged();
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", value);
                 }
             }
         }
-        private global::System.Int32 _STT;
-        partial void OnSTTChanging(global::System.Int32 value);
-        partial void OnSTTChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String MATIENSUBENH
-        {
-            get
-            {
-                return _MATIENSUBENH;
-            }
-            set
-            {
-                OnMATIENSUBENHChanging(value);
-                ReportPropertyChanging("MATIENSUBENH");
-                _MATIENSUBENH = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("MATIENSUBENH");
-                OnMATIENSUBENHChanged();
-            }
-        }
-        private global::System.String _MATIENSUBENH;
-        partial void OnMATIENSUBENHChanging(global::System.String value);
-        partial void OnMATIENSUBENHChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String BENHTIENSU
-        {
-            get
-            {
-                return _BENHTIENSU;
-            }
-            set
-            {
-                OnBENHTIENSUChanging(value);
-                ReportPropertyChanging("BENHTIENSU");
-                _BENHTIENSU = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("BENHTIENSU");
-                OnBENHTIENSUChanged();
-            }
-        }
-        private global::System.String _BENHTIENSU;
-        partial void OnBENHTIENSUChanging(global::System.String value);
-        partial void OnBENHTIENSUChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String MOTA
-        {
-            get
-            {
-                return _MOTA;
-            }
-            set
-            {
-                OnMOTAChanging(value);
-                ReportPropertyChanging("MOTA");
-                _MOTA = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("MOTA");
-                OnMOTAChanged();
-            }
-        }
-        private global::System.String _MOTA;
-        partial void OnMOTAChanging(global::System.String value);
-        partial void OnMOTAChanged();
 
         #endregion
-    
     }
     
     /// <summary>
@@ -5018,6 +6011,66 @@ namespace DO
         #endregion
     
         #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTINHNANG_tbNHOMTINHNANG1", "tbNHOMTINHNANG")]
+        public tbNHOMTINHNANG tbNHOMTINHNANG
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHOMTINHNANG>("DB_HMSModel.FK_tbTINHNANG_tbNHOMTINHNANG1", "tbNHOMTINHNANG").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHOMTINHNANG>("DB_HMSModel.FK_tbTINHNANG_tbNHOMTINHNANG1", "tbNHOMTINHNANG").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbNHOMTINHNANG> tbNHOMTINHNANGReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHOMTINHNANG>("DB_HMSModel.FK_tbTINHNANG_tbNHOMTINHNANG1", "tbNHOMTINHNANG");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbNHOMTINHNANG>("DB_HMSModel.FK_tbTINHNANG_tbNHOMTINHNANG1", "tbNHOMTINHNANG", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbTINHNANG", "tbTHPHANQUYEN")]
+        public EntityCollection<tbTHPHANQUYEN> tbTHPHANQUYENs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbTHPHANQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbTINHNANG", "tbTHPHANQUYEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbTHPHANQUYEN>("DB_HMSModel.FK_tbTHPHANQUYEN_tbTINHNANG", "tbTHPHANQUYEN", value);
+                }
+            }
+        }
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5234,6 +6287,110 @@ namespace DO
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbTINHTP")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class tbTINHTP : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new tbTINHTP object.
+        /// </summary>
+        /// <param name="iDTP">Initial value of the IDTP property.</param>
+        public static tbTINHTP CreatetbTINHTP(global::System.String iDTP)
+        {
+            tbTINHTP tbTINHTP = new tbTINHTP();
+            tbTINHTP.IDTP = iDTP;
+            return tbTINHTP;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String IDTP
+        {
+            get
+            {
+                return _IDTP;
+            }
+            set
+            {
+                if (_IDTP != value)
+                {
+                    OnIDTPChanging(value);
+                    ReportPropertyChanging("IDTP");
+                    _IDTP = StructuralObject.SetValidValue(value, false);
+                    ReportPropertyChanged("IDTP");
+                    OnIDTPChanged();
+                }
+            }
+        }
+        private global::System.String _IDTP;
+        partial void OnIDTPChanging(global::System.String value);
+        partial void OnIDTPChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TENTP
+        {
+            get
+            {
+                return _TENTP;
+            }
+            set
+            {
+                OnTENTPChanging(value);
+                ReportPropertyChanging("TENTP");
+                _TENTP = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TENTP");
+                OnTENTPChanged();
+            }
+        }
+        private global::System.String _TENTP;
+        partial void OnTENTPChanging(global::System.String value);
+        partial void OnTENTPChanged();
+
+        #endregion
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbQUANHUYEN_tbTINHTP", "tbQUANHUYEN")]
+        public EntityCollection<tbQUANHUYEN> tbQUANHUYENs
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbQUANHUYEN>("DB_HMSModel.FK_tbQUANHUYEN_tbTINHTP", "tbQUANHUYEN");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbQUANHUYEN>("DB_HMSModel.FK_tbQUANHUYEN_tbTINHTP", "tbQUANHUYEN", value);
+                }
+            }
+        }
+
+        #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbTRIEUCHUNG")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -5246,13 +6403,11 @@ namespace DO
         /// </summary>
         /// <param name="mATRIEUCHUNG">Initial value of the MATRIEUCHUNG property.</param>
         /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
-        /// <param name="tRIEUCHUNG">Initial value of the TRIEUCHUNG property.</param>
-        public static tbTRIEUCHUNG CreatetbTRIEUCHUNG(global::System.Int32 mATRIEUCHUNG, global::System.String mABENHAN, global::System.String tRIEUCHUNG)
+        public static tbTRIEUCHUNG CreatetbTRIEUCHUNG(global::System.Int32 mATRIEUCHUNG, global::System.String mABENHAN)
         {
             tbTRIEUCHUNG tbTRIEUCHUNG = new tbTRIEUCHUNG();
             tbTRIEUCHUNG.MATRIEUCHUNG = mATRIEUCHUNG;
             tbTRIEUCHUNG.MABENHAN = mABENHAN;
-            tbTRIEUCHUNG.TRIEUCHUNG = tRIEUCHUNG;
             return tbTRIEUCHUNG;
         }
 
@@ -5313,26 +6468,26 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.String TRIEUCHUNG
+        public global::System.String TENTRIEUCHUNG
         {
             get
             {
-                return _TRIEUCHUNG;
+                return _TENTRIEUCHUNG;
             }
             set
             {
-                OnTRIEUCHUNGChanging(value);
-                ReportPropertyChanging("TRIEUCHUNG");
-                _TRIEUCHUNG = StructuralObject.SetValidValue(value, false);
-                ReportPropertyChanged("TRIEUCHUNG");
-                OnTRIEUCHUNGChanged();
+                OnTENTRIEUCHUNGChanging(value);
+                ReportPropertyChanging("TENTRIEUCHUNG");
+                _TENTRIEUCHUNG = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TENTRIEUCHUNG");
+                OnTENTRIEUCHUNGChanged();
             }
         }
-        private global::System.String _TRIEUCHUNG;
-        partial void OnTRIEUCHUNGChanging(global::System.String value);
-        partial void OnTRIEUCHUNGChanged();
+        private global::System.String _TENTRIEUCHUNG;
+        partial void OnTENTRIEUCHUNGChanging(global::System.String value);
+        partial void OnTENTRIEUCHUNGChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5360,6 +6515,47 @@ namespace DO
 
         #endregion
     
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH")]
+        public tbHOSOKHAMBENH tbHOSOKHAMBENH
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", value);
+                }
+            }
+        }
+
+        #endregion
     }
 
     #endregion

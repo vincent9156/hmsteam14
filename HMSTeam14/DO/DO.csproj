@@ -59,7 +59,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HMS_DB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="OutpantientDO\cBenhnhanDO.cs" />
     <Compile Include="OutpantientDO\cSinhLieuDO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <None Include="Properties\DataSources\DB_HMS_Entities.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

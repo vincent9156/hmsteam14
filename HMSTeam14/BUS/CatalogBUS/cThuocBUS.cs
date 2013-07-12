@@ -17,6 +17,10 @@ namespace BUS
         {
             return DA.cThuocDA.GetListMedicine();
         }
+        public static List<cThuocDO> GetMedicine1(Boolean Trangthai)
+        {
+            return DA.cThuocDA.GetListMedicine1(Trangthai);
+        }
         /// <summary>
         /// Gửi yêu cầu thêm thuốc xuống database
         /// </summary>
@@ -60,6 +64,10 @@ namespace BUS
         public static string Getmathuoc()
         {
             return DA.cThuocDA.Getmathuoc();
+        }
+        public static cThuocDO Getthongtinthuoc(string MATHUOC)
+        {
+            return DA.cThuocDA.Getthongtinthuoc(MATHUOC);
         }
     }
 }

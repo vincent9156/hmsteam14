@@ -19,7 +19,7 @@ namespace GUI
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new frmGiaodienchinh());
+            Application.Run(new frmLogin());
         }
     }
 }

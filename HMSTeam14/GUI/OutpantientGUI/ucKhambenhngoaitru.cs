@@ -16,7 +16,7 @@ namespace GUI
         {
             InitializeComponent();
         }
-
+        private string MABACSY = "" ,MAPHONGKHAM ="";
         private void btnIn_Click(object sender, EventArgs e)
         {
             frmHosobenhan hosobenhan = new frmHosobenhan();
@@ -38,10 +38,14 @@ namespace GUI
 
         private void LoadDsbenhan()
         {
-            List<cBenhanDO> dsbenhan = BUS.cBenhanBUS.Getdsbenhan("Chờ Khám",true);
+
+            DO.cNhanVienDO user = BUS.cNhanVienBUS.GetStaffInforByID(DO.cCommonDO.CurrentUser.MANHANVIEN);
+            MAPHONGKHAM = DO.cCommonDO.CurrentUser.MAPHONGKHAM;
+            List<cBenhanDO> dsbenhan = BUS.cBenhanBUS.Getdsbenhan(MAPHONGKHAM,2, 0, DateTime.Today);
             grdDSBNCK.DataSource = dsbenhan;
-            string MABACSY ="ABC002";
-            List<cBenhanDO> dsbenhan1 = BUS.cBenhanBUS.Getdsbenhan1( MABACSY,"Đang Khám",true);
+            MABACSY = DO.cCommonDO.CurrentUser.MANHANVIEN;
+
+            List<cBenhanDO> dsbenhan1 = BUS.cBenhanBUS.Getdsbenhan1(MAPHONGKHAM,MABACSY, 3, 0, DateTime.Today);
             grdDSBNDKCTBS.DataSource = dsbenhan1;
         }
         public cBenhanDO Getthongtinbenh()
@@ -62,17 +66,18 @@ namespace GUI
         {
             try
             {
-                lblSTT.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "STT").ToString();
-                lblMabenhan.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "MABENHAN").ToString();
+                lblSTT.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "MABENHAN").ToString();
                 lblMabenhnhan.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
                 lblHoTen.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "HOTEN").ToString();
-                lblDiachi.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "DIACHI").ToString();
                 lblTuoi.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "TUOI").ToString();
                 lblGioitinh.Text = gridDSBNCK.GetRowCellValue(e.RowHandle, "GIOITINH").ToString();
-                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2("ABC002", lblMabenhan.Text, "Kết Thúc");
+                string MABENHNHAN = gridDSBNCK.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
+                cBenhNhanDO infor = BUS.cBenhanBUS.GetThongtinbenhan(MABENHNHAN);
+                lblDiachi.Text = infor.DIACHI;
+                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2(MABACSY, lblMabenhan.Text, 4);
                 grdHSNLTK.DataSource = hosobenhan;
-                BUS.cBenhanBUS.UpdateBacsivaobenhan(lblMabenhan.Text, "ABC002", DateTime.Today);
-                BUS.cBenhanBUS.UpdateTrangthaibenhnhan(lblMabenhan.Text, "Đang Khám", DateTime.Today);
+                BUS.cBenhanBUS.UpdateBacsivaobenhan(lblMabenhan.Text, MABACSY);
+                BUS.cBenhanBUS.UpdateTrangthai(lblMabenhan.Text, 2);
                 ucKhambenhngoaitru_Load(sender, e);
             }
             catch (System.Exception ex)
@@ -85,14 +90,16 @@ namespace GUI
         {
             try
             {
-                lblSTT.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "STT").ToString();
-                lblMabenhan.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "MABENHAN").ToString();
+
+                lblSTT.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "MABENHAN").ToString();
                 lblMabenhnhan.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
                 lblHoTen.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "HOTEN").ToString();
-                lblDiachi.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "DIACHI").ToString();
                 lblTuoi.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "TUOI").ToString();
                 lblGioitinh.Text = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "GIOITINH").ToString();
-                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2("ABC002", lblMabenhan.Text, "Kết Thúc");
+                string MABENHNHAN = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
+                cBenhNhanDO infor = BUS.cBenhanBUS.GetThongtinbenhan(MABENHNHAN);
+                lblDiachi.Text = infor.DIACHI;
+                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2(MABACSY, lblMabenhan.Text, 4);
                 grdHSNLTK.DataSource = hosobenhan;
             }
             catch (System.Exception ex)

@@ -36,27 +36,16 @@
             this.colSTT1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHoten1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMabenhnhan1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMabenhan1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDiachi1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colGioitinh1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTuoi1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTrangthai1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMabacsy = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTrangthaibenhnhan1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.grpDanhsachbenhnhan = new DevExpress.XtraEditors.GroupControl();
             this.grdDSBNCK = new DevExpress.XtraGrid.GridControl();
             this.gridDSBNCK = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSTT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHoten = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMaBN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDiachi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colGioitinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTuoi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMabenhan = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMabenhnhan = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTrangthaibenhnhan = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTrangthai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.grdHSNLTK = new DevExpress.XtraGrid.GridControl();
             this.gridHSNLTK = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -70,7 +59,6 @@
             this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
             this.lblMabenhnhan = new DevExpress.XtraEditors.LabelControl();
             this.lblSTT = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
@@ -202,6 +190,13 @@
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.lblChidinhdieutri = new DevExpress.XtraEditors.LabelControl();
+            this.colGIODK = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cmbHOTEN = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.MABENH = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMaBenhNhan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGioitinh1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
@@ -292,6 +287,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTaikhamsau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNdtaikham.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoidancuabs.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbHOTEN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MABENH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -330,6 +329,8 @@
             this.grdDSBNDKCTBS.Location = new System.Drawing.Point(2, 21);
             this.grdDSBNDKCTBS.MainView = this.gridDSBNDKCTBS;
             this.grdDSBNDKCTBS.Name = "grdDSBNDKCTBS";
+            this.grdDSBNDKCTBS.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.MABENH});
             this.grdDSBNDKCTBS.Size = new System.Drawing.Size(260, 147);
             this.grdDSBNDKCTBS.TabIndex = 0;
             this.grdDSBNDKCTBS.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -341,13 +342,9 @@
             this.colSTT1,
             this.colHoten1,
             this.colMabenhnhan1,
-            this.colMabenhan1,
-            this.colDiachi1,
             this.colGioitinh1,
             this.colTuoi1,
-            this.colTrangthai1,
-            this.colMabacsy,
-            this.colTrangthaibenhnhan1});
+            this.colMabacsy});
             this.gridDSBNDKCTBS.GridControl = this.grdDSBNDKCTBS;
             this.gridDSBNDKCTBS.Name = "gridDSBNDKCTBS";
             this.gridDSBNDKCTBS.OptionsView.ShowGroupPanel = false;
@@ -356,7 +353,7 @@
             // colSTT1
             // 
             this.colSTT1.Caption = "STT";
-            this.colSTT1.FieldName = "STT";
+            this.colSTT1.FieldName = "MABENHAN";
             this.colSTT1.Name = "colSTT1";
             this.colSTT1.OptionsColumn.AllowEdit = false;
             this.colSTT1.Visible = true;
@@ -379,47 +376,17 @@
             this.colMabenhnhan1.FieldName = "MABENHNHAN";
             this.colMabenhnhan1.Name = "colMabenhnhan1";
             // 
-            // colMabenhan1
-            // 
-            this.colMabenhan1.Caption = "Mã Bệnh Án";
-            this.colMabenhan1.FieldName = "MABENHAN";
-            this.colMabenhan1.Name = "colMabenhan1";
-            // 
-            // colDiachi1
-            // 
-            this.colDiachi1.Caption = "Địa chỉ";
-            this.colDiachi1.FieldName = "DIACHI";
-            this.colDiachi1.Name = "colDiachi1";
-            // 
-            // colGioitinh1
-            // 
-            this.colGioitinh1.Caption = "Giới Tính";
-            this.colGioitinh1.FieldName = "GIOITINH";
-            this.colGioitinh1.Name = "colGioitinh1";
-            // 
             // colTuoi1
             // 
             this.colTuoi1.Caption = "Tuổi";
             this.colTuoi1.FieldName = "TUOI";
             this.colTuoi1.Name = "colTuoi1";
             // 
-            // colTrangthai1
-            // 
-            this.colTrangthai1.Caption = "Trạng Thái";
-            this.colTrangthai1.FieldName = "TRANGTHAI";
-            this.colTrangthai1.Name = "colTrangthai1";
-            // 
             // colMabacsy
             // 
             this.colMabacsy.Caption = "Mã bác sỹ";
             this.colMabacsy.FieldName = "MABACSI";
             this.colMabacsy.Name = "colMabacsy";
-            // 
-            // colTrangthaibenhnhan1
-            // 
-            this.colTrangthaibenhnhan1.Caption = "Trạng Thái Bệnh Nhân";
-            this.colTrangthaibenhnhan1.FieldName = "TRANGTHAIBENHNHAN";
-            this.colTrangthaibenhnhan1.Name = "colTrangthaibenhnhan1";
             // 
             // panelControl4
             // 
@@ -446,6 +413,8 @@
             this.grdDSBNCK.Location = new System.Drawing.Point(2, 21);
             this.grdDSBNCK.MainView = this.gridDSBNCK;
             this.grdDSBNCK.Name = "grdDSBNCK";
+            this.grdDSBNCK.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.cmbHOTEN});
             this.grdDSBNCK.Size = new System.Drawing.Size(260, 141);
             this.grdDSBNCK.TabIndex = 0;
             this.grdDSBNCK.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -455,15 +424,11 @@
             // 
             this.gridDSBNCK.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSTT,
+            this.colGIODK,
             this.colHoten,
-            this.colMaBN,
-            this.colDiachi,
             this.colGioitinh,
             this.colTuoi,
-            this.colMabenhan,
-            this.colMabenhnhan,
-            this.colTrangthaibenhnhan,
-            this.colTrangthai});
+            this.colMaBenhNhan});
             this.gridDSBNCK.GridControl = this.grdDSBNCK;
             this.gridDSBNCK.Name = "gridDSBNCK";
             this.gridDSBNCK.OptionsView.ShowGroupPanel = false;
@@ -472,12 +437,12 @@
             // colSTT
             // 
             this.colSTT.Caption = "STT";
-            this.colSTT.FieldName = "STT";
+            this.colSTT.FieldName = "MABENHAN";
             this.colSTT.Name = "colSTT";
             this.colSTT.OptionsColumn.AllowEdit = false;
             this.colSTT.Visible = true;
             this.colSTT.VisibleIndex = 0;
-            this.colSTT.Width = 126;
+            this.colSTT.Width = 92;
             // 
             // colHoten
             // 
@@ -486,20 +451,8 @@
             this.colHoten.Name = "colHoten";
             this.colHoten.OptionsColumn.AllowEdit = false;
             this.colHoten.Visible = true;
-            this.colHoten.VisibleIndex = 1;
-            this.colHoten.Width = 320;
-            // 
-            // colMaBN
-            // 
-            this.colMaBN.Caption = "Mã Bệnh Nhân";
-            this.colMaBN.Name = "colMaBN";
-            this.colMaBN.Width = 184;
-            // 
-            // colDiachi
-            // 
-            this.colDiachi.Caption = "Địa chỉ";
-            this.colDiachi.FieldName = "DIACHI";
-            this.colDiachi.Name = "colDiachi";
+            this.colHoten.VisibleIndex = 2;
+            this.colHoten.Width = 292;
             // 
             // colGioitinh
             // 
@@ -512,31 +465,6 @@
             this.colTuoi.Caption = "Tuổi";
             this.colTuoi.FieldName = "TUOI";
             this.colTuoi.Name = "colTuoi";
-            // 
-            // colMabenhan
-            // 
-            this.colMabenhan.Caption = "Mã bệnh án";
-            this.colMabenhan.FieldName = "MABENHAN";
-            this.colMabenhan.Name = "colMabenhan";
-            // 
-            // colMabenhnhan
-            // 
-            this.colMabenhnhan.Caption = "gridColumn2";
-            this.colMabenhnhan.FieldName = "MABENHNHAN";
-            this.colMabenhnhan.Name = "colMabenhnhan";
-            // 
-            // colTrangthaibenhnhan
-            // 
-            this.colTrangthaibenhnhan.Caption = "Trạng Thái Bệnh Nhân";
-            this.colTrangthaibenhnhan.FieldName = "TRANGTHAIBENHNHAN";
-            this.colTrangthaibenhnhan.Name = "colTrangthaibenhnhan";
-            // 
-            // colTrangthai
-            // 
-            this.colTrangthai.Caption = "Trạng Thái";
-            this.colTrangthai.FieldName = "TRANGTHAI";
-            this.colTrangthai.Name = "colTrangthai";
-            this.colTrangthai.Width = 157;
             // 
             // groupControl2
             // 
@@ -596,7 +524,6 @@
             this.panelControl6.Controls.Add(this.lblHoTen);
             this.panelControl6.Controls.Add(this.lblMabenhnhan);
             this.panelControl6.Controls.Add(this.lblSTT);
-            this.panelControl6.Controls.Add(this.labelControl34);
             this.panelControl6.Controls.Add(this.labelControl33);
             this.panelControl6.Controls.Add(this.labelControl31);
             this.panelControl6.Controls.Add(this.labelControl30);
@@ -612,64 +539,56 @@
             // 
             // lblTuoi
             // 
-            this.lblTuoi.Location = new System.Drawing.Point(843, 45);
+            this.lblTuoi.Location = new System.Drawing.Point(784, 54);
             this.lblTuoi.Name = "lblTuoi";
             this.lblTuoi.Size = new System.Drawing.Size(0, 13);
             this.lblTuoi.TabIndex = 14;
             // 
             // lblGioitinh
             // 
-            this.lblGioitinh.Location = new System.Drawing.Point(738, 45);
+            this.lblGioitinh.Location = new System.Drawing.Point(679, 54);
             this.lblGioitinh.Name = "lblGioitinh";
             this.lblGioitinh.Size = new System.Drawing.Size(0, 13);
             this.lblGioitinh.TabIndex = 13;
             // 
             // lblDiachi
             // 
-            this.lblDiachi.Location = new System.Drawing.Point(554, 76);
+            this.lblDiachi.Location = new System.Drawing.Point(677, 85);
             this.lblDiachi.Name = "lblDiachi";
             this.lblDiachi.Size = new System.Drawing.Size(0, 13);
             this.lblDiachi.TabIndex = 12;
             // 
             // lblMabenhan
             // 
-            this.lblMabenhan.Location = new System.Drawing.Point(578, 45);
+            this.lblMabenhan.Location = new System.Drawing.Point(444, 52);
             this.lblMabenhan.Name = "lblMabenhan";
             this.lblMabenhan.Size = new System.Drawing.Size(0, 13);
             this.lblMabenhan.TabIndex = 11;
             // 
             // lblHoTen
             // 
-            this.lblHoTen.Location = new System.Drawing.Point(291, 76);
+            this.lblHoTen.Location = new System.Drawing.Point(414, 83);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(0, 13);
             this.lblHoTen.TabIndex = 10;
             // 
             // lblMabenhnhan
             // 
-            this.lblMabenhnhan.Location = new System.Drawing.Point(338, 45);
+            this.lblMabenhnhan.Location = new System.Drawing.Point(461, 52);
             this.lblMabenhnhan.Name = "lblMabenhnhan";
             this.lblMabenhnhan.Size = new System.Drawing.Size(0, 13);
             this.lblMabenhnhan.TabIndex = 9;
             // 
             // lblSTT
             // 
-            this.lblSTT.Location = new System.Drawing.Point(137, 45);
+            this.lblSTT.Location = new System.Drawing.Point(251, 54);
             this.lblSTT.Name = "lblSTT";
             this.lblSTT.Size = new System.Drawing.Size(0, 13);
             this.lblSTT.TabIndex = 8;
             // 
-            // labelControl34
-            // 
-            this.labelControl34.Location = new System.Drawing.Point(512, 45);
-            this.labelControl34.Name = "labelControl34";
-            this.labelControl34.Size = new System.Drawing.Size(60, 13);
-            this.labelControl34.TabIndex = 7;
-            this.labelControl34.Text = "Mã bệnh án:";
-            // 
             // labelControl33
             // 
-            this.labelControl33.Location = new System.Drawing.Point(512, 76);
+            this.labelControl33.Location = new System.Drawing.Point(635, 85);
             this.labelControl33.Name = "labelControl33";
             this.labelControl33.Size = new System.Drawing.Size(36, 13);
             this.labelControl33.TabIndex = 6;
@@ -677,7 +596,7 @@
             // 
             // labelControl31
             // 
-            this.labelControl31.Location = new System.Drawing.Point(52, 45);
+            this.labelControl31.Location = new System.Drawing.Point(177, 54);
             this.labelControl31.Name = "labelControl31";
             this.labelControl31.Size = new System.Drawing.Size(50, 13);
             this.labelControl31.TabIndex = 5;
@@ -685,7 +604,7 @@
             // 
             // labelControl30
             // 
-            this.labelControl30.Location = new System.Drawing.Point(817, 45);
+            this.labelControl30.Location = new System.Drawing.Point(758, 54);
             this.labelControl30.Name = "labelControl30";
             this.labelControl30.Size = new System.Drawing.Size(20, 13);
             this.labelControl30.TabIndex = 4;
@@ -693,7 +612,7 @@
             // 
             // labelControl22
             // 
-            this.labelControl22.Location = new System.Drawing.Point(694, 45);
+            this.labelControl22.Location = new System.Drawing.Point(635, 54);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(38, 13);
             this.labelControl22.TabIndex = 3;
@@ -701,7 +620,7 @@
             // 
             // labelControl21
             // 
-            this.labelControl21.Location = new System.Drawing.Point(243, 76);
+            this.labelControl21.Location = new System.Drawing.Point(366, 83);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(39, 13);
             this.labelControl21.TabIndex = 2;
@@ -709,7 +628,7 @@
             // 
             // labelControl20
             // 
-            this.labelControl20.Location = new System.Drawing.Point(243, 45);
+            this.labelControl20.Location = new System.Drawing.Point(366, 52);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(72, 13);
             this.labelControl20.TabIndex = 1;
@@ -719,7 +638,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Navy;
-            this.labelControl8.Location = new System.Drawing.Point(358, 6);
+            this.labelControl8.Location = new System.Drawing.Point(366, 5);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(226, 28);
             this.labelControl8.TabIndex = 0;
@@ -1903,6 +1822,58 @@
             this.lblChidinhdieutri.TabIndex = 50;
             this.lblChidinhdieutri.Text = "-Chỉ định điều trị :";
             // 
+            // colGIODK
+            // 
+            this.colGIODK.Caption = "Giờ Đăng Ký";
+            this.colGIODK.FieldName = "GIODK";
+            this.colGIODK.Name = "colGIODK";
+            this.colGIODK.OptionsColumn.AllowEdit = false;
+            this.colGIODK.Visible = true;
+            this.colGIODK.VisibleIndex = 1;
+            this.colGIODK.Width = 219;
+            // 
+            // cmbHOTEN
+            // 
+            this.cmbHOTEN.AutoHeight = false;
+            this.cmbHOTEN.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbHOTEN.Name = "cmbHOTEN";
+            this.cmbHOTEN.View = this.repositoryItemGridLookUpEdit1View;
+            // 
+            // repositoryItemGridLookUpEdit1View
+            // 
+            this.repositoryItemGridLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
+            this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.repositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // MABENH
+            // 
+            this.MABENH.AutoHeight = false;
+            this.MABENH.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.MABENH.Name = "MABENH";
+            this.MABENH.View = this.gridView1;
+            // 
+            // gridView1
+            // 
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colMaBenhNhan
+            // 
+            this.colMaBenhNhan.Caption = "Mã Bệnh Nhân";
+            this.colMaBenhNhan.FieldName = "MABENHNHAN";
+            this.colMaBenhNhan.Name = "colMaBenhNhan";
+            // 
+            // colGioitinh1
+            // 
+            this.colGioitinh1.Caption = "Giới tính";
+            this.colGioitinh1.FieldName = "GIOITINH";
+            this.colGioitinh1.Name = "colGioitinh1";
+            // 
             // ucKhambenhngoaitru
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2009,6 +1980,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTaikhamsau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNdtaikham.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoidancuabs.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbHOTEN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MABENH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2030,9 +2005,7 @@
         private DevExpress.XtraGrid.GridControl grdDSBNCK;
         private DevExpress.XtraGrid.Views.Grid.GridView gridDSBNCK;
         private DevExpress.XtraGrid.Columns.GridColumn colSTT;
-        private DevExpress.XtraGrid.Columns.GridColumn colMaBN;
         private DevExpress.XtraGrid.Columns.GridColumn colHoten;
-        private DevExpress.XtraGrid.Columns.GridColumn colTrangthai;
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl30;
         private DevExpress.XtraEditors.LabelControl labelControl22;
@@ -2166,7 +2139,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.LabelControl labelControl31;
         private DevExpress.XtraEditors.LabelControl lblSTT;
-        private DevExpress.XtraEditors.LabelControl labelControl34;
         private DevExpress.XtraEditors.LabelControl lblMabenhnhan;
         private DevExpress.XtraEditors.LabelControl lblGioitinh;
         private DevExpress.XtraEditors.LabelControl lblDiachi;
@@ -2174,21 +2146,19 @@
         private DevExpress.XtraEditors.LabelControl lblHoTen;
         private DevExpress.XtraEditors.LabelControl lblTuoi;
         private DevExpress.XtraGrid.Columns.GridColumn colMabenhnhan1;
-        private DevExpress.XtraGrid.Columns.GridColumn colMabenhan1;
-        private DevExpress.XtraGrid.Columns.GridColumn colDiachi1;
-        private DevExpress.XtraGrid.Columns.GridColumn colGioitinh1;
         private DevExpress.XtraGrid.Columns.GridColumn colTuoi1;
-        private DevExpress.XtraGrid.Columns.GridColumn colTrangthai1;
         private DevExpress.XtraGrid.Columns.GridColumn colMabacsy;
-        private DevExpress.XtraGrid.Columns.GridColumn colTrangthaibenhnhan1;
-        private DevExpress.XtraGrid.Columns.GridColumn colDiachi;
         private DevExpress.XtraGrid.Columns.GridColumn colGioitinh;
         private DevExpress.XtraGrid.Columns.GridColumn colTuoi;
-        private DevExpress.XtraGrid.Columns.GridColumn colMabenhan;
-        private DevExpress.XtraGrid.Columns.GridColumn colMabenhnhan;
-        private DevExpress.XtraGrid.Columns.GridColumn colTrangthaibenhnhan;
         private DevExpress.XtraGrid.Columns.GridColumn colMabenhan2;
         private DevExpress.XtraGrid.Columns.GridColumn colNgayTao;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit MABENH;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colGIODK;
+        private DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit cmbHOTEN;
+        private DevExpress.XtraGrid.Views.Grid.GridView repositoryItemGridLookUpEdit1View;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaBenhNhan;
+        private DevExpress.XtraGrid.Columns.GridColumn colGioitinh1;
 
     }
 }

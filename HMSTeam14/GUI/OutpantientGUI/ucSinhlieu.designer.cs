@@ -37,7 +37,7 @@
             this.gridDanhsachbenhnhan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSTT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHoten = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMabenhnhan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGIODK = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
@@ -79,6 +79,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.colTUOI = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -171,7 +172,8 @@
             this.gridDanhsachbenhnhan.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSTT,
             this.colHoten,
-            this.colMabenhnhan});
+            this.colTUOI,
+            this.colGIODK});
             this.gridDanhsachbenhnhan.GridControl = this.grdDanhsachbenhnhan;
             this.gridDanhsachbenhnhan.Name = "gridDanhsachbenhnhan";
             this.gridDanhsachbenhnhan.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -182,7 +184,7 @@
             // colSTT
             // 
             this.colSTT.Caption = "STT";
-            this.colSTT.FieldName = "STT";
+            this.colSTT.FieldName = "MABENHAN";
             this.colSTT.Name = "colSTT";
             this.colSTT.OptionsColumn.AllowEdit = false;
             this.colSTT.Visible = true;
@@ -199,15 +201,15 @@
             this.colHoten.VisibleIndex = 2;
             this.colHoten.Width = 334;
             // 
-            // colMabenhnhan
+            // colGIODK
             // 
-            this.colMabenhnhan.Caption = "Mã bệnh nhân";
-            this.colMabenhnhan.FieldName = "MABENHNHAN";
-            this.colMabenhnhan.Name = "colMabenhnhan";
-            this.colMabenhnhan.OptionsColumn.AllowEdit = false;
-            this.colMabenhnhan.Visible = true;
-            this.colMabenhnhan.VisibleIndex = 1;
-            this.colMabenhnhan.Width = 186;
+            this.colGIODK.Caption = "Giờ Đăng Ký";
+            this.colGIODK.FieldName = "GIODK";
+            this.colGIODK.Name = "colGIODK";
+            this.colGIODK.OptionsColumn.AllowEdit = false;
+            this.colGIODK.Visible = true;
+            this.colGIODK.VisibleIndex = 1;
+            this.colGIODK.Width = 186;
             // 
             // panelControl5
             // 
@@ -647,6 +649,11 @@
             this.labelControl9.TabIndex = 60;
             this.labelControl9.Text = "-Mã Bệnh Nhân";
             // 
+            // colTUOI
+            // 
+            this.colTUOI.Caption = "Tuổi";
+            this.colTUOI.Name = "colTUOI";
+            // 
             // ucSinhlieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -699,7 +706,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridDanhsachbenhnhan;
         private DevExpress.XtraGrid.Columns.GridColumn colSTT;
         private DevExpress.XtraGrid.Columns.GridColumn colHoten;
-        private DevExpress.XtraGrid.Columns.GridColumn colMabenhnhan;
+        private DevExpress.XtraGrid.Columns.GridColumn colGIODK;
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
@@ -742,5 +749,6 @@
         private DevExpress.XtraEditors.LabelControl lblHoTen;
         private DevExpress.XtraEditors.LabelControl lblNgaySinh;
         private DevExpress.XtraEditors.LabelControl lblDiaChi;
+        private DevExpress.XtraGrid.Columns.GridColumn colTUOI;
     }
 }
