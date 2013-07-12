@@ -32,6 +32,11 @@ namespace BUS
             return DA.cPhongKhamDA.Checkphongkham(PHONGKHAM);
         }
 
+        public static bool Checkmaphongkham (string MAPHONGKHAM)
+        {
+            return DA.cPhongKhamDA.Checkmaphongkham(MAPHONGKHAM);
+        }
+
         public static string Getmaphongkham()
         {
             return DA.cPhongKhamDA.Getmaphongkham();

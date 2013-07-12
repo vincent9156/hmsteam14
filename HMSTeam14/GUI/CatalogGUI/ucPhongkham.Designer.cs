@@ -103,7 +103,6 @@
             // 
             this.btnKhongLuu.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.btnKhongLuu.Appearance.Options.UseForeColor = true;
-            // this.btnKhongLuu.Image = global::GUI.Properties.Resources.Cancel;
             this.btnKhongLuu.Location = new System.Drawing.Point(1156, 5);
             this.btnKhongLuu.Name = "btnKhongLuu";
             this.btnKhongLuu.Size = new System.Drawing.Size(75, 23);
@@ -115,7 +114,6 @@
             // 
             this.btnSua.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.btnSua.Appearance.Options.UseForeColor = true;
-            // this.btnSua.Image = global::GUI.Properties.Resources.edit1_icon;
             this.btnSua.Location = new System.Drawing.Point(994, 5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
@@ -127,7 +125,6 @@
             // 
             this.btnTaomoi.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.btnTaomoi.Appearance.Options.UseForeColor = true;
-            // this.btnTaomoi.Image = global::GUI.Properties.Resources.accept_16x16;
             this.btnTaomoi.Location = new System.Drawing.Point(913, 5);
             this.btnTaomoi.Name = "btnTaomoi";
             this.btnTaomoi.Size = new System.Drawing.Size(75, 23);
@@ -139,7 +136,6 @@
             // 
             this.btnLuu.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.btnLuu.Appearance.Options.UseForeColor = true;
-            // this.btnLuu.Image = global::GUI.Properties.Resources.save_16x16;
             this.btnLuu.Location = new System.Drawing.Point(1075, 5);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
@@ -171,7 +167,6 @@
             // txtMaphongkham
             // 
             this.txtMaphongkham.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtMaphongkham.Enabled = false;
             this.txtMaphongkham.Location = new System.Drawing.Point(359, 38);
             this.txtMaphongkham.Name = "txtMaphongkham";
             this.txtMaphongkham.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
@@ -225,9 +220,9 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.labelControl1.Location = new System.Drawing.Point(487, 5);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(279, 31);
+            this.labelControl1.Size = new System.Drawing.Size(258, 31);
             this.labelControl1.TabIndex = 6;
-            this.labelControl1.Text = "Danh Mục Phòng Khám";
+            this.labelControl1.Text = "Danh Mục Phòng Ban";
             // 
             // panelControl2
             // 
@@ -277,7 +272,7 @@
             // 
             // colMaphongkham
             // 
-            this.colMaphongkham.Caption = "Mã Phòng Khám";
+            this.colMaphongkham.Caption = "Mã Phòng Ban";
             this.colMaphongkham.FieldName = "MAPHONGKHAM";
             this.colMaphongkham.Name = "colMaphongkham";
             this.colMaphongkham.OptionsColumn.AllowEdit = false;
@@ -286,7 +281,7 @@
             // 
             // colTenphongkham
             // 
-            this.colTenphongkham.Caption = "Tên Phòng Khám";
+            this.colTenphongkham.Caption = "Tên Phòng Ban";
             this.colTenphongkham.FieldName = "TENPHONG";
             this.colTenphongkham.Name = "colTenphongkham";
             this.colTenphongkham.OptionsColumn.AllowEdit = false;
