@@ -210,7 +210,7 @@
             // 
             // btnPhongkham
             // 
-            this.btnPhongkham.Caption = "Phòng khám";
+            this.btnPhongkham.Caption = "Phòng ban";
             this.btnPhongkham.Id = 24;
             this.btnPhongkham.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnPhongkham.LargeGlyph")));
             this.btnPhongkham.LargeWidth = 80;
@@ -378,7 +378,7 @@
             this.ribbonDanhmucPK.ItemLinks.Add(this.btnPhongkham);
             this.ribbonDanhmucPK.Name = "ribbonDanhmucPK";
             this.ribbonDanhmucPK.ShowCaptionButton = false;
-            this.ribbonDanhmucPK.Text = "Danh mục phòng khám";
+            this.ribbonDanhmucPK.Text = "Danh mục phòng ban";
             // 
             // ribbonDanhmucthuoc
             // 

@@ -211,7 +211,7 @@
             // 
             // colPhongBan
             // 
-            this.colPhongBan.Caption = "Phòng Khám";
+            this.colPhongBan.Caption = "Phòng Ban";
             this.colPhongBan.FieldName = "MAPHONGKHAM";
             this.colPhongBan.Name = "colPhongBan";
             this.colPhongBan.OptionsColumn.AllowEdit = false;
@@ -339,9 +339,9 @@
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(37)))), ((int)(((byte)(127)))));
             this.labelControl12.Location = new System.Drawing.Point(534, 38);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(59, 13);
+            this.labelControl12.Size = new System.Drawing.Size(51, 13);
             this.labelControl12.TabIndex = 65;
-            this.labelControl12.Text = "Phòng Khám";
+            this.labelControl12.Text = "Phòng Ban";
             // 
             // labelControl13
             // 

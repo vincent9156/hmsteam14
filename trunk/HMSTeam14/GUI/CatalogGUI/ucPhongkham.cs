@@ -51,6 +51,7 @@ namespace GUI
             List<cPhongKhamDO> dsphongkham = BUS.cPhongKhamBUS.Getdsphongkham();
             grdDanhmucphongkham.DataSource = dsphongkham;
             Enablediting(false);
+            txtMaphongkham.Enabled = false;
         }
 
         /// <summary>
@@ -75,6 +76,11 @@ namespace GUI
         /// <returns></returns>
         private static bool Checkdauvao(cPhongKhamDO ds)
         {
+            if (ds.MAPHONGKHAM.Equals(""))
+            {
+                XtraMessageBox.Show("Vui lòng nhập lại mã phòng khám!");
+                return false;
+            }
             if (ds.TENPHONG.Equals(""))
             {
                 XtraMessageBox.Show("Vui lòng nhập lại tên phòng khám!");
@@ -88,7 +94,8 @@ namespace GUI
         /// </summary>
         private void Resettextvalue()
         {
-            txtTenphongkham.Text = null;
+            txtTenphongkham.Text = "";
+            txtMaphongkham.Text = "";
             chkTrangThai.Checked = false;
         }
 
@@ -102,12 +109,12 @@ namespace GUI
                 string maphongkham2 = null;
                 if (maphongkham == null)
                 {
-                maphongkham2 = "PK00";
+                    maphongkham2 = "P";
                 }
                 else
                 {
-                string kytudau = maphongkham.Substring(0, 2);
-                int socantang = Convert.ToInt32(maphongkham.Substring(2)) + 1;
+                    string kytudau = maphongkham.Substring(0, 2);
+                    int socantang = Convert.ToInt32(maphongkham.Substring(2)) + 1;
                 if (socantang >= 0 && socantang < 10)
                 {
                     maphongkham2 = kytudau + "0" + socantang;
@@ -118,7 +125,7 @@ namespace GUI
                 }
                 if (socantang >= 100)
                 {
-                    maphongkham2 = "Không th? thêm ph?ng khám";
+                    maphongkham2 = "Không thể thêm phòng khám";
                 }
             }
             return maphongkham2;
@@ -135,7 +142,8 @@ namespace GUI
             Update = false;
             Resettextvalue();
             Enablediting(true);
-            txtMaphongkham.Text = Xulymaphongkham();
+            txtMaphongkham.Enabled = true;
+       
         }
 
         /// <summary>
@@ -158,31 +166,32 @@ namespace GUI
         private void btnLuu_Click(object sender, EventArgs e)
         {
             cPhongKhamDO ds = Getthongtinpk();
-            string maphongkham = Xulymaphongkham();
 
-            if(Checkdauvao(ds) == true)
+
+            if (Checkdauvao(ds) == true)
             {
-                if (Add && BUS.cPhongKhamBUS.Checkphongkham(ds.TENPHONG) == true && Update == false)
+                if (Add && (BUS.cPhongKhamBUS.Checkmaphongkham(ds.MAPHONGKHAM) == true || BUS.cPhongKhamBUS.Checkphongkham(ds.TENPHONG) == true) && Update == false)
                 {
-                    XtraMessageBox.Show("Tên phòng khám đã tồn tại: " + txtTenphongkham.Text + "!!",
+                    XtraMessageBox.Show("Mã phòng khám hoặc Tên phòng khám đã tồn tại: " + "!!",
                         "Hỏi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Enablediting(true);
-                }else
+                }
+                else
                 {
-                    if(Add && BUS.cPhongKhamBUS.Checkphongkham(ds.TENPHONG) == false && Update == false)
+                    if (Add && BUS.cPhongKhamBUS.Checkphongkham(ds.TENPHONG) == false && BUS.cPhongKhamBUS.Checkmaphongkham(ds.MAPHONGKHAM) == false && Update == false)
                     {
-                        BUS.cPhongKhamBUS.Insertphongkham(maphongkham, ds.TENPHONG, ds.NGAYTAO, ds.TRANGTHAI);
+                        BUS.cPhongKhamBUS.Insertphongkham(ds.MAPHONGKHAM, ds.TENPHONG, ds.NGAYTAO, ds.TRANGTHAI);
                         ucPhongkham_Load(sender, e);
                         XtraMessageBox.Show("Lưu thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
 
-                if(Update)
-                {
-                    BUS.cPhongKhamBUS.Updatephongkham(ds.MAPHONGKHAM, ds.TENPHONG, ds.NGAYTAO, ds.TRANGTHAI);
-                    ucPhongkham_Load(sender, e);
-                    XtraMessageBox.Show("Lưu thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                    if (Update)
+                    {
+                        BUS.cPhongKhamBUS.Updatephongkham(ds.MAPHONGKHAM, ds.TENPHONG, ds.NGAYTAO, ds.TRANGTHAI);
+                        ucPhongkham_Load(sender, e);
+                        XtraMessageBox.Show("Lưu thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
             }
         }
 
@@ -259,6 +268,7 @@ namespace GUI
         private void btnKhongLuu_Click(object sender, EventArgs e)
         {
             Enablediting(false);
+            txtMaphongkham.Enabled = false;
         }
 
         /// <summary>
