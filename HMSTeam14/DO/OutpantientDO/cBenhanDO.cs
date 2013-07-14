@@ -14,7 +14,7 @@ namespace DO
         public string TUOI { set; get; }
         public string GIOITINH { set; get; }
         public DateTime NGAYDK { set; get; }
-        public DateTime GIODK { set; get; }
+        public string GIODK { set; get; }
         public int MAXACNHAN { set; get; }
         public int TRANGTHAI { set; get; }
         public string MAPHONGKHAM {set;get;}

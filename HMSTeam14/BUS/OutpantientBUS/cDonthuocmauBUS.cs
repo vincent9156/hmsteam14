@@ -12,6 +12,10 @@ namespace BUS
         {
             return DA.cDonThuocMauDA.Getdsdonthuocmau(MADONTHUOCMAU, MABACSY);
         }
+        public static List<cDonthuochientaiDO> Getdsdonthuocmau2(string MADONTHUOCMAU, string MABACSY)
+        {
+            return DA.cDonThuocMauDA.Getdsdonthuocmau2(MADONTHUOCMAU, MABACSY);
+        }
         public static void InsertDonthuocmau(string MADONTHUOCMAU, string MABACSI, DateTime NGAYTAO, Boolean TRANGTHAI)
         {
             DA.cDonThuocMauDA.InsertDonthuocmau(MADONTHUOCMAU, MABACSI, NGAYTAO, TRANGTHAI);

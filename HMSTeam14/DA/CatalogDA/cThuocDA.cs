@@ -60,6 +60,24 @@ namespace DA
                 return dsMedicine;
             }
         }
+        public static List<cThuoc1DO> GetListMedicine2(Boolean Trangthai)
+        {
+            List<cThuoc1DO> dsMedicine = new List<cThuoc1DO>();
+            using (DB_HMS_Entities dk = new DB_HMS_Entities())
+            {
+                var query = from ds in dk.tbTHUOCs
+                            where ds.TRANGTHAI == Trangthai
+                            select ds;
+                foreach (var row in query)
+                {
+                    cThuoc1DO ds = new cThuoc1DO();
+                    ds.MATHUOC = row.MATHUOC;
+                    ds.TENTHUONGMAI = row.TENTHUONGMAI;
+                    dsMedicine.Add(ds);
+                }
+                return dsMedicine;
+            }
+        }
         /// <summary>
         /// Thêm thuốc xuống database
         /// </summary>

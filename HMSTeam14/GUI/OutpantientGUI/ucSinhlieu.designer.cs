@@ -37,7 +37,9 @@
             this.gridDanhsachbenhnhan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSTT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHoten = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTUOI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colGIODK = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMabenhnhan = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
@@ -79,7 +81,6 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.colTUOI = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -173,7 +174,8 @@
             this.colSTT,
             this.colHoten,
             this.colTUOI,
-            this.colGIODK});
+            this.colGIODK,
+            this.colMabenhnhan});
             this.gridDanhsachbenhnhan.GridControl = this.grdDanhsachbenhnhan;
             this.gridDanhsachbenhnhan.Name = "gridDanhsachbenhnhan";
             this.gridDanhsachbenhnhan.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -189,7 +191,7 @@
             this.colSTT.OptionsColumn.AllowEdit = false;
             this.colSTT.Visible = true;
             this.colSTT.VisibleIndex = 0;
-            this.colSTT.Width = 83;
+            this.colSTT.Width = 101;
             // 
             // colHoten
             // 
@@ -198,8 +200,13 @@
             this.colHoten.Name = "colHoten";
             this.colHoten.OptionsColumn.AllowEdit = false;
             this.colHoten.Visible = true;
-            this.colHoten.VisibleIndex = 2;
-            this.colHoten.Width = 334;
+            this.colHoten.VisibleIndex = 1;
+            this.colHoten.Width = 133;
+            // 
+            // colTUOI
+            // 
+            this.colTUOI.Caption = "Tuổi";
+            this.colTUOI.Name = "colTUOI";
             // 
             // colGIODK
             // 
@@ -208,8 +215,14 @@
             this.colGIODK.Name = "colGIODK";
             this.colGIODK.OptionsColumn.AllowEdit = false;
             this.colGIODK.Visible = true;
-            this.colGIODK.VisibleIndex = 1;
-            this.colGIODK.Width = 186;
+            this.colGIODK.VisibleIndex = 2;
+            this.colGIODK.Width = 78;
+            // 
+            // colMabenhnhan
+            // 
+            this.colMabenhnhan.Caption = "Mã bệnh nhân";
+            this.colMabenhnhan.FieldName = "MABENHNHAN";
+            this.colMabenhnhan.Name = "colMabenhnhan";
             // 
             // panelControl5
             // 
@@ -649,11 +662,6 @@
             this.labelControl9.TabIndex = 60;
             this.labelControl9.Text = "-Mã Bệnh Nhân";
             // 
-            // colTUOI
-            // 
-            this.colTUOI.Caption = "Tuổi";
-            this.colTUOI.Name = "colTUOI";
-            // 
             // ucSinhlieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -750,5 +758,6 @@
         private DevExpress.XtraEditors.LabelControl lblNgaySinh;
         private DevExpress.XtraEditors.LabelControl lblDiaChi;
         private DevExpress.XtraGrid.Columns.GridColumn colTUOI;
+        private DevExpress.XtraGrid.Columns.GridColumn colMabenhnhan;
     }
 }

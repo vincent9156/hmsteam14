@@ -21,20 +21,16 @@ using System.Runtime.Serialization;
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENH_tbNHOMBENH", "tbNHOMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMBENH), "tbBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENH), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENHPHONGKHAM_tbBENH", "tbBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbBENH), "tbBENHPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENHPHONGKHAM), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbQUANHUYEN), "tbBENHNHAN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENHNHAN), true)]
-[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbBENHNHAN), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbBENHPHONGKHAM_tbPHONGKHAM", "tbPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbPHONGKHAM), "tbBENHPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbBENHPHONGKHAM), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbCHUANDOAN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbCHUANDOAN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbDONTHUOCMAU", "tbDONTHUOCMAU", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DO.tbDONTHUOCMAU), "tbDONTHUOCMAUCHITIET", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbDONTHUOCMAUCHITIET), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbTHUOC", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTHUOC), "tbDONTHUOCMAUCHITIET", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbDONTHUOCMAUCHITIET), true)]
-[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHANVIEN), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
-[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbPHONGKHAM), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
+[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DO.tbNHANVIEN), "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHOSOKHAMBENH), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbHUONGDAN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbHUONGDAN), true)]
-[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbKETOA", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbKETOA), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbLICHHEN_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbLICHHEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbLICHHEN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbSINHLIEU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(DO.tbHOSOKHAMBENH), "tbSINHLIEU", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbSINHLIEU), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTIENSU_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbTIENSU", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTIENSU), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTRIEUCHUNG_tbHOSOKHAMBENH", "tbHOSOKHAMBENH", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbHOSOKHAMBENH), "tbTRIEUCHUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTRIEUCHUNG), true)]
-[assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbKETOA_tbTHUOC", "tbTHUOC", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbTHUOC), "tbKETOA", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbKETOA), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbNHANVIEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMNGUOIDUNG), "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbNHANVIEN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbNHANVIEN_tbPHONGKHAM", "tbPHONGKHAM", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbPHONGKHAM), "tbNHANVIEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbNHANVIEN), true)]
 [assembly: EdmRelationshipAttribute("DB_HMSModel", "FK_tbTHPHANQUYEN_tbNHOMNGUOIDUNG", "tbNHOMNGUOIDUNG", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(DO.tbNHOMNGUOIDUNG), "tbTHPHANQUYEN", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(DO.tbTHPHANQUYEN), true)]
@@ -242,18 +238,18 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<tbKETOA> tbKETOAs
+        public ObjectSet<tbKETOATHUOC> tbKETOATHUOCs
         {
             get
             {
-                if ((_tbKETOAs == null))
+                if ((_tbKETOATHUOCs == null))
                 {
-                    _tbKETOAs = base.CreateObjectSet<tbKETOA>("tbKETOAs");
+                    _tbKETOATHUOCs = base.CreateObjectSet<tbKETOATHUOC>("tbKETOATHUOCs");
                 }
-                return _tbKETOAs;
+                return _tbKETOATHUOCs;
             }
         }
-        private ObjectSet<tbKETOA> _tbKETOAs;
+        private ObjectSet<tbKETOATHUOC> _tbKETOATHUOCs;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -587,11 +583,11 @@ namespace DO
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the tbKETOAs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// Deprecated Method for adding a new object to the tbKETOATHUOCs EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddTotbKETOAs(tbKETOA tbKETOA)
+        public void AddTotbKETOATHUOCs(tbKETOATHUOC tbKETOATHUOC)
         {
-            base.AddObject("tbKETOAs", tbKETOA);
+            base.AddObject("tbKETOATHUOCs", tbKETOATHUOC);
         }
     
         /// <summary>
@@ -1410,28 +1406,6 @@ namespace DO
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbQUANHUYEN>("DB_HMSModel.FK_tbBENHNHAN_tbQUANHUYEN", "tbQUANHUYEN", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbHOSOKHAMBENH")]
-        public EntityCollection<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbHOSOKHAMBENH");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbHOSOKHAMBENH", value);
                 }
             }
         }
@@ -2540,44 +2514,6 @@ namespace DO
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN")]
-        public tbBENHNHAN tbBENHNHAN
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<tbBENHNHAN> tbBENHNHANReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbBENHNHAN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbBENHNHAN", "tbBENHNHAN", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbCHUANDOAN_tbHOSOKHAMBENH1", "tbCHUANDOAN")]
         public EntityCollection<tbCHUANDOAN> tbCHUANDOANs
         {
@@ -2600,16 +2536,16 @@ namespace DO
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN")]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbNHANVIEN")]
         public tbNHANVIEN tbNHANVIEN
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbNHANVIEN").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbNHANVIEN").Value = value;
             }
         }
         /// <summary>
@@ -2621,51 +2557,13 @@ namespace DO
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbNHANVIEN");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbNHANVIEN", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM")]
-        public tbPHONGKHAM tbPHONGKHAM
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<tbPHONGKHAM> tbPHONGKHAMReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbPHONGKHAM>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbPHONGKHAM", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbNHANVIEN>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbNHANVIEN", value);
                 }
             }
         }
@@ -2688,28 +2586,6 @@ namespace DO
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHUONGDAN>("DB_HMSModel.FK_tbHUONGDAN_tbHOSOKHAMBENH", "tbHUONGDAN", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbHOSOKHAMBENH1", "tbKETOA")]
-        public EntityCollection<tbKETOA> tbKETOAs
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbKETOA");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbKETOA", value);
                 }
             }
         }
@@ -3002,26 +2878,22 @@ namespace DO
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbKETOA")]
+    [EdmEntityTypeAttribute(NamespaceName="DB_HMSModel", Name="tbKETOATHUOC")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class tbKETOA : EntityObject
+    public partial class tbKETOATHUOC : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new tbKETOA object.
+        /// Create a new tbKETOATHUOC object.
         /// </summary>
-        /// <param name="mATOATHUOC">Initial value of the MATOATHUOC property.</param>
-        /// <param name="mABENHAN">Initial value of the MABENHAN property.</param>
-        /// <param name="mATHUOC">Initial value of the MATHUOC property.</param>
-        public static tbKETOA CreatetbKETOA(global::System.String mATOATHUOC, global::System.String mABENHAN, global::System.String mATHUOC)
+        /// <param name="sTT">Initial value of the STT property.</param>
+        public static tbKETOATHUOC CreatetbKETOATHUOC(global::System.Int32 sTT)
         {
-            tbKETOA tbKETOA = new tbKETOA();
-            tbKETOA.MATOATHUOC = mATOATHUOC;
-            tbKETOA.MABENHAN = mABENHAN;
-            tbKETOA.MATHUOC = mATHUOC;
-            return tbKETOA;
+            tbKETOATHUOC tbKETOATHUOC = new tbKETOATHUOC();
+            tbKETOATHUOC.STT = sTT;
+            return tbKETOATHUOC;
         }
 
         #endregion
@@ -3032,32 +2904,32 @@ namespace DO
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String MATOATHUOC
+        public global::System.Int32 STT
         {
             get
             {
-                return _MATOATHUOC;
+                return _STT;
             }
             set
             {
-                if (_MATOATHUOC != value)
+                if (_STT != value)
                 {
-                    OnMATOATHUOCChanging(value);
-                    ReportPropertyChanging("MATOATHUOC");
-                    _MATOATHUOC = StructuralObject.SetValidValue(value, false);
-                    ReportPropertyChanged("MATOATHUOC");
-                    OnMATOATHUOCChanged();
+                    OnSTTChanging(value);
+                    ReportPropertyChanging("STT");
+                    _STT = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("STT");
+                    OnSTTChanged();
                 }
             }
         }
-        private global::System.String _MATOATHUOC;
-        partial void OnMATOATHUOCChanging(global::System.String value);
-        partial void OnMATOATHUOCChanged();
+        private global::System.Int32 _STT;
+        partial void OnSTTChanging(global::System.Int32 value);
+        partial void OnSTTChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String MABENHAN
         {
@@ -3069,7 +2941,7 @@ namespace DO
             {
                 OnMABENHANChanging(value);
                 ReportPropertyChanging("MABENHAN");
-                _MABENHAN = StructuralObject.SetValidValue(value, false);
+                _MABENHAN = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("MABENHAN");
                 OnMABENHANChanged();
             }
@@ -3081,7 +2953,7 @@ namespace DO
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String MATHUOC
         {
@@ -3093,7 +2965,7 @@ namespace DO
             {
                 OnMATHUOCChanging(value);
                 ReportPropertyChanging("MATHUOC");
-                _MATHUOC = StructuralObject.SetValidValue(value, false);
+                _MATHUOC = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("MATHUOC");
                 OnMATHUOCChanged();
             }
@@ -3200,85 +3072,6 @@ namespace DO
 
         #endregion
     
-        #region Navigation Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH")]
-        public tbHOSOKHAMBENH tbHOSOKHAMBENH
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<tbHOSOKHAMBENH> tbHOSOKHAMBENHReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbKETOA_tbHOSOKHAMBENH1", "tbHOSOKHAMBENH", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbTHUOC", "tbTHUOC")]
-        public tbTHUOC tbTHUOC
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC").Value;
-            }
-            set
-            {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC").Value = value;
-            }
-        }
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [BrowsableAttribute(false)]
-        [DataMemberAttribute()]
-        public EntityReference<tbTHUOC> tbTHUOCReference
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<tbTHUOC>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbTHUOC", value);
-                }
-            }
-        }
-
-        #endregion
     }
     
     /// <summary>
@@ -3762,18 +3555,18 @@ namespace DO
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbHOSOKHAMBENH")]
+        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbHOSOKHAMBENH")]
         public EntityCollection<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbHOSOKHAMBENH");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbHOSOKHAMBENH");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN", "tbHOSOKHAMBENH", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbNHANVIEN1", "tbHOSOKHAMBENH", value);
                 }
             }
         }
@@ -4504,28 +4297,6 @@ namespace DO
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbBENHPHONGKHAM>("DB_HMSModel.FK_tbBENHPHONGKHAM_tbPHONGKHAM", "tbBENHPHONGKHAM", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbHOSOKHAMBENH")]
-        public EntityCollection<tbHOSOKHAMBENH> tbHOSOKHAMBENHs
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbHOSOKHAMBENH");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbHOSOKHAMBENH>("DB_HMSModel.FK_tbHOSOKHAMBENH_tbPHONGKHAM", "tbHOSOKHAMBENH", value);
                 }
             }
         }
@@ -5708,28 +5479,6 @@ namespace DO
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbDONTHUOCMAUCHITIET>("DB_HMSModel.FK_tbDONTHUOCMAUCHITIET_tbTHUOC", "tbDONTHUOCMAUCHITIET", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("DB_HMSModel", "FK_tbKETOA_tbTHUOC", "tbKETOA")]
-        public EntityCollection<tbKETOA> tbKETOAs
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbKETOA");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<tbKETOA>("DB_HMSModel.FK_tbKETOA_tbTHUOC", "tbKETOA", value);
                 }
             }
         }

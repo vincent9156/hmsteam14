@@ -21,6 +21,10 @@ namespace BUS
         {
             return DA.cThuocDA.GetListMedicine1(Trangthai);
         }
+        public static List<cThuoc1DO> GetMedicine2(Boolean Trangthai)
+        {
+            return DA.cThuocDA.GetListMedicine2(Trangthai);
+        }
         /// <summary>
         /// Gửi yêu cầu thêm thuốc xuống database
         /// </summary>

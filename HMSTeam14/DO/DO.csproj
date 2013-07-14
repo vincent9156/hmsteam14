@@ -52,6 +52,7 @@
     <Compile Include="CatalogDO\cTinhNangDO.cs" />
     <Compile Include="CatalogDO\cTinhNangNhomNhanVienDO.cs" />
     <Compile Include="CatalogDO\cCommonDO.cs" />
+    <Compile Include="OutpantientDO\cKeToaDO.cs" />
     <Compile Include="OutpantientDO\cDonThuocMauDO.cs" />
     <Compile Include="OutpantientDO\cBenhanDO.cs" />
     <Compile Include="HMS_DB.Designer.cs">

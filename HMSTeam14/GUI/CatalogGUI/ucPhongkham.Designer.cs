@@ -267,6 +267,8 @@
             this.gridDanhmucphongkham.OptionsSelection.MultiSelect = true;
             this.gridDanhmucphongkham.OptionsView.ShowGroupPanel = false;
             this.gridDanhmucphongkham.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowForFocusedRow;
+            this.gridDanhmucphongkham.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colTenphongkham, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.gridDanhmucphongkham.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridDanhmucphongkham_RowClick);
             this.gridDanhmucphongkham.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridDanhmucphongkham_FocusedRowChanged);
             // 

@@ -18,4 +18,10 @@ namespace DO
         public Boolean TRANGTHAI { set; get; }
         public DateTime NGAYTAO { set; get; }
     }
+    public class cThuoc1DO
+    {
+        // khai bao bien su dung
+        public string MATHUOC { get; set; }
+        public string TENTHUONGMAI { get; set; }
+    }
 }

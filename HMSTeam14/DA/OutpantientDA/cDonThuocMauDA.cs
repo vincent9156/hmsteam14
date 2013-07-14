@@ -17,7 +17,7 @@ namespace DA
                             join ads1 in ds.tbDONTHUOCMAUCHITIETs on ads.MADONTHUOCMAU equals ads1.MADONTHUOCMAU
                             join ads2 in ds.tbTHUOCs on ads1.MATHUOC equals ads2.MATHUOC
                             where ads.MADONTHUOCMAU == MADONTHUOCMAU && ads.MABACSY == MABACSY
-                            select new { ads, ads1,ads2 };
+                            select new { ads, ads1, ads2 };
                 foreach (var row in query)
                 {
                     cDonThuocMauChiTietDO dss = new cDonThuocMauChiTietDO();
@@ -36,9 +36,29 @@ namespace DA
                 }
                 return dsbenhan;
             }
-          
-        }
 
+        }
+        public static List<cDonthuochientaiDO> Getdsdonthuocmau2(string MADONTHUOCMAU, string MABACSY)
+        {
+            List<cDonthuochientaiDO> dsbenhan = new List<cDonthuochientaiDO>();
+            using (DB_HMS_Entities ds = new DB_HMS_Entities())
+            {
+                var query = from ads in ds.tbDONTHUOCMAUs
+                            join ads1 in ds.tbDONTHUOCMAUCHITIETs on ads.MADONTHUOCMAU equals ads1.MADONTHUOCMAU
+                            join ads2 in ds.tbTHUOCs on ads1.MATHUOC equals ads2.MATHUOC
+                            where ads.MADONTHUOCMAU == MADONTHUOCMAU && ads.MABACSY == MABACSY
+                            select new { ads, ads1, ads2 };
+                foreach (var row in query)
+                {
+                    cDonthuochientaiDO dss = new cDonthuochientaiDO();
+                    dss.MATHUOC = row.ads1.MATHUOC;
+                    dss.TENTHUONGMAI = row.ads2.TENTHUONGMAI;
+                    dsbenhan.Add(dss);
+                }
+                return dsbenhan;
+            }
+
+        }
         
         public static void InsertDonthuocmau(string MADONTHUOCMAU, string MABACSI, DateTime NGAYTAO, Boolean TRANGTHAI)
         {
