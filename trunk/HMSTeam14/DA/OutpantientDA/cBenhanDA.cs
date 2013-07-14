@@ -23,11 +23,11 @@ namespace DA
                     dss.MABENHAN = row.ads.MAKHAMBENH;
                     dss.MABENHNHAN = row.ads.MABENHNHAN;
                     dss.MABACSY = row.ads.MABACSY;
-                    dss.HOTEN = row.ads1.HO + "" + row.ads1.TEN;
+                    dss.HOTEN = row.ads1.HO + " " + row.ads1.TEN;
                     dss.TUOI = row.ads.TUOI.ToString();
                     dss.GIOITINH = row.ads.GIOITINH;
                     dss.NGAYDK = row.ads.NGAYDK.Value;
-                    dss.GIODK = row.ads.GIODK.Value;
+                    dss.GIODK = row.ads.GIODK.Value.ToString().Substring(9);
                     dsbenhan.Add(dss);
                 }
                 return dsbenhan;
@@ -48,11 +48,11 @@ namespace DA
                     dss.MABENHAN = row.ads.MAKHAMBENH;
                     dss.MABENHNHAN = row.ads.MABENHNHAN;
                     dss.MABACSY = row.ads.MABACSY;
-                    dss.HOTEN = row.ads1.HO + "" + row.ads1.TEN;
+                    dss.HOTEN = row.ads1.HO + " " + row.ads1.TEN;
                     dss.TUOI = row.ads.TUOI.ToString();
                     dss.GIOITINH = row.ads.GIOITINH;
                     dss.NGAYDK = row.ads.NGAYDK.Value;
-                    dss.GIODK = row.ads.GIODK.Value;
+                    dss.GIODK = row.ads.GIODK.Value.ToString().Substring(9);
                     dsbenhan.Add(dss);
                 }
                 return dsbenhan;
@@ -73,11 +73,11 @@ namespace DA
                     dss.MABENHAN = row.ads.MAKHAMBENH;
                     dss.MABENHNHAN = row.ads.MABENHNHAN;
                     dss.MABACSY = row.ads.MABACSY;
-                    dss.HOTEN = row.ads1.HO + "" + row.ads1.TEN;
+                    dss.HOTEN = row.ads1.HO + " " + row.ads1.TEN;
                     dss.TUOI = row.ads.TUOI.ToString();
                     dss.GIOITINH = row.ads.GIOITINH;
                     dss.NGAYDK = row.ads.NGAYDK.Value;
-                    dss.GIODK = row.ads.GIODK.Value;
+                    dss.GIODK = row.ads.GIODK.Value.ToString().Substring(9);
                     dsbenhan.Add(dss);
                 }
                 return dsbenhan;
@@ -102,8 +102,6 @@ namespace DA
                 var query = (from dss in ds.tbHOSOKHAMBENHs
                              where dss.MAKHAMBENH ==MABENHAN
                              select dss).First();
-                //query.MABENH = MABENH;
-                query.MAKHAMBENH = MABENHAN;
                 query.TRANGTHAI = TRANGTHAI;
                 ds.SaveChanges();
             }
@@ -116,8 +114,6 @@ namespace DA
                 var query = (from dss in ds.tbHOSOKHAMBENHs
                              where dss.MAKHAMBENH == MABENHAN
                              select dss).First();
-                //query.MABENH = MABENH;
-                query.MAKHAMBENH = MABENHAN;
                 query.MAXACNHAN = MAXACNHAN;
                 ds.SaveChanges();
             }
@@ -130,8 +126,6 @@ namespace DA
                 var query = (from dss in ds.tbHOSOKHAMBENHs
                              where dss.MAKHAMBENH == MABENHAN
                              select dss).First();
-                //query.MABENH = MABENH;
-                query.MAKHAMBENH = MABENHAN;
                 query.MABACSY = MABACSY;
                 ds.SaveChanges();
             }
@@ -148,7 +142,7 @@ namespace DA
                              select new { u,u2,u3}).First();
                 ma.MABENHNHAN = query.u.MABENHNHAN;
                 ma.HOTEN = query.u.HO+" "+query.u.TEN;
-                ma.DIACHI = query.u.DIACHI + " " + query.u2.TENQH + " " + query.u3.TENTP;
+                ma.DIACHI = query.u.DIACHI + " , " + query.u2.TENQH + " , " + query.u3.TENTP;
                 ma.GIOITINH = query.u.GIOITINH;
                 ma.NTNSBN = query.u.NTNSBN;
                 return ma;

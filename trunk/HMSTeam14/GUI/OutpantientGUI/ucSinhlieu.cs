@@ -24,9 +24,13 @@ namespace GUI
         private void LoadDSBN()
         {
             DO.cNhanVienDO user = BUS.cNhanVienBUS.GetStaffInforByID(DO.cCommonDO.CurrentUser.MANHANVIEN);
+            string MANHOM = DO.cCommonDO.CurrentUser.MANHOMNHANVIEN;
             string MAPHONGKHAM = DO.cCommonDO.CurrentUser.MAPHONGKHAM;
+            if (MANHOM=="G003")
+            {
             List<cBenhanDO> dsbenhnhan = BUS.cBenhanBUS.Getdsbenhan(MAPHONGKHAM,1, 0, DateTime.Today);
             grdDanhsachbenhnhan.DataSource = dsbenhnhan;
+            }
         }
 
         private void ucSinhlieu_Load(object sender, EventArgs e)
@@ -73,7 +77,7 @@ namespace GUI
             sl.CANNANG = txtCanNang.Text;
             sl.VONGBUNG = txtVongBung.Text;
             sl.TRANGTHAI = true;
-            sl.NGAYTAO = DateTime.Now;
+            sl.NGAYTAO = DateTime.Today;
             return sl;
         }
 
@@ -87,13 +91,20 @@ namespace GUI
             string masl = BUS.cSinhLieuBUS.Getmasl();
             int socantang = Convert.ToInt32(masl) + 1;
             string masl2 = null;
-            if (socantang >= 0 && socantang < 10)
+            if (masl == "")
             {
-                masl2 = "0" + socantang;
+                masl2 = "00";
             }
-            if (socantang >= 10)
+            else
             {
-                masl2 = socantang.ToString();
+                if (socantang >= 0 && socantang < 10)
+                {
+                    masl2 = "0" + socantang;
+                }
+                if (socantang >= 10)
+                {
+                    masl2 = socantang.ToString();
+                }
             }
             return masl2;
         }
@@ -112,7 +123,7 @@ namespace GUI
             {
                 string ID = gridDanhsachbenhnhan.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
                 cBenhNhanDO infor = BUS.cBenhanBUS.GetThongtinbenhan(ID);
-                lblMaBenhNhan.Text = ID;
+                lblMaBenhNhan.Text = gridDanhsachbenhnhan.GetRowCellValue(e.RowHandle, "MABENHAN").ToString();
                 lblHoTen.Text = infor.HOTEN;
                 lblGioiTinh.Text = infor.GIOITINH;
                 lblDiaChi.Text = infor.DIACHI;

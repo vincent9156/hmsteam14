@@ -109,16 +109,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tbKETOAs">
-      <EntityTypeMapping TypeName="DB_HMSModel.tbKETOA">
-        <MappingFragment StoreEntitySet="tbKETOA">
+    <EntitySetMapping Name="tbKETOATHUOCs">
+      <EntityTypeMapping TypeName="DB_HMSModel.tbKETOATHUOC">
+        <MappingFragment StoreEntitySet="tbKETOATHUOC">
           <ScalarProperty Name="NGAYTAO" ColumnName="NGAYTAO" />
           <ScalarProperty Name="SOLUONGDUNG" ColumnName="SOLUONGDUNG" />
           <ScalarProperty Name="SOLANDUNG" ColumnName="SOLANDUNG" />
           <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
           <ScalarProperty Name="MATHUOC" ColumnName="MATHUOC" />
           <ScalarProperty Name="MABENHAN" ColumnName="MABENHAN" />
-          <ScalarProperty Name="MATOATHUOC" ColumnName="MATOATHUOC" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

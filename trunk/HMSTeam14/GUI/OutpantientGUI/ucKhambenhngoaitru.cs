@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DO;
 using BUS;
+using DevExpress.XtraGrid.Views.Grid;
 namespace GUI
 {
     public partial class ucKhambenhngoaitru : DevExpress.XtraEditors.XtraUserControl
@@ -16,7 +17,7 @@ namespace GUI
         {
             InitializeComponent();
         }
-        private string MABACSY = "" ,MAPHONGKHAM ="";
+        private string MABACSY = "" ,MAPHONGKHAM ="" ,MANHOM="";
         private void btnIn_Click(object sender, EventArgs e)
         {
             frmHosobenhan hosobenhan = new frmHosobenhan();
@@ -29,24 +30,75 @@ namespace GUI
         private void ucKhambenhngoaitru_Load(object sender, EventArgs e)
         {
             LoadDsbenhan();
+            LoadDonthuocmau();
+            LoadLaidulieu();
+
+        }
+        private void LoadLaidulieu()
+        {
             Timer tmr = new Timer();
             tmr.Interval = 5000;
             tmr.Enabled = true;
             tmr.Start();
             tmr.Tick += tmr_Tick;
         }
-
         private void LoadDsbenhan()
         {
-
+            
             DO.cNhanVienDO user = BUS.cNhanVienBUS.GetStaffInforByID(DO.cCommonDO.CurrentUser.MANHANVIEN);
+            MANHOM = DO.cCommonDO.CurrentUser.MANHOMNHANVIEN;
             MAPHONGKHAM = DO.cCommonDO.CurrentUser.MAPHONGKHAM;
-            List<cBenhanDO> dsbenhan = BUS.cBenhanBUS.Getdsbenhan(MAPHONGKHAM,2, 0, DateTime.Today);
-            grdDSBNCK.DataSource = dsbenhan;
-            MABACSY = DO.cCommonDO.CurrentUser.MANHANVIEN;
+            if (MANHOM == "G002")
+            {
+                List<cBenhanDO> dsbenhan = BUS.cBenhanBUS.Getdsbenhan(MAPHONGKHAM, 2, 0, DateTime.Today);
+                grdDSBNCK.DataSource = dsbenhan;
+                MABACSY = DO.cCommonDO.CurrentUser.MANHANVIEN;
 
-            List<cBenhanDO> dsbenhan1 = BUS.cBenhanBUS.Getdsbenhan1(MAPHONGKHAM,MABACSY, 3, 0, DateTime.Today);
-            grdDSBNDKCTBS.DataSource = dsbenhan1;
+                List<cBenhanDO> dsbenhan1 = BUS.cBenhanBUS.Getdsbenhan1(MAPHONGKHAM, MABACSY, 3, 0, DateTime.Today);
+                grdDSBNDKCTBS.DataSource = dsbenhan1;
+            }
+        }
+
+        private void LoadDonthuocmau()
+        {
+            List<cThuocDO> dsdonthuoc1 = BUS.cThuocBUS.GetMedicine1(true);
+            cmbMathuoc.DataSource = dsdonthuoc1;
+            cmbMathuoc.DisplayMember = "TENTHUONGMAI";
+            cmbMathuoc.ValueMember = "MATHUOC";
+            DO.cNhanVienDO user = BUS.cNhanVienBUS.GetStaffInforByID(DO.cCommonDO.CurrentUser.MANHANVIEN);
+            MABACSY = DO.cCommonDO.CurrentUser.MANHANVIEN;
+            if(BUS.cDonthuocmauBUS.CheckDonthuocmau("DT1",MABACSY)==true)
+            {
+                lblDonthuoc1.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT2", MABACSY) == true)
+            {
+                lblDonthuoc2.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT3", MABACSY) == true)
+            {
+                lblDonthuoc3.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT4", MABACSY) == true)
+            {
+                lblDonthuoc4.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT5", MABACSY) == true)
+            {
+                lblDonthuoc5.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT6", MABACSY) == true)
+            {
+                lblDonthuoc6.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT7", MABACSY) == true)
+            {
+                lblDonthuoc7.Enabled = true;
+            }
+            if (BUS.cDonthuocmauBUS.CheckDonthuocmau("DT8", MABACSY) == true)
+            {
+                lblDonthuoc8.Enabled = true;
+            }
         }
         public cBenhanDO Getthongtinbenh()
         {
@@ -74,10 +126,10 @@ namespace GUI
                 string MABENHNHAN = gridDSBNCK.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
                 cBenhNhanDO infor = BUS.cBenhanBUS.GetThongtinbenhan(MABENHNHAN);
                 lblDiachi.Text = infor.DIACHI;
-                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2(MABACSY, lblMabenhan.Text, 4);
+                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2(MABACSY, lblSTT.Text, 4);
                 grdHSNLTK.DataSource = hosobenhan;
-                BUS.cBenhanBUS.UpdateBacsivaobenhan(lblMabenhan.Text, MABACSY);
-                BUS.cBenhanBUS.UpdateTrangthai(lblMabenhan.Text, 2);
+                BUS.cBenhanBUS.UpdateBacsivaobenhan(lblSTT.Text, MABACSY);
+                BUS.cBenhanBUS.UpdateTrangthai(lblSTT.Text, 3);
                 ucKhambenhngoaitru_Load(sender, e);
             }
             catch (System.Exception ex)
@@ -99,7 +151,7 @@ namespace GUI
                 string MABENHNHAN = gridDSBNDKCTBS.GetRowCellValue(e.RowHandle, "MABENHNHAN").ToString();
                 cBenhNhanDO infor = BUS.cBenhanBUS.GetThongtinbenhan(MABENHNHAN);
                 lblDiachi.Text = infor.DIACHI;
-                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2(MABACSY, lblMabenhan.Text, 4);
+                List<cBenhanDO> hosobenhan = BUS.cBenhanBUS.Getdsbenhan2(MABACSY, lblSTT.Text, 4);
                 grdHSNLTK.DataSource = hosobenhan;
             }
             catch (System.Exception ex)
@@ -111,13 +163,21 @@ namespace GUI
         {
             try
             {
-                ucKhambenhngoaitru_Load(sender, e);
+                LoadDsbenhan();
             }
             catch (System.Exception ex)
             {
             	
             }
  
+        }
+
+        private void lblDonthuoc1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            List<cDonThuocMauChiTietDO> dsdonthuoc = BUS.cDonthuocmauBUS.Getdsdonthuocmau("DT1", MABACSY);
+            grdDonthuocmau.DataSource = dsdonthuoc;
+
+            
         }
     }
 }

@@ -36,4 +36,9 @@ namespace DO
         public Boolean TRANGTHAI1 { set; get; }
         public DateTime NGAYTAO1 { set; get; }
     }
+    public class cDonthuochientaiDO
+    {
+        public string MATHUOC { get; set; }
+        public string TENTHUONGMAI { get; set; }
+    }
 }
