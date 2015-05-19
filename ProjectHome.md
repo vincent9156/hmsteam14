@@ -1,0 +1,1 @@
+system help user to control hospital
